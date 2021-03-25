@@ -26,7 +26,7 @@ I work for my other project [localmint.com](https://www.localmint.com/), where I
 
 ## Import/Export
 * You can import or export Thunder Client collections data, useful to share with team mates.
-* Currently you can import collections from Postman also. ( other file formats support soon.. ).
+* Currently you can import collection file from Postman also. ( other file formats support soon.. ).
 
 ## Scriptless Testing
 I noticed we need to write lot of biolerplate code to do basic testing like status code equal 200. So I implemented GUI based tests, where you select couple of dropdowns to do most standard tests easily.
