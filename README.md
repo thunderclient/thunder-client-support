@@ -1,2 +1,2 @@
-# thunder-client-support
-Thunder Client Support
+# Thunder Client
+Thunder Client VS Code Extension Support
