@@ -21,3 +21,4 @@ I have my other project [localmint.com](https://www.localmint.com/), where I nee
 * **Graphql:** Send Graphql Query & Variables has syntax highlighting support.
 * **Environment Variables:** Syntax highlighting support for environment variables just use `{{variable}}` syntax in most fields
 * **Scriptless Testing:** Test APIs with GUI based functionality, no scripting knowledge needed.
+* **Themes:** The extension also supports VS Code themes.
