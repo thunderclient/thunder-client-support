@@ -1,5 +1,5 @@
 # Thunder Client
 Thunder Client VS Code Extension Support
 
-![](https://github.com/rangav/thunder-client-support/blob/54e06b35b2b16024777f610b04e98ec2a6cff1ba/thunder-rest-client.png)
+![](https://github.com/rangav/thunder-client-support/blob/6ba3bfa7b2142572bd84029efb745972721d7963/thunder-client-vscode.png)
 
