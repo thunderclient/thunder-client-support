@@ -1,6 +1,9 @@
 # Thunder Client
 Thunder Client is a GUI based Rest API Client Extension for Visual Studio Code, The source code is not open sourced. You can report any Bugs Or Feature requests here.
 
+* Website - [www.thunderclient.io](https://www.thunderclient.io)
+* Follow on Twitter for updates - [twitter.com/thunder_client](https://twitter.com/thunder_client)
+
 ## Usage
 Once Extension is Installed, Click Thunder Client icon on the Action Bar.
 ![](https://github.com/rangav/thunder-client-support/blob/6ba3bfa7b2142572bd84029efb745972721d7963/thunder-client-vscode.png)
@@ -17,4 +20,4 @@ I have my other project [localmint.com](https://www.localmint.com/), where I nee
 * **Post Body:** Send post body as Text, Json, Xml, Form Data and Form-Url-Encoded.
 * **Graphql:** Send Graphql Query & Variables has syntax highlighting support.
 * **Environment Variables:** Syntax highlighting support for environment variables just use `{{variable}}` syntax in most fields
-* 
+* **Scriptless Testing:** Test APIs with GUI based functionality, no scripting knowledge needed.
