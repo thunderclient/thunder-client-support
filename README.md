@@ -1,5 +1,5 @@
 # Thunder Client
-Thunder Client is a GUI based Rest API Client Extension for Visual Studio Code, hand-crafted by [Ranga Vadhineni](https://twitter.com/ranga_vadhineni), The source code is not open source. You can report any Bugs Or Feature requests here.
+Thunder Client is a GUI based Rest API Client Extension for Visual Studio Code, hand-crafted by [Ranga Vadhineni](https://twitter.com/ranga_vadhineni). The source code is not open source. You can report any Bugs Or Feature requests here.
 
 * Website - [www.thunderclient.io](https://www.thunderclient.io)
 * Follow on Twitter for updates - [twitter.com/thunder_client](https://twitter.com/thunder_client)
