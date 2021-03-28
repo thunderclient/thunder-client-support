@@ -35,15 +35,3 @@ I work for my other project [localmint.com](https://www.localmint.com/), where I
 I noticed we need to write lot of biolerplate code in Postman and other clients to do basic testing using scripting like status code equal 200. So I implemented GUI based tests, where you select couple of dropdowns to do most standard tests easily without scripting knowledge.
 
 ![](https://github.com/rangav/thunder-client-support/blob/master/images/thunder-client-tests.png?raw=true)
-
-### Test Examples
-
-**Postman Response Code**
-```
-pm.test("Status code is 200", function () {
-    pm.response.to.have.status(200);
-});
-```
-
-***Thunder Client Response Code***
-
