@@ -39,3 +39,6 @@ I work for my other project [localmint.com](https://www.localmint.com/), where I
 I noticed we need to write lot of biolerplate code in Postman and other clients to do basic testing using scripting like status code equal 200. So I implemented GUI based tests, where you select couple of dropdowns to do most standard tests easily without scripting knowledge.
 
 ![](https://github.com/rangav/thunder-client-support/blob/master/images/thunder-client-tests.png?raw=true)
+
+### Telemetry
+* Basic telemetry data of extension usage is collected using [vscode-extension-telemetry](https://github.com/Microsoft/vscode-extension-telemetry), No Personal or User data is collected. You can opt out using VS Code Settings [details here](https://code.visualstudio.com/docs/getstarted/telemetry)
