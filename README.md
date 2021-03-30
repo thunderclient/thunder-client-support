@@ -5,12 +5,12 @@ Thunder Client is a GUI based Rest API Client Extension for Visual Studio Code, 
 * Follow on Twitter for updates - [twitter.com/thunder_client](https://twitter.com/thunder_client)
 * You can reach me on [LinkedIn](https://www.linkedin.com/in/rangav/) or [Twitter](https://twitter.com/ranga_vadhineni).
 
+### Story behind Thunder Client
+* Read Launch Blog Post on [Medium](https://medium.com/@rangav/how-postman-led-me-to-create-my-own-api-client-called-thunder-client-for-vs-code-fd36e062e53e)
+
 ## Usage
 Install the Extension, Click Thunder Client icon on the Action Bar. [Intro Video on Youtube](https://www.youtube.com/watch?v=NKZ0ahNbmak)
 ![](images/thunder-client.gif)
-
-## Story behind Thunder Client
-* Read Launch Blog Post on [Medium](https://medium.com/@rangav/how-postman-led-me-to-create-my-own-api-client-called-thunder-client-for-vs-code-fd36e062e53e)
 
 ## Tech
 * Thunder Client is built with Javascript, Flexbox, Typescript, Ace Editor, Got, Nedb. No javascript or bootstrap frameworks used.
