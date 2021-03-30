@@ -10,7 +10,7 @@ Install the Extension, Click Thunder Client icon on the Action Bar. [Intro Video
 ![](images/thunder-client.gif)
 
 ## Story behind Thunder Client
-I work for my own project [localmint.com](https://www.localmint.com/), where I need to update the location data regularly, which involves dealing with lot of Crawlers & APIs. I was using Postman to test APIs from last few years, But recently for each update the Postman client is becoming slow and confusing UI, So I started looking for other clients, which I found requires multiple clicks to make a simple api request and complex UI. Then I searched the VS Code extension gallery and found REST Client extension which is popular but not a GUI based client. So I finally decided to create a GUI based extension which is simple, easy to use and one click access to most functionality.
+* Read Launch Blog Post on [Medium](https://medium.com/@rangav/how-postman-led-me-to-create-my-own-api-client-called-thunder-client-for-vs-code-fd36e062e53e)
 
 ## Tech
 * Thunder Client is built with Javascript, Flexbox, Typescript, Ace Editor, Got, Nedb. No javascript or bootstrap frameworks used.
