@@ -13,7 +13,7 @@ Install the Extension, Click Thunder Client icon on the Action Bar. [Intro Video
 ![](images/thunder-client.gif)
 
 ## Tech
-* Thunder Client is built with Javascript, Flexbox, Typescript, Ace Editor, Got, Nedb. No javascript or bootstrap frameworks used.
+* Thunder Client is built with **Javascript, Flexbox, Typescript, Ace Editor, Got, Nedb**. No javascript or bootstrap frameworks used.
 
 ## Features
 * Send http/https API request using any of the methods GET, POST, PUT, DELETE, PATCH, HEAD and OPTIONS.
