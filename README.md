@@ -35,6 +35,7 @@ Thunder Client is a GUI based Rest API Client Extension for Visual Studio Code, 
 ## Import/Export
 * You can import or export Thunder Client collections data, useful to share with team mates.
 * Currently you can import collection or Environment file from **Postman** also. ( other file formats support soon.. ).
+* Submit PR for other file formats on https://github.com/rangav/thunder-imports
 
 ## Run Collection
 * You can test multiple requests using Collection, select `Run All` option from the collection menu.
