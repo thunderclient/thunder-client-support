@@ -27,9 +27,12 @@ Install the Extension, Click Thunder Client icon on the Action Bar. [Intro Video
 * **Scriptless Testing:** Test APIs with GUI based functionality, no scripting knowledge needed.
 * **Themes:** The extension also supports VS Code themes.
 
+## Privacy
+* Basic anonymised telemetry data of extension usage is collected using [vscode-extension-telemetry](https://github.com/Microsoft/vscode-extension-telemetry), No Personal or request data is collected. You can opt out using VS Code Settings [details here](https://code.visualstudio.com/docs/getstarted/telemetry)
+
 ## Import/Export
 * You can import or export Thunder Client collections data, useful to share with team mates.
-* Currently you can import collection or Environment file from Postman also. ( other file formats support soon.. ).
+* Currently you can import collection or Environment file from **Postman** also. ( other file formats support soon.. ).
 
 ## Run Collection
 * You can test multiple requests using Collection, select `Run All` option from the collection menu.
@@ -40,5 +43,3 @@ I noticed we need to write lot of boilerplate code in Postman and other clients 
 
 ![](https://github.com/rangav/thunder-client-support/blob/master/images/thunder-client-tests.png?raw=true)
 
-#### Telemetry
-* Basic anonymised telemetry data of extension usage is collected using [vscode-extension-telemetry](https://github.com/Microsoft/vscode-extension-telemetry), No Personal or request data is collected. You can opt out using VS Code Settings [details here](https://code.visualstudio.com/docs/getstarted/telemetry)
