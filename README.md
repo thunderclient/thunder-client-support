@@ -28,6 +28,7 @@ Install the Extension, Click Thunder Client icon on the Action Bar. [Intro Video
 
 ## Privacy
 * Basic anonymised telemetry data of extension usage is collected using [vscode-extension-telemetry](https://github.com/Microsoft/vscode-extension-telemetry), No Personal or request data is collected. You can opt out using VS Code Settings [details here](https://code.visualstudio.com/docs/getstarted/telemetry)
+* There is no backend or cloud sync currently, all the data is stored locally on your computer.
 
 ## Import/Export
 * You can import or export Thunder Client collections data, useful to share with team mates.
