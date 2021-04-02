@@ -1,13 +1,13 @@
 ---
 name: issue template
-about: Describe this issue template's purpose here.
+about: Use this template to submit Bug or Feature request.
 title: ''
 labels: ''
 assignees: ''
 
 ---
 
-# provide details for BUG or Feature request
+# provide details for Bug or Feature request
 
 # Are you using Windows/Mac/Linux?
 
