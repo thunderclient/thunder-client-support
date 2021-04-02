@@ -9,6 +9,7 @@ Thunder Client is a GUI based Rest API Client Extension for Visual Studio Code, 
 
 ## Menu
 * [How to Use](#usage)
+* [Tech](#tech)
 
 ## How to Use
 <a name="usage"></a>
@@ -17,6 +18,7 @@ Thunder Client is a GUI based Rest API Client Extension for Visual Studio Code, 
 
 ![](images/thunder-client.gif)
 
+<a name="tech"></a>
 ## Tech
 * Thunder Client is built with **Javascript, Flexbox, Typescript, Ace Editor, Got, Nedb**. No javascript or bootstrap frameworks used.
 
