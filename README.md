@@ -15,11 +15,11 @@ Thunder Client is a GUI based Rest API Client Extension for Visual Studio Code, 
 * [How to Use](#usage)
 * [Tech](#tech)
 * [Features](#features)
-* [Privacy](#privacy)
 * [Import/Export](#import)
 * [Run Collection](#runcol)
 * [Scriptless Testing](#testing)
 * [Contribution](#contribution)
+* [Privacy](#privacy)
 
 
 <a name="usage"></a>
@@ -46,11 +46,6 @@ Thunder Client is a GUI based Rest API Client Extension for Visual Studio Code, 
 * **Scriptless Testing:** Test APIs with GUI based functionality, no scripting knowledge needed.
 * **Themes:** The extension also supports VS Code themes.
 
-<a name="privacy"></a>
-## Privacy
-* Basic anonymised telemetry data of extension usage is collected using [vscode-extension-telemetry](https://github.com/Microsoft/vscode-extension-telemetry), No Personal or request data is collected. You can opt out using VS Code Settings [details here](https://code.visualstudio.com/docs/getstarted/telemetry)
-* There is no backend or cloud sync currently, all the data is stored locally on your computer.
-
 <a name="import"></a>
 ## Import/Export
 * You can import or export Thunder Client collections data, useful to share with team mates.
@@ -64,12 +59,18 @@ Thunder Client is a GUI based Rest API Client Extension for Visual Studio Code, 
 
 <a name="testing"></a>
 ## Scriptless Testing
-I noticed we need to write lot of boilerplate code in Postman and other clients to do basic testing using scripting like status code equal 200. So I implemented GUI based tests, where you select couple of dropdowns to do most standard tests very easily without any scripting knowledge.
-
 ![](https://github.com/rangav/thunder-client-support/blob/master/images/thunder-client-tests.png?raw=true)
+
+* I noticed we need to write lot of boilerplate code in Postman and other clients to do basic testing using scripting like status code equal 200. So I implemented GUI based tests, where you select couple of dropdowns to do most standard tests very easily without any scripting knowledge.
+* **Set Environment Variable** from tests tab is now supported
 
 <a name="contribution"></a>
 ## Contribution Guidelines
 * As the project is not open source, when you submit feature request or bug, if you know the solution, please submit code sample or a sample project in **node or .Net**, so it will be faster for me to integrate into main project. 
+
+<a name="privacy"></a>
+## Privacy
+* Basic anonymised telemetry data of extension usage is collected using [vscode-extension-telemetry](https://github.com/Microsoft/vscode-extension-telemetry), No Personal or request data is collected. You can opt out using VS Code Settings [details here](https://code.visualstudio.com/docs/getstarted/telemetry)
+* There is no backend or cloud sync currently, all the data is stored locally on your computer.
 
 
