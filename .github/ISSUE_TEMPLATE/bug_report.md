@@ -20,4 +20,4 @@ assignees: ''
  - OS: 
 
 **Solution:**
-<!--- if you know the solution, please submit code sample or a sample project in node or .Net, so it will be faster for me to integrate into main project. --->
+<!--- if you know the solution, please post it --->
