@@ -65,8 +65,8 @@ Thunder Client is a GUI based Rest API Client Extension for Visual Studio Code, 
 * **Set Environment Variable** from tests tab is now supported, follow below steps
   * Create Env and the required variable name with empty value
   * From the tests tab select `Set Env Variable` option and enter the json property
-  * In value input enter the variable name when its matches name in env, it will turn **green**
-  * Now execute the request you will see the variable value set.
+  * In value input enter the variable name when its matches name in Env, it will turn **green**
+  * Now execute the request you will see the variable value set in the Env.
 
 <a name="contribution"></a>
 ## Contribution Guidelines
