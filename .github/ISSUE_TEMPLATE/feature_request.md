@@ -17,7 +17,4 @@ assignees: ''
 <!--- A clear and concise description of any alternative solutions or features you've considered. --->
 
 **Implementation:**
-<!--- if you know the solution, please submit code sample or a sample project in node or .Net, so it will be faster for me to integrate into main project.
-
-If you like to contribute to this feature let us know.
- --->
+<!--- if you know the solution, please submit code sample or link --->
