@@ -15,6 +15,8 @@ Thunder Client is a GUI based Rest API Client Extension for Visual Studio Code, 
 * [How to Use](#usage)
 * [Tech](#tech)
 * [Features](#features)
+* [Team Features](#team)
+* [Proxy](#proxy)
 * [Import/Export](#import)
 * [Run Collection](#runcol)
 * [Scriptless Testing](#testing)
@@ -46,6 +48,18 @@ Thunder Client is a GUI based Rest API Client Extension for Visual Studio Code, 
 * **Environment Variables:** Syntax highlighting support for environment variables just use `{{variable}}` syntax in most fields
 * **Scriptless Testing:** Test APIs with GUI based functionality, no scripting knowledge needed.
 * **Themes:** The extension also supports VS Code themes.
+
+<a name="team></a>
+## Team Features
+The team features are still in `beta`
+* Store all the data in Custom storage location, 2 settings provided
+* **Load From Project**: select this option when you like to spilt data per project, it will create `thunder-tests` folder in workspace. This loads the data when open the project in vscode.
+* **Custom Location**: select this option when you like save all the data in one location, enter the folder path to save the data.
+* Note: **Files changes** are not detected by the extension yet, you need to manually click **Reload** option from collection Tab.
+
+<a name="proxy"></a>
+## Proxy
+Proxy is supported using vscode proxy setting. format `http://username:password@host:port`
 
 <a name="import"></a>
 ## Import/Export
