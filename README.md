@@ -56,10 +56,11 @@ The team features are still in **Beta**, based on feedback I will improve it.
 * **Load From Project**: select this option when you like to spilt data per project, it will create `thunder-tests` folder in workspace. This loads the data when open the project in vscode.
 * **Custom Location**: select this option when you like save all the data in one location, enter the folder path to save the data.
 * Note: **Files changes** are not detected by the extension yet, you need to manually click **Reload** option from collection Tab.
+* please restart vscode after updating settings.
 
 <a name="proxy"></a>
 ## Proxy
-Proxy is supported using vscode proxy setting. format `http://username:password@host:port`
+Proxy is supported using vscode proxy setting. format `http://username:password@host:port`, please restart vscode after setting proxy.
 
 <a name="import"></a>
 ## Import/Export
