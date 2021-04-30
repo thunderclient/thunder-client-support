@@ -51,7 +51,7 @@ Thunder Client is a GUI based Rest API Client Extension for Visual Studio Code, 
 
 <a name="team"></a>
 ## Team Features
-The team features are still in `Beta`, based on feedback I will improve it.
+The team features are still in **Beta**, based on feedback I will improve it.
 * Store all the data in Custom storage location, 2 settings provided
 * **Load From Project**: select this option when you like to spilt data per project, it will create `thunder-tests` folder in workspace. This loads the data when open the project in vscode.
 * **Custom Location**: select this option when you like save all the data in one location, enter the folder path to save the data.
