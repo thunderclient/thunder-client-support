@@ -52,13 +52,15 @@ Thunder Client is a GUI based Rest API Client Extension for Visual Studio Code, 
 <a name="team"></a>
 ## Team Features
 The team features are still in **Beta**, based on feedback I will improve it.
+
+**WARNING**: There might be breaking changes for these Team features in next updates, so its not production ready.
+
 * Integrate with the Git source control is now supported, 2 settings provided
 * **Load From Project**: select this option when you like to spilt data per project, it will create `thunder-tests` folder in workspace. This loads the data when you open the project in vscode.
 * **Custom Location**: select this option when you like save all the data in one location, enter the folder path to save the data.
 * **Environment file**: if you dont want to save environment file to git server, use gitignore to ingore file thunderEnvironment.db
 * Note 1: **Files changes** are not detected by the extension yet, you need to manually click **Reload** option from collection Tab.
 * Note 2: Please restart vscode after updating settings.
-* **WARNING**: There might be breaking changes for above Team features in next updates, so its not production ready.
 
 <a name="proxy"></a>
 ## Proxy
