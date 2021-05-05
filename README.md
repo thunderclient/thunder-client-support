@@ -60,7 +60,7 @@ The team features are still in **Beta**, based on feedback I will improve it.
 * **Custom Location**: select this option when you like save all the data in one location, enter the full folder path to save the data.
 * Note 1: **Environment file**: if you dont want to save environment file to git server, use gitignore to ingore file thunderEnvironment.db
 * Note 2: **Files changes** are not detected by the extension yet, if you pulled changed from git, click **Reload** option from collection Tab to update data.
-* Note 3: Please restart vscode after updating settings.
+* Note 3: Please **restart vscode** after updating settings.
 
 <a name="proxy"></a>
 ## Proxy
