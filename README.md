@@ -83,9 +83,8 @@ Proxy is supported using vscode proxy setting. format `http://username:password@
 
 * I noticed we need to write lot of boilerplate code in Postman and other clients to do basic testing using scripting like status code equal 200. So I implemented GUI based tests, where you select couple of dropdowns to do most standard tests very easily without any scripting knowledge.
 * **Set Environment Variable** from tests tab is now supported, follow below steps
-  * Create Env and the required variable name with empty value
   * From the tests tab select `Set Env Variable` option and enter the json property
-  * In value input enter the variable name when its matches name in Env, it will turn **green**
+  * In value input enter the variable name when its matches name in Env, it will turn **green**, if variable not exists, it will create new.
   * Now execute the request you will see the variable value set in the Env.
 
 <a name="contribution"></a>
