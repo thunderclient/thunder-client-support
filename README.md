@@ -20,6 +20,7 @@ Thunder Client is a lightweight Rest API Client Extension for Visual Studio Code
 * [Import/Export](#import)
 * [Run Collection](#runcol)
 * [Scriptless Testing](#testing)
+* [Keyboard Shortcuts](#keyboard)
 * [Contribution](#contribution)
 * [Privacy](#privacy)
 
@@ -90,6 +91,15 @@ Proxy is supported using vscode proxy setting. format `http://username:password@
   * **Set Variable from Header**: Enter `header.headerName` in the left input, the prefix is `header.`
   * **Set Variable from Cookie**: Enter `cookie.cookieName` in the left input, the prefix is `cookie.`
 
+
+<a name="keyboard"></a>
+## Keyboard Shortcuts
+* `Ctl+Shift+P`: From Command Palette
+  * Thunder Client - New Request 
+  * Thunder Client - Run Last Request
+* `Cmd/Ctrl + Enter`: To execute the request
+* `Cmd/Ctrl+s` Environment variable window save data.
+* `Alt+Shft+f` Format Post Body data.
 
 <a name="contribution"></a>
 ## Contribution Guidelines
