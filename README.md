@@ -86,9 +86,9 @@ Proxy is supported using vscode proxy setting. format `http://username:password@
   * From the tests tab select `Set Env Variable` option and enter the json property
   * In value input enter the variable name when its matches name in Env, it will turn **green**, if variable not exists, it will create new.
   * Now execute the request you will see the variable value set in the Env.
-  * **Set Var from Text Response**: Enter `text` keyword in the left input
-  * **Set Var from Header**: Enter `header.headerName` in the left input, the prefix is `header.`
-  * **Set Var from Cookie**: Enter `cookie.cookieName` in the left input, the prefix is `cookie.`
+  * **Set Variable from Text Response**: Enter `text` keyword in the left input
+  * **Set Variable from Header**: Enter `header.headerName` in the left input, the prefix is `header.`
+  * **Set Variable from Cookie**: Enter `cookie.cookieName` in the left input, the prefix is `cookie.`
 
 
 <a name="contribution"></a>
