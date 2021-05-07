@@ -69,7 +69,7 @@ Proxy is supported using vscode proxy setting. format `http://username:password@
 <a name="import"></a>
 ## Import/Export
 * You can import or export Thunder Client collections data, useful to share with team mates.
-* Currently you can import collection or Environment file from **Postman** also. ( other file formats support soon.. ).
+* Currently you can import collection or Environment file from **Postman** 2.1.0 format. ( other file formats support soon.. ).
 * Submit PR for other file formats on https://github.com/rangav/thunder-imports
 
 <a name="runcol"></a>
