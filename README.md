@@ -8,9 +8,6 @@ Thunder Client is a lightweight Rest API Client Extension for Visual Studio Code
 #### Story behind Thunder Client
 * Read Launch Blog Post on [Medium](https://rangav.medium.com/thunder-client-alternative-to-postman-68ee0c9486d6)
 
-## Review
-* If you like this extension, please leave a review or rating on [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=rangav.vscode-thunder-client), will be useful for new users.
-
 ## Menu
 * [How to Use](#usage)
 * [Tech](#tech)
