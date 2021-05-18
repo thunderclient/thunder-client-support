@@ -53,9 +53,9 @@ The team features are still in **Beta**, based on feedback I will improve it.
 
 **WARNING**: The **Environment** file which stores the secrets also saved in the same git folder, see **Note: 1** below.
 
-* Integrate with the Git source control is now supported, 2 settings provided
-* **Load From Project**: select this option when you like to spilt data per project, it will create `thunder-tests` folder in workspace. This loads the data when you open the project in vscode.
-* **Custom Location**: select this option when you like save all the data in one location, enter the full folder path to save the data.
+Integrate with the Git source control is now supported, 2 settings provided
+1. **Load From Project**: select this option when you like to spilt data per project, it will create `thunder-tests` folder in workspace. This loads the data when you open the project in vscode.
+2. **Custom Location**: select this option when you like save all the data in one location, enter the full folder path to save the data.
 * Note 1: **Environment file**: if you dont want to save environment file to git server, use **.gitignore** to ingore the file thunderEnvironment.db
 * Note 2: **Files changes** are not detected by the extension yet, if you pulled changes from git, click **Reload** option from collection Tab to update data.
 * Note 3: Please **restart vscode** after updating settings.
