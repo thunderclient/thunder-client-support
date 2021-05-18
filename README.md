@@ -82,15 +82,17 @@ Integrate with the Git source control is now supported, 2 settings provided
 ![](https://github.com/rangav/thunder-client-support/blob/master/images/thunder-client-tests.png?raw=true)
 
 * I noticed we need to write lot of boilerplate code in Postman and other clients to do basic testing using scripting like status code equal 200. So I implemented GUI based tests, where you select couple of dropdowns to do most standard tests very easily without any scripting knowledge.
-* **Set Environment Variable** from tests tab is now supported, follow below steps
-  * Create Environment first from Env Tab if its not already created.
-  * From the Tests tab select `Set Env Variable` option
-  * **Set Variable from Json Response**: enter the `json.propertyName`  on the left input box
-  * In value input enter the variable name when its matches name in Env, it will turn **green**, if variable not exists, it will create new.
-  * Now execute the request you will see the variable value set in the Env.
-  * **Set Variable from Text Response**: Enter `text` keyword in the left input
-  * **Set Variable from Header**: Enter `header.headerName` in the left input, the prefix is `header.`
-  * **Set Variable from Cookie**: Enter `cookie.cookieName` in the left input, the prefix is `cookie.`
+
+#### Set Environment Variable
+ Setting Environment Variable from Tests tab is now supported, follow below steps
+ * Create Environment first from Env Tab if its not already created.
+ * From the Tests tab select `Set Env Variable` option
+ * **Set Variable from Json Response**: enter the `json.propertyName`  on the left input box
+ * In value input enter the variable name when its matches name in Env, it will turn **green**, if variable not exists, it will create new.
+ * Now execute the request you will see the variable value set in the Env.
+ * **Set Variable from Text Response**: Enter `text` keyword in the left input
+ * **Set Variable from Header**: Enter `header.headerName` in the left input, the prefix is `header.`
+ * **Set Variable from Cookie**: Enter `cookie.cookieName` in the left input, the prefix is `cookie.`
 
 
 <a name="keyboard"></a>
