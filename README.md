@@ -65,6 +65,14 @@ Integrate with the Git source control is now supported, 2 settings provided
 * Note 2: **Files changes** are not detected by the extension yet, if you pulled changes from git, click **Reload** option from collection Tab to update data.
 * Note 3: Please **restart vscode** after updating settings.
 
+## System Variables
+The system variables are useful to generate random/dynamic data for use in request query params or body. The format is `{{#variableName}}`
+* {{#randomString}} - generates random uuid
+* {{#randomNumber}} - generates random number between 1 to 1000000
+* {{#randomEmail}} - generates random email
+* {{#date}} - generates date timestamp
+* {{#dateISO}} - generates date ISO format
+
 <a name="proxy"></a>
 ## Proxy
 * Proxy is supported using vscode proxy setting. format `http://username:password@host:port` 
