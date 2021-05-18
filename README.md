@@ -62,7 +62,8 @@ The team features are still in **Beta**, based on feedback I will improve it.
 
 <a name="proxy"></a>
 ## Proxy
-Proxy is supported using vscode proxy setting. format `http://username:password@host:port`, please restart vscode after setting proxy.
+* Proxy is supported using vscode proxy setting. format `http://username:password@host:port`, please restart vscode after setting proxy.
+* **exclude Proxy Host List**: Use this setting to exclude hosts from proxy, supports comma separated values e.g: `abc.com,xyz.com`.
 
 <a name="import"></a>
 ## Import/Export
