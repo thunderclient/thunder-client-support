@@ -55,7 +55,12 @@ The team features are still in **Beta**, based on feedback I will improve it.
 
 Integrate with the Git source control is now supported, 2 settings provided
 1. **Load From Project**: select this option when you like to spilt data per project, it will create `thunder-tests` folder in workspace. This loads the data when you open the project in vscode.
+   * Now supports relative path to workspace directory. Use setting `Workspace Relative Path` to specify the relative path.
+   * Make sure the `Workspace Relative Path` setting is **Workspace** setting not **User** setting.
+   * Example 1: Relative Path to save in child folder of workspace is `FolderName` or `Child/FolderName`
+   * Example 2: Relative Path to save in Parent folder of workspace is `../`
 2. **Custom Location**: select this option when you like save all the data in one location, enter the full folder path to save the data.
+   * Now supports relative path to Home directory. use **$HOME** prefix e.g `$HOME/Documents/ProjectName`
 * Note 1: **Environment file**: if you dont want to save environment file to git server, use **.gitignore** to ingore the file thunderEnvironment.db
 * Note 2: **Files changes** are not detected by the extension yet, if you pulled changes from git, click **Reload** option from collection Tab to update data.
 * Note 3: Please **restart vscode** after updating settings.
