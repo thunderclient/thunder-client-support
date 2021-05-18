@@ -69,6 +69,7 @@ Proxy is supported using vscode proxy setting. format `http://username:password@
 * You can import or export Thunder Client collections data, useful to share with team mates.
 * Currently you can import collection or Environment file from **Postman** 2.1.0 format. ( other file formats support soon.. ).
 * Submit PR for other file formats on https://github.com/rangav/thunder-imports
+* Import Curl is now supported from Activity tab. Keyboard shortcut `Cmd/Ctrl + u`
 
 <a name="runcol"></a>
 ## Run Collection
@@ -99,6 +100,7 @@ Proxy is supported using vscode proxy setting. format `http://username:password@
 * `Cmd/Ctrl + Enter`: To execute the request
 * `Cmd/Ctrl+s` Environment variable window save data.
 * `Alt+Shft+f` Format Post Body data.
+* `Cmd/Ctrl + u` Import Curl
 
 <a name="contribution"></a>
 ## Contribution Guidelines
