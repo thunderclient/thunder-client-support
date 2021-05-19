@@ -18,6 +18,8 @@ assignees: ''
 
 **Platform:** 
  - OS: 
+ - vscode version:
+ - extension version:
 
 **Solution:**
 <!--- if you know the solution, please post it --->
