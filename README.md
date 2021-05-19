@@ -82,7 +82,7 @@ The system variables are useful to generate random/dynamic data for use in reque
 
 <a name="import"></a>
 ## Import/Export
-* You can import or export Thunder Client collections data, useful to share with team mates.
+* You can import or export Thunder Client collections and environment data.
 * Currently you can import collection or Environment file from **Postman** 2.1.0 format. ( other file formats support soon.. ).
 * Submit PR for other file formats on https://github.com/rangav/thunder-imports
 * Import Curl is now supported from Activity tab. Keyboard shortcut `Cmd/Ctrl + u`
