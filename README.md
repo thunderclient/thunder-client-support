@@ -56,7 +56,7 @@ The team features are still in **Beta**, based on feedback I will improve it.
 
 Integrate with the Git source control is now supported, 2 settings provided
 1. **Load From Project**: select this option when you like to spilt data per project, it will create `thunder-tests` folder in workspace. This loads the data when you open the project in vscode.
-   * Now supports relative path to workspace directory. Use setting `Workspace Relative Path` to specify the relative path.
+   * Now supports relative path to workspace directory (Optional). Use setting `Workspace Relative Path` to specify the relative path.
    * Make sure the `Workspace Relative Path` setting is **Workspace** setting not **User** setting.
    * Example 1: Relative Path to save in child folder of workspace is `FolderName` or `Child/FolderName`
    * Example 2: Relative Path to save in Parent folder of workspace is `../`
