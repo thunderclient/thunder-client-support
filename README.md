@@ -103,7 +103,7 @@ The system variables are useful to generate random/dynamic data for use in reque
  * Create Environment first from Env Tab if its not already created.
  * From the Tests tab select `Set Env Variable` dropdown option
  * **Set Variable from Json Response**: enter the `json.propertyName`  on the left input box
- * In value input enter the variable name when its matches name in Env, it will turn **green**, if variable not exists, it will create new.
+ * In value input enter the variable name, when its matches name in Env, it will turn **green**, if variable not exists, it will create new.
  * Now execute the request you will see the variable value set in the Env.
  * **Set Variable from Text Response**: Enter `text` keyword in the left input
  * **Set Variable from Header**: Enter `header.headerName` in the left input, the prefix is `header.`
