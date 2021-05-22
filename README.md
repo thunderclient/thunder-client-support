@@ -69,8 +69,8 @@ Integrate with the Git source control is now supported, 2 settings provided
 
 <a name="auth"></a>
 ## Auth
-* OAuth 2.0 the callback url needs to be entered into your oauth server trusted redirect url list.
-* Oauth authentication credentials is send via header or body, please select appropriate one based on your server requirement.
+* OAuth 2.0 when grant type is **Authorization Code** the **callback url** needs to be entered into your oauth server trusted redirect url list.
+* Oauth authentication credentials is send **via header or body**, please select appropriate one based on your server requirement.
 
 <a name="variables"></a>
 ## System Variables
