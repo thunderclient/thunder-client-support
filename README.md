@@ -13,6 +13,7 @@ Thunder Client is a lightweight Rest API Client Extension for Visual Studio Code
 * [Tech](#tech)
 * [Features](#features)
 * [Team Features](#team)
+* [Auth](#auth)
 * [System Variables](#variables)
 * [Proxy](#proxy)
 * [Import/Export](#import)
@@ -65,6 +66,11 @@ Integrate with the Git source control is now supported, 2 settings provided
 * Note 1: **Environment file**: if you dont want to save environment file to git server, use **.gitignore** to ingore the file thunderEnvironment.db
 * Note 2: **Files changes** are not detected by the extension yet, if you pulled changes from git, click **Reload** option from collection Tab to update data.
 * Note 3: Please **restart vscode** after updating settings.
+
+<a name="auth"></a>
+## Auth
+* OAuth 2.0 the callback url needs to be entered into your oauth server trusted redirect url list.
+* Oauth authentication credentials is send via header or body, please select appropriate one based on your server requirement.
 
 <a name="variables"></a>
 ## System Variables
