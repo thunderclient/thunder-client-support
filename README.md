@@ -101,7 +101,7 @@ The system variables are useful to generate random/dynamic data for use in reque
 #### Set Environment Variable
  Setting Environment Variable from Tests tab is now supported, follow below steps
  * Create Environment first from Env Tab if its not already created.
- * From the Tests tab select `Set Env Variable` option
+ * From the Tests tab select `Set Env Variable` dropdown option
  * **Set Variable from Json Response**: enter the `json.propertyName`  on the left input box
  * In value input enter the variable name when its matches name in Env, it will turn **green**, if variable not exists, it will create new.
  * Now execute the request you will see the variable value set in the Env.
