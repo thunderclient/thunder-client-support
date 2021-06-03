@@ -121,7 +121,8 @@ The system variables are useful to generate random/dynamic data for use in reque
 * `Ctl+Shift+P`: From Command Palette
   * Thunder Client - New Request 
   * Thunder Client - Run Last Request
-* `Cmd/Ctrl + Enter`: To execute the request
+* `Cmd/Ctrl + Enter`: To execute the request.
+* `Enter` on request url to send request.
 * `Cmd/Ctrl + s` Environment variable window save data.
 * `Alt+Shft + f` Format Post Body data.
 * `Cmd/Ctrl + u` Import Curl
