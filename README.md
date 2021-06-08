@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="images/thunder-icon.png" width="160" height="160" />
+  <img src="images/thunder-icon.png" width="150" height="150" />
 </p>
 
 # Thunder Client
