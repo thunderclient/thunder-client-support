@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="images/thunder-icon.png" />
+</p>
+
 # Thunder Client
 Thunder Client is a lightweight Rest API Client Extension for Visual Studio Code, hand-crafted by [Ranga Vadhineni](https://twitter.com/ranga_vadhineni) with simple and clean design. The source code is not open source. You can report any Bugs Or Feature requests here.
 
