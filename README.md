@@ -55,7 +55,7 @@ Thunder Client is a lightweight Rest API Client Extension for Visual Studio Code
 
 <a name="team"></a>
 ## Team Features
-The team features are still in **Beta**, based on feedback I will improve it.
+The team features are useful to share requests with team. The feature is still in **Beta**, based on feedback I will improve it.
 
 **WARNING**: The **Environment** file which stores the secrets also saved in the same git folder, see **Note: 1** below.
 
