@@ -45,12 +45,12 @@ Thunder Client is a lightweight Rest API Client Extension for Visual Studio Code
 * Send http/https API request using any of the methods GET, POST, PUT, DELETE, PATCH, HEAD and OPTIONS.
 * The Response data supports **syntax hightlighting using ACE Editor** which can handle large responses easily, you can also view response in **Full Screen**
 * **History, Collections and Environment** Tabs in the Action Bar View for quick access.
-* **Authentication:** Basic Auth, Bearer Token and OAuth 2.0 are supported.
+* **[Authentication](#auth):** Basic Auth, Bearer Token and OAuth 2.0 are supported.
 * **Headers:** You can send http headers to test api, with **auto-complete** support.
 * **Post Body:** Send post body as Text, Json, Xml, Form Data, Files and Form-Url-Encoded. Content-Type header will be automatically set.
 * **Graphql:** Send Graphql Query & Variables has syntax highlighting support.
 * **Environment Variables:** Syntax highlighting support for environment variables just use `{{variable}}` syntax in most fields
-* **Scriptless Testing:** Test APIs with GUI based functionality, no scripting knowledge needed.
+* **[Scriptless Testing](#testing):** Test APIs with GUI based functionality, no scripting knowledge needed.
 * **Themes:** The extension also supports VS Code themes.
 
 <a name="team"></a>
