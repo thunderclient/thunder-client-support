@@ -31,7 +31,7 @@ Ace Editor License
  * ***** END LICENSE BLOCK ***** */
 
 
-The below license is for third-party open source libraries with MT License
+The below license is for open source libraries with MT License
 
 MIT License
 
