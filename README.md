@@ -138,6 +138,6 @@ The system variables are useful to generate random/dynamic data for use in reque
 <a name="privacy"></a>
 ## Privacy
 * Basic anonymised telemetry data of extension usage is collected using [vscode-extension-telemetry](https://github.com/Microsoft/vscode-extension-telemetry), No Personal or request data is collected. You can opt out using VS Code Settings [details here](https://code.visualstudio.com/docs/getstarted/telemetry)
-* There is no backend or cloud sync currently, all the data is stored locally on your computer.
+* There is no backend or cloud sync, all the data is stored locally on your computer.
 
 
