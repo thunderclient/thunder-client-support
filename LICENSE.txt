@@ -21,7 +21,7 @@ The Software is licensed to provide functionality to Test APIs in Visual Studio 
 You may install and use the free edition of the Software for your individual internal business or non-business purposes.
 
 •	RESTRICTIONS ON USE OF THE SOFTWARE
-You are NOT permitted to: a) Edit, alter, modify, adapt, translate or otherwise change the whole or any part of the Software. b) Decompile, disassemble or reverse engineer the Software or attempt to do any such things. c) Reproduce, copy, distribute, resell or otherwise use the whole or any part of the Software for any commercial purpose. d) Disable, modify or hide notifications sent by the Software. e) Distribute, resell, or share Licence Keys. f) Access or use Premium Features without a valid Licence Key..
+You are NOT permitted to: a) Edit, alter, modify, adapt, translate or otherwise change the whole or any part of the Software. b) Decompile, disassemble or reverse engineer the Software or attempt to do any such things. c) Reproduce, copy, distribute, resell or otherwise use the whole or any part of the Software's Code for any commercial purpose. d) Disable, modify or hide notifications sent by the Software. e) Distribute, resell, or share Licence Keys. f) Access or use Premium Features without a valid Licence Key..
 
 •	UPGRADES AND SUPPORT
 The Licensor has no obligation to provide updates or upgrades to the Software, or otherwise maintain or support the Software.
