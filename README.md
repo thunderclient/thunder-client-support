@@ -17,12 +17,12 @@ Thunder Client is a lightweight Rest API Client Extension for Visual Studio Code
 * [Tech](#tech)
 * [Features](#features)
 * [Team Features](#team)
+* [Testing](#testing)
 * [Auth](#auth)
 * [System Variables](#variables)
 * [Proxy](#proxy)
 * [Import/Export](#import)
 * [Run Collection](#runcol)
-* [Testing](#testing)
 * [Keyboard Shortcuts](#keyboard)
 * [Contribution](#contribution)
 * [Privacy](#privacy)
@@ -70,6 +70,23 @@ Integrate with the Git source control is now supported to sync data, 2 settings 
 * Note 2: **Files changes** are not detected by the extension yet, if you pulled changes from git, click **Reload** option from collection Tab to update data.
 * Note 3: Please **restart vscode** after updating settings.
 
+<a name="testing"></a>
+## Scriptless Testing
+![](https://github.com/rangav/thunder-client-support/blob/master/images/thunder-client-tests.png?raw=true)
+
+* I noticed we need to write lot of boilerplate code in Postman and other clients to do basic testing using scripting like status code equal 200. So I implemented GUI based tests, where you select couple of dropdowns to do most standard tests very easily without any scripting knowledge.
+
+#### Set Environment Variable
+ Setting Environment Variable from Tests tab is now supported, follow below steps
+ * Create Environment first from Env Tab if its not already created.
+ * From the Tests tab select `Set Env Variable` dropdown option
+ * **Set Variable from Json Response**: enter the `json.propertyName`  on the left input box
+ * In value input enter the variable name, when its matches name in Env, it will turn **green**, if variable not exists, it will create new.
+ * Now execute the request you will see the variable value set in the Env.
+ * **Set Variable from Text Response**: Enter `text` keyword in the left input
+ * **Set Variable from Header**: Enter `header.headerName` in the left input, the prefix is `header.`
+ * **Set Variable from Cookie**: Enter `cookie.cookieName` in the left input, the prefix is `cookie.`
+ 
 <a name="auth"></a>
 ## Auth
 * OAuth 2.0 when grant type is **Authorization Code** the **callback url** needs to be entered into your oauth server trusted redirect url list.
@@ -100,24 +117,6 @@ The system variables are useful to generate random/dynamic data for use in reque
 ## Run Collection
 * You can test multiple requests using Collection, select `Run All` option from the collection menu.
 * The collection runner will execute all requests and test cases and display the result.
-
-<a name="testing"></a>
-## Scriptless Testing
-![](https://github.com/rangav/thunder-client-support/blob/master/images/thunder-client-tests.png?raw=true)
-
-* I noticed we need to write lot of boilerplate code in Postman and other clients to do basic testing using scripting like status code equal 200. So I implemented GUI based tests, where you select couple of dropdowns to do most standard tests very easily without any scripting knowledge.
-
-#### Set Environment Variable
- Setting Environment Variable from Tests tab is now supported, follow below steps
- * Create Environment first from Env Tab if its not already created.
- * From the Tests tab select `Set Env Variable` dropdown option
- * **Set Variable from Json Response**: enter the `json.propertyName`  on the left input box
- * In value input enter the variable name, when its matches name in Env, it will turn **green**, if variable not exists, it will create new.
- * Now execute the request you will see the variable value set in the Env.
- * **Set Variable from Text Response**: Enter `text` keyword in the left input
- * **Set Variable from Header**: Enter `header.headerName` in the left input, the prefix is `header.`
- * **Set Variable from Cookie**: Enter `cookie.cookieName` in the left input, the prefix is `cookie.`
-
 
 <a name="keyboard"></a>
 ## Keyboard Shortcuts
