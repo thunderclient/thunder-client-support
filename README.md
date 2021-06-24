@@ -20,6 +20,7 @@ Thunder Client is a lightweight Rest API Client Extension for Visual Studio Code
 * [Testing](#testing)
 * [Auth](#auth)
 * [System Variables](#variables)
+* [Code Snippet](#codegen)
 * [Proxy](#proxy)
 * [Import/Export](#import)
 * [Run Collection](#runcol)
@@ -100,6 +101,14 @@ The system variables are useful to generate random/dynamic data for use in reque
 * {{#randomEmail}} - generates random email
 * {{#date}} - generates date timestamp
 * {{#dateISO}} - generates date ISO format
+
+<a name="codegen"></a>
+## Code Snippet
+The code snippet generation is avialable for following languages. Open request view and click icon `{}` to see Code Tab.
+* C# - HttpClient
+* cURL
+* Javascipt Fetch & Axios
+* Python requests & http.client
 
 <a name="proxy"></a>
 ## Proxy
