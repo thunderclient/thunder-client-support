@@ -110,6 +110,8 @@ The code snippet generation is avialable for following languages. Open request v
 * Javascipt Fetch & Axios
 * Python requests & http.client
 
+The feature is open for contribution - https://github.com/rangav/thunder-codegen 
+
 <a name="proxy"></a>
 ## Proxy
 * Proxy is supported using vscode proxy setting. format `http://username:password@host:port` 
