@@ -136,7 +136,7 @@ The feature is open for contribution - https://github.com/rangav/thunder-codegen
   * Thunder Client - Run Last Request
 * `Cmd/Ctrl + Enter`: To execute the request.
 * `Enter` on request url to send request.
-* `Cmd/Ctrl + s` Environment variable window save data.
+* `Cmd/Ctrl + s` Environment variable view save data.
 * `Alt+Shft + f` Format Post Body data.
 * `Cmd/Ctrl + u` Import Curl
 
