@@ -18,6 +18,7 @@ Thunder Client is a lightweight Rest API Client Extension for Visual Studio Code
 * [Features](#features)
 * [Team Features](#team)
 * [Testing](#testing)
+* [Set Environment Variable](#setenv)
 * [Auth](#auth)
 * [System Variables](#variables)
 * [Code Snippet](#codegen)
@@ -77,16 +78,20 @@ Integrate with the Git project is now supported, 2 vscode settings options provi
 
 * I noticed we need to write lot of boilerplate code in Postman and other clients to do basic testing using scripting like status code equal 200. So I implemented GUI based tests, where you select couple of dropdowns to do most standard tests very easily without any scripting knowledge.
 
-#### Set Environment Variable
- Setting Environment Variable from Tests tab is now supported, follow below steps
- * Create Environment first from Env Tab if its not already created.
- * From the Tests tab select `Set Env Variable` dropdown option
- * **Set Variable from Json Response**: enter the `json.propertyName`  on the left input box
- * In value input enter the variable name, when its matches name in Env, it will turn **green**, if variable not exists, it will create new.
- * Now execute the request you will see the variable value set in the Env.
- * **Set Variable from Text Response**: Enter `text` keyword in the left input
- * **Set Variable from Header**: Enter `header.headerName` in the left input, the prefix is `header.`
- * **Set Variable from Cookie**: Enter `cookie.cookieName` in the left input, the prefix is `cookie.`
+<a name="setenv"></a>
+## Set Environment Variable
+Setting environment variables is supported in the Tests tab. Follow the steps below:
+ * Create an environment first from the Env tab if it's not already created.
+ * In the Tests tab, select the `Set Env Variable` dropdown option. (The action will automatically become `setTo`.)
+ * Enter the appropriate source of variable value in the left input box:
+   * **Header:** Enter `header.headerName` where `headerName` is the response header name.
+   * **Cookie:** Enter `cookie.cookieName` where `cookieName` is the response cookie name.
+   * **JSON Response:** Enter `json.propertyName` where `propertyName` is the JSON key in the response body.
+   * **Text Response:** Enter the `text` keyword. This sets the entire response body to the variable.
+ * In the value input, enter a variable name in the `{{variableName}}` format.
+   * When it matches a variable name in Env, it will turn **green**. If the variable doesn't exist, it will be created.
+ * Now execute the request. You will see the variable value set in the Env tab.
+   * If you don't see the change in the Env tab, close and re-open the tab to refresh it.
  
 <a name="auth"></a>
 ## Auth
