@@ -3,7 +3,7 @@
 </p>
 
 # Thunder Client
-![https://marketplace.visualstudio.com/items?itemName=rangav.vscode-thunder-client](https://vsmarketplacebadge.apphb.com/installs/rangav.vscode-thunder-client.svg) ![https://marketplace.visualstudio.com/items?itemName=rangav.vscode-thunder-client](https://vsmarketplacebadge.apphb.com/version-short/rangav.vscode-thunder-client.svg) 
+[![installs](https://vsmarketplacebadge.apphb.com/installs/rangav.vscode-thunder-client.svg)](https://marketplace.visualstudio.com/items?itemName=rangav.vscode-thunder-client) [![version](https://vsmarketplacebadge.apphb.com/version-short/rangav.vscode-thunder-client.svg)](https://marketplace.visualstudio.com/items?itemName=rangav.vscode-thunder-client)
 
 Thunder Client is a lightweight Rest API Client Extension for Visual Studio Code, hand-crafted by [Ranga Vadhineni](https://twitter.com/ranga_vadhineni) with simple and clean design. The source code is not open source. You can report any Bugs Or Feature requests here.
 
