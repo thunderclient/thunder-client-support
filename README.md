@@ -101,7 +101,8 @@ Setting environment variables is supported in the Tests tab. Follow the steps be
 * OAuth authentication credentials is sent **via header or body**, please select appropriate one based on your server requirement.
 
 * ### Manual SSL Certificates
-  * Provide ssl certificate paths for auth, using relative path to workspace or absolute paths. see example below
+  * Provide ssl certificate paths for auth, using relative path to workspace or absolute paths. 
+  * Use the Certificates vscode setting, see example below
   ```json
   "thunder-client.certificates": [
           {
