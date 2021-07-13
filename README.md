@@ -113,7 +113,7 @@ Setting environment variables is supported in the Tests tab. Follow the steps be
           },
           {
               "host": "localhost:8081",
-              "pfxPath": "ssl/pfx.p12",
+              "pfxPath": "/Users/test/Documents/ssl/pfx.p12",
               "passphrase": "test"
           },
           {
