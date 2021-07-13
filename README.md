@@ -103,6 +103,7 @@ Setting environment variables is supported in the Tests tab. Follow the steps be
 <a name="variables"></a>
 ## System Variables
 The system variables are useful to generate random/dynamic data for use in request query params or body. The format is `{{#variableName}}`
+* {{#guid}} - generates random uuid
 * {{#randomString}} - generates random uuid
 * {{#randomNumber}} - generates random number between 1 to 1000000
 * {{#randomEmail}} - generates random email
