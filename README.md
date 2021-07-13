@@ -156,7 +156,7 @@ The feature is open for contribution - https://github.com/rangav/thunder-codegen
 * Currently you can import collection or Environment file from **Postman** 2.1.0 format. ( other file formats support soon.. ).
 * Submit PR for other file formats on https://github.com/rangav/thunder-imports
 * **Import Curl** is now supported from Activity tab. Keyboard shortcut `Cmd/Ctrl + u`
-* Import of .env files also supported, select `Import` from Env tab and choose .env file
+* Import of **.env files** also supported, select `Import` from Env tab and choose .env file
 
 <a name="runcol"></a>
 ## Run Collection
