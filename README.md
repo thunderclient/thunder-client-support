@@ -99,29 +99,30 @@ Setting environment variables is supported in the Tests tab. Follow the steps be
 ## Auth
 * OAuth 2.0 when grant type is **Authorization Code** the **callback url** needs to be entered into your oauth server trusted redirect url list.
 * OAuth authentication credentials is sent **via header or body**, please select appropriate one based on your server requirement.
-* **Manual SSL Certificates**
+
+* ### Manual SSL Certificates
   * Provide ssl certificate paths for auth, using relative path to workspace or absolute paths. see example below
-```json
-"thunder-client.certificates": [
-        {
-            "host": "thunderclient.io",
-            "certPath": "ssl/cert.pem",
-            "keyPath": "ssl/keyfile.key",
-            "pfxPath": "ssl/pfx.p12",
-            "passphrase": "test"
-        },
-        {
-            "host": "localhost:8081",
-            "pfxPath": "ssl/pfx.p12",
-            "passphrase": "test"
-        },
-        {
-            "host": "testing.com",
-            "certPath": "ssl/cert.pem",
-            "keyPath": "ssl/keyfile.key"
-        },
-    ]
-```
+  ```json
+  "thunder-client.certificates": [
+          {
+              "host": "thunderclient.io",
+              "certPath": "ssl/cert.pem",
+              "keyPath": "ssl/keyfile.key",
+              "pfxPath": "ssl/pfx.p12",
+              "passphrase": "test"
+          },
+          {
+              "host": "localhost:8081",
+              "pfxPath": "ssl/pfx.p12",
+              "passphrase": "test"
+          },
+          {
+              "host": "testing.com",
+              "certPath": "ssl/cert.pem",
+              "keyPath": "ssl/keyfile.key"
+          },
+      ]
+  ```
     
 
 <a name="variables"></a>
