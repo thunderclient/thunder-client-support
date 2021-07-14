@@ -177,7 +177,10 @@ The feature is open for contribution - https://github.com/rangav/thunder-codegen
 
 <a name="contribution"></a>
 ## Contribution Guidelines
-* As the project is not open source, when you submit feature request or bug, if you know the solution, please submit code sample or a sample project in **node or .Net**, so it will be faster for me to integrate into main project. 
+* As the project is not open source, when you submit feature request or bug, if you know the solution, please submit code sample or a sample project in **node or .Net**. 
+* Two modules are open for contribution, let me know if you like to contribute
+  * Code Snippet Generation
+  * Open API file import/export
 
 <a name="privacy"></a>
 ## Privacy
