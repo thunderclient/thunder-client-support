@@ -36,7 +36,7 @@ Thunder Client is a lightweight Rest API Client Extension for Visual Studio Code
 ## How to Use
 * Install the Extension, Click Thunder Client icon on the Action Bar.
 * From Command Palette (Cm+Sh+P) type ``thunder`` and select ``Thunder Client: New Request``
-* Video: [youtube.com/watch?v=NKZ0ahNbmak](https://www.youtube.com/watch?v=NKZ0ahNbmak)
+* Video: [youtube.com/watch?v=NKZ0ahNbmak](https://www.youtube.com/watch?v=NKZ0ahNbmak?t=3)
 
 ![](images/thunder-client.gif)
 
