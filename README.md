@@ -95,6 +95,13 @@ Setting environment variables is supported in the Tests tab. Follow the steps be
  * Now execute the request. You will see the variable value set in the Env tab.
    * If you don't see the change in the Env tab, close and re-open the tab to refresh it.
  
+ <a name="scope"></a>
+ #### Set Env with Scope
+ * You can use scope to control which environment variable to set the value explicitly.
+ * In the value input in the right use the scopes `global` or `active`
+ * To set variable in global environment use `{{variable, global}}`
+ * To set variable in active environment use `{{variable, active}}`
+ 
 <a name="auth"></a>
 ## Auth
 * OAuth 2.0 when grant type is **Authorization Code** the **callback url** needs to be entered into your oauth server trusted redirect url list.
