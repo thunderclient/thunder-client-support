@@ -94,11 +94,9 @@ Setting environment variables is supported in the Tests tab. Follow the steps be
    * When it matches a variable name in Env, it will turn **green**. If the variable doesn't exist, it will be created.
  * Now execute the request. You will see the variable value set in the Env tab.
    * If you don't see the change in the Env tab, close and re-open the tab to refresh it.
- 
  <a name="scope"></a>
  #### Set Env with Scope
- * You can use scope to control which environment variable to set the value explicitly.
- * In the value input in the right use the scopes `global` or `active`
+ * You can use scope to control which environment variable to set the value explicitly using scopes `global` or `active`
  * To set variable in global environment use `{{variable, global}}`
  * To set variable in active environment use `{{variable, active}}`
  
