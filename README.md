@@ -97,8 +97,8 @@ Setting environment variables is supported in the Tests tab. Follow the steps be
  <a name="scope"></a>
  #### Set Env with Scope
  * You can use scope to control which environment variable to set the value explicitly
- * To set variable in global environment use `{{variable, global}}`
- * To set variable in active environment use `{{variable, active}}`
+ * To set variable in **global** environment use `{{variable, global}}`
+ * To set variable in **active** environment use `{{variable, active}}`
  
 <a name="auth"></a>
 ## Auth
