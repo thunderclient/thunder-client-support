@@ -149,6 +149,7 @@ The code snippet generation is avialable for following languages. Open request v
 * C# - HttpClient
 * cURL
 * Javascipt Fetch & Axios
+* PowerShell
 * Python requests & http.client
 
 The feature is open for contribution - https://github.com/rangav/thunder-codegen 
