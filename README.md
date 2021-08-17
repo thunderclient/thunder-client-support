@@ -140,7 +140,7 @@ The system variables are useful to generate random/dynamic data for use in reque
   * Custom Range: use `{{#number, min, max}}`, e.g: `{{#number, 100, 999}}`
 * {{#email}} - generates random email
 * {{#date}} - generates date timestamp
-  * Custom date format: use `{{#date, 'YYYY-MM-DD hh:mm:ss:fff'}}`, the format should be single quote.
+  * Custom date format: use `{{#date, 'YYYY-MM-DD hh:mm:ss:fff'}}`, the format should be in single quote.
 * {{#dateISO}} - generates date ISO format
 
 <a name="codegen"></a>
