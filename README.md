@@ -70,7 +70,7 @@ Integrate with the Git project is now supported, 2 vscode settings options provi
    * Example 2: Relative Path to save in Parent folder of workspace is `../`
 2. **Custom Location**: select this option when you like save all the data in one location, enter the full folder path to save the data.
    * Now supports relative path to Home directory. use **$HOME** prefix e.g `$HOME/Documents/ProjectName`
-* Note 1: **Environment file**: if you dont want to save environment file to git server, use **.gitignore** to ingore the file thunderEnvironment.db
+* Note 1: **Environment file**: if you dont want to save environment file to git server, use **.gitignore** to ignore the file thunderEnvironment.db
 * Note 2: **Files changes** are not detected by the extension yet, if you pulled changes from git, click **Reload** option from collection Tab to update data.
 * Note 3: Please **restart vscode** after updating settings.
 
@@ -78,7 +78,7 @@ Integrate with the Git project is now supported, 2 vscode settings options provi
 ## Scriptless Testing
 ![](https://github.com/rangav/thunder-client-support/blob/master/images/thunder-client-tests.png?raw=true)
 
-* We need to write lot of boilerplate code in Postman and other clients to do basic testing using scripting like status code equal 200. So I implemented GUI based tests, where you select couple of dropdowns to do most standard tests very easily without any scripting knowledge.
+* We need to write a lot of boilerplate code in Postman and other clients to do basic testing using scripting like status code equal 200. So I implemented GUI based tests, where you select couple of dropdowns to do most standard tests very easily without any scripting knowledge.
 
 <a name="setenv"></a>
 ## Set Environment Variable
