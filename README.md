@@ -103,7 +103,7 @@ Setting environment variables is supported in the Tests tab. Follow the steps be
 <a name="auth"></a>
 ## Auth
 * OAuth 2.0 when grant type is **Authorization Code** the **callback url** needs to be entered into your oauth server trusted redirect url list.
-* OAuth authentication credentials is sent **via header or body**, please select appropriate one based on your server requirement.
+* OAuth authentication credentials are sent **via header or body**, please select appropriate one based on your server requirement.
 
 * ### Manual SSL Certificates
   * Provide ssl certificate paths for auth, using relative path to workspace or absolute paths. 
@@ -145,7 +145,7 @@ The system variables are useful to generate random/dynamic data for use in reque
 
 <a name="codegen"></a>
 ## Code Snippet
-The code snippet generation is avialable for following languages. Open request view and click icon `{}` to see Code Tab.
+The code snippet generation is available for following languages. Open request view and click icon `{}` to see Code Tab.
 * C# - HttpClient
 * cURL
 * Javascipt Fetch & Axios
