@@ -167,6 +167,11 @@ The feature is open for contribution - https://github.com/rangav/thunder-codegen
 * **Import Curl** is now supported from Activity tab. Keyboard shortcut `Cmd/Ctrl + u`
 * Import of **.env files** also supported, select `Import` from Env tab and choose .env file
 
+ ### How to Import Collection
+  1. Select the `Collection` tab from the sidebar
+  2. Click `Menu` icon near searchbar, and Select `Import`
+  3. Now select json file from Postman or Thunder Clinet.
+
 <a name="runcol"></a>
 ## Run Collection
 * You can test multiple requests using Collection, select `Run All` option from the collection menu.
@@ -194,7 +199,7 @@ The feature is open for contribution - https://github.com/rangav/thunder-codegen
 
 <a name="privacy"></a>
 ## Privacy
-* Basic anonymised telemetry data of extension usage is collected using [vscode-extension-telemetry](https://github.com/Microsoft/vscode-extension-telemetry), No Personal or request data is collected. You can opt out using VS Code Settings [details here](https://code.visualstudio.com/docs/getstarted/telemetry)
+* Basic anonymised analytics data is collected using [vscode-extension-telemetry](https://github.com/Microsoft/vscode-extension-telemetry), No Personal or request data is collected. You can opt out using VS Code Settings [details here](https://code.visualstudio.com/docs/getstarted/telemetry)
 * There is no backend or cloud sync, all the data is stored locally on your computer.
 
 
