@@ -170,7 +170,7 @@ The feature is open for contribution - https://github.com/rangav/thunder-codegen
  ### How to Import Collection
   1. Select the `Collection` tab from the sidebar
   2. Click `Menu` icon near searchbar, and Select `Import`
-  3. Now select json file from Postman or Thunder Clinet.
+  3. Now select json file from Postman or Thunder Client.
 
 <a name="runcol"></a>
 ## Run Collection
