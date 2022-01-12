@@ -18,7 +18,7 @@ Thunder Client is a lightweight Rest API Client Extension for Visual Studio Code
 * [How to Use](#usage)
 * [Tech](#tech)
 * [Features](#features)
-* [Team Features](#team)
+* [Team Features / Sync](#team)
 * [Testing](#testing)
 * [Set Environment Variable](#setenv)
 * [Auth](#auth)
@@ -58,13 +58,13 @@ Thunder Client is a lightweight Rest API Client Extension for Visual Studio Code
 
 <a name="team"></a>
 ## Team Features
-The team features are useful to share requests with team by saving data in git project. The feature is still in **Beta**, based on feedback I will improve it.
+The team features are useful to share requests with team by saving data in git project.
 
 **WARNING**: The **Environment** file which stores the secrets also saved in the same git folder, see **Note: 1** below.
 
 Integrate with the Git project is now supported, 2 vscode settings options provided
 1. **Load From Project**: select this option when you like to spilt data per project, it will create `thunder-tests` folder in workspace. This loads the data when you open the project in vscode.
-   * Now supports relative path to workspace directory (Optional). Use setting `Workspace Relative Path` to specify the relative path.
+   * (Optional) Now supports relative path to workspace directory. Use setting `Workspace Relative Path` to specify the relative path.
    * Make sure the `Workspace Relative Path` setting is **Workspace** setting not **User** setting.
    * Example 1: Relative Path to save in child folder of workspace is `FolderName` or `Child/FolderName`
    * Example 2: Relative Path to save in Parent folder of workspace is `../`
