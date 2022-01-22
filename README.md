@@ -184,7 +184,7 @@ The feature is open for contribution - https://github.com/rangav/thunder-codegen
   * Thunder Client - New Request 
   * Thunder Client - Run Last Request
 * `Cmd/Ctrl + Enter`: To execute the request.
-* `Enter` on request url to send request.
+* `Enter` on request url field to send request.
 * `Cmd/Ctrl + s` Save Request without run.
 * `Cmd/Ctrl + click` on request in Sidebar will open in new tab
 * `Cmd/Ctrl + s` Environment variable view save data.
