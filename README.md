@@ -22,6 +22,7 @@ Thunder Client is a lightweight Rest API Client Extension for Visual Studio Code
 * [Testing](#testing)
 * [Set Environment Variable](#setenv)
 * [Auth](#auth)
+* [Path Variables](#path)
 * [System Variables](#variables)
 * [Code Snippet](#codegen)
 * [Proxy](#proxy)
@@ -131,6 +132,11 @@ Setting environment variables is supported in the Tests tab. Follow the steps be
       ]
   ```
     
+<a name="path"></a>
+## Path Variables
+Path variables are supported using the format `{variable}` in the url field
+* e.g 1: `https://www.thunderclient.com/details/customer/{customerId}`
+* e.g 2: `https://www.thunderclient.com/details/{customerId}{name}/`
 
 <a name="variables"></a>
 ## System Variables
