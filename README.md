@@ -26,6 +26,7 @@ Thunder Client is a lightweight Rest API Client Extension for Visual Studio Code
 * [System Variables](#variables)
 * [Code Snippet](#codegen)
 * [Proxy](#proxy)
+* [Http/2](#http2)
 * [Import/Export](#import)
 * [Run Collection](#runcol)
 * [Keyboard Shortcuts](#keyboard)
@@ -165,6 +166,10 @@ The feature is open for contribution - https://github.com/rangav/thunder-codegen
 ## Proxy
 * Proxy is supported using vscode proxy setting. format `http://username:password@host:port` 
 * **exclude Proxy Host List**: Use this setting to exclude hosts from proxy, supports comma separated values e.g: `abc.com,xyz.com`
+
+<a name="http2"></a>
+## Http/2
+* To send request using Http/2 protocol, please select `HTTP/2` option in vscode settings for **Http Version**
 
 <a name="import"></a>
 ## Import/Export
