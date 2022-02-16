@@ -73,7 +73,7 @@ Integrate with the Git project is now supported, 2 vscode settings options provi
 2. **Custom Location**: select this option when you like save all the data in one location, enter the full folder path to save the data.
    * Now supports relative path to Home directory. use **$HOME** prefix e.g `$HOME/Documents/ProjectName`
 * Note 1: **Environment file**: if you dont want to save environment file to git server, use **.gitignore** to ignore the file thunderEnvironment.db
-* Note 2: **Files changes** are not detected by the extension yet, if you pulled changes from git, click **Reload** option from collection Tab to update data.
+* Note 2: **Files changes** are not detected by the extension yet, if you pulled changes from git, click **Reload** icon in sidebar.
 * Note 3: Please **restart vscode** after updating settings.
 
 <a name="testing"></a>
