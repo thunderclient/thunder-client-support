@@ -82,6 +82,10 @@ Integrate with the Git project is now supported, 2 vscode settings options provi
 
 * We need to write a lot of boilerplate code in Postman and other clients to do basic testing using scripting like status code equal 200. So I implemented GUI based tests, where you select couple of dropdowns to do most standard tests very easily without any scripting knowledge.
 
+<a name="environments"></a>
+## Environments
+The following environments can be created in Thunder Client from least precedence to high precedenc
+
 <a name="setenv"></a>
 ## Set Environment Variable
 Setting environment variables is supported in the Tests tab. Follow the steps below:
