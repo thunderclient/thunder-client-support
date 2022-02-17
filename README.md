@@ -76,7 +76,7 @@ Integration with the Git project is supported by below vscode settings options, 
    * Supports relative path to Home directory. use **$HOME** prefix e.g `$HOME/Documents/ProjectName`
    
    
-* Note 1: **Environment file**: The environments will stored in `thunderEnvironment.db` file. which will be part of thunder-tests folder. If you like to exclude any secrets from `thunderEnvironment.db` file then use `Local Environment` to store values locally 
+* Note 1: **Environment file**: The environments will stored in `thunderEnvironment.db` file, which will be part of **thunder-tests** folder. If you like to exclude any secrets from `thunderEnvironment.db` file then use `Local Environment` to store values locally 
 * Note 2: **Files changes** are not detected by the extension yet, if you pulled changes from git, click **Reload** icon in sidebar.
 * Note 3: Please **restart vscode** after updating settings.
 
