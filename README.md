@@ -91,7 +91,7 @@ Integration with the Git project is supported by below vscode settings, choose *
 ## Environments
 ![env2](https://user-images.githubusercontent.com/8637550/154529631-7b6a4cb0-5538-471d-ab88-4035bacba878.png)
 
-The following environments can be created in Thunder Client from least precedence to high precedence.
+The following environments can be used in Thunder Client from least precedence to high precedence are listed below.
 1. **Local Environment**: Use Local Environment to save secrets and transient tokens locally on your computer, which you dont want to save in the git project. This environment is a `global type` and the variables are available to all collections. (See above image option 3)
 
 2. **Global Environment**: Use Global Environment to save variables and share with all the collections. The values will stored in main `thunderEnvironment.db` file.  (See above image option 2)  
@@ -107,6 +107,12 @@ The following environments can be created in Thunder Client from least precedenc
     number=25543
     ```
  4. **Active Environment**: To use an environment variables, you need to make it active using the options menu `...` then select `Set Active`.
+ 5. **Attach Env to this Collection**: (Optional) You can attach a environment to collection from Collection Settings view. Use this option when you like to link multiple collections to multiple environments. The values in this Environment will take precedence over Active Environment. If you change environment frequently, this option is not recommended. Please see example below
+    ```
+    CollectionA -> EnvA
+    CollectionB -> EnvB
+    CollectionC -> EnvC
+    ``` 
  
  #### Import
  You can import Thunder Client, Postman and .env files using the Import Menu Option ( see above image option 4), more details [here](#import) 
