@@ -207,6 +207,8 @@ The feature is open for contribution - https://github.com/rangav/thunder-codegen
 * `Ctl+Shift+P`: From Command Palette
   * Thunder Client - New Request 
   * Thunder Client - Run Last Request
+  * Thunder Client - Change Active Environment
+  * Thunder Client - Convert To Postman Format
 * `Cmd/Ctrl + Enter`: To execute the request.
 * `Enter` on request url field to send request.
 * `Cmd/Ctrl + s` Save Request without run.
