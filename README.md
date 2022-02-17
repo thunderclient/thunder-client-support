@@ -88,7 +88,7 @@ Integration with the Git project is supported by below vscode settings, choose *
 
 <a name="environments"></a>
 ## Environments
-![image](https://user-images.githubusercontent.com/8637550/154470745-ed0dabeb-4a92-4dd8-8633-587f08565522.png)
+![env2](https://user-images.githubusercontent.com/8637550/154529631-7b6a4cb0-5538-471d-ab88-4035bacba878.png)
 
 The following environments can be created in Thunder Client from least precedence to high precedence.
 1. **Local Environment**: Use Local Environment to save secrets and transient tokens locally on your computer, which you dont want to save in the git project. This environment is a `global type` and the variables are available to all collections. (See above image option 3)
