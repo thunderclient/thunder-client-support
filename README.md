@@ -65,7 +65,7 @@ The team features are useful to share requests with team by saving data in git p
 
 **WARNING**: The **Environment** file which stores the secrets also saved in the same git folder, see **Note: 1** below.
 
-Integration with the Git project is supported by below vscode settings options, choose **any one** as required.
+Integration with the Git project is supported by below vscode settings, choose **any one** as required.
 
 1. **Load From Project**: select this option when you like to spilt requests data per project, it will create `thunder-tests` folder in root of workspace. This option loads the data when you open the project in vscode automatically.
    * (Optional) The default location of `thunder-tests` folder is root of workspace. Use setting `Workspace Relative Path` to specify different relative path. see below examples
