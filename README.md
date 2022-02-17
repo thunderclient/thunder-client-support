@@ -20,6 +20,7 @@ Thunder Client is a lightweight Rest API Client Extension for Visual Studio Code
 * [Features](#features)
 * [Team Features / Git Sync](#team)
 * [Testing](#testing)
+* [Environments](#environments)
 * [Set Environment Variable](#setenv)
 * [Auth](#auth)
 * [Path Variables](#path)
@@ -84,7 +85,13 @@ Integrate with the Git project is now supported, 2 vscode settings options provi
 
 <a name="environments"></a>
 ## Environments
-The following environments can be created in Thunder Client from least precedence to high precedenc
+![image](https://user-images.githubusercontent.com/8637550/154470745-ed0dabeb-4a92-4dd8-8633-587f08565522.png)
+
+The following environments can be created in Thunder Client from least precedence to high precedence.
+1. **Local Environment**: Use Local Environement to save secrets and transient tokens locally on your computer, which you dont want to save in the git project. This environment is a `global type` and the variables are available to all collections. (See above image option 3)
+
+2. **Global Environment**: Use Global Environement to save variables and share with all the collections. The values will stored in main `thunderEnvironment.db` file.  (See above image option 2)  
+
 
 <a name="setenv"></a>
 ## Set Environment Variable
@@ -208,10 +215,12 @@ The feature is open for contribution - https://github.com/rangav/thunder-codegen
 
 <a name="contribution"></a>
 ## Contribution Guidelines
-* As the project is not open source, when you submit feature request or bug, if you know the solution, please submit code sample or a sample project in **node or .Net**. 
+* **Documentation**: if you like to improvement documentation, please dubmit PR.
+* As the project is not open source, when you submit feature request or bug, if you know the solution, please submit code sample or link. 
 * Two modules are open for contribution, let me know if you like to contribute
   * Code Snippet Generation
-  * Open API file import/export
+  * Import of OpenAPI json/yaml files
+  * Import of Insomnia Collections
 
 <a name="privacy"></a>
 ## Privacy
