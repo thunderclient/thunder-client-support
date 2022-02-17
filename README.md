@@ -215,7 +215,7 @@ The feature is open for contribution - https://github.com/rangav/thunder-codegen
 
 <a name="contribution"></a>
 ## Contribution
-* **Documentation**: if you like to improvement documentation, please dubmit PR.
+* **Documentation**: if you like to improve documentation, please dubmit PR.
 * As the project is not open source, when you submit feature request or bug, if you know the solution, please submit code sample or link. 
 * Two modules are open for contribution, let me know if you like to contribute
   * Code Snippet Generation
