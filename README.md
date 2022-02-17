@@ -20,6 +20,7 @@ Thunder Client is a lightweight Rest API Client Extension for Visual Studio Code
 * [Features](#features)
 * [Team Features / Git Sync](#team)
 * [Testing](#testing)
+* [Environments](#environments)
 * [Set Environment Variable](#setenv)
 * [Auth](#auth)
 * [Path Variables](#path)
@@ -64,15 +65,18 @@ The team features are useful to share requests with team by saving data in git p
 
 **WARNING**: The **Environment** file which stores the secrets also saved in the same git folder, see **Note: 1** below.
 
-Integrate with the Git project is now supported, 2 vscode settings options provided
-1. **Load From Project**: select this option when you like to spilt data per project, it will create `thunder-tests` folder in workspace. This loads the data when you open the project in vscode.
-   * (Optional) Now supports relative path to workspace directory. Use setting `Workspace Relative Path` to specify the relative path.
+Integration with the Git project is supported by below vscode settings options, choose **any one** as required.
+
+1. **Load From Project**: select this option when you like to spilt requests data per project, it will create `thunder-tests` folder in root of workspace. This option loads the data when you open the project in vscode automatically.
+   * (Optional) The default location of `thunder-tests` folder is root of workspace. Use setting `Workspace Relative Path` to specify different relative path. see below examples
    * Make sure the `Workspace Relative Path` setting is **Workspace** setting not **User** setting.
-   * Example 1: Relative Path to save in child folder of workspace is `FolderName` or `Child/FolderName`
-   * Example 2: Relative Path to save in Parent folder of workspace is `../`
-2. **Custom Location**: select this option when you like save all the data in one location, enter the full folder path to save the data.
-   * Now supports relative path to Home directory. use **$HOME** prefix e.g `$HOME/Documents/ProjectName`
-* Note 1: **Environment file**: if you dont want to save environment file to git server, use **.gitignore** to ignore the file thunderEnvironment.db
+   * Example 1: To save in Child folder of workspace then relative path is `FolderName` or `Child/FolderName`
+   * Example 2: To save in Parent folder of workspace then relative path is `../`
+2. **Custom Location**: select this option when you like save all the requests data in one fixed location, enter the full folder path to save the data.
+   * Supports relative path to Home directory. use **$HOME** prefix e.g `$HOME/Documents/ProjectName`
+   
+   
+* Note 1: The environments will be stored in `thunderEnvironment.db` file, which will be part of **thunder-tests** folder. If you like to exclude any secrets from `thunderEnvironment.db` file then use `Local Environment` to store values locally on your computer
 * Note 2: **Files changes** are not detected by the extension yet, if you pulled changes from git, click **Reload** icon in sidebar.
 * Note 3: Please **restart vscode** after updating settings.
 
@@ -81,6 +85,15 @@ Integrate with the Git project is now supported, 2 vscode settings options provi
 ![](https://github.com/rangav/thunder-client-support/blob/master/images/thunder-client-tests.png?raw=true)
 
 * We need to write a lot of boilerplate code in Postman and other clients to do basic testing using scripting like status code equal 200. So I implemented GUI based tests, where you select couple of dropdowns to do most standard tests very easily without any scripting knowledge.
+
+<a name="environments"></a>
+## Environments
+![image](https://user-images.githubusercontent.com/8637550/154470745-ed0dabeb-4a92-4dd8-8633-587f08565522.png)
+
+The following environments can be created in Thunder Client from least precedence to high precedence.
+1. **Local Environment**: Use Local Environment to save secrets and transient tokens locally on your computer, which you dont want to save in the git project. This environment is a `global type` and the variables are available to all collections. (See above image option 3)
+
+2. **Global Environment**: Use Global Environment to save variables and share with all the collections. The values will stored in main `thunderEnvironment.db` file.  (See above image option 2)  
 
 <a name="setenv"></a>
 ## Set Environment Variable
@@ -98,10 +111,10 @@ Setting environment variables is supported in the Tests tab. Follow the steps be
    * If you don't see the change in the Env tab, close and re-open the tab to refresh it.
  <a name="scope"></a>
  #### Set Env with Scope
- * You can use scope to control which environment variable to set the value explicitly
+   The default location will be Active Environment when you use `{{variable}}`. You can use scope to control which environment variable to set the value explicitly
  * To set variable in **local** environment use `{{variable, local}}`
  * To set variable in **global** environment use `{{variable, global}}`
- * To set variable in **active** environment use `{{variable, active}}`
+ * (optional) To set variable in **active** environment use `{{variable, active}}`, Use this format only when you have attached Environment to Collection, otherwise `{{variable}}` format should be used
  
 <a name="auth"></a>
 ## Auth
@@ -194,20 +207,25 @@ The feature is open for contribution - https://github.com/rangav/thunder-codegen
 * `Ctl+Shift+P`: From Command Palette
   * Thunder Client - New Request 
   * Thunder Client - Run Last Request
+  * Thunder Client - Change Environment
+  * Thunder Client - Convert To Postman Format
 * `Cmd/Ctrl + Enter`: To execute the request.
 * `Enter` on request url field to send request.
 * `Cmd/Ctrl + s` Save Request without run.
 * `Cmd/Ctrl + click` on request in Sidebar will open in new tab
 * `Cmd/Ctrl + s` Environment variable view save data.
+* `Cmd/Ctrl + e` Change Active Environment.
 * `Alt+Shft + f` Format Post Body data.
 * `Cmd/Ctrl + u` Import Curl
 
 <a name="contribution"></a>
-## Contribution Guidelines
-* As the project is not open source, when you submit feature request or bug, if you know the solution, please submit code sample or a sample project in **node or .Net**. 
-* Two modules are open for contribution, let me know if you like to contribute
+## Contribution
+* **Documentation**: if you like to improve documentation, please dubmit PR.
+* As the project is not open source, when you submit feature request or bug, if you know the solution, please submit code sample or link. 
+* The following modules are open for contribution, let me know if you like to contribute
   * Code Snippet Generation
-  * Open API file import/export
+  * Import of OpenAPI json/yaml files
+  * Import of Insomnia Collections
 
 <a name="privacy"></a>
 ## Privacy
