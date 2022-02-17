@@ -217,7 +217,7 @@ The feature is open for contribution - https://github.com/rangav/thunder-codegen
 ## Contribution
 * **Documentation**: if you like to improve documentation, please dubmit PR.
 * As the project is not open source, when you submit feature request or bug, if you know the solution, please submit code sample or link. 
-* Two modules are open for contribution, let me know if you like to contribute
+* The following modules are open for contribution, let me know if you like to contribute
   * Code Snippet Generation
   * Import of OpenAPI json/yaml files
   * Import of Insomnia Collections
