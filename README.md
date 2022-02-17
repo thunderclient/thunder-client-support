@@ -31,6 +31,7 @@ Thunder Client is a lightweight Rest API Client Extension for Visual Studio Code
 * [Import/Export](#import)
 * [Run Collection](#runcol)
 * [Keyboard Shortcuts](#keyboard)
+* [VS Code Settings](#settings)
 * [Contribution](#contribution)
 * [Privacy](#privacy)
 
@@ -232,6 +233,10 @@ The feature is open for contribution - https://github.com/rangav/thunder-codegen
 * `Cmd/Ctrl + e` Change Active Environment.
 * `Alt+Shft + f` Format Post Body data.
 * `Cmd/Ctrl + u` Import Curl
+
+<a name="settings"></a>
+## VS Code Settings
+This section will be updated soon..
 
 <a name="contribution"></a>
 ## Contribution
