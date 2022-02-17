@@ -95,6 +95,21 @@ The following environments can be created in Thunder Client from least precedenc
 
 2. **Global Environment**: Use Global Environment to save variables and share with all the collections. The values will stored in main `thunderEnvironment.db` file.  (See above image option 2)  
 
+3. **env file**: You can use `.env files` in Thunder Client. To Use .env file follow below steps
+   - Create an Environment (using option 1 in img)
+   - Open the Environment view, then you will see the option `Link to .env file`
+   - Select the .env file and save it, Now you can use the variables in the Requests using `{{variable}}`
+   - The env file variables format should be in 
+    ```
+    key=value
+    name=thunder
+    number=25543
+    ```
+ 4. **Active Environment**: To use an environment variables, you need to make it active using the options menu `...` then select `Set Active`.
+ 
+ #### Import
+ You can import Thunder Client, Postman and .env files using the Import Menu Option ( see above image option 4), more details [here](#import) 
+
 <a name="setenv"></a>
 ## Set Environment Variable
 Setting environment variables is supported in the Tests tab. Follow the steps below:
