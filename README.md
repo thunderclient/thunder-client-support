@@ -111,10 +111,10 @@ Setting environment variables is supported in the Tests tab. Follow the steps be
    * If you don't see the change in the Env tab, close and re-open the tab to refresh it.
  <a name="scope"></a>
  #### Set Env with Scope
- * The default location will be Active Environment when you use `{{variable}}`. You can use scope to control which environment variable to set the value explicitly
+   The default location will be Active Environment when you use `{{variable}}`. You can use scope to control which environment variable to set the value explicitly
  * To set variable in **local** environment use `{{variable, local}}`
  * To set variable in **global** environment use `{{variable, global}}`
- * (optional) To set variable in **active** environment use `{{variable, active}}`, Use this only when you have attached Environment to Collection, then use this format.
+ * (optional) To set variable in **active** environment use `{{variable, active}}`, Use this format only when you have attached Environment to Collection, otherwise `{{variable}}` format should be used
  
 <a name="auth"></a>
 ## Auth
