@@ -107,7 +107,7 @@ The following environments can be used in Thunder Client from least precedence t
     number=25543
     ```
  4. **Active Environment**: To use an environment variables, you need to make it active using the options menu `...` then select `Set Active`.
- 5. **Attach Env to this Collection**: (Optional) You can attach a environment to collection from Collection Settings view. Use this option when you like to link multiple collections to multiple environments. The values in this Environment will take precedence over Active Environment. If you change environment frequently, this option is not recommended. Please see example below
+ 5. **Attach Env to Collection**: (Optional) You can attach a environment to collection from Collection Settings view. Use this option when you like to link multiple collections to multiple environments. The values in this Environment will take precedence over Active Environment. If you change environment frequently, this option is not recommended. Please see example below
     ```
     CollectionA -> EnvA
     CollectionB -> EnvB
