@@ -214,15 +214,15 @@ The feature is open for contribution - https://github.com/rangav/thunder-codegen
 * **Import Curl** is now supported from Activity tab. Keyboard shortcut `Cmd/Ctrl + u`
 * Import of **.env files** also supported, select `Import` from Env tab and choose .env file
 
- ### How to Import Collection
+### How to Import Collection
   1. Select the `Collection` tab from the sidebar
   2. Click `Menu` icon near searchbar, and Select `Import`
   3. Now select json file from Postman or Thunder Client.
   
-  ### How to Convert to Postman Fortmat
+### How to Convert to Postman Fortmat
   - First Export Thunder Client collection to json file, Then convert to Postman format using below options
   - From Command Palette - `Convert To Postman Format` option available
-  - From Sidebar menu at the Top `(...)` then select `Convert To Postman Format`
+  - From Sidebar menu at the Top `(...)` select `Convert To Postman Format`
 
 <a name="runcol"></a>
 ## Run Collection
