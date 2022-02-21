@@ -114,7 +114,7 @@ The following environments can be used in Thunder Client from least precedence t
     CollectionC -> EnvC
     ``` 
  
- #### Import
+ #### Import Env
  You can import Thunder Client, Postman and .env files using the Import Menu Option ( see above image option 4), more details [here](#import) 
 
 <a name="setenv"></a>
@@ -218,6 +218,11 @@ The feature is open for contribution - https://github.com/rangav/thunder-codegen
   1. Select the `Collection` tab from the sidebar
   2. Click `Menu` icon near searchbar, and Select `Import`
   3. Now select json file from Postman or Thunder Client.
+  
+  ### How to Convert to Postman Fortmat
+  - First Export Thunder Client collection to json file, Then convert to Postman format using below options
+  - From Command Palette - `Convert To Postman Format` option available
+  - From Sidebar menu at the Top `(...)` then select `Convert To Postman Format`
 
 <a name="runcol"></a>
 ## Run Collection
