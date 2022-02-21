@@ -244,7 +244,7 @@ The feature is open for contribution - https://github.com/rangav/thunder-codegen
 ## VS Code Settings
 
 To see all the Thunder Client vscode settings
-1. Open vscode settings, then search for `Thunder Client`
+1. Open vscode settings View, then search for `Thunder Client`
 2. From Sidebar View -> Click `...` menu at the top, then click `Extension Settings`
 
 <a name="contribution"></a>
