@@ -29,7 +29,6 @@ Thunder Client is a lightweight Rest API Client Extension for Visual Studio Code
 * [Proxy](#proxy)
 * [Http/2](#http2)
 * [Import/Export](#import)
-* [Run Collection](#runcol)
 * [Keyboard Shortcuts](#keyboard)
 * [VS Code Settings](#settings)
 * [Contribution](#contribution)
@@ -223,11 +222,6 @@ The feature is open for contribution - https://github.com/rangav/thunder-codegen
   - First Export Thunder Client collection to json file, Then convert to Postman format using below options
   - From Command Palette - `Convert To Postman Format` option available
   - From Sidebar menu at the Top `(...)` select `Convert To Postman Format`
-
-<a name="runcol"></a>
-## Run Collection
-* You can test multiple requests using Collection, select `Run All` option from the collection menu.
-* The collection runner will execute all requests and test cases and display the result.
 
 <a name="keyboard"></a>
 ## Keyboard Shortcuts
