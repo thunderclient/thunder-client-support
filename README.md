@@ -186,6 +186,10 @@ The system variables are useful to generate random/dynamic data for use in reque
 * {{#date}} - generates date timestamp
   * Custom date format: use `{{#date, 'YYYY-MM-DD hh:mm:ss:fff'}}`, the format should be in single quote.
 * {{#dateISO}} - generates date ISO format
+* {{#bool}} - generates true or false
+* {{#enum, val1, val2, val3,...}} generates one of the enum values provided
+  * e.g `{{#enum, red, green, blue}}`
+  * e.g `{{#enum, 1, 2, 3}}`
 
 <a name="codegen"></a>
 ## Code Snippet
