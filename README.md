@@ -245,6 +245,7 @@ The feature is open for contribution - https://github.com/rangav/thunder-codegen
 * `Cmd/Ctrl + e` Change Active Environment.
 * `Alt+Shft + f` Format Post Body data.
 * `Cmd/Ctrl + u` Import Curl
+* `Alt + z` Toggle Word wrap on response
 
 <a name="settings"></a>
 ## VS Code Settings
