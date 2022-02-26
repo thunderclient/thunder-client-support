@@ -195,6 +195,7 @@ The system variables are useful to generate random/dynamic data for use in reque
 ## Code Snippet
 The code snippet generation is available for following languages. Open request view and click icon `{}` to see Code Tab.
 * C# - HttpClient
+* Dart Http
 * cURL
 * Javascipt Fetch & Axios
 * PowerShell
