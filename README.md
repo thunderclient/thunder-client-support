@@ -87,6 +87,7 @@ Integration with the Git project is supported by below vscode settings, choose *
 * We need to write a lot of boilerplate code in Postman and other clients to do basic testing using scripting like status code equal 200. So I implemented GUI based tests, where you select couple of dropdowns to do most standard tests very easily without any scripting knowledge.
 * Tests can be done for strings, number, count and type checking
 * Setting Env variable also possible in Tests section
+* Re-arrange tests order using drag and drop
 
 <a name="environments"></a>
 ## Environments
