@@ -242,7 +242,7 @@ The feature is open for contribution - https://github.com/rangav/thunder-codegen
 * `Enter` on request url field to send request.
 * `Cmd/Ctrl + s` Save Request without run.
 * `Cmd/Ctrl + click` on request in Sidebar will open in new tab
-* `Cmd/Ctrl + s` Environment variable view save data.
+* `Cmd/Ctrl + s` Environment view save data.
 * `Cmd/Ctrl + e` Change Active Environment.
 * `Alt+Shft + f` Format Post Body data.
 * `Cmd/Ctrl + u` Import Curl
