@@ -217,7 +217,6 @@ The feature is open for contribution - https://github.com/rangav/thunder-codegen
 ## Import/Export
 * You can import or export Thunder Client collections and environment data.
 * Currently you can import collection or Environment file from **Postman** 2.1.0 format. ( other file formats support soon.. ).
-* Submit PR for other file formats on https://github.com/rangav/thunder-imports
 * **Import Curl** is now supported from Activity tab. Keyboard shortcut `Cmd/Ctrl + u`
 * Import of **.env files** also supported, select `Import` from Env tab and choose .env file
 
@@ -260,9 +259,7 @@ To see all the Thunder Client vscode settings
 * Documentation: if you like to improve documentation, please submit PR.
 * The following modules are open for contribution, let me know if you like to contribute
   * Code Snippet Generation
-  * Import of OpenAPI json/yaml files
-  * Import of Insomnia Collections
-
+  
 <a name="privacy"></a>
 ## Privacy
 * Basic anonymised analytics data is collected using [vscode-extension-telemetry](https://github.com/Microsoft/vscode-extension-telemetry), No Personal or request data is collected. You can opt out using VS Code Settings [details here](https://code.visualstudio.com/docs/getstarted/telemetry)
