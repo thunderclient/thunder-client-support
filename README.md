@@ -67,7 +67,7 @@ The team features are useful to share requests with team by saving data in git p
 
 Integration with the Git project is supported by below vscode settings, choose **any one** as required.
 
-1. **Load From Project**: select this option when you like to spilt requests data per project, it will create `thunder-tests` folder in root of workspace. This option loads the data when you open the project in vscode automatically.
+1. **Save To Workspace**: select this option when you like to spilt requests data per project, it will create `thunder-tests` folder in root of workspace. This option loads the data when you open the project in vscode automatically.
    * (Optional) The default location of `thunder-tests` folder is root of workspace. Use setting `Workspace Relative Path` to specify different relative path. see below examples
    * Make sure the `Workspace Relative Path` setting is **Workspace** setting not **User** setting.
    * Example 1: To save in Child folder of workspace then relative path is `FolderName` or `Child/FolderName`
@@ -215,15 +215,19 @@ The feature is open for contribution - https://github.com/rangav/thunder-codegen
 
 <a name="import"></a>
 ## Import/Export
+* The following import of Collections & Environments supported
+  - Postman 2.1.0 format
+  - Insomnia v4 json file
+  - Open API v3 json or yaml files
+  - Thunder Client
 * You can import or export Thunder Client collections and environment data.
-* Currently you can import collection or Environment file from **Postman** 2.1.0 format. ( other file formats support soon.. ).
 * **Import Curl** is now supported from Activity tab. Keyboard shortcut `Cmd/Ctrl + u`
 * Import of **.env files** also supported, select `Import` from Env tab and choose .env file
 
 #### How to Import Collection
   1. Select the `Collection` tab from the sidebar
   2. Click `Menu` icon near searchbar, and Select `Import`
-  3. Now select json file from Postman or Thunder Client.
+  3. Now select file from Postman, Thunder Client, Insomnia or Open API.
   
 #### How to Convert to Postman Fortmat
   - First Export Thunder Client collection to json file, Then convert to Postman format using below options
