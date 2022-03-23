@@ -63,9 +63,7 @@ Thunder Client is a lightweight Rest API Client Extension for Visual Studio Code
 ## Team Features
 The team features are useful to share requests with team by saving data in git project.
 
-**WARNING**: The **Environment** file which stores the secrets also saved in the same git folder, see **Note: 1** below.
-
-Integration with the Git project is supported by below vscode settings, choose **any one** as required.
+Integration with the Git project is supported by below vscode settings, choose **any one** as required. To view Thunder Client settings, open vscode settings UI and search for Thunder Client to view all the extension settings.
 
 1. **Save To Workspace**: select this option when you like to spilt requests data per project, it will create `thunder-tests` folder in root of workspace. This option loads the data when you open the project in vscode automatically.
    * (Optional) The default location of `thunder-tests` folder is root of workspace. Use setting `Workspace Relative Path` to specify different relative path. see below examples
@@ -75,7 +73,9 @@ Integration with the Git project is supported by below vscode settings, choose *
 2. **Custom Location**: select this option when you like save all the requests data in one fixed location, enter the full folder path to save the data.
    * Supports relative path to Home directory. use **$HOME** prefix e.g `$HOME/Documents/ProjectName`
    
-   
+<br/>
+
+* **WARNING**: The **Environment** file which stores the secrets also saved in the same git folder, see **Note: 1** below.
 * Note 1: The environments will be stored in `thunderEnvironment.db` file, which will be part of **thunder-tests** folder. If you like to exclude any secrets from `thunderEnvironment.db` file then use `Local Environment` to store values locally on your computer
 * Note 2: **Files changes** are not detected by the extension yet, if you pulled changes from git, click **Reload** icon in sidebar.
 * Note 3: Please **restart vscode** after updating settings.
