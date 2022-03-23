@@ -115,9 +115,13 @@ The following environments can be used in Thunder Client from least precedence t
     CollectionB -> EnvB
     CollectionC -> EnvC
     ``` 
+ #### How to use Environment Variables
+ * To use env variables use the format `{{variableName}}`, you can use variables in Query Params, Headers, Body & Tests
  
  #### Import Env
- You can import Thunder Client, Postman and .env files using the Import Menu Option ( see above image option 4), more details [here](#import) 
+  * You can import Thunder Client, Postman and .env files using the Import Menu Option ( see above image option 4), more details [here](#import) 
+  
+<br/>
 
 <a name="setenv"></a>
 ## Set Environment Variable
