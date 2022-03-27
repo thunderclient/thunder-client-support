@@ -234,7 +234,7 @@ The feature is open for contribution - https://github.com/rangav/thunder-codegen
   2. Click `Menu` icon near searchbar, and Select `Import`
   3. Now select file from Postman, Thunder Client, Insomnia or Open API.
   
-#### How to Convert to Postman Fortmat
+#### How to Convert to Postman Format
   - First Export Thunder Client collection to json file, Then convert to Postman format using below options
   - From Command Palette - `Convert To Postman Format` option available
   - From Sidebar menu at the Top `(...)` select `Convert To Postman Format`
