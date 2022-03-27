@@ -267,7 +267,7 @@ To see all the Thunder Client vscode settings
 ## Contribution
 * Documentation: if you like to improve documentation, please submit PR.
 * The following modules are open for contribution, let me know if you like to contribute
-  * Code Snippet Generation
+  * Code Snippet Generation - https://github.com/rangav/thunder-codegen
   
 <a name="privacy"></a>
 ## Privacy
