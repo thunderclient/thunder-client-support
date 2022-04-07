@@ -65,12 +65,12 @@ This feature is useful to share requests with team by saving data in git project
 
 Integration with the Git is supported by below vscode settings, choose **any one** as required. To view Thunder Client settings, open vscode settings UI and search for Thunder Client to view all the extension settings.
 
-1. **Save To Workspace**: enable this setting when you like to spilt requests data per project, it will create `thunder-tests` folder in root of workspace. This option loads the data automatically when you open the project in vscode.
+1. **Save To Workspace**: (recommended) enable this setting when you like to spilt requests data per project, it will create `thunder-tests` folder in root of workspace. This option loads the data automatically when you open the project in vscode.
    * (Optional) The default location of `thunder-tests` folder is root of workspace. Use setting `Workspace Relative Path` to specify different relative path. see below examples
    * Make sure the `Workspace Relative Path` setting is **Workspace** setting not **User** setting.
    * Example 1: To save in Child folder of workspace then relative path is `FolderName` or `Child/FolderName`
    * Example 2: To save in Parent folder of workspace then relative path is `../`
-2. **Custom Location**: enable this setting when you like save all the requests data in one fixed location, enter the full folder path to save the data.
+2. **Custom Location**: use this setting when you like save all the requests data in one fixed location, enter the full folder path to save the data.
    * Supports relative path to Home directory. use **$HOME** prefix e.g `$HOME/Documents/ProjectName`
    
 <br/>
