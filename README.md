@@ -95,7 +95,7 @@ Integration with the Git is supported by below vscode settings, choose **any one
 ![env2](https://user-images.githubusercontent.com/8637550/154529631-7b6a4cb0-5538-471d-ab88-4035bacba878.png)
 
 The following environments can be used in Thunder Client from least precedence to high precedence are listed below.
-1. **Local Environment**: Use Local Environment to save secrets and transient tokens locally on your computer, which you dont want to save in the git project. This environment is a `global type` and the variables are available to all collections. (See above image option 3)
+1. **Local Environment**: Use Local Environment to save secrets and transient tokens locally on your computer, useful to exclude `secrets` from git project. This environment is a `global type` and the variables are available to all collections. (See above image option 3)
 
 2. **Global Environment**: Use Global Environment to save variables and share with all the collections. The values will stored in main `thunderEnvironment.json` file.  (See above image option 2)  
 
