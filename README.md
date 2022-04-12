@@ -76,7 +76,7 @@ Integration with the Git is supported by below vscode settings, choose **any one
 <br/>
 
 * **WARNING**: The **Environment** file which stores the secrets also saved in the same git folder, see **Note: 1** below.
-* Note 1: The environments will be stored in `thunderEnvironment.db` file, which will be part of **thunder-tests** folder. If you like to exclude any secrets from `thunderEnvironment.db` file then use `Local Environment` to store values locally on your computer
+* Note 1: The environments will be stored in `thunderEnvironment.json` file, which will be part of **thunder-tests** folder. If you like to exclude any secrets from `thunderEnvironment.json` file then use `Local Environment` to store values locally on your computer
 * Note 2: **Files changes** are not detected by the extension yet, if you pulled changes from git, click **Reload** icon in sidebar.
 * Note 3: Please **restart vscode** after updating settings.
 
@@ -97,7 +97,7 @@ Integration with the Git is supported by below vscode settings, choose **any one
 The following environments can be used in Thunder Client from least precedence to high precedence are listed below.
 1. **Local Environment**: Use Local Environment to save secrets and transient tokens locally on your computer, which you dont want to save in the git project. This environment is a `global type` and the variables are available to all collections. (See above image option 3)
 
-2. **Global Environment**: Use Global Environment to save variables and share with all the collections. The values will stored in main `thunderEnvironment.db` file.  (See above image option 2)  
+2. **Global Environment**: Use Global Environment to save variables and share with all the collections. The values will stored in main `thunderEnvironment.json` file.  (See above image option 2)  
 
 3. **env file**: You can use `.env files` in Thunder Client. To Use .env file follow below steps
    - Create an Environment (using option 1 in img)
@@ -255,6 +255,7 @@ The feature is open for contribution - https://github.com/rangav/thunder-codegen
 * `Alt+Shft + f` Format Post Body data.
 * `Cmd/Ctrl + u` Import Curl
 * `Alt + z` Toggle Word wrap on response
+* `Escape` to cancel Response full screen mode
 
 <a name="settings"></a>
 ## VS Code Settings
