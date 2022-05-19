@@ -191,6 +191,7 @@ The system variables are useful to generate random/dynamic data for use in reque
 * {{#email}} - generates random email
 * {{#date}} - generates date timestamp
   * Custom date format: use `{{#date, 'YYYY-MM-DD hh:mm:ss:fff'}}`, the format should be in single quote.
+  * Unix date format: use `{{#date, 'X'}}`, this will output unix timestamp in seconds.
 * {{#dateISO}} - generates date ISO format
 * {{#bool}} - generates true or false
 * {{#enum, val1, val2, val3,...}} generates one of the enum values (comma separated) provided
