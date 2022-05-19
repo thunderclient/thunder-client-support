@@ -95,11 +95,13 @@ Integration with the Git is supported by below vscode settings, choose **any one
 ![env2](https://user-images.githubusercontent.com/8637550/154529631-7b6a4cb0-5538-471d-ab88-4035bacba878.png)
 
 The following environments can be used in Thunder Client from least precedence to high precedence are listed below.
-1. **Local Environment**: Use Local Environment to save secrets and transient tokens locally on your computer, useful to exclude `secrets` from git project. This environment is a `global type` and the variables are available to all collections. (See above image option 3)
 
-2. **Global Environment**: Use Global Environment to save variables and share with all the collections. The values will stored in main `thunderEnvironment.json` file.  (See above image option 2)  
+1. **OS Environment Variables**: You can use OS System environment variables as global variables using the format `{{variable}}`
+2. **Local Environment**: Use Local Environment to save secrets and transient tokens locally on your computer, useful to exclude `secrets` from git project. This environment is a `global type` and the variables are available to all collections. (See above image option 3)
 
-3. **env file**: You can use `.env files` in Thunder Client. To Use .env file follow below steps
+3. **Global Environment**: Use Global Environment to save variables and share with all the collections. The values will stored in main `thunderEnvironment.json` file.  (See above image option 2)  
+
+4. **env file**: You can use `.env files` in Thunder Client. To Use .env file follow below steps
    - Create an Environment (using option 1 in img)
    - Open the Environment view, then you will see the option `Link to .env file`
    - Select the .env file and save it, Now you can use the variables in the Requests using `{{variable}}`
@@ -109,8 +111,8 @@ The following environments can be used in Thunder Client from least precedence t
     name=thunder
     number=25543
     ```
- 4. **Active Environment**: To use an environment variables, you need to make it active using the options menu `...` then select `Set Active`.
- 5. **Attach Env to Collection**: (Optional) You can attach a environment to collection from Collection Settings view. Use this option when you like to link multiple collections to multiple environments. The values in this Environment will take precedence over Active Environment. If you change environment frequently, this option is not recommended. Please see example below
+ 5. **Active Environment**: To use an environment variables, you need to make it active using the options menu `...` then select `Set Active`.
+ 6. **Attach Env to Collection**: (Optional) You can attach a environment to collection from Collection Settings view. Use this option when you like to link multiple collections to multiple environments. The values in this Environment will take precedence over Active Environment. If you change environment frequently, this option is not recommended. Please see example below
     ```
     CollectionA -> EnvA
     CollectionB -> EnvB
@@ -134,6 +136,9 @@ Setting environment variables is supported in the Tests tab. Follow the steps be
    * **Cookie:** Enter `cookie.cookieName` where `cookieName` is the response cookie name.
    * **JSON Response:** Enter `json.propertyName` where `propertyName` is the JSON key in the response body.
    * **Text Response:** Enter the `text` keyword. This sets the entire response body to the variable.
+   * **Custom Value:** To set any custom value manually, Just type the text as required in the left input e.g `processing`
+   * **Clear Value:** To clear values use `null` keyword in the left input.
+   * **Delete Variable:** To delete a variable completely use `delete` keyword in left input.
  * In the value input, enter a variable name in the `{{variableName}}` format.
    * When it matches a variable name in Env, it will turn **green**. If the variable doesn't exist, it will be created.
  * Now execute the request. You will see the variable value set in the Env tab.
