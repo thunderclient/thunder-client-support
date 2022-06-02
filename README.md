@@ -23,6 +23,7 @@ Thunder Client is a lightweight Rest API Client Extension for Visual Studio Code
 * [Environments](#environments)
 * [Set Environment Variable](#setenv)
 * [Auth](#auth)
+* [Cookies](#cookies)
 * [Path Variables](#path)
 * [System Variables](#variables)
 * [Code Snippet](#codegen)
@@ -178,7 +179,12 @@ Setting environment variables is supported in the Tests tab. Follow the steps be
           },
       ]
   ```
-    
+
+<a name="cookies"></a>
+## Cookies
+* You can create cookies using the `Cookie` header in the request.
+* To Clear existing cookies for the request, use `Clear All` button in the Cookies Tab
+
 <a name="path"></a>
 ## Path Variables
 Path variables are supported using the format `{variable}` in the url field
