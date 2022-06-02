@@ -185,6 +185,10 @@ Setting environment variables is supported in the Tests tab. Follow the steps be
 * You can create cookies using the `Cookie` header in the request.
 * To Clear existing cookies for the request, use `Clear All` button in the Cookies Tab
 
+
+![image](https://user-images.githubusercontent.com/8637550/171612397-378b5ac8-5215-4f2a-94f4-5fdb8cab6ed7.png)
+
+
 <a name="path"></a>
 ## Path Variables
 Path variables are supported using the format `{variable}` in the url field
