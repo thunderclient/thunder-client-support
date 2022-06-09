@@ -182,7 +182,7 @@ Setting environment variables is supported in the Tests tab. Follow the steps be
 
 <a name="cookies"></a>
 ## Cookies
-* You can create cookies using the `Cookie` header in the request.
+* You can create or modify cookies using the `Cookie` header in the request.
 * To Clear existing cookies for the request, use `Clear All` button in the Cookies Tab
 
 
