@@ -222,7 +222,7 @@ The code snippet generation is available for following languages. Open request v
 * PowerShell
 * Python requests & http.client
 
-The feature is open for contribution - https://github.com/rangav/thunder-codegen 
+The feature is open for **contribution** - https://github.com/rangav/thunder-codegen 
 
 <a name="proxy"></a>
 ## Proxy
