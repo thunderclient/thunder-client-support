@@ -71,7 +71,7 @@ Integration with the Git is supported by below vscode settings, choose **any one
    * Example 1: To save in Child folder of workspace then relative path is `FolderName` or `Child/FolderName`
    * Example 2: To save in Parent folder of workspace then relative path is `../`
 2. **Custom Location**: use this setting when you like save all the requests data in one fixed location, enter the full folder path to save the data.
-   * Supports relative path to Home directory. use **$HOME** prefix e.g `$HOME/Documents/ProjectName`
+   * Supports relative path to user root directory. use **$HOME** prefix e.g `$HOME/Documents/ProjectName`
    
 <br/>
 
