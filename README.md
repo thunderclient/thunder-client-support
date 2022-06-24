@@ -38,8 +38,8 @@ Thunder Client is a lightweight Rest API Client Extension for Visual Studio Code
 
 <a name="usage"></a>
 ## How to Use
-* Install the Extension, Click Thunder Client icon on the Action Bar.
-* From Sidebar click `New Request` button to test API
+* Install the extension, click the Thunder Client icon on the Action Bar.
+* From the sidebar click `New Request` button to test API
 * Video: [youtube.com/watch?v=NKZ0ahNbmak](https://youtu.be/NKZ0ahNbmak?t=3)
 * Minimum **vscode** version now required is `v1.63.0`
 
@@ -52,33 +52,33 @@ Thunder Client is a lightweight Rest API Client Extension for Visual Studio Code
 <a name="features"></a>
 ## Main Features
 
-- **Lightweight** Rest API Client for VS Code.
+- **Lightweight** Rest API Client for VS Code
 - **Simple & Easy** to use UI
-- Supports **Collections and Environment variables**.
-- **Scriptless Testing:** Test API response easily with GUI based interface .
-- **Themes:** The extension supports VS Code themes.
+- Supports **Collections and [Environment variables](#environments)**
+- **Scriptless Testing:** [Test API response easily with GUI based interface](#scriptless-testing)
+- **Themes:** The extension supports VS Code themes
 - **Local Storage** All the requests data is saved locally on your device.
 
 <a name="team"></a>
 ## Git Sync
-This feature is useful to share requests with team by saving data in git project.
+This feature is useful to share requests by saving data in a git project.
 
 Integration with the Git is supported by below vscode settings, choose **any one** as required. To view Thunder Client settings, open vscode settings UI and search for Thunder Client to view all the extension settings.
 
 1. **Save To Workspace**: (recommended) enable this setting when you like to save requests data in current workspace, this will create `thunder-tests` folder in root of workspace. The extension will load the data automatically when you open the project in vscode.
-   * (Optional) The default location of `thunder-tests` folder is root of workspace. Use setting `Workspace Relative Path` to specify different relative path. see below examples
-   * Make sure the `Workspace Relative Path` setting is **Workspace** setting not **User** setting.
-   * Example 1: To save in Child folder of workspace then relative path is `FolderName` or `Child/FolderName`
-   * Example 2: To save in Parent folder of workspace then relative path is `../`
-2. **Custom Location**: use this setting when you like save all the requests data in one fixed location, enter the full folder path to save the data.
+   * (Optional) The default location of `thunder-tests` folder is root of workspace. Use setting `thunder-client.workspaceRelativePath` to specify different relative path. see below examples
+   * Make sure the `thunder-client.workspaceRelativePath` setting is configured in **Workspace** settings not **User** settings.
+   * *Example 1*: To save in Child folder of workspace then relative path is `FolderName` or `Child/FolderName`
+   * *Example 2*: To save in Parent folder of workspace then relative path is `../`
+2. **Custom Location**: use this setting when you want to save all the request data in one fixed location, enter the full folder path to save the data.
    * Supports relative path to user root directory. use prefix **$HOME**.  e.g `$HOME/Documents/folderName`
    
 <br/>
 
-* **WARNING**: The **Environment** file which stores the secrets also saved in the same git folder, see **Note: 1** below.
-* Note 1: The environments will be stored in `thunderEnvironment.json` file, which will be part of **thunder-tests** folder. If you like to exclude any secrets from `thunderEnvironment.json` file then use `Local Environment` to store values locally on your computer
-* Note 2: **Files changes** are not detected by the extension yet, if you pulled changes from git, click **Reload** icon in sidebar.
-* Note 3: Please **restart vscode** after updating settings.
+> **WARNING**: The **Environment** file which stores the secrets is also saved in the same git folder, see **Note 1** below.
+> 1. The environments will be stored in `thunderEnvironment.json` file, which will be part of **thunder-tests** folder. If you like to exclude any secrets from `thunderEnvironment.json` file then use `Local Environment` to store values locally on your computer
+> 2. **Files changes** are not detected by the extension yet, if you pulled changes from git, click **Reload** icon in sidebar.
+> 3. Please **restart vscode** after updating settings.
 
 <a name="testing"></a>
 ## Scriptless Testing
@@ -91,10 +91,10 @@ Integration with the Git is supported by below vscode settings, choose **any one
 * Re-arrange tests order using drag and drop
 
 <a name="environments"></a>
-## Environments
+## Environment Variables
 ![env2](https://user-images.githubusercontent.com/8637550/154529631-7b6a4cb0-5538-471d-ab88-4035bacba878.png)
 
-The following environments can be used in Thunder Client from least precedence to high precedence are listed below.
+The following environments can be used in Thunder Client ranked from least precedence to highest precedence.
 
 1. **OS Environment Variables**: You can use OS System environment variables as global variables using the format `{{variable}}`
 2. **Local Environment**: Use Local Environment to save secrets and transient tokens locally on your computer, useful to exclude `secrets` from git project. This environment is a `global type` and the variables are available to all collections. The values will not be saved in main `thunderEnvironement.json` file (See above image option 3)
