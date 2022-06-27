@@ -89,6 +89,7 @@ Integration with the Git is supported by below vscode settings, choose **any one
 * `Json schema` validation
 * Setting `Env variable` also possible in Tests section
 * Re-arrange tests order using drag and drop
+* Use Json Query Tests for `Xml Response`. ( Xml is converted to Json for tests )
 
 <a name="environments"></a>
 ## Environments
