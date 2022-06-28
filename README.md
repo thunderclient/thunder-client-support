@@ -204,7 +204,7 @@ The system variables are useful to generate random/dynamic data for use in reque
 * {{#number}} - generates random number between 1 to 1000000
   * Custom Range: use `{{#number, min, max}}`, e.g: `{{#number, 100, 999}}`
 * {{#email}} - generates random email
-* {{#date}} - generates date timestamp
+* {{#date}} - generates unix date timestamp in seconds
   * Custom date format: use `{{#date, 'YYYY-MM-DD hh:mm:ss:fff'}}`, the format should be in single quote.
   * Unix timestamp: use `{{#date, 'X'}}`, this will output unix timestamp in seconds.
 * {{#dateISO}} - generates date ISO format
