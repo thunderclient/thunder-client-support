@@ -89,6 +89,7 @@ Integration with Git is supported by the below VS Code settings, choose **anyone
 * `Json schema` validation
 * Setting `env variables` is also possible in the Tests section
 * Re-arrange tests order using drag and drop
+* Use Json Query Tests for `Xml Response`. ( Xml is converted to Json for tests )
 
 <a name="environments"></a>
 ## Environment Variables
@@ -203,7 +204,7 @@ The system variables are useful to generate random/dynamic data for use in reque
 * {{#number}} - generates random number between 1 to 1000000
   * Custom Range: use `{{#number, min, max}}`, e.g: `{{#number, 100, 999}}`
 * {{#email}} - generates random email
-* {{#date}} - generates date timestamp
+* {{#date}} - generates unix date timestamp in milliseconds
   * Custom date format: use `{{#date, 'YYYY-MM-DD hh:mm:ss:fff'}}`, the format should be in single quote.
   * Unix timestamp: use `{{#date, 'X'}}`, this will output unix timestamp in seconds.
 * {{#dateISO}} - generates date ISO format
