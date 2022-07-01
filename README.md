@@ -41,7 +41,7 @@ Thunder Client is a lightweight Rest API Client Extension for Visual Studio Code
 * Install the Extension, Click Thunder Client icon on the Action Bar.
 * From Sidebar click `New Request` button to test API
 * Video: [youtube.com/watch?v=NKZ0ahNbmak](https://youtu.be/NKZ0ahNbmak?t=3)
-* Minimum **vscode** version now required is `v1.63.0`
+* Minimum **VS Code** version now required is `v1.63.0`
 
 ![](images/thunder-client.gif)
 
@@ -57,28 +57,28 @@ Thunder Client is a lightweight Rest API Client Extension for Visual Studio Code
 - Supports **Collections and Environment variables**.
 - **Scriptless Testing:** Test API response easily with GUI based interface .
 - **Themes:** The extension supports VS Code themes.
-- **Local Storage** All the requests data is saved locally on your device.
+- **Local Storage** All the requests' data is saved locally on your device.
 
 <a name="team"></a>
 ## Git Sync
 This feature is useful to share requests with team by saving data in git project.
 
-Integration with the Git is supported by below vscode settings, choose **any one** as required. To view Thunder Client settings, open vscode settings UI and search for Thunder Client to view all the extension settings.
+Integration with the Git is supported by below VS Code settings, choose **any one** as required. To view Thunder Client settings, open VS Code settings UI and search for Thunder Client to view all the extension settings.
 
-1. **Save To Workspace**: (recommended) enable this setting when you like to save requests data in current workspace, this will create `thunder-tests` folder in root of workspace. The extension will load the data automatically when you open the project in vscode.
-   * (Optional) The default location of `thunder-tests` folder is root of workspace. Use setting `Workspace Relative Path` to specify different relative path. see below examples
+1. **Save To Workspace**: (Recommended) Enable this setting when you like to save requests' data in current workspace, this will create `thunder-tests` folder in root of workspace. The extension will load the data automatically when you open the project in VS Code.
+   * (Optional) The default location of `thunder-tests` folder is root of workspace. Use setting `Workspace Relative Path` to specify different relative path.(see below examples)
    * Make sure the `Workspace Relative Path` setting is **Workspace** setting not **User** setting.
    * Example 1: To save in Child folder of workspace then relative path is `FolderName` or `Child/FolderName`
    * Example 2: To save in Parent folder of workspace then relative path is `../`
-2. **Custom Location**: use this setting when you like save all the requests data in one fixed location, enter the full folder path to save the data.
+2. **Custom Location**: Use this setting when you like save all the requests' data in one fixed location, enter the full folder path to save the data.
    * Supports relative path to user root directory. use prefix **$HOME**.  e.g `$HOME/Documents/folderName`
    
 <br/>
 
-* **WARNING**: The **Environment** file which stores the secrets also saved in the same git folder, see **Note: 1** below.
+* **WARNING**: The **Environment** file which stores the secrets also saved in the same git folder (see **Note: 1** below).
 * Note 1: The environments will be stored in `thunderEnvironment.json` file, which will be part of **thunder-tests** folder. If you like to exclude any secrets from `thunderEnvironment.json` file then use `Local Environment` to store values locally on your computer
 * Note 2: **Files changes** are not detected by the extension yet, if you pulled changes from git, click **Reload** icon in sidebar.
-* Note 3: Please **restart vscode** after updating settings.
+* Note 3: Please **restart VS Code** after updating settings.
 
 <a name="testing"></a>
 ## Scriptless Testing
@@ -98,9 +98,9 @@ Integration with the Git is supported by below vscode settings, choose **any one
 The following environments can be used in Thunder Client from least precedence to high precedence are listed below.
 
 1. **OS Environment Variables**: You can use OS System environment variables as global variables using the format `{{variable}}`
-2. **Local Environment**: Use Local Environment to save secrets and transient tokens locally on your computer, useful to exclude `secrets` from git project. This environment is a `global type` and the variables are available to all collections. The values will not be saved in main `thunderEnvironement.json` file (See above image option 3)
+2. **Local Environment**: You can use Local Environment to save secrets and transient tokens locally on your computer, useful to exclude `secrets` from git project. This environment is a `global type` and the variables are available to all collections. The values will not be saved in main `thunderEnvironement.json` file (See above image option 3)
 
-3. **Global Environment**: Use Global Environment to save variables and share with all the collections. The values will stored in main `thunderEnvironment.json` file.  (See above image option 2)  
+3. **Global Environment**: You can use Global Environment to save variables and share with all the collections. The values will stored in main `thunderEnvironment.json` file.  (See above image option 2)  
 
 4. **env file**: You can use `.env files` in Thunder Client. To Use .env file follow below steps
    - Create an Environment (using option 1 in img)
@@ -158,7 +158,7 @@ Setting environment variables is supported in the Tests tab. Follow the steps be
 
 * ### Manual SSL Certificates
   * Provide ssl certificate paths for auth, using relative path to workspace or absolute paths. 
-  * Use the **Certificates** vscode setting, see example below
+  * Use the **Certificates** VS Code setting, see example below
   ```json
   "thunder-client.certificates": [
           {
@@ -227,12 +227,12 @@ The feature is open for **contribution** - https://github.com/rangav/thunder-cod
 
 <a name="proxy"></a>
 ## Proxy
-* Proxy is supported using vscode proxy setting. format `http://username:password@host:port` 
+* Proxy is supported using VS Code proxy setting. format `http://username:password@host:port` 
 * **exclude Proxy Host List**: Use this setting to exclude hosts from proxy, supports comma separated values e.g: `abc.com,xyz.com`
 
 <a name="http2"></a>
 ## Http/2
-* To send request using Http/2 protocol, please select `HTTP/2` option in vscode settings for **Http Version**
+* To send request using Http/2 protocol, please select `HTTP/2` option in VS Code settings for **Http Version**
 
 <a name="import"></a>
 ## Import/Export
@@ -276,8 +276,8 @@ The feature is open for **contribution** - https://github.com/rangav/thunder-cod
 <a name="settings"></a>
 ## VS Code Settings
 
-To see all the Thunder Client vscode settings
-1. Open vscode settings View, then search for `Thunder Client`
+To see all the Thunder Client VS Code settings
+1. Open VS Code settings View, then search for `Thunder Client`
 2. From Sidebar View -> Click `...` menu at the top, then click `Extension Settings`
 
 <a name="contribution"></a>
