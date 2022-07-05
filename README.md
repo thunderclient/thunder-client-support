@@ -5,7 +5,7 @@
 # Thunder Client
 [![installs](https://img.shields.io/visual-studio-marketplace/i/rangav.vscode-thunder-client.svg)](https://marketplace.visualstudio.com/items?itemName=rangav.vscode-thunder-client) [![version](https://img.shields.io/visual-studio-marketplace/v/rangav.vscode-thunder-client.svg)](https://marketplace.visualstudio.com/items?itemName=rangav.vscode-thunder-client)
 
-Thunder Client is a lightweight Rest API Client Extension for Visual Studio Code, hand-crafted by [Ranga Vadhineni](https://twitter.com/ranga_vadhineni) with simple and clean design. The source code is not open source. You can report any Bugs Or Feature requests here.
+Thunder Client is a lightweight Rest API Client Extension for Visual Studio Code, hand-crafted by [Ranga Vadhineni](https://twitter.com/ranga_vadhineni) with a simple and clean design. The source code is not open source. You can report any Bugs Or Feature requests here.
 
 * Voted as **#10 Product of the day** on [Product Hunt](https://www.producthunt.com/posts/thunder-client)
 * Website - [www.thunderclient.com](https://www.thunderclient.com)
@@ -38,8 +38,8 @@ Thunder Client is a lightweight Rest API Client Extension for Visual Studio Code
 
 <a name="usage"></a>
 ## How to Use
-* Install the Extension, Click Thunder Client icon on the Action Bar.
-* From Sidebar click `New Request` button to test API
+* Install the extension, click the Thunder Client icon on the Action Bar.
+* From the sidebar click `New Request` button to test API
 * Video: [youtube.com/watch?v=NKZ0ahNbmak](https://youtu.be/NKZ0ahNbmak?t=3)
 * Minimum **VS Code** version now required is `v1.63.0`
 
@@ -52,7 +52,7 @@ Thunder Client is a lightweight Rest API Client Extension for Visual Studio Code
 <a name="features"></a>
 ## Main Features
 
-- **Lightweight** Rest API Client for VS Code.
+- **Lightweight** Rest API Client for VS Code
 - **Simple & Easy** to use UI
 - Supports **Collections and Environment variables**.
 - **Scriptless Testing:** Test API response easily with GUI based interface .
@@ -80,51 +80,52 @@ Integration with the Git is supported by below VS Code settings, choose **any on
 * Note 2: **Files changes** are not detected by the extension yet, if you pulled changes from git, click **Reload** icon in sidebar.
 * Note 3: Please **restart VS Code** after updating settings.
 
+
 <a name="testing"></a>
 ## Scriptless Testing
 ![](https://github.com/rangav/thunder-client-support/blob/master/images/thunder-client-tests.png?raw=true)
 
-* We need to write a lot of boilerplate code in Postman and other clients to do basic testing using scripting like status code equal 200. So I implemented GUI based tests, where you select couple of dropdowns to do most standard tests very easily without any scripting knowledge.
-* Tests can be done for strings, number, count and type checking
+* We need to write a lot of boilerplate code in Postman and other clients to do basic testing using scripting like status code equal 200. So I implemented GUI based tests, where you select a couple of dropdowns to do most standard tests very easily without any scripting knowledge.
+* Tests can be done for strings, numbers, count, and type checking
 * `Json schema` validation
-* Setting `Env variable` also possible in Tests section
+* Setting `env variables` is also possible in the Tests section
 * Re-arrange tests order using drag and drop
 * Use Json Query Tests for `Xml Response`. ( Xml is converted to Json for tests )
 
 <a name="environments"></a>
-## Environments
+## Environment Variables
 ![env2](https://user-images.githubusercontent.com/8637550/154529631-7b6a4cb0-5538-471d-ab88-4035bacba878.png)
 
-The following environments can be used in Thunder Client from least precedence to high precedence are listed below.
+The following environments can be used in Thunder Client ranked from least precedence to highest precedence.
 
 1. **OS Environment Variables**: You can use OS System environment variables as global variables using the format `{{variable}}`
 2. **Local Environment**: You can use Local Environment to save secrets and transient tokens locally on your computer, useful to exclude `secrets` from git project. This environment is a `global type` and the variables are available to all collections. The values will not be saved in main `thunderEnvironement.json` file (See above image option 3)
-
 3. **Global Environment**: You can use Global Environment to save variables and share with all the collections. The values will stored in main `thunderEnvironment.json` file.  (See above image option 2)  
 
-4. **env file**: You can use `.env files` in Thunder Client. To Use .env file follow below steps
+
+4. **env file**: You can use `.env files` in Thunder Client. To use a .env file follow the below steps
    - Create an Environment (using option 1 in img)
    - Open the Environment view, then you will see the option `Link to .env file`
    - Select the .env file and save it, Now you can use the variables in the Requests using `{{variable}}`
-   - The env file variables format should be in 
+   - The env file variables format should be in:
     ```
     key=value
     name=thunder
     number=25543
     ```
- 5. **Active Environment**: To use an environment variables, you need to make it active using the options menu `...` then select `Set Active`.
- 6. **Attach Env to Collection**: (Optional) You can attach a environment to collection from Collection Settings view. Use this option when you like to link multiple collections to multiple environments. The values in this Environment will take precedence over Active Environment. If you change environment frequently, this option is not recommended. Please see example below
+ 5. **Active Environment**: To use environment variables, you need to make it active using the options menu `...` then select `Set Active`.
+ 6. **Attach Env to Collection**: (Optional) You can attach an environment to a collection from the Collection Settings view. Use this option when you like to link multiple collections to multiple environments. The values in this environment will take precedence over the active environment. If you change environments frequently, this option is not recommended. Please see the example below:
     ```
     CollectionA -> EnvA
     CollectionB -> EnvB
     CollectionC -> EnvC
-    ``` 
+    ```
  #### How to use Environment Variables
  * To use env variables use the format `{{variableName}}`, you can use variables in Query Params, Headers, Body & Tests
- 
+
  #### Import Env
-  * You can import Thunder Client, Postman and .env files using the Import Menu Option ( see above image option 4), more details [here](#import) 
-  
+  * You can import Thunder Client, Postman and .env files using the Import Menu Option ( see above image option 4), more details [here](#import)
+
 <br/>
 
 <a name="setenv"></a>
@@ -146,11 +147,11 @@ Setting environment variables is supported in the Tests tab. Follow the steps be
    * If you don't see the change in the Env tab, close and re-open the tab to refresh it.
  <a name="scope"></a>
  #### Set Env with Scope
-   The default location will be Active Environment when you use `{{variable}}`. You can use scope to control which environment variable to set the value explicitly
- * To set variable in **local** environment use `{{variable, local}}`
- * To set variable in **global** environment use `{{variable, global}}`
- * (optional) To set variable in **active** environment use `{{variable, active}}`, Use this format only when you have attached Environment to Collection, otherwise `{{variable}}` format should be used
- 
+   The default location will be Active Environment when you use `{{variable}}`. You can use a scope to control which environment variable to set the value explicitly
+ * To set a variable in **local** environment use `{{variable, local}}`
+ * To set a variable in **global** environment use `{{variable, global}}`
+ * (optional) To set a variable in **active** environment use `{{variable, active}}`, Use this format only when you have attached Environment to Collection, otherwise `{{variable}}` format should be used
+
 <a name="auth"></a>
 ## Auth
 * OAuth 2.0 when grant type is **Authorization Code** the **callback url** needs to be entered into your oauth server trusted redirect url list.
@@ -159,6 +160,7 @@ Setting environment variables is supported in the Tests tab. Follow the steps be
 * ### Manual SSL Certificates
   * Provide ssl certificate paths for auth, using relative path to workspace or absolute paths. 
   * Use the **Certificates** VS Code setting, see example below
+  
   ```json
   "thunder-client.certificates": [
           {
@@ -223,7 +225,7 @@ The code snippet generation is available for following languages. Open request v
 * PowerShell
 * Python requests & http.client
 
-The feature is open for **contribution** - https://github.com/rangav/thunder-codegen 
+The feature is open for **contribution** - https://github.com/rangav/thunder-codegen
 
 <a name="proxy"></a>
 ## Proxy
@@ -247,18 +249,18 @@ The feature is open for **contribution** - https://github.com/rangav/thunder-cod
 
 #### How to Import Collection
   1. Select the `Collection` tab from the sidebar
-  2. Click `Menu` icon near searchbar, and Select `Import`
-  3. Now select file from Postman, Thunder Client, Insomnia or Open API.
-  
+  2. Click the `Menu` icon near the search bar, and select `Import`
+  3. Now select a file from Postman, Thunder Client, Insomnia, or Open API.
+
 #### How to Convert to Postman Format
-  - First Export Thunder Client collection/environment to json file, Then convert to Postman format using below options
+  - First Export Thunder Client collection/environment to a .json file, Then convert to Postman format using the below options
   - From Command Palette - `Convert To Postman Format` option available
-  - From Sidebar menu at the Top `(...)` select `Convert To Postman Format`
+  - From the Sidebar menu at the Top `(...)` select `Convert To Postman Format`
 
 <a name="keyboard"></a>
 ## Keyboard Shortcuts
 * `Ctl+Shift+P`: From Command Palette
-  * Thunder Client - New Request 
+  * Thunder Client - New Request
   * Thunder Client - Run Last Request
   * Thunder Client - Change Environment
   * Thunder Client - Convert To Postman Format
@@ -285,10 +287,8 @@ To see all the Thunder Client VS Code settings
 * Documentation: if you like to improve documentation, please submit PR.
 * The following modules are open for contribution, let me know if you like to contribute
   * Code Snippet Generation - https://github.com/rangav/thunder-codegen
-  
+
 <a name="privacy"></a>
 ## Privacy
 * Basic anonymised analytics data is collected using [vscode-extension-telemetry](https://github.com/Microsoft/vscode-extension-telemetry), No Personal or request data is collected. You can opt out using VS Code Settings [details here](https://code.visualstudio.com/docs/getstarted/telemetry)
 * There is no backend or cloud sync, all the data is stored locally on your computer.
-
-
