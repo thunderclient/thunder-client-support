@@ -57,7 +57,7 @@ Thunder Client is a lightweight Rest API Client Extension for Visual Studio Code
 - Supports **Collections and Environment variables**.
 - **Scriptless Testing:** Test API response easily with GUI based interface .
 - **Themes:** The extension supports VS Code themes.
-- **Local Storage** All the requests data is saved locally on your device.
+- **Offline & Local Storage:** Works offline and saves all the requests data locally on your device.
 
 <a name="team"></a>
 ## Git Sync
