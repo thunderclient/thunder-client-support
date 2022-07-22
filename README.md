@@ -14,6 +14,10 @@ Thunder Client is a lightweight Rest API Client Extension for Visual Studio Code
 #### Story behind Thunder Client
 * Read Launch Blog Post on [Medium](https://rangav.medium.com/thunder-client-alternative-to-postman-68ee0c9486d6)
 
+#### Milestones
+* 1 Million downloads on July 13th 2022
+* 500K downloads on Dec 20th 2021
+
 ## Menu
 * [How to Use](#usage)
 * [Tech](#tech)
