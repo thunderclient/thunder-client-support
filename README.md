@@ -17,6 +17,7 @@ Thunder Client is a lightweight Rest API Client Extension for Visual Studio Code
 #### Milestones
 * **1 Million** downloads on July 13, 2022
 * **500K** downloads on Dec 20, 2021
+* Extension **launched** on Mar 31, 2021
 
 ## Menu
 * [How to Use](#usage)
