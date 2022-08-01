@@ -46,7 +46,7 @@ Thunder Client is a lightweight Rest API Client Extension for Visual Studio Code
 * Install the extension, click the Thunder Client icon on the Action Bar.
 * From the sidebar click `New Request` button to test API
 * Video: [youtube.com/watch?v=NKZ0ahNbmak](https://youtu.be/NKZ0ahNbmak?t=3)
-* Minimum **VS Code** version now required is `v1.63.0`
+* Minimum **VS Code** version now required is `v1.65.0`
 
 ![](images/thunder-client.gif)
 
@@ -267,6 +267,7 @@ The feature is open for **contribution** - https://github.com/rangav/thunder-cod
 * `Ctl+Shift+P`: From Command Palette
   * Thunder Client - New Request
   * Thunder Client - Run Last Request
+  * Thunder Client - Import Curl
   * Thunder Client - Change Environment
   * Thunder Client - Convert To Postman Format
 * `Cmd/Ctrl + Enter`: To execute the request.
