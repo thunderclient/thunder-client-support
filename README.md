@@ -227,8 +227,10 @@ The code snippet generation is available for following languages. Open request v
 * cURL
 * Dart Http
 * Javascipt Fetch & Axios
+* Php Laravel
 * PowerShell
 * Python requests & http.client
+* and other languages are powered by [httpsnippet](https://github.com/Kong/httpsnippet)
 
 The feature is open for **contribution** - https://github.com/rangav/thunder-codegen
 
