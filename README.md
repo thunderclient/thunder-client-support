@@ -223,6 +223,15 @@ The system variables are useful to generate random/dynamic data for use in reque
 <a name="codegen"></a>
 ## Code Snippet
 The code snippet generation is available for following languages. Open request view and click icon `{}` to see Code Tab.
+
+### Key Features
+* Supports most languages including Flutter Dart, C#, Javascript, Pyhton, Swift etc..
+* Updates the code snippet in **`real-time`** as you make changes to Request
+* You can save the code snippet to `file` or open the snippet on VS Code `tab` using <img width="30" alt="Screenshot 2022-08-01 at 17 09 12" src="https://user-images.githubusercontent.com/8637550/182192387-283a4975-7625-4f71-8c02-9240eae2a609.png">
+
+
+![](https://github.com/rangav/thunder-client-support/blob/master/images/code-snippet.png?raw=true)
+
 * C# - HttpClient
 * cURL
 * Dart Http
