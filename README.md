@@ -264,8 +264,10 @@ The system variables are useful to generate random/dynamic data for use in reque
 
 #### How to Import Collection
   1. Select the `Collection` tab from the sidebar
-  2. Click the `Menu` icon near the search bar, and select `Import`
+  2. Click the `Menu` icon ( see image ), and select `Import` or `Import from Url`
   3. Now select a file from Postman, Thunder Client, Insomnia, or Open API.
+   <img width="289"  alt="import-from-url" src="https://user-images.githubusercontent.com/8637550/182372575-86853b57-72fa-4a25-aa0b-21eb181d05b8.png">
+
 
 #### How to Convert to Postman Format
   - First Export Thunder Client collection/environment to a .json file, Then convert to Postman format using the below options
