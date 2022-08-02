@@ -24,6 +24,7 @@ Thunder Client is a lightweight Rest API Client Extension for Visual Studio Code
 * [Tech](#tech)
 * [Features](#features)
 * [Team Features / Git Sync](#team)
+* [Code Snippet](#codegen)
 * [Testing](#testing)
 * [Environments](#environments)
 * [Set Environment Variable](#setenv)
@@ -31,7 +32,6 @@ Thunder Client is a lightweight Rest API Client Extension for Visual Studio Code
 * [Cookies](#cookies)
 * [Path Variables](#path)
 * [System Variables](#variables)
-* [Code Snippet](#codegen)
 * [Proxy](#proxy)
 * [Http/2](#http2)
 * [Import/Export](#import)
@@ -84,6 +84,28 @@ Integration with the Git is supported by below VS Code settings, choose **any on
 * Note 1: The environments will be stored in `thunderEnvironment.json` file, which will be part of **thunder-tests** folder. If you like to exclude any secrets from `thunderEnvironment.json` file then use `Local Environment` to store values locally on your computer
 * Note 2: **Files changes** are not detected by the extension yet, if you pulled changes from git, click **Reload** icon in sidebar.
 * Note 3: Please **restart VS Code** after updating settings.
+
+
+<a name="codegen"></a>
+## Code Snippet
+The code snippet generation is available for following languages. Open request view and click icon `{}` to see Code Tab.
+
+#### Key Features
+* Supports most languages including Flutter Dart, PHP Laravel, C#, JS, Python, Swift etc..
+* Updates the code snippet in **`real-time`** as you make changes to Request
+* You can save the code snippet to `file` or open the snippet on VS Code `tab` using <img width="30" alt="Screenshot 2022-08-01 at 17 09 12" src="https://user-images.githubusercontent.com/8637550/182192387-283a4975-7625-4f71-8c02-9240eae2a609.png">
+
+
+![](https://github.com/rangav/thunder-client-support/blob/master/images/code-snippet.png?raw=true)
+
+* C# - HttpClient
+* cURL
+* Dart Http
+* Javascipt Fetch & Axios
+* Php Laravel
+* PowerShell
+* Python requests & http.client
+* and other languages are powered by [httpsnippet](https://github.com/Kong/httpsnippet)
 
 
 <a name="testing"></a>
@@ -219,27 +241,6 @@ The system variables are useful to generate random/dynamic data for use in reque
 * {{#enum, val1, val2, val3,...}} generates one of the enum values (comma separated) provided
   * e.g `{{#enum, red, green, blue}}`
   * e.g `{{#enum, 1, 2, 3}}`
-
-<a name="codegen"></a>
-## Code Snippet
-The code snippet generation is available for following languages. Open request view and click icon `{}` to see Code Tab.
-
-#### Key Features
-* Supports most languages including Flutter Dart, PHP Laravel, C#, JS, Python, Swift etc..
-* Updates the code snippet in **`real-time`** as you make changes to Request
-* You can save the code snippet to `file` or open the snippet on VS Code `tab` using <img width="30" alt="Screenshot 2022-08-01 at 17 09 12" src="https://user-images.githubusercontent.com/8637550/182192387-283a4975-7625-4f71-8c02-9240eae2a609.png">
-
-
-![](https://github.com/rangav/thunder-client-support/blob/master/images/code-snippet.png?raw=true)
-
-* C# - HttpClient
-* cURL
-* Dart Http
-* Javascipt Fetch & Axios
-* Php Laravel
-* PowerShell
-* Python requests & http.client
-* and other languages are powered by [httpsnippet](https://github.com/Kong/httpsnippet)
 
 <a name="proxy"></a>
 ## Proxy
