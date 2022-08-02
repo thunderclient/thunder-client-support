@@ -241,8 +241,6 @@ The code snippet generation is available for following languages. Open request v
 * Python requests & http.client
 * and other languages are powered by [httpsnippet](https://github.com/Kong/httpsnippet)
 
-The feature is open for **contribution** - https://github.com/rangav/thunder-codegen
-
 <a name="proxy"></a>
 ## Proxy
 * Proxy is supported using VS Code proxy setting. format `http://username:password@host:port` 
@@ -302,8 +300,7 @@ To see all the Thunder Client VS Code settings
 <a name="contribution"></a>
 ## Contribution
 * Documentation: if you like to improve documentation, please submit PR.
-* The following modules are open for contribution, let me know if you like to contribute
-  * Code Snippet Generation - https://github.com/rangav/thunder-codegen
+* Suggestions to further improve the product.
 
 <a name="privacy"></a>
 ## Privacy
