@@ -65,6 +65,14 @@ Thunder Client is a lightweight Rest API Client Extension for Visual Studio Code
 - **Offline & Local Storage:** Works offline and saves all the requests data locally on your device.
 
 <a name="team"></a>
+
+## Location of the files, request and collections
+
+The files and requests data should be below this location
+
+  - on PC  `%APPDATA%\Code\User\globalStorage\rangav.vscode-thunder-client`
+  - on Mac `/Users/{{userName}}/Library/Application Support/Code/User/globalStorage/rangav.vscode-thunder-client/` replace `{{username}}` with yours
+
 ## Git Sync
 This feature is useful to share requests with team by saving data in git project.
 
