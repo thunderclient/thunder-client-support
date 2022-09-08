@@ -24,6 +24,7 @@ Thunder Client is a lightweight Rest API Client Extension for Visual Studio Code
 * [Tech](#tech)
 * [Features](#features)
 * [Git Sync](#team)
+* [Storage Location](#storage)
 * [Code Snippet](#codegen)
 * [Testing](#testing)
 * [Environments](#environments)
@@ -65,14 +66,6 @@ Thunder Client is a lightweight Rest API Client Extension for Visual Studio Code
 - **Offline & Local Storage:** Works offline and saves all the requests data locally on your device.
 
 <a name="team"></a>
-
-## Location of the files, request and collections
-
-The files and requests data should be below this location
-
-  - on PC  `%APPDATA%\Code\User\globalStorage\rangav.vscode-thunder-client`
-  - on Mac `/Users/{{userName}}/Library/Application Support/Code/User/globalStorage/rangav.vscode-thunder-client/` replace `{{username}}` with yours
-
 ## Git Sync
 This feature is useful to share requests with team by saving data in git project.
 
@@ -93,7 +86,14 @@ Integration with the Git is supported by below VS Code settings, choose **any on
 * Note 2: **Files changes** are not detected by the extension yet, if you pulled changes from git, click **Reload** icon in sidebar.
 * Note 3: Please **restart VS Code** after updating settings.
 
+<a name="storage"></a>
+## Location of the request files
 
+The files and requests data location paths
+
+  - on PC  `%APPDATA%\Code\User\globalStorage\rangav.vscode-thunder-client`
+  - on Mac `/Users/{{userName}}/Library/Application Support/Code/User/globalStorage/rangav.vscode-thunder-client/` replace `{{username}}` with yours
+  
 <a name="codegen"></a>
 ## Code Snippet
 The code snippet generation is available for following languages. Open request view and click icon `{}` to see Code Tab.
