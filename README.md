@@ -47,7 +47,7 @@ Thunder Client is a lightweight Rest API Client Extension for Visual Studio Code
 * Install the extension, click the Thunder Client icon on the Action Bar.
 * From the sidebar click `New Request` button to test API
 * Video: [youtube.com/watch?v=NKZ0ahNbmak](https://youtu.be/NKZ0ahNbmak?t=3)
-* Minimum **VS Code** version now required is `v1.65.0`
+* Minimum **VS Code** version now required is `v1.66.0`
 
 ![](images/thunder-client.gif)
 
@@ -278,9 +278,8 @@ The system variables are useful to generate random/dynamic data for use in reque
 
 
 #### How to Convert to Postman Format
-  - First Export Thunder Client collection/environment to a .json file, Then convert to Postman format using the below options
-  - From Command Palette - `Convert To Postman Format` option available
   - From the Sidebar menu at the Top `(...)` select `Convert To Postman Format`
+  - From Command Palette - `Convert To Postman Format` option available
 
 <a name="keyboard"></a>
 ## Keyboard Shortcuts
