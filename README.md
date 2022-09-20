@@ -353,7 +353,7 @@ System variables are useful to generate random/dynamic data for use in request q
 
 To see all the VS Code settings for Thunder Client:
 
-1. Open VS Code settings View, then search for `Thunder Client`.
+1. Open VSCode settings View, then search for `Thunder Client`.
 2. From Sidebar View -> Click `...` menu at the top, then click `Extension Settings`.
 
 <a name="contribution"></a>
