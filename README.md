@@ -153,9 +153,8 @@ Open request view and click the `{}` icon to see the Code Tab:
 The following environments can be used in Thunder Client, ranked from least to highest precedence:
 
 1. **OS Environment Variables**: You can use OS System environment variables as global variables using the format `{{variable}}`.
-2. **Local Environment**: You can use Local Environment to save secrets and transient tokens locally on your computer; useful to exclude `secrets` from a git project. This environment is a `global type` and the variables are available to all collections. The values will not be saved in the main `thunderEnvironement.json` file (See above image, option 3)
-3. **Global Environment**: You can use Global Environment to save variables and share them with all collections. The values will be stored in the main `thunderEnvironment.json` file. (See above image, option 2)
-
+2. **Global Environment**: You can use Global Environment to save variables and share them with all collections. The values will be stored in the main `thunderEnvironment.json` file. (See above image, option 2)
+3. **Local Environment**: You can use Local Environment to save secrets and transient tokens locally on your computer; useful to exclude `secrets` from a git project. This environment is a `global type` and the variables are available to all collections. The values will not be saved in the main `thunderEnvironement.json` file (See above image, option 3)
 4. **env file**: You can use `.env` files in Thunder Client. To use a `.env` file follow the below steps:
    - Create an Environment (using option 1 in above image).
    - Open the Environment view, where you will see the option `Link to .env file`.
