@@ -220,6 +220,11 @@ The default location will be Active Environment when you use `{{variable}}`. You
 - OAuth 2.0's **callback url**, when grant type is **Authorization Code**, needs to be entered into your oauth server trusted redirect url list.
 - OAuth authentication credentials are sent **via header or body**; please select the appropriate one based on your server requirements.
 
+- ### Automatically Refresh Tokens
+  * The OAuth tokens will be refreshed automatically at request, folder & collection level
+  * The token values are saved locally and not in json files
+  * Save tokens per environment vscode setting added
+
 - ### Manual SSL Certificates
 
   - Provide SSL certificate paths for auth, using the relative path to the workspace or absolute paths.
