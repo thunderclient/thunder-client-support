@@ -103,6 +103,7 @@ Integration with Git is supported by VS Code settings below, choose **any one** 
 The files and requests data location paths:
 
 - **Windows**: `%APPDATA%\Code\User\globalStorage\rangav.vscode-thunder-client`
+- **Linux**: `~/.config/Code/User/globalStorage/rangav.vscode-thunder-client`
 - **Mac**: `/Users/{{userName}}/Library/Application Support/Code/User/globalStorage/rangav.vscode-thunder-client/`
   - Replace `{{username}}` with yours.
 
