@@ -292,12 +292,12 @@ System variables are useful to generate random/dynamic data for use in request q
   - Custom date format: use `{{#date, 'YYYY-MM-DD hh:mm:ss:fff'}}`, the format should be in _single_ quotes.
   - Unix timestamp: use `{{#date, 'X'}}`, this will output unix timestamp in seconds.
   - **Manipulate date** using format : `{year:2, mon:-3, day:-2, hour:3, min:5, sec:7}`
-   - Example 1: `{{#date, {year: -1, day: 3, mon: 5}}}`
-   - Example 2: `{{#date,'YYYY-MM-DD', {year: -1}}}`
+    - Example 1: `{{#date, {year: -1, day: 3, mon: 5}}}`
+    - Example 2: `{{#date,'YYYY-MM-DD', {year: -1}}}`
 - {{#dateISO}} — Generates date ISO format.
   - **Manipulate date** using format : `{year:2, mon:-3, day:-2, hour:3, min:5, sec:7}`
-   - Example 1: `{{#dateISO, {year: 1}}}`
-   - Example 2: `{{#dateISO, { year : -1, day: 3 } }}`
+    - Example 1: `{{#dateISO, {year: 1}}}`
+    - Example 2: `{{#dateISO, { year : -1, day: 3 } }}`
 
 <a name="proxy"></a>
 
