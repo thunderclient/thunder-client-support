@@ -278,19 +278,26 @@ Path variables are supported using the format `{variable}` in the url field:
 System variables are useful to generate random/dynamic data for use in request query params or body. The format is `{{#variableName}}`
 
 - {{#guid}} — Generates random uuid.
+- {{#name}} - Generates random name.
 - {{#string}} — Generates random string.
 - {{#number}} — Generates random number between 1 to 1000000.
   - Custom Range: use `{{#number, min, max}}`
     - example: `{{#number, 100, 999}}`
 - {{#email}} — Generates random email.
-- {{#date}} — Generates unix date timestamp in milliseconds.
-  - Custom date format: use `{{#date, 'YYYY-MM-DD hh:mm:ss:fff'}}`, the format should be in _single_ quotes.
-  - Unix timestamp: use `{{#date, 'X'}}`, this will output unix timestamp in seconds.
-- {{#dateISO}} — Generates date ISO format.
 - {{#bool}} — Generates true or false.
 - {{#enum, val1, val2, val3,...}} — Generates one of the enum values provided (comma separated).
   - example: `{{#enum, red, green, blue}}`
   - example: `{{#enum, 1, 2, 3}}`
+- {{#date}} — Generates unix date timestamp in milliseconds.
+  - Custom date format: use `{{#date, 'YYYY-MM-DD hh:mm:ss:fff'}}`, the format should be in _single_ quotes.
+  - Unix timestamp: use `{{#date, 'X'}}`, this will output unix timestamp in seconds.
+  - **Manipulate date** using format : `{year:2, mon:-3, day:-2, hour:3, min:5, sec:7}`
+   - Example 1: `{{#date, {year: -1, day: 3, mon: 5}}}`
+   - Example 2: `{{#date,'YYYY-MM-DD', {year: -1}}}`
+- {{#dateISO}} — Generates date ISO format.
+  - **Manipulate date** using format : `{year:2, mon:-3, day:-2, hour:3, min:5, sec:7}`
+   - Example 1: `{{#dateISO, {year: 1}}}`
+   - Example 2: `{{#dateISO, { year : -1, day: 3 } }}`
 
 <a name="proxy"></a>
 
@@ -324,7 +331,8 @@ System variables are useful to generate random/dynamic data for use in request q
 1. Select the `Collection` tab from the sidebar.
 2. Click the `Menu` icon (see image) and select `Import` or `Import from Url`.
 3. Now select a file from Postman, Thunder Client, Insomnia, or Open API.
-   <img width="289"  alt="import-from-url" src="https://user-images.githubusercontent.com/8637550/182372575-86853b57-72fa-4a25-aa0b-21eb181d05b8.png">
+   
+<img width="289"  alt="import-from-url" src="https://user-images.githubusercontent.com/8637550/182372575-86853b57-72fa-4a25-aa0b-21eb181d05b8.png">
 
 #### How to Convert to Postman Format
 
