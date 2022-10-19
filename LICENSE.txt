@@ -41,8 +41,8 @@ This license can be terminated by you at any time. If you choose to terminate th
 You and Licensor are independent parties. Nothing in this Agreement shall be construed as making you an employee, agent, partner or legal representative of Licensor.
 
 •	PAYMENT
-The license is free of charge.  
-In future certain features will be paid features. You will need a License Key to use the paid features at that time.
+The license is free of charge currently.  
+In future certain features will be paid features. You will need a License Key to use the paid features at that time and you are not allowed to use old free version of extension.
 
 •	GOVERNING LAW
 This Agreement will be governed by the laws of Ireland and you submit to the exclusive jurisdiction of the courts of Ireland. This Agreement is not subject to the United Nations Convention on Contracts for the Sale of Goods.
