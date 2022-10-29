@@ -281,7 +281,7 @@ System variables are useful to generate random/dynamic data for use in request q
 - {{#name}} - Generates random name.
 - {{#string}} — Generates random string.
 - {{#number}} — Generates random number between 1 to 1000000.
-  - Custom Range: use `{{#number, min, max}}`
+  - **Custom Range**: use `{{#number, min, max}}`
   - Example: `{{#number, 100, 999}}`
 - {{#email}} — Generates random email.
 - {{#bool}} — Generates true or false.
