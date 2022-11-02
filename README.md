@@ -289,7 +289,7 @@ System variables are useful to generate random/dynamic data for use in request q
   - example: `{{#enum, red, green, blue}}`
   - example: `{{#enum, 1, 2, 3}}`
 - {{#date}} — Generates unix date timestamp in milliseconds.
-  - **Custom Date format**: use `{{#date, 'YYYY-MM-DD hh:mm:ss:fff'}}`, the format should be in `single` quotes.
+  - **Custom date format**: use `{{#date, 'YYYY-MM-DD hh:mm:ss:fff'}}`, the format should be in `single` quotes.
   - Unix timestamp: use `{{#date, 'X'}}`, this will output unix timestamp in seconds.
   - **Manipulate date** using format : `{year:2, mon:-3, day:-2, hour:3, min:5, sec:7}`
     - Example 1: `{{#date, {year: -1, day: 3, mon: 5}}}`
