@@ -225,6 +225,7 @@ The default location will be Active Environment when you use `{{variable}}`. You
   * The `OAuth 2` tokens will be refreshed automatically at request, folder & collection level
   * The token values are saved locally and not in json files
   * You can also save tokens per environemnt, please enable VS Code setting `Save Token Per Environment`
+  * if there is any problem, please click `Generate Token` button again, the refresh should work.
 
 - ### Manual SSL Certificates
 
