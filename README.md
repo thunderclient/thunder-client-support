@@ -381,5 +381,5 @@ To see all the VS Code settings for Thunder Client:
 
 ## Privacy
 
-- Basic, anonymized analytics data is collected using [vscode-extension-telemetry](https://github.com/Microsoft/vscode-extension-telemetry). No personal or requests data is collected. You can opt-out using VS Code Settings [details here](https://code.visualstudio.com/docs/getstarted/telemetry).
-- There is no backend or cloud sync; all data is stored locally on your computer, but you can save to [git](https://github.com/rangav/thunder-client-support#git-sync).
+- Basic anonymized analytics data is collected using [vscode-extension-telemetry](https://github.com/Microsoft/vscode-extension-telemetry). No personal or requests data is collected. You can opt-out using VS Code Settings [details here](https://code.visualstudio.com/docs/getstarted/telemetry).
+- There is no backend or cloud sync; all data is stored locally on your computer, but you can sync data using [git](https://github.com/rangav/thunder-client-support#git-sync).
