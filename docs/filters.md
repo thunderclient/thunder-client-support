@@ -21,8 +21,8 @@
    <td width="120px"> <a href="#add">add</a> </td> 
    <td  width="120px"><a href="#atob">atob</a></td> 
    <td  width="120px"><a href="#btoa">btoa</a></td>   
-   <td  width="120px">exec</td>  
-   <td  width="120px">first</td> 
+   <td  width="120px"><a href="#exec">exec</a></td>  
+   <td  width="120px"><a href="#first">first</a></td> 
 </tr>
 <tr>
    <td >hash</td> <td >hmac</td>  <td>join</td> <td >last</td> <td >length</td> <td >lower</td> 
@@ -56,6 +56,16 @@
 #### btoa
 - The filter will encode the value, The syntax is `{{input | btoa}}`
 - if `input` value is `Hello World`, then result is `SGVsbG8gV29ybGQ=`
+
+<a name="exec"></a>
+#### exec
+- The filter will execute node command and return value, The syntax is `{{variable | exec("command")}}` or without a variable {{@ | exec("command")}}
+- if `command` value is `node --version`, then result is `v16.15.0`
+
+<a name="first"></a>
+#### first
+- The filter will return first element in array, The syntax is `{{variable | spilit(" ") | first}}`
+- if `variable` value is `Hello World`, then result is `Hello`
 
 others updating in progress...
 
