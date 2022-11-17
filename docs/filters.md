@@ -67,7 +67,7 @@
 - The filter will return first element in array, The syntax is `{{variable | spilit(" ") | first}}`
 - if `variable` value is `Hello World`, then result is `Hello`
 
-others updating in progress...
+documentation updating in progress...
 
 <a name="filters-in-env-var"></a>
 
