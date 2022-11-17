@@ -35,27 +35,6 @@
 </tr>
 </table>
 
-**Sample Json**
-- This sample json to use in filter examples
-
-```json
-{
-  "data": {
-    "name": "Sample data", 
-    "items": [
-      {
-        "id": "001",
-        "name": "one"
-      },
-      {
-        "id": "003",
-        "name": "three"
-      }
-    ]
-  }
-}
-
-```
 
 <a name="abs"></a>
 #### abs
