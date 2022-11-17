@@ -41,10 +41,10 @@
    <td><a href="#split">split</a></td>
 </tr>
 <tr>
-   <td>stringify</td>    
-   <td>substring</td>      
-   <td>subtract</td> 
-   <td>upper</td> 
+   <td><a href="#stringify">stringify</a></td>    
+   <td><a href="#substring">substring</a></td>      
+   <td><a href="#subtract">subtract</a></td> 
+   <td><a href="#upper">upper</a></td> 
    <td></td> 
    <td></td> 
 </tr>
@@ -118,6 +118,7 @@
 
 <a name="map"></a>
 #### map
+- The filter will return subset of properties of the input, The syntax is `{{variable | map("id", "name")}}`
 
 <a name="multiply"></a>
 #### multiply
@@ -145,7 +146,27 @@
 - The filter will split the string using the separator, The syntax is `{{variable | split("separator")}}`
 - if `variable` value is `Hello World`, then `split(" ")` result is `["Hello", "World"]`
 
-documentation updating in progress...
+<a name="stringify"></a>
+#### stringify
+- The filter will JSON stringify the object, The syntax is `{{variable | stringify}}`
+
+<a name="substring"></a>
+#### substring
+- The filter will return substring of the input, The syntax is `{{variable | substring(start, end)}}`
+- if `variable` value is `Hello World`, then `substring(-5)` result is `World`
+- if you like pass `input.length - 5` then just pass `-5` value
+
+<a name="subtract"></a>
+#### subtract
+- The syntax is `{{number | subtract(5)}}` or `{{number | multiply("subtract")}}`
+- e.g 1: if `number` value is 6, then add filter will return 1
+- e.g 2: if `number` is 45 and `variableName` is 8, then result is 37
+
+<a name="upper"></a>
+#### upper
+- The filter will return uppercase of the string, The syntax is `{{variable | upper}}`
+- if `variable` value is `Hello World`, then result is `HELLO WORLD`
+
 
 <a name="filters-in-env-var"></a>
 
