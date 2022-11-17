@@ -93,12 +93,18 @@
 
 <a name="last"></a>
 #### last
-
+- The filter will return last element in array, The syntax is `{{variable | spilit(" ") | last}}`
+- if `variable` value is `Hello World`, then result is `World`
+- 
 <a name="length"></a>
 #### length
+- The filter will return length of the string or array, The syntax is `{{variable | length}}`
+- if `variable` value is `Hello World`, then result is `11`
 
 <a name="lower"></a>
 #### lower
+- The filter will return lowercase of the string, The syntax is `{{variable | lower}}`
+- if `variable` value is `Hello World`, then result is `hello world`
 
 
 documentation updating in progress...
