@@ -33,10 +33,20 @@
    <td><a href="#lower">lower</a></td> 
 </tr>
 <tr>
-     <td>map</td> <td >multiply</td> <td >removeQuotes</td> <td >replace</td>  <td>slice</td> <td >split</td> 
+   <td><a href="#map">map</a></td> 
+   <td><a href="#multiply">multiply</a></td> 
+   <td><a href="#removeQuotes">removeQuotes</a></td> 
+   <td><a href="#replace">replace</a></td>  
+   <td><a href="#slice">slice</a></td> 
+   <td><a href="#split">split</a></td>
 </tr>
 <tr>
-   <td >stringify</td>    <td >substring</td>      <td>subtract</td> <td >upper</td> <td ></td> <td ></td> 
+   <td>stringify</td>    
+   <td>substring</td>      
+   <td>subtract</td> 
+   <td>upper</td> 
+   <td></td> 
+   <td></td> 
 </tr>
 </table>
 
@@ -95,7 +105,7 @@
 #### last
 - The filter will return last element in array, The syntax is `{{variable | spilit(" ") | last}}`
 - if `variable` value is `Hello World`, then result is `World`
-- 
+
 <a name="length"></a>
 #### length
 - The filter will return length of the string or array, The syntax is `{{variable | length}}`
@@ -106,6 +116,34 @@
 - The filter will return lowercase of the string, The syntax is `{{variable | lower}}`
 - if `variable` value is `Hello World`, then result is `hello world`
 
+<a name="map"></a>
+#### map
+
+<a name="multiply"></a>
+#### multiply
+- The syntax is `{{number | multiply(5)}}` or `{{number | multiply("variableName")}}`
+- e.g 1: if `number` value is 6, then add filter will return 30
+- e.g 2: if `number` is 5 and `variableName` is 8, then result is 40
+- 
+<a name="removeQuotes"></a>
+#### removeQuotes
+- The filter will remove quotes of the string, The syntax is `{{variable | removeQuotes}}`
+- if `variable` value is `"Hell"o World`, then result is `hello world`
+
+<a name="replace"></a>
+#### replace
+- The filter will replace match with replace string, The syntax is `{{variable | replace("Hello", "")}}`
+- if `variable` value is `Hello World`, then result is `World`
+
+<a name="slice"></a>
+#### slice
+- The filter will perform standard array slice operation, The syntax is `{{variable | spilit(" ") | slice(1, 2)}}`
+- if `variable` value is `welcome to thunder client`, then result is `["to"]`
+
+<a name="split"></a>
+#### split
+- The filter will split the string using the separator, The syntax is `{{variable | split("separator")}}`
+- if `variable` value is `Hello World`, then `split(" ")` result is `["Hello", "World"]`
 
 documentation updating in progress...
 
