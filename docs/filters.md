@@ -15,9 +15,14 @@
 
 ### Built-In Filters:
 
-<table style="width:100%">
+<table>
 <tr>
-<td><a href="#abs">abs</a> </td> <td>add</td> <td >atob</td> <td >btoa</td>   <td>exec</td>  <td >first</td> 
+<td width="120px"><a href="#abs">abs</a> </td> 
+   <td width="120px"> <a href="#add">add</a> </td> 
+   <td  width="120px">atob</td> 
+   <td  width="120px">btoa</td>   
+   <td  width="120px">exec</td>  
+   <td  width="120px">first</td> 
 </tr>
 <tr>
    <td >hash</td> <td >hmac</td>  <td>join</td> <td >last</td> <td >length</td> <td >lower</td> 
@@ -45,10 +50,6 @@
       {
         "id": "003",
         "name": "three"
-      },
-      {
-        "id": "004",
-        "name": "four"
       }
     ]
   }
@@ -59,7 +60,13 @@
 <a name="abs"></a>
 #### abs
 - The syntax is `{{number | abs}}` 
-- if `number` variable value is -7, then abs filter will return 7
+- if `number` value is -7, then abs filter will return 7
+
+<a name="add"></a>
+#### add
+- The syntax is `{{number | add(5)}}` or `{{number | add(variableName)}}`
+- e.g 1: if `number` value is 6, then add filter will return 11
+- e.g 2: if `number` is 5 and `variableName` is 8, then result is 13
 
 
 others updating in progress...
