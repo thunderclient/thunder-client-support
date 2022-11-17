@@ -17,7 +17,7 @@
 
 <table style="width:100%">
 <tr>
-<td>abs</td> <td>add</td> <td >atob</td> <td >btoa</td>   <td>exec</td>  <td >first</td> 
+<td><a href="#abs">abs</a> </td> <td>add</td> <td >atob</td> <td >btoa</td>   <td>exec</td>  <td >first</td> 
 </tr>
 <tr>
    <td >hash</td> <td >hmac</td>  <td>join</td> <td >last</td> <td >length</td> <td >lower</td> 
@@ -29,6 +29,40 @@
    <td >stringify</td>    <td >substring</td>      <td>subtract</td> <td >upper</td> <td ></td> <td ></td> 
 </tr>
 </table>
+
+**Sample Json**
+- This sample json to use in filter examples
+
+```json
+{
+  "data": {
+    "name": "Sample data", 
+    "items": [
+      {
+        "id": "001",
+        "name": "one"
+      },
+      {
+        "id": "003",
+        "name": "three"
+      },
+      {
+        "id": "004",
+        "name": "four"
+      }
+    ]
+  }
+}
+
+```
+
+<a name="abs"></a>
+#### abs
+- The syntax is `{{number | abs}}` 
+- if `number` variable value is -7, then abs filter will return 7
+
+
+others updating in progress...
 
 <a name="filters-in-env-var"></a>
 
