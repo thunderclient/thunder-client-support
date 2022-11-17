@@ -19,8 +19,8 @@
 <tr>
 <td width="120px"><a href="#abs">abs</a> </td> 
    <td width="120px"> <a href="#add">add</a> </td> 
-   <td  width="120px">atob</td> 
-   <td  width="120px">btoa</td>   
+   <td  width="120px"><a href="#atob">atob</a></td> 
+   <td  width="120px"><a href="#btoa">btoa</a></td>   
    <td  width="120px">exec</td>  
    <td  width="120px">first</td> 
 </tr>
@@ -68,6 +68,15 @@
 - e.g 1: if `number` value is 6, then add filter will return 11
 - e.g 2: if `number` is 5 and `variableName` is 8, then result is 13
 
+<a name="atob"></a>
+#### atob
+- The filter will decode the value, The syntax is `{{input | atob}}`
+- if `input` value is `SGVsbG8gV29ybGQ=`, then result is `Hello World`
+
+<a name="btoa"></a>
+#### btoa
+- The filter will encode the value, The syntax is `{{input | btoa}}`
+- if `input` value is `Hello World`, then result is `SGVsbG8gV29ybGQ=`
 
 others updating in progress...
 
