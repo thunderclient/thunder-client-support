@@ -48,7 +48,7 @@
 
 <a name="add"></a>
 #### add
-- The syntax is `{{number | add(5)}}` or `{{number | add(variableName)}}`
+- The syntax is `{{number | add(5)}}` or `{{number | add("variableName")}}`
 - e.g 1: if `number` value is 6, then add filter will return 11
 - e.g 2: if `number` is 5 and `variableName` is 8, then result is 13
 
