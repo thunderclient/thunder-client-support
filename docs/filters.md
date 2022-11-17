@@ -158,9 +158,9 @@
 
 <a name="subtract"></a>
 #### subtract
-- The syntax is `{{number | subtract(5)}}` or `{{number | multiply("subtract")}}`
+- The syntax is `{{number | subtract(5)}}` or `{{number | subtract("variable")}}`
 - e.g 1: if `number` value is 6, then add filter will return 1
-- e.g 2: if `number` is 45 and `variableName` is 8, then result is 37
+- e.g 2: if `number` is 45 and `variable` is 8, then result is 37
 
 <a name="upper"></a>
 #### upper
