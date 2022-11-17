@@ -59,7 +59,7 @@
 
 <a name="exec"></a>
 #### exec
-- The filter will execute node command and return value, The syntax is `{{variable | exec("command")}}` or without a variable {{@ | exec("command")}}
+- The filter will execute node command and return value, The syntax is `{{variable | exec("command")}}` or without a variable `{{@ | exec("command")}}`
 - if `command` value is `node --version`, then result is `v16.15.0`
 
 <a name="first"></a>
