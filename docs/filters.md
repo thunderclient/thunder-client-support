@@ -25,7 +25,12 @@
    <td  width="120px"><a href="#first">first</a></td> 
 </tr>
 <tr>
-   <td >hash</td> <td >hmac</td>  <td>join</td> <td >last</td> <td >length</td> <td >lower</td> 
+   <td><a href="#hash">hash</a></td> 
+   <td><a href="#hmac">hmac</a></td>  
+   <td><a href="#join">join</a></td> 
+   <td><a href="#last">last</a></td> 
+   <td><a href="#length">length</a></td> 
+   <td><a href="#lower">lower</a></td> 
 </tr>
 <tr>
      <td>map</td> <td >multiply</td> <td >removeQuotes</td> <td >replace</td>  <td>slice</td> <td >split</td> 
@@ -66,6 +71,35 @@
 #### first
 - The filter will return first element in array, The syntax is `{{variable | spilit(" ") | first}}`
 - if `variable` value is `Hello World`, then result is `Hello`
+
+<a name="hash"></a>
+#### hash
+- The filter will create hash of the input, The syntax is `{{variable | hash("algorithm", "encoding")}}` or `{{variable | hash}}`
+- @param - `algorithm`: The default value is `MD5`. The values supported are `SHA256`, `SHA512`, `SHA1`, `MD5`.
+- @param - `encoding`: The default value is `base64`. The values supported are `hex`, `base64`.
+
+<a name="hmac"></a>
+#### hmac
+- The filter will create hash of the input, The syntax is `{{variable | hmac("secret", "algorithm", "encoding")}}` or `{{variable | hmac("secret")}}`
+- @param - `secret`: The name of the env variable where secret is saved.
+- @param - `algorithm`: The default value is `SHA256`. The values supported are `SHA256`, `SHA512`, `SHA1`, `MD5`.
+- @param - `encoding`: The default value is `base64`. The values supported are `hex`, `base64`.
+
+<a name="join"></a>
+#### join
+- The filter will join array with separator, The syntax is `{{variable | spilit(" ") | join("separator")}}` or in Tests `json.items | join`
+- The default `separator` is comma `,` so you can use `json.items | join`
+- if `variable` value is `Hello World`, then result is `Hello-World`
+
+<a name="last"></a>
+#### last
+
+<a name="length"></a>
+#### length
+
+<a name="lower"></a>
+#### lower
+
 
 documentation updating in progress...
 
