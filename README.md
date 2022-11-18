@@ -25,11 +25,11 @@ Thunder Client is a lightweight Rest API Client Extension for Visual Studio Code
 ## Menu
 
 - [How to Use](#usage)
-- [Tech](#tech)
 - [Features](#features)
 - [Git Sync](#team)
 - [Storage Location](#storage)
 - [Code Snippet](#codegen)
+- [Pre Request Scripting](#pre-request)
 - [Testing](#testing)
 - [Environments](#environments)
 - [Set Environment Variable](#setenv)
@@ -56,13 +56,9 @@ Thunder Client is a lightweight Rest API Client Extension for Visual Studio Code
 
 ![](images/thunder-client.gif)
 
-<a name="tech"></a>
-
-## Tech
+<a name="features"></a>
 
 - Thunder Client is built with **Javascript, Typescript, Flexbox, Ace Editor, Got, Nedb**.
-
-<a name="features"></a>
 
 ## Main Features
 
@@ -132,8 +128,14 @@ Open request view and click the `{}` icon to see the Code Tab:
 - Updates the code snippet in **real-time** as you make changes to a request.
 - You can save the code snippet to a file or open the snippet on VS Code `tab` using <img width="30" alt="Screenshot 2022-08-01 at 17 09 12" src="https://user-images.githubusercontent.com/8637550/182192387-283a4975-7625-4f71-8c02-9240eae2a609.png">
 
-<a name="testing"></a>
 
+<a name="pre-request"></a>
+## Pre Request Scripting
+
+- Pre Request scriting is now supported by using [Function Filters & Custom Filters](https://github.com/rangav/thunder-client-support/blob/master/docs/filters.md)
+
+
+<a name="testing"></a>
 ## Scriptless Testing
 
 ![](https://github.com/rangav/thunder-client-support/blob/master/images/thunder-client-tests.png?raw=true)
@@ -144,6 +146,9 @@ Open request view and click the `{}` icon to see the Code Tab:
 - Setting `env variables` is also possible in the Tests section.
 - Re-arrange tests order using drag & drop.
 - Use Json Query Tests for `Xml Response`. (Xml is converted to Json for tests).
+
+#### Custom Scripting in Tests
+- For Advanced use-cases you can use [Function Filters & Custom Filters](https://github.com/rangav/thunder-client-support/blob/master/docs/filters.md#filters-in-tests)
 
 <a name="environments"></a>
 
