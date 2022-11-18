@@ -120,9 +120,9 @@
 
 <a name="map"></a>
 #### map
-- The filter will return subset of properties of the input, The syntax is `{{variable | map("id", "name")}}`
-- e.g 1: `{{variable | map("id")}}` which result in ["123","534","56444"]
-- e.g 2: `{{variable | map("id", "name")}}` which result in [{"name":"test1", "id":"123}, {"name":"test2", "id":"534"}]
+- The filter will return subset of properties, The syntax is `{{variable | map("id", "name")}}` or In Tests `json.items | map("id")`
+- e.g 1: In Tests `json.items | map("id")` which result in `["123","534","56444"]`
+- e.g 2: `json.items | map("id", "name")` which result in `[{"name":"test1", "id":"123}, {"name":"test2", "id":"534"}]`
 
 <a name="multiply"></a>
 #### multiply
