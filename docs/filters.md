@@ -77,6 +77,7 @@
 <a name="exec"></a>
 #### exec
 - The filter will execute node command and return value, The syntax is `{{variable | exec("command")}}` or without a variable `{{@ | exec("command")}}`
+- You can also pass variables as parameters e.g: `{{@ | exec("gcloud auth {0} {1}", "var1", "var2")}}`
 - if `command` value is `node --version`, then result is `v16.15.0`
 
 <a name="first"></a>
