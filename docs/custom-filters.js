@@ -1,5 +1,5 @@
 // This is sample example file to create custom filters
-// Open tc-types.d.ts in vscode, so you will get auto complete suggestions for tc object.
+/// <reference path="./tc-types.d.ts" />
 
 const CryptoJS = require("crypto-js");
 const { v4: uuid4 } = require("uuid");
