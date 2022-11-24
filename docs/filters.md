@@ -6,12 +6,23 @@
 - if you like to use filters without a variable use @ sign `{{@ | filter1 | filter2}}`
 
 ## Menu
-- [Built-In Filters](#built-in-filters)
 - [Filters In Env Variable](#filters-in-env-var)
 - [Filters In Tests](#filters-in-tests)
+- [Built-In Filters](#built-in-filters)
 - [Custom Filters](#custom-filters)
 - [Feedback](#feedback)
 
+<a name="filters-in-env-var"></a>
+
+#### Filters In Env Variable
+- This is similar to `pre-request` scripting
+<img width="900" alt="Screenshot 2022-11-17 at 09 45 15" src="https://user-images.githubusercontent.com/8637550/202413000-abe18411-13a1-47c0-a612-f3bc585b5bb0.png">
+
+<a name="filters-in-tests"></a>
+
+#### Filters In Tests
+- This is similar to `post-request` scripting
+<img width="900" alt="Screenshot 2022-11-17 at 09 56 57" src="https://user-images.githubusercontent.com/8637550/202415862-5e6d3712-a7c8-466b-8c7c-f91452ee4464.png">
 
 <a name="built-in-filters"></a>
 
@@ -210,21 +221,9 @@
 - if `variable` value is `Hello World`, then result is `HELLO WORLD`
 
 
-<a name="filters-in-env-var"></a>
-
-#### Filters In Env Variable
-- This is similar to `pre-request` scripting
-<img width="900" alt="Screenshot 2022-11-17 at 09 45 15" src="https://user-images.githubusercontent.com/8637550/202413000-abe18411-13a1-47c0-a612-f3bc585b5bb0.png">
-
-<a name="filters-in-tests"></a>
-
-#### Filters In Tests
-- This is similar to `post-request` scripting
-<img width="900" alt="Screenshot 2022-11-17 at 09 56 57" src="https://user-images.githubusercontent.com/8637550/202415862-5e6d3712-a7c8-466b-8c7c-f91452ee4464.png">
-
 <a name="custom-filters"></a>
 
-### Custom Filters
+## Custom Filters
 
 - Create Javascript file with custom filters
 - The sample custom filters javascript file [custom-filters.js](https://github.com/rangav/thunder-client-support/blob/master/docs/custom-filters.js)
