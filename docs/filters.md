@@ -97,7 +97,7 @@
 - if `json.items` value is `[3,6,8,9]`, then result is `3`
 
 <a name="filter"></a>
-#### slice
+#### filter
 - The filter will perform filter array operation, The syntax in Tests `json.items | filter(id>5)`
 - The following operations are supported `>, >=, <, <=, =, *=, ^=, $=`
 
