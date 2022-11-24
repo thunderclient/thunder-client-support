@@ -99,6 +99,11 @@
 - The filter will perform filter array operation, The syntax in Tests `json.items | filter(id>5)`
 - The following operations are supported `>, >=, <, <=, =, *=, ^=, $=`
 
+<a name="format"></a>
+#### format
+- The format filter useful to format the string output, The syntax is `{{variable | format("Hello {0}")}}`
+- if `variable` value is `World`, then result is `Hello World`
+
 <a name="hash"></a>
 #### hash
 - The filter will create hash of the input, The syntax is `{{variable | hash("algorithm", "encoding")}}` or `{{variable | hash}}`
@@ -111,6 +116,14 @@
 - @param - `secret`: The name of the env variable where secret is saved.
 - @param - `algorithm`: The default value is `SHA256`. The values supported are `SHA256`, `SHA512`, `SHA1`, `MD5`.
 - @param - `encoding`: The default value is `base64`. The values supported are `hex`, `base64`.
+
+<a name="isEmail"></a>
+#### isEmail
+- The filter will check the input is email or not return true or false, The syntax in Tests `json.email | isEmail`
+
+<a name="isUrl"></a>
+#### isUrl
+- The filter will check the input is URL or not return true or false, The syntax in Tests `json.homepage | isUrl`
 
 <a name="join"></a>
 #### join
