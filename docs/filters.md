@@ -98,7 +98,7 @@
 
 <a name="filter"></a>
 #### filter
-- The filter will perform filter array operation, The syntax in Tests `json.items | filter(id>5)`
+- The filter will perform array filter operation, The syntax in Tests `json.items | filter(id>5)`
 - The following operations are supported `>, >=, <, <=, =, *=, ^=, $=`
 
 <a name="format"></a>
