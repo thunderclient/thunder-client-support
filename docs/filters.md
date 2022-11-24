@@ -93,8 +93,8 @@
 
 <a name="first"></a>
 #### first
-- The filter will return first element in array, The syntax is `{{variable | spilit(" ") | first}}`
-- if `variable` value is `Hello World`, then result is `Hello`
+- The filter will return first element in array, The syntax in Tests `json.items | first`
+- if `json.items` value is `[3,6,8,9]`, then result is `3`
 
 <a name="filter"></a>
 #### slice
@@ -135,12 +135,12 @@
 
 <a name="last"></a>
 #### last
-- The filter will return last element in array, The syntax is `{{variable | spilit(" ") | last}}`
-- if `variable` value is `Hello World`, then result is `World`
+- The filter will return last element in array, The syntax is `json.items | last`
+- if `json.items` value is `[3,6,8,9]`, then result is `9`
 
 <a name="length"></a>
 #### length
-- The filter will return length of the string or array, The syntax is `{{variable | length}}`
+- The filter will return length of the `string` or `array`, The syntax is `{{variable | length}}`
 - if `variable` value is `Hello World`, then result is `11`
 
 <a name="lower"></a>
