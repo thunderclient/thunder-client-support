@@ -10,6 +10,7 @@
 - [Filters In Env Variable](#filters-in-env-var)
 - [Filters In Tests](#filters-in-tests)
 - [Custom Filters](#custom-filters)
+- [Feedback](#feedback)
 
 
 <a name="built-in-filters"></a>
@@ -237,7 +238,9 @@
 <img width="900" alt="custom-filter-using" src="https://user-images.githubusercontent.com/8637550/202422840-76998a57-0cbf-46ef-9309-52965c72959c.png">
 
 
-
+<a name="feedback"></a>
+### Feedback
+- Let us know if you have any suggestions for improvement and also need any additional built-in filters
 
 
 
