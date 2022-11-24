@@ -1,13 +1,24 @@
+// version 1.1
+
 declare var tc: tcType;
 
 interface tcType {
     /**
-     * Get environment variable value
+     * Get Environment variable value
      * @param variableName variable name
      */
-    getVar(variableName: string): string | undefined,
-    request: RequestModel,
-    response: ResponseModel | undefined,
+    getVar(variableName: string): string;
+
+    /**
+     * Set Environment variable value
+     * @param variableName variable name
+     * @param value variable value
+     * @param scope [optional] environment scope with values: local, global
+     */
+    setVar(variableName: string, value: any, scope?: "local" | "global"): void;
+
+    request: RequestModel;
+    response: ResponseModel | undefined;
 }
 
 type RequestModel = {
