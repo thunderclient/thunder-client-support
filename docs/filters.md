@@ -59,7 +59,9 @@
 <a name="at"></a>
 #### at
 - The filter will return element at index, The syntax is in Tests `json.items | at(1)`
-- if `json.items` value is `[2,6,8,9]`, then result is `6`
+- if `json.items` value is `[2,6,8,9]`
+  - `json.items | at(1)` the result will be `6`
+  - `json.items | at(-1)` the result will be `9`
 
 <a name="abs"></a>
 #### abs
