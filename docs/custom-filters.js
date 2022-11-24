@@ -1,4 +1,5 @@
-// This is sample example file to create custom filters
+/// version 1.1
+/// This is sample file to create custom filters
 /// <reference path="./tc-types.d.ts" />
 
 const CryptoJS = require("crypto-js");
@@ -21,6 +22,22 @@ function customHmac(input) {
     return encoded.toString(CryptoJS.enc.Base64);
 }
 
-module.exports = [customHmac, appendString];
+function randomName(input) {
 
+    console.log("random Name filter:", input);
+    let uuid = uuid4();
+
+    // ---- save to active environment
+    tc.setVar("uuidFromScript", uuid);
+
+    // ---- save to local environment
+    // tc.setVar("uuidFromScript", uuid, "local");
+
+    // ---- save to global environment
+    // tc.setVar("uuidFromScript", uuid, "global");
+
+    return `${uuid}`;
+}
+
+module.exports = [customHmac, appendString, randomName];
 
