@@ -168,6 +168,11 @@
 - The filter will replace match with replace string, The syntax is `{{variable | replace("Hello", "")}}`
 - if `variable` value is `Hello World`, then result is `World`
 
+<a name="setIfValue"></a>
+#### setIfValue
+- The filter will set env variable only when input has value, The syntax in Tests `json.name | setIfValue`
+- This filter is useful in `Tests` section, when `Set Env Variable` dropdown selected
+
 <a name="slice"></a>
 #### slice
 - The filter will perform standard array slice operation, The syntax is `{{variable | spilit(" ") | slice(1, 2)}}`
