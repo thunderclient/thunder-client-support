@@ -168,8 +168,9 @@
 
 <a name="replace"></a>
 #### replace
-- The filter will replace match with replace string, The syntax is `{{variable | replace("Hello", "")}}`
-- if `variable` value is `Hello World`, then result is `World`
+- The filter will replace match with replace string, The syntax is `{{variable | replace("Hello", "NewValue")}}`
+- if `variable` value is `Hello World`, then `replace("Hello", "New")` result is `New World`
+- You can also pass single argument `{{variable | replace("Hello")}}`, which will replace with empty string
 
 <a name="setIfValue"></a>
 #### setIfValue
