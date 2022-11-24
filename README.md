@@ -154,6 +154,9 @@ Open request view and click the `{}` icon to see the Code Tab:
 #### Custom Scripting in Tests
 - For Advanced use-cases you can use [Function Filters & Custom Filters](https://github.com/rangav/thunder-client-support/blob/master/docs/filters.md#filters-in-tests)
 
+#### Xml Testing
+- To perform tests and save response data to environment [click here](https://github.com/rangav/thunder-client-support/blob/master/docs/xml-testing.md)
+
 <a name="environments"></a>
 
 ## Environment Variables
