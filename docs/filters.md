@@ -105,6 +105,7 @@
 #### format
 - The format filter useful to format the string output, The syntax is `{{variable | format("Hello {0}")}}`
 - if `variable` value is `World`, then result is `Hello World`
+- Using multiple variables `{{var1 | format("Hello {0} {1} {2}", "var2", "var3")}}`, the `{0}` is replaced with `var1` value, `{1}` with `var2` value, and `{2}` with `var3` value.
 
 <a name="hash"></a>
 #### hash
