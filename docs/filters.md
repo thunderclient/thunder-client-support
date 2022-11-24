@@ -18,39 +18,48 @@
 
 <table>
 <tr>
-<td width="120px"><a href="#abs">abs</a> </td> 
-   <td width="120px"> <a href="#add">add</a> </td> 
-   <td  width="120px"><a href="#atob">atob</a></td> 
-   <td  width="120px"><a href="#btoa">btoa</a></td>   
-   <td  width="120px"><a href="#exec">exec</a></td>  
-   <td  width="120px"><a href="#first">first</a></td> 
+   <td width="120px"><a href="#at">at</a></td>
+   <td width="120px"><a href="#abs">abs</a></td> 
+   <td width="120px"><a href="#add">add</a></td> 
+   <td width="120px"><a href="#atob">atob</a></td> 
+   <td width="120px"><a href="#btoa">btoa</a></td>   
+   <td width="120px"><a href="#exec">exec</a></td>  
+   <td width="120px"><a href="#first">first</a></td>
 </tr>
 <tr>
+   <td><a href="#filter">filter</a></td>
+   <td><a href="#format">format</a></td> 
    <td><a href="#hash">hash</a></td> 
-   <td><a href="#hmac">hmac</a></td>  
+   <td><a href="#hmac">hmac</a></td> 
+   <td><a href="#isEmail">isEmail</a></td>
+   <td><a href="#isUrl">isUrl</a></td>  
    <td><a href="#join">join</a></td> 
-   <td><a href="#last">last</a></td> 
+</tr>
+<tr>
+    <td><a href="#last">last</a></td> 
    <td><a href="#length">length</a></td> 
    <td><a href="#lower">lower</a></td> 
-</tr>
-<tr>
    <td><a href="#map">map</a></td> 
    <td><a href="#multiply">multiply</a></td> 
    <td><a href="#removeQuotes">removeQuotes</a></td> 
-   <td><a href="#replace">replace</a></td>  
-   <td><a href="#slice">slice</a></td> 
-   <td><a href="#split">split</a></td>
+   <td><a href="#replace">replace</a></td>
+   
 </tr>
 <tr>
+   <td><a href="#setIfValue">setIfValue</a></td> 
+   <td><a href="#slice">slice</a></td> 
+   <td><a href="#split">split</a></td>
    <td><a href="#stringify">stringify</a></td>    
    <td><a href="#substring">substring</a></td>      
    <td><a href="#subtract">subtract</a></td> 
    <td><a href="#upper">upper</a></td> 
-   <td></td> 
-   <td></td> 
 </tr>
 </table>
 
+<a name="at"></a>
+#### at
+- The filter will return element at index, The syntax is in Tests `json.items | at(1)`
+- if `json.items` value is `[2,6,8,9]`, then result is `6`
 
 <a name="abs"></a>
 #### abs
@@ -84,6 +93,11 @@
 #### first
 - The filter will return first element in array, The syntax is `{{variable | spilit(" ") | first}}`
 - if `variable` value is `Hello World`, then result is `Hello`
+
+<a name="filter"></a>
+#### slice
+- The filter will perform filter array operation, The syntax in Tests `json.items | filter(id>5)`
+- The following operations are supported `>, >=, <, <=, =, *=, ^=, $=`
 
 <a name="hash"></a>
 #### hash
