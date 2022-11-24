@@ -230,6 +230,12 @@ The default location will be Active Environment when you use `{{variable}}`. You
 - OAuth 2.0's **callback url**, when grant type is **Authorization Code**, needs to be entered into your oauth server trusted redirect url list.
 - OAuth authentication credentials are sent **via header or body**; please select the appropriate one based on your server requirements.
 
+- ### OAuth 2.0 Callback Url
+  * You need to use the provided callback url to get access code from auth server to extension.
+  * You can use default url `https://www.thunderclient.com/oauth/callback`
+  * Or You can use the localhost version `http://localhost:6789/callback`
+  * The Callback Url should be added to your `OAuth server` authorised callback list.
+
 - ### Automatically Refresh Tokens
   * The `OAuth 2` tokens will be refreshed automatically at request, folder & collection level
   * The token values are saved locally and not in json files
