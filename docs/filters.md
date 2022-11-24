@@ -14,14 +14,14 @@
 
 <a name="filters-in-env-var"></a>
 
-#### Filters In Env Variable
+### Filters In Env Variable
 - This is similar to `pre-request` scripting
 - The filters can be used in query params, headers, Auth & body
 <img width="900" alt="Screenshot 2022-11-17 at 09 45 15" src="https://user-images.githubusercontent.com/8637550/202413000-abe18411-13a1-47c0-a612-f3bc585b5bb0.png">
 
 <a name="filters-in-tests"></a>
 
-#### Filters In Tests
+### Filters In Tests
 - This is similar to `post-request` scripting
 <img width="900" alt="Screenshot 2022-11-17 at 09 56 57" src="https://user-images.githubusercontent.com/8637550/202415862-5e6d3712-a7c8-466b-8c7c-f91452ee4464.png">
 
