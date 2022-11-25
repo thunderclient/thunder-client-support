@@ -150,7 +150,7 @@ Open request view and click the `{}` icon to see the Code Tab:
 - Re-arrange tests order using drag & drop.
 
 #### Test Arrays
-- Test array data in response using array filters
+- Test array data in response using array filters [details here](https://github.com/rangav/thunder-client-support/blob/master/docs/array-testing.md)
 
 #### Set Env Variable
 - You can save response data to Env Variables [details here](https://github.com/rangav/thunder-client-support#setenv)
@@ -345,9 +345,13 @@ System variables are useful to generate random/dynamic data for use in request q
   - Open API v3 json or yaml files
   - Thunder Client
 - You can import or export Thunder Client Collections and Environments data.
-- **Import Curl** is now supported from Activity tab.
-  - Keyboard shortcut `Cmd/Ctrl + u`
 - Import of **.env files** is also supported, select `Import` from Env tab and choose `.env` file
+
+#### Import CURL
+
+- From Activity tab menu, select `Import Curl`
+- Now you can enter `Curl Text` or `Url` in the same input ( shortcut `Ctrl/Cmd + u` )
+- From Command Palette select `Thunder Client: Import Curl`, which is helpful to test a  request from anywhere. Here also you enter Curl text or Url
 
 #### How to Import a Collection
 
