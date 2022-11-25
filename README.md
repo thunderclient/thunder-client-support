@@ -147,9 +147,13 @@ Open request view and click the `{}` icon to see the Code Tab:
 - We need to write a lot of boilerplate code in Postman and other clients to do basic testing using scripting (like status code equals `200`). So I implemented GUI-based tests, where you can select a couple of dropdowns to do most standard tests easily, without any scripting knowledge.
 - Tests can be done for strings, numbers, count, and type checking.
 - Json schema validation.
-- Setting `env variables` is also possible in the Tests section.
 - Re-arrange tests order using drag & drop.
-- Use Json Query Tests for `Xml Response`. (Xml is converted to Json for tests).
+
+#### Test Arrays
+- Test array data in response using array filters
+
+#### Set Env Variable
+- You can save response data to Env Variables [details here](https://github.com/rangav/thunder-client-support#setenv)
 
 #### Custom Scripting in Tests
 - For Advanced use-cases you can use [Function Filters & Custom Filters](https://github.com/rangav/thunder-client-support/blob/master/docs/filters.md#filters-in-tests)
