@@ -54,17 +54,20 @@
    <td><a href="#lower">lower</a></td> 
    <td><a href="#map">map</a></td> 
    <td><a href="#multiply">multiply</a></td> 
+   <td><a href="#prop">prop</a></td> 
    <td><a href="#removeQuotes">removeQuotes</a></td> 
-   <td><a href="#replace">replace</a></td>
    
 </tr>
 <tr>
+    <td><a href="#replace">replace</a></td>
    <td><a href="#setIfValue">setIfValue</a></td> 
    <td><a href="#slice">slice</a></td> 
    <td><a href="#split">split</a></td>
    <td><a href="#stringify">stringify</a></td>    
    <td><a href="#substring">substring</a></td>      
    <td><a href="#subtract">subtract</a></td> 
+</tr>
+<tr>
    <td><a href="#upper">upper</a></td> 
 </tr>
 </table>
@@ -173,7 +176,13 @@
 - The syntax is `{{number | multiply(5)}}` or `{{number | multiply("variableName")}}`
 - e.g 1: if `number` value is 6, then add filter will return 30
 - e.g 2: if `number` is 5 and `variableName` is 8, then result is 40
-- 
+
+<a name="prop"></a>
+#### prop
+- The filter will get property value of an object, The syntax in Tests `json.items | prop("id")`
+- e.g 1: if `json.items` value is `[{"id":1005, "name":"boston"}]`, then `prop("id")` will return `1005`
+- e.g 1: if array is `[{"id":1005, "name":"boston"}, {"id":1006, "name":"london"}]`, then `prop("id")` will return `1005,1006`
+
 <a name="removeQuotes"></a>
 #### removeQuotes
 - The filter will remove quotes of the string, The syntax is `{{variable | removeQuotes}}`
