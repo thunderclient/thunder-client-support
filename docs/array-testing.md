@@ -5,6 +5,9 @@
 #### Array Filters
 - Array can tested using array filters
 - The following filter operations are supported `*, =, !=, <=, <, >=, >, *=, ^=, $=`
+- `*=` filters using `contains` operation
+- `^=` filters using `startsWith` operation
+- `$=` filters using `endsWith` operation
 - To access array items from the end use negative index number `json.items[-2].id`
 
 #### Function Filters
