@@ -4,6 +4,7 @@
 - The filters can be used in `Environment Variables` and `Tests`
 - The filter syntax is `{{variable | filter1 | filter2...}}` or in **Tests** `json.items | filter1 | filter2...`
 - if you like to use filters without a variable use @ sign `{{@ | filter1 | filter2}}`
+- The Filters can be used in `Headers, Body, Query Params & Tests`
 
 ## Menu
 - [Filters In Env Variable](#filters-in-env-var)
