@@ -185,8 +185,8 @@
 
 <a name="removeQuotes"></a>
 #### removeQuotes
-- The filter will remove quotes of the string, The syntax is `{{variable | removeQuotes}}`
-- if `variable` value is `"Hell"o World`, then result is `hello world`
+- The filter will remove quotes from the string, The syntax is `{{variable | removeQuotes}}`
+- if `variable` value is `"Hell"o W'orld`, then result is `Hello World`
 
 <a name="replace"></a>
 #### replace
