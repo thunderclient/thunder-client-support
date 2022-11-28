@@ -17,7 +17,7 @@
 
 ### Filters In Env Variable
 - This is similar to `pre-request` scripting
-- The filters can be used in query params, headers, Auth & body
+- The filters can be used in `Query params, Headers, Auth & Body`
 <img width="900" alt="Screenshot 2022-11-17 at 09 45 15" src="https://user-images.githubusercontent.com/8637550/202413000-abe18411-13a1-47c0-a612-f3bc585b5bb0.png">
 
 <a name="filters-in-tests"></a>
