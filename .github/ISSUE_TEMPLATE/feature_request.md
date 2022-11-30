@@ -16,5 +16,5 @@ assignees: ''
 **Describe alternatives you've considered**
 <!--- A clear and concise description of any alternative solutions or features you've considered. --->
 
-**Implementation:**
-<!--- if you know the solution, please submit code sample or link --->
+**Your Team Size:**
+<!--- Please let us know your team size, will help to improve the product --->
