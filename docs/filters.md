@@ -235,12 +235,12 @@
 
 <a name="urlEncode"></a>
 #### urlEncode
-- The filter will will [encode](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent) the string, The syntax is `{{queryParam1 | urlEncode}}`
+- The filter will [encode](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent) the string, The syntax is `{{queryParam1 | urlEncode}}`
 - if `queryParam1` value is `hello+world`, then result is `hello%2Bworld`
 
 <a name="urlDecode"></a>
 #### urlDecode
-- The filter will will [decode](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/decodeURIComponent) the string, The syntax is `{{queryParam1 | urlDecode}}`
+- The filter will [decode](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/decodeURIComponent) the string, The syntax is `{{queryParam1 | urlDecode}}`
 - if `queryParam1` value is `hello%2Bworld`, then result is `hello+world`
 
 
