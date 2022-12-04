@@ -101,7 +101,7 @@
 
 <a name="btoa"></a>
 #### btoa
-- The filter will [encode](https://developer.mozilla.org/en-US/docs/Web/API/btoa) the value, The syntax is `{{input | btoa}}`
+- The filter will Base64 [encode](https://developer.mozilla.org/en-US/docs/Web/API/btoa) the value, The syntax is `{{input | btoa}}`
 - if `input` value is `Hello World`, then result is `SGVsbG8gV29ybGQ=`
 
 <a name="exec"></a>
