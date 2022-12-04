@@ -77,7 +77,7 @@
 
 <a name="at"></a>
 #### at
-- The filter will return element at index, The syntax is in Tests `json.items | at(1)`
+- The filter will return element [at](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/at) index, The syntax is in Tests `json.items | at(1)`
 - if `json.items` value is `[2,6,8,9]` then
   - `json.items | at(1)` the result will be `6`
   - `json.items | at(-1)` the result will be `9`
@@ -96,12 +96,12 @@
 
 <a name="atob"></a>
 #### atob
-- The filter will decode the value, The syntax is `{{input | atob}}`
+- The filter will [decode](https://developer.mozilla.org/en-US/docs/Web/API/atob) the value, The syntax is `{{input | atob}}`
 - if `input` value is `SGVsbG8gV29ybGQ=`, then result is `Hello World`
 
 <a name="btoa"></a>
 #### btoa
-- The filter will encode the value, The syntax is `{{input | btoa}}`
+- The filter will [encode](https://developer.mozilla.org/en-US/docs/Web/API/btoa) the value, The syntax is `{{input | btoa}}`
 - if `input` value is `Hello World`, then result is `SGVsbG8gV29ybGQ=`
 
 <a name="exec"></a>
@@ -204,7 +204,7 @@
 
 <a name="slice"></a>
 #### slice
-- The filter will perform standard array slice operation, The syntax is `{{variable | spilit(" ") | slice(1, 2)}}`
+- The filter will perform standard array [slice](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice) operation, The syntax is `{{variable | spilit(" ") | slice(1, 2)}}`
 - if `variable` value is `welcome to thunder client`, then result is `["to"]`
 
 <a name="split"></a>
