@@ -69,7 +69,9 @@
    <td><a href="#subtract">subtract</a></td> 
 </tr>
 <tr>
-   <td><a href="#upper">upper</a></td> 
+   <td><a href="#upper">upper</a></td>
+   <td><a href="#urlEncode">urlEncode</a></td> 
+   <td><a href="#urlDecode">urlDecode</a></td> 
 </tr>
 </table>
 
@@ -230,6 +232,16 @@
 #### upper
 - The filter will return uppercase of the string, The syntax is `{{variable | upper}}`
 - if `variable` value is `Hello World`, then result is `HELLO WORLD`
+
+<a name="urlEncode"></a>
+#### urlEncode
+- The filter will will [encode](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent) the string, The syntax is `{{queryParam1 | urlEncode}}`
+- if `queryParam1` value is `hello+world`, then result is `hello%2Bworld`
+
+<a name="urlDecode"></a>
+#### urlDecode
+- The filter will will [decode](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/decodeURIComponent) the string, The syntax is `{{queryParam1 | urlDecode}}`
+- if `queryParam1` value is `hello%2Bworld`, then result is `hello+world`
 
 
 <a name="custom-filters"></a>
