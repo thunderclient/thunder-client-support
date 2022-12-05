@@ -1,4 +1,4 @@
-// version 1.1
+// version 1.2.0
 
 declare var tc: tcType;
 
@@ -17,7 +17,22 @@ interface tcType {
      */
     setVar(variableName: string, value: any, scope?: "local" | "global"): void;
 
+    /**
+     * Load and get node module from npm registry.
+     * The first run will take few seconds as it needs to download the module from npm
+     * @param moduleName module name
+     * @param version module version, if empty latest version will be used
+     */
+    loadModule(moduleName: string, version?: string): Promise<any>;
+
+    /**
+     * Get the Request object (read-only)
+     */
     request: RequestModel;
+
+    /**
+     * Get the Response object (read-only)
+     */
     response: ResponseModel | undefined;
 }
 
