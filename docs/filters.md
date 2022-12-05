@@ -11,6 +11,8 @@
 - [Filters In Tests](#filters-in-tests)
 - [Built-In Filters](#built-in-filters)
 - [Custom Filters](#custom-filters)
+  - [Run Custom Filter in Pre-Run Tab](#pre-run-filters)
+  - [Import Node Module](#import-node-module)
 - [Feedback](#feedback)
 
 <a name="filters-in-env-var"></a>
@@ -259,12 +261,16 @@
 - Use Custom filters in Request
 <img width="900" alt="custom-filter-using" src="https://user-images.githubusercontent.com/8637550/202422840-76998a57-0cbf-46ef-9309-52965c72959c.png">
 
+<a name="pre-run-filters"></a>
+
 ### Run Custom Filter Directly
 - Run Custom Filter directly in `Pre-Run` tab, useful to set Env Variables
 <img width="781" alt="Screenshot 2022-12-04 at 16 56 16" src="https://user-images.githubusercontent.com/8637550/205504506-c7cd58b8-f489-4560-a860-9916d0c14456.png">
 
 - This Custom Filter will not have any `arguments` and return `no value`
 <img width="543" alt="Screenshot 2022-12-04 at 17 31 23" src="https://user-images.githubusercontent.com/8637550/205506079-395de0b6-593e-4fa9-b38a-31a1d6a1545a.png">
+
+<a name="import-node-module"></a>
 
 ### Import Node Module
 - Now you can import any `node module` in [Custom Filters](https://github.com/rangav/thunder-client-support/blob/master/docs/custom-filters.js)
