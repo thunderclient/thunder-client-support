@@ -272,8 +272,9 @@
 
 <a name="import-node-module"></a>
 
-### Import Node Module
+### Import Node Module (Beta)
 - Now you can import any `node module` in [Custom Filters](https://github.com/rangav/thunder-client-support/blob/master/docs/custom-filters.js)
+- This feature is still in `Beta`, not all modules are working
 - e.g:   `var moment = await tc.loadModule("moment");`
 <img width="762" alt="Screenshot 2022-12-04 at 17 33 03" src="https://user-images.githubusercontent.com/8637550/205506205-f01dd73d-d8b1-41eb-9f65-a0c88170d00f.png">
 
