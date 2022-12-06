@@ -91,10 +91,8 @@ Integration with Git is supported by [VS Code settings](#settings) below, choose
 
 <br/>
 
-- **WARNING**: The **Environment** file which stores the secrets is also saved in the **same git folder** (see **Note 1** below).
 - **Note 1**: The environments will be stored in `thunderEnvironment.json`, in the **thunder-tests** folder. If you'd like to exclude any secrets from `thunderEnvironment.json` file then use `Local Environment` to store values locally on your computer.
-- **Note 2**: **File changes** are not detected by the extension (yet), if you pulled changes from git, click the **Reload** icon in sidebar.
-- **Note 3**: Please **restart VS Code** after updating settings.
+- **Note 2**: Please **restart VS Code** after updating settings.
 
 <a name="storage"></a>
 
