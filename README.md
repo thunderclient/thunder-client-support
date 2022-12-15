@@ -56,7 +56,8 @@ Thunder Client is a lightweight Rest API Client Extension for Visual Studio Code
 - Video: [youtube.com/watch?v=NKZ0ahNbmak](https://youtu.be/NKZ0ahNbmak?t=3)
 - Minimum **VS Code** version now required is `v1.70.0`
 
-![](images/thunder-client.gif)
+<img width="850" alt="Thunder Client" src="https://github.com/rangav/thunder-client-support/blob/master/images/thunder-client-v2.png">
+
 
 <a name="features"></a>
 
@@ -122,7 +123,7 @@ Code snippet generation is available for the following languages:
 
 Open request view and click the `{}` icon to see the Code Tab:
 
-![](https://github.com/rangav/thunder-client-support/blob/master/images/code-snippet.png?raw=true)
+<img width="850" alt="Thunder Client Code Snippet" src="https://user-images.githubusercontent.com/8637550/207847889-a46de85c-0951-4026-a37e-db36f44de007.png">
 
 #### Key Features
 
@@ -140,7 +141,7 @@ Open request view and click the `{}` icon to see the Code Tab:
 <a name="testing"></a>
 ## Scriptless Testing
 
-![](https://github.com/rangav/thunder-client-support/blob/master/images/thunder-client-tests.png?raw=true)
+<img width="850" alt="Thunder Client" src="https://github.com/rangav/thunder-client-support/blob/master/images/thunder-client-tests-v2.png">
 
 - We need to write a lot of boilerplate code in Postman and other clients to do basic testing using scripting (like status code equals `200`). So I implemented GUI-based tests, where you can select a couple of dropdowns to do most standard tests easily, without any scripting knowledge.
 - Tests can be done for strings, numbers, count, and type checking.
@@ -281,7 +282,7 @@ The default location will be Active Environment when you use `{{variable}}`. You
 - You can create or modify cookies using the `Cookie` header in the request.
 - To **clear** existing cookies for the request, use `Clear All` button in the Cookies Tab:
 
-![image](https://user-images.githubusercontent.com/8637550/171612397-378b5ac8-5215-4f2a-94f4-5fdb8cab6ed7.png)
+<img width="650" alt="thunder-cookie" src="https://user-images.githubusercontent.com/8637550/207848789-b3d02d20-1e2f-4cc9-9b8c-e81893b8b29a.png">
 
 <a name="path"></a>
 
