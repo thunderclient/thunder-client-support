@@ -36,6 +36,7 @@ Thunder Client is a lightweight Rest API Client Extension for Visual Studio Code
 - [Environments](#environments)
 - [Set Environment Variable](#setenv)
 - [Auth](#auth)
+- [Logs](#logs)
 - [Cookies](#cookies)
 - [Path Variables](#path)
 - [System Variables](#variables)
@@ -164,7 +165,7 @@ Open request view and click the `{}` icon to see the Code Tab:
 
 ## Environment Variables
 
-![env2](https://user-images.githubusercontent.com/8637550/154529631-7b6a4cb0-5538-471d-ab88-4035bacba878.png)
+<img width="314" alt="Thunder Client Environment Variables" src="https://user-images.githubusercontent.com/8637550/208125768-af89dabb-3107-47eb-8ece-e2caf7bff714.png">
 
 The following environments can be used in Thunder Client, ranked from least to highest precedence:
 
@@ -275,6 +276,16 @@ The default location will be Active Environment when you use `{{variable}}`. You
       ]
   ```
 
+<a name="logs"></a>
+
+## Logs
+
+- To view the logs open `Output` Window and select `Thunder Client` in download filter
+- Logs will display request details and error logs
+
+<img width="834" alt="Thunder Client Logs" src="https://user-images.githubusercontent.com/8637550/208124214-bcc493ba-82e6-41f1-90e7-34f16e8fa8e6.png">
+
+
 <a name="cookies"></a>
 
 ## Cookies
@@ -282,7 +293,7 @@ The default location will be Active Environment when you use `{{variable}}`. You
 - You can create or modify cookies using the `Cookie` header in the request.
 - To **clear** existing cookies for the request, use `Clear All` button in the Cookies Tab:
 
-<img width="650" alt="thunder-cookie" src="https://user-images.githubusercontent.com/8637550/207848789-b3d02d20-1e2f-4cc9-9b8c-e81893b8b29a.png">
+<img width="834" alt="Thunder Client Cookie" src="https://user-images.githubusercontent.com/8637550/208124553-f65370d6-2420-41f8-944e-200b28113b6e.png">
 
 <a name="path"></a>
 
@@ -358,7 +369,7 @@ System variables are useful to generate random/dynamic data for use in request q
 2. Click the `Menu` icon (see image) and select `Import` or `Import from Url`.
 3. Now select a file from Postman, Thunder Client, Insomnia, or Open API.
    
-<img width="289"  alt="import-from-url" src="https://user-images.githubusercontent.com/8637550/182372575-86853b57-72fa-4a25-aa0b-21eb181d05b8.png">
+<img width="310" alt="Thunder Import From Url" src="https://user-images.githubusercontent.com/8637550/208125123-08ead7f4-e7bd-4fc4-9323-9f1ee2023d5a.png">
 
 #### How to Convert to Postman Format
 
