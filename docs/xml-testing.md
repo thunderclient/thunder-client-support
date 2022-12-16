@@ -1,7 +1,7 @@
 ## XML Testing
 
 
-<img width="1243" alt="Screenshot 2022-11-24 at 18 51 29" src="https://user-images.githubusercontent.com/8637550/203850402-ad73fab6-328e-4a2e-a91d-89b0bf86d853.png">
+<img width="1165" alt="Screenshot 2022-12-16 at 11 45 39" src="https://user-images.githubusercontent.com/8637550/208091563-b3fdfd76-5a31-47f3-b753-b23caae6bb96.png">
 
 ### Steps to Test Xml
 1. When the response of the request is xml, the menu will show `Convert To Json` option
