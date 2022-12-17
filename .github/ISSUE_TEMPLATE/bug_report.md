@@ -22,4 +22,4 @@ assignees: ''
  - extension version:
 
 **Your Team Size:**
-<!--- Please let us know your team size, will help to improve the product --->
+<!--- How many team members using Thunder Client, will help to improve the product --->
