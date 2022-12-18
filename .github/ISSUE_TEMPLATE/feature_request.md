@@ -16,5 +16,5 @@ assignees: ''
 **Describe alternatives you've considered**
 <!--- A clear and concise description of any alternative solutions or features you've considered. --->
 
-**Your Team Size:**
+**Your Team Size Using TC:**
 <!--- How many team members using Thunder Client, will help to improve the product --->

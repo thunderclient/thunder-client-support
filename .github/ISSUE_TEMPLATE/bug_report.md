@@ -21,5 +21,5 @@ assignees: ''
  - vscode version:
  - extension version:
 
-**Your Team Size:**
+**Your Team Size Using TC:**
 <!--- How many team members using Thunder Client, will help to improve the product --->
