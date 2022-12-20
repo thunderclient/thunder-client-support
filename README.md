@@ -279,7 +279,7 @@ The default location will be Active Environment when you use `{{variable}}`. You
 
 ## Logs
 
-- To view the logs open `Output` Window and select `Thunder Client` in download filter
+- To view the logs open `Output` Window and select `Thunder Client` in filter dropdown
 - Logs will display request details and error logs
 
 <img width="834" alt="Thunder Client Logs" src="https://user-images.githubusercontent.com/8637550/208124214-bcc493ba-82e6-41f1-90e7-34f16e8fa8e6.png">
