@@ -265,10 +265,10 @@
 
 ### Run Custom Filter Directly
 - Run Custom Filter directly in `Pre-Run` tab, useful to set Env Variables
-<img width="781" alt="Screenshot 2022-12-04 at 16 56 16" src="https://user-images.githubusercontent.com/8637550/205504506-c7cd58b8-f489-4560-a860-9916d0c14456.png">
+<img width="759" alt="Pre-Filter" src="https://user-images.githubusercontent.com/8637550/208707332-6861d35b-83d0-4d88-a766-9fba15a3d8a8.png">
 
 - This Custom Filter will not have any `arguments` and return `no value`
-<img width="543" alt="Screenshot 2022-12-04 at 17 31 23" src="https://user-images.githubusercontent.com/8637550/205506079-395de0b6-593e-4fa9-b38a-31a1d6a1545a.png">
+<img width="543" alt="Pre Filter Function" src="https://user-images.githubusercontent.com/8637550/205506079-395de0b6-593e-4fa9-b38a-31a1d6a1545a.png">
 
 <a name="import-node-module"></a>
 
