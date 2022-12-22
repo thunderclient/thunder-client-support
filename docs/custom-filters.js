@@ -7,8 +7,11 @@ const CryptoJS = require("crypto-js");
 const { v4: uuid4 } = require("uuid");
 // var axios = require('axios');
 
-// more node modules supported
+// ---- more node modules supported
 // tough-cookie, ajv, ajv-formats, papaparse, http, https, assert, buffer, stream, url
+
+// ---- To load any additional node modules from npm
+// await tc.loadModule("moduleName");  see example below.
 
 function appendString(input, param1) {
 
