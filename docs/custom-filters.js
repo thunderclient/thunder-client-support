@@ -1,12 +1,14 @@
-/// version 1.2.0
+/// version 1.2.1
 /// copy tc-types.d.ts file for vscode autocompletion on tc object
 /// <reference path="./tc-types.d.ts" />
 
 // built-in node modules
 const CryptoJS = require("crypto-js");
 const { v4: uuid4 } = require("uuid");
-// var papa = require("papaparse");
-// var url = require('url');
+// var axios = require('axios');
+
+// more node modules supported
+// tough-cookie, ajv, ajv-formats, papaparse, http, https, assert, buffer, stream, url
 
 function appendString(input, param1) {
 
