@@ -5,7 +5,7 @@
 // built-in node modules
 const CryptoJS = require("crypto-js");
 const { v4: uuid4 } = require("uuid");
-// var axios = require('axios');  // -- you can use async/await to make requests
+const axios = require('axios');  // -- you can use async/await to make requests
 // ---- more node modules supported
 // tough-cookie, ajv, ajv-formats, papaparse, http, https, assert, buffer, stream, url
 
