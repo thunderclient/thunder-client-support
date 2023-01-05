@@ -58,19 +58,21 @@
    <td><a href="#map">map</a></td> 
    <td><a href="#multiply">multiply</a></td> 
    <td><a href="#prop">prop</a></td> 
-   <td><a href="#removeQuotes">removeQuotes</a></td> 
+   <td><a href="#readFile">readFile</a></td> 
    
 </tr>
 <tr>
+     <td><a href="#removeQuotes">removeQuotes</a></td> 
     <td><a href="#replace">replace</a></td>
    <td><a href="#setIfValue">setIfValue</a></td> 
    <td><a href="#slice">slice</a></td> 
    <td><a href="#split">split</a></td>
    <td><a href="#stringify">stringify</a></td>    
    <td><a href="#substring">substring</a></td>      
-   <td><a href="#subtract">subtract</a></td> 
+
 </tr>
 <tr>
+     <td><a href="#subtract">subtract</a></td> 
    <td><a href="#upper">upper</a></td>
    <td><a href="#urlEncode">urlEncode</a></td> 
    <td><a href="#urlDecode">urlDecode</a></td> 
@@ -187,6 +189,13 @@
 - The filter will get property value of an object, The syntax in Tests `json.items | prop("id")`
 - e.g 1: if `json.items` value is `[{"id":1005, "name":"boston"}]`, then `prop("id")` will return `1005`
 - e.g 1: if array is `[{"id":1005, "name":"boston"}, {"id":1006, "name":"london"}]`, then `prop("id")` will return `1005,1006`
+
+<a name="readFile"></a>
+#### readFile
+- The filter will read the contents of the file, The syntax is `{{filePathVariable | readFile}}`
+- Please create a Env variable with value as path of the file. The path can be `absolute` or `relative` path to workspace
+- Relative path will work only if you enabled setting `Save To Workspace`
+
 
 <a name="removeQuotes"></a>
 #### removeQuotes
