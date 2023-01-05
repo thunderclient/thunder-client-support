@@ -1,4 +1,4 @@
-/// version 1.2.1
+/// version 1.2.2
 /// copy tc-types.d.ts file for vscode autocompletion on tc object
 /// <reference path="./tc-types.d.ts" />
 
@@ -12,11 +12,15 @@ const axios = require('axios');  // -- you can use async/await to make requests
 // ---- To load any additional node modules from npm
 // await tc.loadModule("moduleName");  see example below.
 
-function appendString(input, param1) {
+async function appendString(input, param1) {
 
-    console.log("func testing:", input, param1);
-
-    return `${input} ${param1}`;
+     // read a file
+    var data = await tc.readFile(input);
+    
+    // execute a command
+    var result = await tc.exec("echo testing");
+    
+    return `${input} ${data} ${result}`;
 }
 
 function customHmac(input) {
