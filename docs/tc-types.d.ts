@@ -36,7 +36,14 @@ interface tcType {
      */
     exec(command: string): Promise<any>;
 
+    /**
+     * Get the Request object (Only Headers can be modified)
+     */
     request: RequestModel;
+    
+    /**
+     * Get the Response object (read-only)
+     */
     response: ResponseModel | undefined;
 }
 
