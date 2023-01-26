@@ -84,7 +84,9 @@ Thunder Client is a lightweight Rest API Client Extension for Visual Studio Code
 
 This feature is useful to share requests with your team by saving data in a git project.
 
-Integration with Git is supported by [VS Code settings](#settings) below, choose **any one** as required.
+Integration with Git is supported by [VS Code settings](#settings) below.
+
+**NOTE:**  choose **any one setting** as required.
 
 1. **Save To Workspace** (Recommended): Enable this setting when you'd like to save requests data in the current workspace. This will create a `thunder-tests` folder in the root of the workspace. The extension will load the data automatically when you open the project in VS Code.
    - `Workspace Relative Path` (Optional): The default location of the `thunder-tests` folder is at the root of your workspace. Use the `Workspace Relative Path` setting to specify a different relative path (see below for examples).
