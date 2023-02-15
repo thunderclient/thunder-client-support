@@ -104,6 +104,7 @@ Integration with Git is supported by [VS Code settings](#settings) below.
 - **Note 1**: The environments will be stored in `thunderEnvironment.json`, in the **thunder-tests** folder. If you'd like to exclude any secrets from `thunderEnvironment.json` file then use `Local Environment` to store values locally on your computer.
 - **Note 2**: Please **restart VS Code** after updating settings.
 - **Note 3**: Requests that existed before activating the git sync feature are not saved automatically. To save them, create the `thunder-tests` folder and copy the `.json` files found in the [default storage](#storage-location) into it.
+- **Note 4**: If you use both settings, then `Save To Workspace` will be used.
 
 <a name="storage"></a>
 
