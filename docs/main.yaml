@@ -42,7 +42,7 @@ jobs:
       # Run the Thunder Client collection
       - name: Run Thunder Client collection
         run: |
-          tc --col "ColNameOrId" --report csv,json,xml,html
+          tc --col "ColNameOrId" --report csv,json,xml,html --stop-on-fail
 
       # Upload the contents of Test Results directory to workspace
       - name: Output the run Details
