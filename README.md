@@ -243,7 +243,7 @@ The default location will be Active Environment when you use `{{variable}}`. You
 
 #### Set Env in Custom Scripts
 
-To Set Env from custom scripts, please see the below options. 
+To Set Env from [Custom scripts](https://github.com/rangav/thunder-client-support/blob/master/docs/filters.md#custom-filters), please see the below options. 
 
 - To save to active environment - `tc.setEnv(varName, value)`
 - To save to local environment - `tc.setEnv(varName, value, "local")`
