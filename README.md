@@ -155,7 +155,7 @@ Open request view and click the `{}` icon to see the Code Tab:
 
 <img width="850" alt="Thunder Client" src="https://github.com/rangav/thunder-client-support/blob/master/images/thunder-client-tests-v2.png">
 
-- We need to write a lot of boilerplate code in Postman and other clients to do basic testing using scripting (like status code equals `200`). So I implemented GUI-based tests, where you can select a couple of dropdowns to do most standard tests easily, without any scripting knowledge.
+- We need to write a lot of boilerplate code in Postman and other clients to do basic testing using scripting (like status code equals `200`). So we implemented GUI-based tests, where you can select a couple of dropdowns to do most standard tests easily, without any scripting knowledge.
 - Tests can be done for strings, numbers, count, and type checking.
 - Json schema validation.
 - Re-arrange tests order using drag & drop.
