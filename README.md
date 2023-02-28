@@ -64,7 +64,7 @@ Thunder Client is a lightweight Rest API Client Extension for Visual Studio Code
 <img width="850" alt="Thunder Client" src="https://github.com/rangav/thunder-client-support/blob/master/images/thunder-client-v2.png">
 
 #### Requirements
-- Minimum **VS Code** version now required is `v1.70.0`
+- Minimum **VS Code** version now required is `v1.71.0`
 
 <a name="features"></a>
 
