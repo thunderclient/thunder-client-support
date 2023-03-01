@@ -338,7 +338,7 @@ System variables are useful to generate random/dynamic data for use in request q
   - **Custom Range**: use `{{#number, min, max}}`
   - Example: `{{#number, 100, 999}}`
 - `{{#email}}` — Generates random email.
-- `{{#bool}} — Generates true or false.
+- `{{#bool}}` — Generates true or false.
 - `{{#enum, val1, val2, val3,...}}` — Generates one of the enum values provided (comma separated).
   - example: `{{#enum, red, green, blue}}`
   - example: `{{#enum, 1, 2, 3}}`
