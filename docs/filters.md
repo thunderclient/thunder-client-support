@@ -215,7 +215,7 @@
 
 <a name="slice"></a>
 #### slice
-- The filter will perform standard array [slice](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice) operation, The syntax is `{{variable | spilit(" ") | slice(1, 2)}}`
+- The filter will perform standard array [slice](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice) operation, The syntax is `{{variable | split(" ") | slice(1, 2)}}`
 - if `variable` value is `welcome to thunder client`, then result is `["to"]`
 
 <a name="split"></a>
