@@ -1,4 +1,4 @@
-// version 1.2.1
+// version 1.2.2
 
 declare var tc: tcType;
 
@@ -35,6 +35,11 @@ interface tcType {
      * @param command command to execute
      */
     exec(command: string): Promise<any>;
+    
+    /**
+     * Clear all existing cookies
+     */
+    clearCookies(): Promise<void>;
 
     /**
      * Get the Request object (Only Headers can be modified)
