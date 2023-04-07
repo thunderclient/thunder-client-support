@@ -71,16 +71,16 @@ Thunder Client is a lightweight Rest API Client Extension for Visual Studio Code
 
 ## Main Features
 
-- **Lightweight** Rest API Client for VS Code
-- **Simple & Easy** to use UI
+- **Lightweight** Rest API Client for VS Code.
+- **Simple & Easy** to use UI.
 - Supports **Collections and Environment variables**.
-- **Scriptless Testing:** Test API response easily with GUI based interface .
+- **Scriptless Testing:** Test API response easily with GUI-based interface.
 - **Themes:** The extension supports VS Code themes.
 - **Offline & Local Storage:** Works offline and saves all the requests data locally on your device.
-- **Git Sync:** Save requests data in current workspace
+- **Git Sync:** Save requests data in current workspace.
 
 #### Tech
-- Thunder Client is built with **Javascript, Typescript, Flexbox, Ace Editor, Got**.
+- Thunder Client is built with **Javascript, Typescript, Flexbox, Ace Editor, and Got**.
 
 <a name="team"></a>
 
@@ -97,7 +97,7 @@ Integration with Git is supported by [VS Code settings](#settings) below.
    - Make sure the `Workspace Relative Path` setting is "**Workspace**", not "**User**".
    - **Example 1**: To save in the Child folder of the workspace, the relative path is `FolderName` or `Child/FolderName`
    - **Example 2**: To save in the Parent folder of the workspace, the relative path is `../`
-2. **Custom Location**: Use this setting when you'd like save all of the requests data in one fixed location. Enter the full folder path to save the data.
+2. **Custom Location**: Use this setting when you'd like to save all of the requests data in one fixed location. Enter the full folder path to save the data.
    - Supports relative path to user root directory. Use prefix **$HOME**. e.g `$HOME/Documents/folderName`
 
 <br/>
@@ -147,7 +147,7 @@ Open request view and click the `{}` icon to see the Code Tab:
 <a name="pre-request"></a>
 ## Pre Request Scripting
 
-- Pre Request scriting is now supported by using [Function Filters & Custom Filters](https://github.com/rangav/thunder-client-support/blob/master/docs/filters.md)
+- Pre Request scripting is now supported by using [Function Filters & Custom Filters](https://github.com/rangav/thunder-client-support/blob/master/docs/filters.md)
 
 
 <a name="testing"></a>
@@ -267,7 +267,7 @@ To Set Env from [Custom scripts](https://github.com/rangav/thunder-client-suppor
 - ### Automatically Refresh Tokens
   * The `OAuth 2` tokens will be refreshed automatically at request, folder & collection level
   * The token values are saved locally and not in json files
-  * You can also save tokens per environemnt, please enable VS Code setting `Save Token Per Environment`
+  * You can also save tokens per environment, please enable VS Code setting `Save Token Per Environment`
   * if there is any problem, please click `Generate Token` button again, the refresh should work.
 
 - ### Manual SSL Certificates
@@ -382,7 +382,7 @@ System variables are useful to generate random/dynamic data for use in request q
 
 - From Activity tab menu, select `Import Curl`
 - Now you can enter `Curl Text` or `Url` in the same input ( shortcut `Ctrl/Cmd + u` )
-- From Command Palette select `Thunder Client: Import Curl`, which is helpful to test a  request from anywhere. Here also you enter Curl text or Url
+- From Command Palette select `Thunder Client: Import Curl`, which is helpful to test a  request from anywhere. Here also you can enter Curl text or Url
 
 #### How to Import a Collection
 
