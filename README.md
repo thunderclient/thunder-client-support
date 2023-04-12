@@ -340,8 +340,8 @@ System variables are useful to generate random/dynamic data for use in request q
 - `{{#email}}` — Generates random email.
 - `{{#bool}}` — Generates true or false.
 - `{{#enum, val1, val2, val3,...}}` — Generates one of the enum values provided (comma separated).
-  - example: `{{#enum, red, green, blue}}`
-  - example: `{{#enum, 1, 2, 3}}`
+  - Example 1: `{{#enum, red, green, blue}}`
+  - Example 2: `{{#enum, 1, 2, 3}}`
 - `{{#date}}` — Generates unix date timestamp in milliseconds.
   - **Custom date format**: use `{{#date, 'YYYY-MM-DD hh:mm:ss:fff'}}`, the format should be in `single` quotes.
   - Unix timestamp: use `{{#date, 'X'}}`, this will output unix timestamp in seconds.
