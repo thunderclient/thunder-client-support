@@ -245,9 +245,9 @@ The default location will be Active Environment when you use `{{variable}}`. You
 
 To Set Env from [Custom scripts](https://github.com/rangav/thunder-client-support/blob/master/docs/filters.md#custom-filters), please see the below options. 
 
-- To save to active environment - `tc.setEnv(varName, value)`
-- To save to local environment - `tc.setEnv(varName, value, "local")`
-- To save to global environment - `tc.setEnv(varName, value, "global")`
+- To save to active environment - `tc.setVar(varName, value)`
+- To save to local environment - `tc.setVar(varName, value, "local")`
+- To save to global environment - `tc.setVar(varName, value, "global")`
 - For more details [visit here](https://github.com/rangav/thunder-client-support/blob/master/docs/custom-filters.js#L40)
 
 
