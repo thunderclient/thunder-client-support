@@ -14,5 +14,5 @@ We are launching Subscription plans for businesses that use `Git-Sync` feature
 6. Now they sign-in from extension to use the subscrption.
 
 ### Feedback
-- Please let us know your feedback about pricing [here](https://github.com/rangav/thunder-client-support/issues/1170)
+- Please let us know your feedback [here](https://github.com/rangav/thunder-client-support/issues/1170)
 
