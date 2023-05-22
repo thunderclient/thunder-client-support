@@ -19,5 +19,5 @@ We are launching Subscription plans for businesses
 7. Now click sign-in from extension to use the your subscrption account.
 
 ### Feedback
-- Please let us know your feedback [here](https://github.com/rangav/thunder-client-support/issues/1170)
+- Please let us know your feedback [here](https://github.com/rangav/thunder-client-support/issues/1177)
 
