@@ -14,7 +14,7 @@ We are launching Subscription plans for businesses
 4. The Team members will get invitation emails
 5. Team member creates account in thunderclient from the invitation email.
 
-## How to Sign from Extesnion
+## How to login from extesnion
 1. From Thunder Client Sidebar click `...` at the top and select `Manage Account`
 7. Now click sign-in from extension to use the your subscrption account.
 
