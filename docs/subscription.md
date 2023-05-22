@@ -3,7 +3,9 @@
 We are launching Subscription plans for businesses
 
 - The core extension will be free for personal use
-- Businesses require to purchase subscription by **August 18th, 2023** to use  `Extension software and Team share features` for commercial purpose.
+- The subscription plan is required to use the `Extension software and Team share features` for commercial purposes.
+- Businesses have time until `August 18th, 2023`, to make a decision.
+
 
 ## How to Purchase Subscription
 1. Pricing - Please visit [thunderclient](https://www.thunderclient.com/pricing) website for pricing details
