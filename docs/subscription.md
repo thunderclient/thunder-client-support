@@ -7,7 +7,7 @@ We are launching Subscription plans for businesses
 - Businesses have time until `August 18th, 2023`, to make a decision.
 
 ## Why subscription plan is needed?
-- A subscription plan cost is for `extension software + team sharing features + future updates` to be used by teams for commercial purposes. 
+- A subscription plan cost is for `extension software + team sharing features + future updates` to be used by businesses. 
 - The revenue generated from subscriptions will be useful to cover our below costs
   - Development Costs
   - Team Salaries
