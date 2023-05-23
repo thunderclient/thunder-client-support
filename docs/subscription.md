@@ -2,7 +2,7 @@
 
 We are launching Subscription plans for businesses
 
-- The core extension will be free for personal use
+- The core extension will be free for personal/individual use
 - The subscription plan is required to use the `Extension software and Team share features` for commercial purposes.
 - Businesses have time until `August 18th, 2023`, to make a decision.
 
