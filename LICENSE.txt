@@ -1,6 +1,6 @@
 End User Licence Agreement
 
-This End User License Agreement ("Agreement") is a legal contract between you as an individual or business organisation ("you" or "Licensee") and Localmint Limited trading as Thunder Client ("Licensor") for the Thunder Client software (all editions), including any associated media, printed materials and electronic documentation (the "Software").
+This End User License Agreement ("Agreement") is a legal contract between you as an individual or business organisation ("you" or "Licensee") and Thunder Client Limited ("Licensor") for the Thunder Client software (all editions), including any associated media, printed materials and electronic documentation (the "Software").
 By copying, downloading, accessing, or otherwise using the Software, you agree to be bound by the terms of this Agreement and you warrant and represent that you are authorised to enter into this Agreement on behalf of yourself or your business organisation.
 If you do not wish to be bound by the terms of this Agreement, you may not download, install, access or use the Software.
 	
@@ -23,9 +23,6 @@ You may install and use the free edition of the Software for your individual int
 •	RESTRICTIONS ON USE OF THE SOFTWARE
 You are NOT permitted to: a) Edit, alter, modify, adapt, translate or otherwise change the whole or any part of the Software. b) Decompile, disassemble or reverse engineer the Software or attempt to do any such things. c) Reproduce, copy, distribute, resell or otherwise use the whole or any part of the Software's Code for any commercial purpose. d) Disable, modify or hide notifications sent by the Software. e) Distribute, resell, or share Licence Keys. f) Access or use Premium Features without a valid Licence Key..
 
-•	UPGRADES AND SUPPORT
-The Licensor has no obligation to provide updates or upgrades to the Software, or otherwise maintain or support the Software.
-
 •	LIMITED WARRANTY AND DISCLAIMER OF WARRANTY
 SOFTWARE IS PROVIDED TO LICENSEE "AS IS" AND WITHOUT WARRANTIES. LICENSOR MAKES NO WARRANTY AS TO ITS USE OR PERFORMANCE. TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, LICENSOR AND ITS AFFILIATES, SUPPLIERS AND RESELLERS DISCLAIM ALL OTHER WARRANTIES AND CONDITIONS, EITHER EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT, WITH REGARD TO SOFTWARE, AND THE PROVISION OF OR FAILURE TO PROVIDE SUPPORT SERVICES.
 
@@ -41,8 +38,8 @@ This license can be terminated by you at any time. If you choose to terminate th
 You and Licensor are independent parties. Nothing in this Agreement shall be construed as making you an employee, agent, partner or legal representative of Licensor.
 
 •	PAYMENT
-The license is free of charge currently.  
-In future certain features will be paid features. You will need a License Key to use the paid features at that time and you are not allowed to use old free version of extension.
+The subscription fee is required to use the extension for teams. Please see our website for plans.
+The free version can be used for personal or individual use and does not include sharing features. The free plan can also be used for business purposes.
 
 •	GOVERNING LAW
 This Agreement will be governed by the laws of Ireland and you submit to the exclusive jurisdiction of the courts of Ireland. This Agreement is not subject to the United Nations Convention on Contracts for the Sale of Goods.
