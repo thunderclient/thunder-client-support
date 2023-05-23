@@ -6,6 +6,16 @@ We are launching Subscription plans for businesses
 - The subscription plan is required to use the `Extension software and Team share features` for commercial purposes.
 - Businesses have time until `August 18th, 2023`, to make a decision.
 
+## Why subscription plan is needed?
+- A subscription plan cost is for `extension software + team sharing features + future updates` to be used by teams for commercial purposes. 
+- The revenue generated from subscriptions will be useful to cover our below costs
+  - Development Costs
+  - Team Salaries
+  - Operational Costs
+  - Future development costs
+  - Support costs
+  - Sales Costs
+
 
 ## How to Purchase Subscription
 1. Pricing - Please visit [thunderclient](https://www.thunderclient.com/pricing) website for pricing details
