@@ -91,7 +91,7 @@ Thunder Client is a lightweight Rest API Client Extension for Visual Studio Code
 
 This feature is useful to share requests with your team by saving data in a git project or custom location.
 
-Integration with Git is supported by [VS Code settings](#settings) below.
+Integration with Git is supported by VSCode settings below.
 
 **NOTE:**  choose **any one setting** as required.
 
