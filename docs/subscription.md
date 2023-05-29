@@ -2,8 +2,8 @@
 
 We are launching Subscription plans for businesses
 
-- The core extension will be free for personal/individual use
-- The subscription plan is required to use the `Extension software and Team share features` for commercial purposes.
+- The core extension will be free for personal/individual business use
+- The subscription plan is required to use the **Extension software and [Team features](https://github.com/rangav/thunder-client-support#git-sync)** suitable for business teams.
 - Businesses have time until `August 18th, 2023`, to make a decision.
 
 ## Why subscription plan is needed?
@@ -27,7 +27,4 @@ We are launching Subscription plans for businesses
 ## How to login from extesnion
 1. From Thunder Client Sidebar click `...` at the top and select `Manage Account`
 7. Now click sign-in from extension to use the your subscrption account.
-
-### Feedback
-- Please let us know your feedback [here](https://github.com/rangav/thunder-client-support/issues/1177)
 
