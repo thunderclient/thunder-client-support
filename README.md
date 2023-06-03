@@ -32,6 +32,7 @@ Thunder Client is a lightweight Rest API Client Extension for Visual Studio Code
 - [How to Use](#usage)
 - [Features](#features)
 - [Git Sync](#git-sync)
+- [CLI & CI/CD Integration](#cli)
 - [Storage Location](#storage)
 - [Code Snippet](#codegen)
 - [Pre Request Scripting](#pre-request)
@@ -58,9 +59,6 @@ Thunder Client is a lightweight Rest API Client Extension for Visual Studio Code
 - Install the extension, click the Thunder Client icon on the Action Bar.
 - From the sidebar click `New Request` button to test API
 - Video: [youtube.com/watch?v=NKZ0ahNbmak](https://youtu.be/NKZ0ahNbmak?t=3)
-
-#### Thunder Client CLI
-- Test APIs using `CLI` and integrate with `CI/CD build` pipeline, see [documentation](https://rangav.medium.com/d91eb5c71d8e)
 
 <img width="850" alt="Thunder Client" src="https://github.com/rangav/thunder-client-support/blob/master/images/thunder-client-v2.png">
 
@@ -109,6 +107,11 @@ Integration with Git is supported by VSCode settings below.
 - **Note 2**: Please **restart VS Code** after updating settings.
 - **Note 3**: Requests that existed before activating the git sync feature are not saved automatically. To save them, create the `thunder-tests` folder and copy the `.json` files found in the [default storage](#storage-location) into it.
 - **Note 4**: If you use both settings, then `Save To Workspace` will be used.
+
+<a name="cli"></a>
+
+## CLI & CI/CD Integration
+- Test APIs using `CLI` and integrate with `CI/CD build` pipeline, see [documentation](https://rangav.medium.com/d91eb5c71d8e)
 
 <a name="storage"></a>
 
