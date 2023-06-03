@@ -2,7 +2,7 @@
 
 We are launching Subscription plans for businesses
 
-- The core extension will be free for personal/individual business use
+- The core extension will be free suitable for individuals for personal or business purposes.
 - The subscription plan is required to use the **Extension software and [Team features](https://github.com/rangav/thunder-client-support#git-sync)** suitable for business teams.
 - Businesses have time until `August 18th, 2023`, to make a decision.
 
