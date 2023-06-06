@@ -38,7 +38,7 @@ This license can be terminated by you at any time. If you choose to terminate th
 You and Licensor are independent parties. Nothing in this Agreement shall be construed as making you an employee, agent, partner or legal representative of Licensor.
 
 •	PAYMENT
-The subscription is required to use the team features of the extension that is suitable for business teams. Please see our website for plans and payment terms. The free plan is suitable for individuals to use for personal or business purposes. The free plan does not include team features. The use of on older version of the extension is not allowed to avoid buying a subscription.
+A subscription is required to use the team features of the extension that are suitable for business teams. Please see our website for plans and payment terms. The free plan is suitable for individuals to use for personal or business purposes. The free plan does not include team features. The use of an older version of the extension is not allowed to avoid buying a subscription.
 
 •	GOVERNING LAW
 This Agreement will be governed by the laws of Ireland and you submit to the exclusive jurisdiction of the courts of Ireland. This Agreement is not subject to the United Nations Convention on Contracts for the Sale of Goods.
