@@ -90,14 +90,16 @@ Integration with Git is supported by VSCode settings below.
 
 **NOTE:**  choose **any one setting** as required.
 
-1. **Save To Workspace** (Recommended): Enable this setting when you'd like to save requests data in the current workspace. This will create a `thunder-tests` folder in the root of the workspace. The extension will load the data automatically when you open the project in VS Code.
+### 1. Save To Workspace (Recommended):
+   Enable this setting when you'd like to save requests data in the current workspace. This will create a `thunder-tests` folder in the root of the workspace. The extension will load the data automatically when you open the project in VS Code.
    - **Workspace Relative Path** (Optional Setting): The default location of the `thunder-tests` folder is at the root of your workspace. Use the `Workspace Relative Path` setting to specify a different relative path (see below for examples).
    - Make sure the `Workspace Relative Path` setting is "**Workspace**" scope, not "**User**".
    - **Example 1**: To save requests in the folder named `Child` inside the workspace, the Workspace relative path is `Child`. Similarly, for a folder `Child/folder_name` inside the workspace the workspace relative path is `Child/folder_name`
    - **Example 2**: To save requests in the Parent folder of the workspace, the workspace relative path is `../`
 <br/>
 
-2. **Custom Location**: Use this setting when you'd like to save all of the requests data in one fixed location. Enter the full folder path to save the data.
+### 2. Custom Location:
+   Use this setting when you'd like to save all of the requests data in one fixed location. Enter the full folder path to save the data.
    - Supports relative path to user root directory. Use prefix **$HOME**. e.g `$HOME/Documents/folderName`
 
 <br/>
