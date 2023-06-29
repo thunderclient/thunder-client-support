@@ -1,5 +1,5 @@
 ## Announcing Subscription Plans
-The extension was free for the last 2 years, but to support the development and operational costs, we will be charging businesses that use team features.
+The extension was free for the last 2 years, but to support our development and operational costs, we will be charging businesses that use team features.
 
 #### We are launching Subscription plans for businesses
 
