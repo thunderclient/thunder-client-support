@@ -1,4 +1,4 @@
-// version 1.2.2
+// version 1.3.0
 
 declare var tc: tcType;
 
@@ -25,7 +25,7 @@ interface tcType {
     loadModule(moduleName: string, version?: string): Promise<any>;
 
     /**
-     * Read file from disk
+     * Read the file from disk
      * @param path file path relative to project root or absolute path
      */
     readFile(path: string): Promise<string | undefined>;
@@ -40,6 +40,12 @@ interface tcType {
      * Clear all existing cookies
      */
     clearCookies(): Promise<void>;
+
+    /**
+     * Run Request from the script
+     * @param reqId the request id
+     */
+    runRequest(reqId: string): Promise<ResponseModel | undefined>;
 
     /**
      * Get the Request object (Only Headers can be modified)
