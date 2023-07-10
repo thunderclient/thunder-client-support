@@ -42,7 +42,7 @@ interface tcType {
     clearCookies(): Promise<void>;
 
     /**
-     * Run Request from the script
+     * Executes the request and returns the response
      * @param reqId the request id
      */
     runRequest(reqId: string): Promise<ResponseModel | undefined>;
