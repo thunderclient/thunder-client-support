@@ -446,3 +446,6 @@ To see all the VS Code settings for Thunder Client:
 
 - Basic anonymized analytics data is collected using [vscode-extension-telemetry](https://github.com/Microsoft/vscode-extension-telemetry). No personal or requests data is collected. You can opt-out using VS Code Settings [details here](https://code.visualstudio.com/docs/getstarted/telemetry).
 - There is no backend or cloud sync; all data is stored locally on your computer, but you can sync data using [git](https://github.com/rangav/thunder-client-support#git-sync).
+#### Thunder Client CLI
+- There is no analytics tracking used in the Thunder Client CLI. So when you run CLI in the CI and CD build pipelines, there is zero tracking and no data is shared with us.
+- When CLI is used locally along the extension, basic anonymized analytics data is collected in the extension, which can be turned off as mentioned above.
