@@ -112,6 +112,7 @@ Integration with Git is supported by VSCode settings below.
 
 ## CLI & CI/CD Integration
 - Test APIs using the `CLI` and integrate with the `CI/CD build` pipeline, see [documentation](https://rangav.medium.com/d91eb5c71d8e).
+- CLI privacy [details here](#privacy)
 
 <a name="storage"></a>
 
