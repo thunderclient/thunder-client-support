@@ -8,7 +8,7 @@
 <img width="647" alt="Screenshot 2022-10-15 at 07 59 09" src="https://user-images.githubusercontent.com/8637550/195973873-5b72a1f1-3810-4fc4-95f5-d290452beed1.png">
 
 ### Condition based on Variable Value
-- The following conditions are supported `*, =, !=, <=, <, >=, >, *=, ^=, $=`
+- The following conditions are supported `=, !=, <=, <, >=, >, *=, ^=, $=`
 - `*=` performs `contains` operation
 - `^=` performs `startsWith` operation
 - `$=` performs `endsWith` operation
