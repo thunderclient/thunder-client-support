@@ -15,7 +15,7 @@ This Agreement does not convey to you any rights of ownership in the Software. A
 Upon your acceptance of this Agreement, Licensor grants you a limited, non-transferable, non-assignable, non-exclusive license to install and use the free edition of the Software on the terms and conditions set forth herein.
 
 •	INTENDED USERS OF THE SOFTWARE
-The Software is licensed to provide functionality to Test APIs in Visual Studio Code as an Extension.
+The Thunder Client software is licensed to provide functionality to Test APIs in Visual Studio Code as an Extension. The Thunder Client CLI can be used locally on the user's computer with the free plan. A subscription is required to use the Thunder Client CLI in the CI and CD build pipelines. Please see our website for plans and payment terms.
 
 •	INSTALLATION OF THE SOFTWARE
 You may install and use the free edition of the Software for your individual internal business or non-business purposes.
@@ -39,6 +39,9 @@ You and Licensor are independent parties. Nothing in this Agreement shall be con
 
 •	PAYMENT
 A subscription is required to use the team features of the extension that are suitable for business teams. Please see our website for plans and payment terms. The free plan is suitable for individuals to use for personal or business purposes. The free plan does not include team features. The use of an older version of the extension is not allowed to avoid buying a subscription.
+
+•	Thunder Client CLI
+The CLI can be used locally on the user's computer with the free plan. A subscription is required to use the Thunder Client CLI in the CI and CD build pipelines. Please see our website for plans and payment terms.
 
 •	GOVERNING LAW
 This Agreement will be governed by the laws of Ireland and you submit to the exclusive jurisdiction of the courts of Ireland. This Agreement is not subject to the United Nations Convention on Contracts for the Sale of Goods.
