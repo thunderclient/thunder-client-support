@@ -321,7 +321,7 @@ const axios = require('axios');
 
 async function testReq(){
    const response = await axios.get("https://www.thunderclient.com/welcome");
-   console.log(result);
+   console.log(response);
 }
 
 module.exports = [testReq]
