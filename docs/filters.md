@@ -11,21 +11,24 @@
 - [Filters In Tests](#filters-in-tests)
 - [Built-In Filters](#built-in-filters)
 - [Custom Filters](#custom-filters)
-  - [Run Custom Filter in Pre-Run Tab](#pre-run-filters)
+  - [Pre Request Script](#pre-req-filter)
+  - [Post Request Script](#post-req-filter)
   - [Import Node Module](#import-node-module)
+  - [Execute Requests](#execute-requests)
+  - [tc object types](#tc-object)
 - [Feedback](#feedback)
 
 <a name="filters-in-env-var"></a>
 
 ### Filters In Env Variable
-- This is similar to `pre-request` scripting
+- This is useful to modify the environment variable value before sending the request
 - The filters can be used in `Query params, Headers, Auth & Body`
 <img width="900" alt="Screenshot 2022-11-17 at 09 45 15" src="https://user-images.githubusercontent.com/8637550/202413000-abe18411-13a1-47c0-a612-f3bc585b5bb0.png">
 
 <a name="filters-in-tests"></a>
 
 ### Filters In Tests
-- This is similar to `post-request` scripting
+- This is useful for advanced use cases to test and set environment variables from the response.
 <img width="900" alt="Screenshot 2022-11-17 at 09 56 57" src="https://user-images.githubusercontent.com/8637550/202415862-5e6d3712-a7c8-466b-8c7c-f91452ee4464.png">
 
 <a name="built-in-filters"></a>
@@ -271,14 +274,23 @@
 - Use Custom filters in Request
 <img width="900" alt="custom-filter-using" src="https://user-images.githubusercontent.com/8637550/202422840-76998a57-0cbf-46ef-9309-52965c72959c.png">
 
-<a name="pre-run-filters"></a>
+<a name="pre-req-filter"></a>
 
-### Run Custom Filter Directly
-- Run Custom Filter directly in `Pre-Run` tab, useful to set Env Variables
-<img width="759" alt="Pre-Filter" src="https://user-images.githubusercontent.com/8637550/208707332-6861d35b-83d0-4d88-a766-9fba15a3d8a8.png">
+### Pre Request Script in PreRun Tab
+- Run Custom Filter directly in `Pre-Run` tab as Pre Request Script, useful to set Env Variables
+<img width="705" alt="Pre Req Filter" src="https://github.com/rangav/thunder-client-support/assets/8637550/07420d12-c9de-4efc-af3f-f85a47412cf2">
 
 - This Custom Filter will not have any `arguments` and return `no value`
 <img width="543" alt="Pre Filter Function" src="https://user-images.githubusercontent.com/8637550/205506079-395de0b6-593e-4fa9-b38a-31a1d6a1545a.png">
+
+<a name="post-req-filter"></a>
+
+### Post Request Script in Tests Tab
+- Run Custom Filter directly in `Tests` tab as Post Request Script
+- Useful to do clean-up tasks after request or set environment variables from the response for advanced use cases
+
+<img width="705" alt="Post Req Script" src="https://github.com/rangav/thunder-client-support/assets/8637550/8b0769df-c796-4219-b4c9-a5c4fe36d9b0">
+
 
 <a name="import-node-module"></a>
 
@@ -287,6 +299,37 @@
 - This feature is still in `Beta`, not all modules are working
 - e.g:   `var moment = await tc.loadModule("moment");`
 <img width="762" alt="Screenshot 2022-12-04 at 17 33 03" src="https://user-images.githubusercontent.com/8637550/205506205-f01dd73d-d8b1-41eb-9f65-a0c88170d00f.png">
+
+
+<a name="execute-requests"></a>
+
+### Send Requests from Script
+- Execute existing requests using the API - `tc.runRequest("reqId");`
+- Useful for request chaining programmatically from the Pre or Post request script.
+```js
+async function testReq(){
+   var result = await tc.runRequest("reqId");
+   console.log(result);
+}
+
+module.exports = [testReq]
+``` 
+- Execute custom requests using the [Axios library](https://axios-http.com/docs/api_intro)
+- Useful for executing custom requests programmatically from the Pre or Post request script.
+```js
+const axios = require('axios');
+
+async function testReq(){
+   const response = await axios.get("https://www.thunderclient.com/welcome");
+   console.log(result);
+}
+
+module.exports = [testReq]
+``` 
+<a name="tc-object"></a>
+
+### tc object types
+- Refer to `tc` object types file  [tc-types.d.ts](https://github.com/rangav/thunder-client-support/blob/master/docs/tc-types.d.ts) for the methods and properties available.
 
 <a name="feedback"></a>
 ### Feedback
