@@ -1,4 +1,4 @@
-// version 1.3.0
+// version 1.3.1
 
 declare var tc: tcType;
 
@@ -27,22 +27,29 @@ interface tcType {
     /**
      * Read the file from disk
      * @param path file path relative to project root or absolute path
+     * @param encoding [optional] encoding to use base64 or utf8. if empty utf8 will be used
      */
-    readFile(path: string): Promise<string | undefined>;
+    readFile(path: string, encoding?: string): Promise<string | undefined>;
 
     /**
      * Executes the command and returns the result
      * @param command command to execute
      */
     exec(command: string): Promise<any>;
-    
+
     /**
      * Clear all existing cookies
      */
     clearCookies(): Promise<void>;
 
     /**
-     * Executes the request and returns the response
+     * Delay the execution for the specified milliseconds
+     * @param ms the delay time in milliseconds
+     */
+    delay(ms: number): Promise<void>;
+
+    /**
+     * Run Request from the script
      * @param reqId the request id
      */
     runRequest(reqId: string): Promise<ResponseModel | undefined>;
@@ -51,7 +58,7 @@ interface tcType {
      * Get the Request object (Only Headers can be modified)
      */
     request: RequestModel;
-    
+
     /**
      * Get the Response object (read-only)
      */
