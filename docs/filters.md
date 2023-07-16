@@ -15,6 +15,7 @@
   - [Post Request Script](#post-req-filter)
   - [Import Node Module](#import-node-module)
   - [Execute Requests](#execute-requests)
+  - [Delay Function](#delay)
   - [tc object types](#tc-object)
 - [Feedback](#feedback)
 
@@ -196,9 +197,18 @@
 
 <a name="readFile"></a>
 #### readFile
-- The filter will read the contents of the file, The syntax is `{{filePathVariable | readFile}}`
+- The filter will read the contents of the file, The syntax is `{{pathVar | readFile}}` or `{{pathVar | readFile("base64")}}`
 - Please create a Env variable with value as path of the file. The path can be `absolute` or `relative` path to workspace
-- Relative path will work only if you enabled setting `Save To Workspace`
+- Relative path will work only if you enabled the setting `Save To Workspace`
+- e.g 1: `{{pathVar | readFile}}` will read the file as text useful to read JSON files.
+- e.g 2: `{{pathVar | readFile("base64")}}` will read the file as `base64` encoding useful to read image files.
+- e.g 3: To use in the request body
+  
+```json
+  {
+    "data": "{{pathVar | readFile(\"base64\")}}"
+  }
+  ```
 
 
 <a name="removeQuotes"></a>
@@ -274,6 +284,7 @@
 - Use Custom filters in Request
 <img width="900" alt="custom-filter-using" src="https://user-images.githubusercontent.com/8637550/202422840-76998a57-0cbf-46ef-9309-52965c72959c.png">
 
+------
 <a name="pre-req-filter"></a>
 
 ### Pre Request Script in PreRun Tab
@@ -283,6 +294,8 @@
 - This Custom Filter will not have any `arguments` and return `no value`
 <img width="543" alt="Pre Filter Function" src="https://user-images.githubusercontent.com/8637550/205506079-395de0b6-593e-4fa9-b38a-31a1d6a1545a.png">
 
+------
+
 <a name="post-req-filter"></a>
 
 ### Post Request Script in Tests Tab
@@ -291,6 +304,7 @@
 
 <img width="705" alt="Post Req Script" src="https://github.com/rangav/thunder-client-support/assets/8637550/8b0769df-c796-4219-b4c9-a5c4fe36d9b0">
 
+------
 
 <a name="import-node-module"></a>
 
@@ -300,11 +314,12 @@
 - e.g:   `var moment = await tc.loadModule("moment");`
 <img width="762" alt="Screenshot 2022-12-04 at 17 33 03" src="https://user-images.githubusercontent.com/8637550/205506205-f01dd73d-d8b1-41eb-9f65-a0c88170d00f.png">
 
+------
 
 <a name="execute-requests"></a>
 
 ### Send Requests from Script
-- Execute existing requests using the API - `tc.runRequest("reqId");`
+- Execute existing requests using the API - `await tc.runRequest("reqId");`
 - Useful for request chaining programmatically from the Pre or Post request script.
 ```js
 async function testReq(){
@@ -325,7 +340,24 @@ async function testReq(){
 }
 
 module.exports = [testReq]
-``` 
+```
+
+------
+
+<a name="delay"></a>
+
+### Delay Helper Function
+- To delay the script execution use the API - `await tc.delay(1000);`
+```js
+async function testReq(){
+   // delay for 5 seconds
+   var result = await tc.delay(5000);
+   console.log("delayed for 5 seconds");
+}
+
+module.exports = [testReq]
+```
+------
 <a name="tc-object"></a>
 
 ### tc object types
