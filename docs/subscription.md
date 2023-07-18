@@ -3,8 +3,8 @@ The extension was free for the last 2 years, but to support our development and
 
 #### We are launching Subscription plans for businesses
 
-- The core extension will be free and suitable for individuals for personal or business purposes. The free plan does not include team features.
-- The subscription plan is required to use the **Extension software and [Team features](https://github.com/rangav/thunder-client-support#git-sync)** suitable for business teams.
+- The core extension will be free and suitable for individuals for personal or business purposes. The free plan does not include [team features](https://github.com/rangav/thunder-client-support#git-sync) and CI/CD integration.
+- A Subscription is required for businesses to use team features and CI/CD integration. Please see [price plans](https://www.thunderclient.com/pricing) on our website. 
 - Businesses have time until `August 18th, 2023`, to purchase a subscription.
 
 
