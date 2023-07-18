@@ -60,22 +60,23 @@
    <td><a href="#length">length</a></td> 
    <td><a href="#lower">lower</a></td> 
    <td><a href="#map">map</a></td> 
-   <td><a href="#multiply">multiply</a></td> 
-   <td><a href="#prop">prop</a></td> 
-   <td><a href="#readFile">readFile</a></td> 
-   
+   <td><a href="#multiply">multiply</a></td>
+   <td><a href="#parseJson">parseJSON</a></td> 
+   <td><a href="#prop">prop</a></td>    
 </tr>
 <tr>
+     <td><a href="#readFile">readFile</a></td> 
      <td><a href="#removeQuotes">removeQuotes</a></td> 
     <td><a href="#replace">replace</a></td>
    <td><a href="#setIfValue">setIfValue</a></td> 
    <td><a href="#slice">slice</a></td> 
    <td><a href="#split">split</a></td>
    <td><a href="#stringify">stringify</a></td>    
-   <td><a href="#substring">substring</a></td>      
+   
 
 </tr>
 <tr>
+  <td><a href="#substring">substring</a></td>      
      <td><a href="#subtract">subtract</a></td> 
    <td><a href="#upper">upper</a></td>
    <td><a href="#urlEncode">urlEncode</a></td> 
@@ -188,6 +189,11 @@
 - The syntax is `{{number | multiply(5)}}` or `{{number | multiply("variableName")}}`
 - e.g 1: if `number` value is 6, then add filter will return 30
 - e.g 2: if `number` is 5 and `variableName` is 8, then result is 40
+
+<a name="parseJson"></a>
+#### parseJSON
+- The filter will convert string to JSON object. The syntax is `{{address | parseJSON}}`
+- The filter can be used with other filters e.g: `{{address | parseJSON | prop("lat")}}`
 
 <a name="prop"></a>
 #### prop
