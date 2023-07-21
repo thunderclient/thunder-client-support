@@ -323,6 +323,35 @@
 - e.g:   `var moment = await tc.loadModule("moment");`
 <img width="762" alt="Screenshot 2022-12-04 at 17 33 03" src="https://user-images.githubusercontent.com/8637550/205506205-f01dd73d-d8b1-41eb-9f65-a0c88170d00f.png">
 
+#### Use Node Modules to generate fake data
+- You can use node libraries like [faker-js](https://www.npmjs.com/package/@faker-js/faker), or lightweight libraries [chance](https://www.npmjs.com/package/chance), [falso](https://www.npmjs.com/package/@ngneat/falso) to generate random data
+- Create a Custom Filter and use it in `Pre Run` tab -> `Pre Request Script` to generate fake data.
+- Example custom filter script
+```js
+async function fakeDataFilter() {
+    // example code to load faker-js module
+    console.log("loading faker-js module");
+
+    // Note: this can take a few seconds as its a heavy library
+    var { faker } = await tc.loadModule("@faker-js/faker");  
+    console.log("faker Name: ", faker.person.firstName());
+    console.log("loading done");
+
+    // example code to load chance module
+    var Chance = await tc.loadModule("chance");
+    var chance = new Chance();
+    console.log("Person Name: ", chance.name());
+    console.log("Person Number: ", chance.integer());
+
+    // example code to load falso module
+    console.log("loading falso module");
+    var falso = await tc.loadModule("@ngneat/falso");
+    var user = falso.randUser();
+    console.log("user", user.firstName, user.lastName);
+}
+
+module.exports = [fakeDataFilter];
+```
 ------
 
 <a name="execute-requests"></a>
@@ -371,6 +400,11 @@ module.exports = [testReq]
 
 ### tc object types
 - Refer to `tc` object types file  [tc-types.d.ts](https://github.com/rangav/thunder-client-support/blob/master/docs/tc-types.d.ts) for the methods and properties available.
+- Copy the types file to you project and refer at the top for VS Code autocomplete suggestions
+```
+/// copy tc-types.d.ts file for vscode autocompletion on tc object
+/// <reference path="./tc-types.d.ts" />
+```
 
 <a name="feedback"></a>
 ### Feedback
