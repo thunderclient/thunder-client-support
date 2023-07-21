@@ -360,6 +360,36 @@ System variables are useful to generate random/dynamic data for use in request q
     - Example 1: `{{#dateISO, {year: 1}}}`
     - Example 2: `{{#dateISO, { year : -1, day: 3 } }}`
 
+### Using Node Modules to generate fake data
+- You can use node libraries like [faker-js](https://www.npmjs.com/package/@faker-js/faker), or lightweight libraries [chance](https://www.npmjs.com/package/chance), [falso](https://www.npmjs.com/package/@ngneat/falso) to generate random data
+- Create a Custom Filter and use it in `Pre Run` tab -> `Pre Request Script` to generate fake data.
+- Please follow the instructions for [Custom Scripts](https://github.com/rangav/thunder-client-support/blob/master/docs/filters.md#custom-filters)
+- Example custom filter script
+```js
+async function fakeDataFilter() {
+    // example code to load faker-js module
+    console.log("loading faker-js module");
+
+    // Note: this can take a few seconds as its a heavy library
+    var { faker } = await tc.loadModule("@faker-js/faker");  
+    console.log("faker Name: ", faker.person.firstName());
+    console.log("loading done");
+
+    // example code to load chance module
+    var Chance = await tc.loadModule("chance");
+    var chance = new Chance();
+    console.log("Person Name: ", chance.name());
+    console.log("Person Number: ", chance.integer());
+
+    // example code to load falso module
+    console.log("loading falso module");
+    var falso = await tc.loadModule("@ngneat/falso");
+    var user = falso.randUser();
+    console.log("user", user.firstName, user.lastName);
+}
+
+module.exports = [fakeDataFilter];
+```
 <a name="proxy"></a>
 
 ## Proxy
