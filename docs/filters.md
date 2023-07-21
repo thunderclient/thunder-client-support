@@ -127,7 +127,10 @@
 <a name="filter"></a>
 #### filter
 - The filter will perform array filter operation, The syntax in Tests `json.items | filter(id>5)`
-- The following operations are supported `>, >=, <, <=, =, *=, ^=, $=`
+- The following operations are supported `>, >=, <, <=, =, !=, *=, ^=, $=`
+- `*=` filters using contains operation
+- `^=` filters using startsWith operation
+- `$=` filters using endsWith operation
 
 <a name="format"></a>
 #### format
