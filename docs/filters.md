@@ -187,7 +187,7 @@
 <a name="multiply"></a>
 #### multiply
 - The syntax is `{{number | multiply(5)}}` or `{{number | multiply("variableName")}}`
-- e.g 1: if `number` value is 6, then add filter will return 30
+- e.g 1: if `number` value is 6, then multiply filter will return 30
 - e.g 2: if `number` is 5 and `variableName` is 8, then result is 40
 
 <a name="parseJson"></a>
