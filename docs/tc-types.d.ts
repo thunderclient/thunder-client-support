@@ -1,4 +1,4 @@
-// version 1.3.1
+// version 1.4.0
 
 declare var tc: tcType;
 
@@ -45,14 +45,24 @@ interface tcType {
     /**
      * Delay the execution for the specified milliseconds
      * @param ms the delay time in milliseconds
+     * @since 1.3.1
      */
     delay(ms: number): Promise<void>;
 
     /**
+     * Test assertion (Only works in Post Request Script)
+     * @param name the name of the test
+     * @param result the result of the test -> boolean or function that returns false or throws exception
+     * @since 1.4.0
+     */
+    test(name: string, result: boolean | (() => boolean | void)): void;
+
+    /**
      * Run Request from the script
      * @param reqId the request id
+     * @since 1.3.0
      */
-    runRequest(reqId: string): Promise<ResponseModel | undefined>;
+    runRequest(reqId: string): Promise<ResponseModel>;
 
     /**
      * Get the Request object (Only Headers can be modified)
@@ -62,7 +72,7 @@ interface tcType {
     /**
      * Get the Response object (read-only)
      */
-    response: ResponseModel | undefined;
+    response: ResponseModel;
 }
 
 type RequestModel = {
@@ -79,7 +89,7 @@ type ResponseModel = {
     contentType: string;
     headers: KeyValue[];
     cookies: KeyValue[];
-    json: object | undefined;
+    json: any;
     text: string;
 }
 
