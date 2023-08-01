@@ -13,7 +13,7 @@ The extension was free for the last 2 years, but to support our development and
 2. Purchase a subscription plan.
 3. Add Team emails to the `Team Members` section in Dashboard.
 4. The Team members will get invitation emails
-5. Team member creates an account in Thunder Client from the invitation email.
+5. Team member creates an account using the activation link in the email.
 
 ### How to log in from the extension
 1. From Thunder Client Sidebar click `...` at the top and select `Manage Account`
