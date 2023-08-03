@@ -1,7 +1,5 @@
 ## Announcing Subscription Plans
-The extension was free for the last 2 years, but to support our development and operational costs, we will be charging businesses that use team features.
-
-#### We are launching Subscription plans for businesses
+We are launching [subscription plans](https://www.thunderclient.com/pricing) for businesses to use [team features](https://github.com/rangav/thunder-client-support#git-sync)
 
 - The core extension will be free and suitable for individuals for personal or business purposes. The free plan does not include [team features](https://github.com/rangav/thunder-client-support#git-sync) and CI/CD integration.
 - A subscription is required for businesses to use [team features](https://github.com/rangav/thunder-client-support#git-sync) and CI/CD integration. Please see the [price plans](https://www.thunderclient.com/pricing) on our website. 
