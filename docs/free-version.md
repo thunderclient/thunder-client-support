@@ -3,13 +3,12 @@ We announced Subscriptions on `May 19th` -  https://github.com/rangav/thunder-cl
 ### Move To Free Version
 If you want to move to the **free version** and stop using **git-sync feature** please follow the below steps
 
-**Step1:** move the collections and environments folders to the default location below
-https://github.com/rangav/thunder-client-support#storage
+- **Step1:** move the collections and environments folders to the [default location](https://github.com/rangav/thunder-client-support#storage)
 
-**Step2:** disable git sync settings in vs code ( see below image )
-https://github.com/rangav/thunder-client-support#git-sync
 
-**Step3:** restart vs code and you should see all the data.
+- **Step2:** disable git sync settings in vs code ( see below image )
+
+- **Step3:** restart vs code and you should see all the data.
 
 ### Free Version Limits from `* Sept 20th, 2023 *`
 - Collections - 2
@@ -26,7 +25,7 @@ https://github.com/rangav/thunder-client-support#git-sync
 - [Convert to Postman](https://github.com/rangav/thunder-client-support#how-to-convert-to-postman-format) format and export json file
 
 ### Support
-If you have any further questions contact using below link
+- If you have any further questions -
 https://www.thunderclient.com/contact
 
 ### Git Settings
