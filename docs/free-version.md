@@ -13,9 +13,9 @@ If you want to move to the **free version** and stop using **git-sync feature** 
 
 ### Free Version Limits from `* Sept 20th, 2023 *`
 - Activity - No Limits
-- Collections - 2
+- Collections - 5
 - Requests Per Collection - 15
-- Environments - 1
+- Environments - 2
 - Collection Runs - 30 per month
 - No CLI
 - No Git Sync
