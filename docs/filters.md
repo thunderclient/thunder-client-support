@@ -282,15 +282,16 @@
 
 ## Custom Filters
 
-- Create Javascript file with custom filters
+**Step 1:** Create Javascript file with custom filters
 - The sample custom filters javascript file [custom-filters.js](https://github.com/rangav/thunder-client-support/blob/master/docs/custom-filters.js)
 - The `tc` object types file [tc-types.d.ts](https://github.com/rangav/thunder-client-support/blob/master/docs/tc-types.d.ts)
+
 <img width="701" alt="custom-filter" src="https://user-images.githubusercontent.com/8637550/202422492-30ad7123-0964-40db-ba1c-31bbe67d57f4.png">
 
-- Attach Custom filters JS files to `Collection Settings`
+**Step 2:** Attach Custom filters JS files to `Collection Settings`
 <img width="900" alt="col-sets" src="https://user-images.githubusercontent.com/8637550/202426659-972f5307-0b51-4100-b6bf-0f3fb2f33140.png">
 
-- Use Custom filters in Request
+**Step 3:** Use Custom filters in Request
 <img width="900" alt="custom-filter-using" src="https://user-images.githubusercontent.com/8637550/202422840-76998a57-0cbf-46ef-9309-52965c72959c.png">
 
 ------
