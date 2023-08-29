@@ -16,8 +16,6 @@ If you want to move to the **free version** and stop using **git-sync feature** 
 - Environments - 5
 - Collections - 5
 - Collection Runs - 30 per month
-- No CLI
-- No Git Sync
 
 ### Compare Plans
 - https://www.thunderclient.com/pricing#compare
