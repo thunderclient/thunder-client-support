@@ -13,8 +13,8 @@ If you want to move to the **free version** and stop using **git-sync feature** 
 
 ### Free Version Limits from `* Sept 20th, 2023 *`
 - Activity - No Limits
-- Environments - 5
-- Collections - 5
+- Environments - Unlimited
+- Collections - Unlimited
 - Collection Runs - 30 per month
 - No CLI
 
