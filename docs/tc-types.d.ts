@@ -1,4 +1,4 @@
-// version 1.4.0
+// version 1.5.0
 
 declare var tc: tcType;
 
@@ -16,6 +16,14 @@ interface tcType {
      * @param scope [optional] environment scope with values: local, global
      */
     setVar(variableName: string, value: any, scope?: "local" | "global"): void;
+
+    /**
+    * Add or update the query parameter of the URL
+    * @param paramName query parameter name
+    * @param value parameter value
+    * @since 1.5.0
+    */
+    setParam(paramName: string, value: any): void;
 
     /**
      * Load and get node module from npm registry
@@ -76,6 +84,7 @@ interface tcType {
 }
 
 type RequestModel = {
+    id: string;
     url: string;
     method: string;
     headers: KeyValue[];
