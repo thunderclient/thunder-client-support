@@ -11,13 +11,6 @@ If you want to move to the **free version** and stop using **git-sync feature** 
 
 - **Step3:** Restart vs code and you should see all the data.
 
-### Free Version Limits
-- Activity - No Limits
-- Environments - Unlimited
-- Collections - Unlimited
-- Collection Runs - 30 per month
-- No CLI
-
 ### Compare Plans
 - https://www.thunderclient.com/pricing#compare
 
