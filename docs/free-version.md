@@ -7,7 +7,7 @@ If you want to move to the **free version** and stop using **git-sync feature** 
 - **Step1:** Move the collections and environments folders to the [default location](https://github.com/rangav/thunder-client-support#storage)
 
 
-- **Step2:** Disable git sync settings in vs code ( see below image )
+- **Step2:** Disable/Remove git sync settings in vs code ( see below image )
 
 - **Step3:** Restart vs code and you should see all the data.
 
