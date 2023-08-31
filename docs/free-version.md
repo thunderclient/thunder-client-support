@@ -23,4 +23,4 @@ https://www.thunderclient.com/contact
 
 ### Git Settings
 Disable Or Remove values for git related vscode settings 
-<img width="1151" alt="Screenshot 2023-08-22 at 07 50 31" src="https://github.com/rangav/thunder-client-support/assets/8637550/a0a23a67-8478-4a9a-86f1-181a40023ecd">
+<img width="1073" alt="Screenshot 2023-08-31 at 15 55 50" src="https://github.com/rangav/thunder-client-support/assets/8637550/cda6eb7e-a0f8-4f27-9278-9666a95e7f8b">
