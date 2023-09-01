@@ -66,18 +66,21 @@
 </tr>
 <tr>
      <td><a href="#readFile">readFile</a></td> 
-     <td><a href="#removeQuotes">removeQuotes</a></td> 
+     <td><a href="#removeQuotes">removeQuotes</a></td>
+     <td><a href="#removeSpaces">removeSpaces</a></td>
     <td><a href="#replace">replace</a></td>
    <td><a href="#setIfValue">setIfValue</a></td> 
    <td><a href="#slice">slice</a></td> 
    <td><a href="#split">split</a></td>
-   <td><a href="#stringify">stringify</a></td>    
+    
    
 
 </tr>
 <tr>
+  <td><a href="#stringify">stringify</a></td>   
   <td><a href="#substring">substring</a></td>      
      <td><a href="#subtract">subtract</a></td> 
+  <td><a href="#unique">unique</a></td>
    <td><a href="#upper">upper</a></td>
    <td><a href="#urlEncode">urlEncode</a></td> 
    <td><a href="#urlDecode">urlDecode</a></td> 
@@ -225,6 +228,11 @@
 - The filter will remove quotes from the string, The syntax is `{{variable | removeQuotes}}`
 - if `variable` value is `"Hell"o W'orld`, then result is `Hello World`
 
+<a name="removeSpaces"></a>
+#### removeSpaces
+- The filter will remove spaces from the string, The syntax is `{{variable | removeSpaces}}`
+- if `variable` value is `"Welcome Hello World`, then the result is `WelcomeHelloWorld`
+
 <a name="replace"></a>
 #### replace
 - The filter will replace match with replace string, The syntax is `{{variable | replace("Hello", "NewValue")}}`
@@ -261,6 +269,11 @@
 - The syntax is `{{number | subtract(5)}}` or `{{number | subtract("variable")}}`
 - e.g 1: if `number` value is 6, then add filter will return 1
 - e.g 2: if `number` is 45 and `variable` is 8, then result is 37
+
+<a name="unique"></a>
+#### unique
+- The filter will return unique elements in array, The syntax is `json.items | unique`
+- if `json.items` value is `[3,8,9,6,8,9]`, then result is `[3,8,9,6]`
 
 <a name="upper"></a>
 #### upper
