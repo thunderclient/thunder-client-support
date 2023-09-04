@@ -125,6 +125,10 @@ The requests data files default storage location paths:
 - **Mac**: `/Users/{{userName}}/Library/Application Support/Code/User/globalStorage/rangav.vscode-thunder-client/`
   - Replace `{{username}}` with yours.
 
+For VSCode Server:
+
+- **Linux**: `~/.vscode-server/data/User/globalStorage/rangav.vscode-thunder-client`
+
 <a name="codegen"></a>
 
 ## Code Snippet
