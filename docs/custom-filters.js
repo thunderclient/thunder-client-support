@@ -1,4 +1,4 @@
-/// version 1.2.3
+/// version 1.3.0
 /// copy tc-types.d.ts file for vscode autocompletion on tc object
 /// <reference path="./tc-types.d.ts" />
 
@@ -11,6 +11,10 @@ const axios = require('axios');  // -- you can use async/await to make requests
 
 // ---- To load any additional node modules from npm
 // await tc.loadModule("moduleName");  see example below.
+
+var chai = require("chai");
+var expect = chai.expect;
+var assert = chai.assert;
 
 async function appendString(input, param1) {
 
@@ -59,5 +63,16 @@ async function customFilter(input) {
     return `${input} ${moment().format()}`;
 }
 
-module.exports = [customHmac, appendString, preFilter1, customFilter];
+async function testChaiFilter() {
+
+    tc.test("Response code is 200", function () {
+        assert.equal(tc.response.status, 200)
+    })
+
+    tc.test("Response code expect to be 200", function () {
+        expect(tc.response.status).to.equal(200);
+    })
+}
+
+module.exports = [customHmac, appendString, preFilter1, customFilter, testChaiFilter];
 
