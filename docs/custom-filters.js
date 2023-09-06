@@ -7,7 +7,7 @@ const CryptoJS = require("crypto-js");
 const { v4: uuid4 } = require("uuid");
 const axios = require('axios');  // -- you can use async/await to make requests
 // ---- All built-in node modules supported
-// crypto-js, axios, tough-cookie, ajv, ajv-formats, papaparse, http, https, assert, buffer, fs, stream, url
+// crypto-js, axios, tough-cookie, chai, ajv, ajv-formats, papaparse, http, https, assert, buffer, fs, stream, url
 
 // ---- To load any additional node modules from npm
 // await tc.loadModule("moduleName");  see example below.
