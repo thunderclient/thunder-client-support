@@ -15,6 +15,7 @@
   - [Post Request Script](#post-req-filter)
   - [Import Node Module](#import-node-module)
   - [Execute Requests](#execute-requests)
+  - [Assertions using Scripting](#assertions)
   - [Delay Function](#delay)
   - [tc object types](#tc-object)
 - [Feedback](#feedback)
@@ -393,6 +394,28 @@ async function testReq(){
 module.exports = [testReq]
 ```
 
+------
+
+<a name="assertions"></a>
+### Assertions using Scripting
+- Please see the documentation to write assertions using scripting - [click here](https://github.com/rangav/thunder-client-support/blob/master/docs/script-assertions.md)
+```js
+var chai = require("chai");
+var expect = chai.expect;
+var assert = chai.assert;
+
+async function testChaiFilter() {
+    tc.test("Response code is 200", function () {
+        assert.equal(tc.response.status, 200)
+    })
+
+    tc.test("Response code expect to be 200", function () {
+        expect(tc.response.status).to.equal(200);
+    })
+}
+
+module.exports = [testChaiFilter]
+```
 ------
 
 <a name="delay"></a>
