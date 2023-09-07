@@ -404,7 +404,7 @@ var chai = require("chai");
 var expect = chai.expect;
 var assert = chai.assert;
 
-async function testChaiFilter() {
+function testChaiFilter() {
     tc.test("Response code is 200", function () {
         assert.equal(tc.response.status, 200)
     })
