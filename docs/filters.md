@@ -397,7 +397,7 @@ module.exports = [testReq]
 ------
 
 <a name="assertions"></a>
-### Assertions using Scripting
+## Assertions using Scripting
 - Please see the documentation to write assertions using scripting - [click here](https://github.com/rangav/thunder-client-support/blob/master/docs/script-assertions.md)
 ```js
 var chai = require("chai");
