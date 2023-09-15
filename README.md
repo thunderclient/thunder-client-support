@@ -399,6 +399,8 @@ module.exports = [fakeDataFilter];
 
 - Proxies are supported using the VS Code proxy setting, in the format: `http://username:password@host:port`.
 - **exclude Proxy Host List**: Use this setting to exclude hosts from proxy, supports comma separated values e.g: `*.abc.com,xyz.com`.
+- If above settings does not work try below
+  - https://code.visualstudio.com/docs/setup/network#_proxy-server-support
 
 <a name="http2"></a>
 
