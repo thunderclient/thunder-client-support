@@ -12,3 +12,4 @@ Please see solutions to common problems
     - [::1]
     - 127.0.0.1
     - 0.0.0.0
+    - issue references: https://github.com/rangav/thunder-client-support/issues/251#issuecomment-874439967, https://github.com/rangav/thunder-client-support/issues/170#issuecomment-1079710824
