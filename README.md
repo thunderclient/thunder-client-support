@@ -415,7 +415,7 @@ module.exports = [fakeDataFilter];
 - The following imports of Collections and Environments are supported:
   - Postman 2.1.0 format
   - Insomnia v4 json file
-  - Open API v3 json or yaml files
+  - Open API v3 json or yaml files (Paid Version Only)
   - Thunder Client
 - You can import or export Thunder Client Collections and Environments data.
 - Import of **.env files** is also supported, select `Import` from Env tab and choose `.env` file
