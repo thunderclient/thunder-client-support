@@ -42,10 +42,11 @@ jobs:
       # Run the Thunder Client collection
       - name: Run Thunder Client collection
         run: |
-          tc --col "ColNameOrId" --report csv,json,xml,html --stop-on-fail
+          tc --col "ColNameOrId" --report cli,json,xml,html --log 8
 
       # Upload the contents of Test Results directory to workspace
       - name: Output the run Details
+        if: ${{ always() }}
         uses: actions/upload-artifact@v3
         with:
           name: RunReports
