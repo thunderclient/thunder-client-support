@@ -1,4 +1,4 @@
-/// version 1.3.0
+/// version 1.3.1
 /// copy tc-types.d.ts file for vscode autocompletion on tc object
 /// <reference path="./tc-types.d.ts" />
 
@@ -7,7 +7,7 @@ const CryptoJS = require("crypto-js");
 const { v4: uuid4 } = require("uuid");
 const axios = require('axios');  // -- you can use async/await to make requests
 // ---- All built-in node modules supported
-// ajv, ajv-formats, assert, axios, buffer, chai, crypto-js, fast-xml-parser, fs, http, https, papaparse, stream, tough-cookie, url
+// ajv, ajv-formats, assert, atob, axios, btoa, buffer, chai, crypto-js, fast-xml-parser, fs, http, https, papaparse, stream, tough-cookie, url
 
 // ---- To load any additional node modules from npm
 // await tc.loadModule("moduleName");  see example below.
