@@ -434,6 +434,7 @@ module.exports = [fakeDataFilter];
    
 <img width="310" alt="Thunder Import From Url" src="https://user-images.githubusercontent.com/8637550/208125123-08ead7f4-e7bd-4fc4-9323-9f1ee2023d5a.png">
 
+### Export Data
 #### How to Convert to Postman Format
 
 - **From the Sidebar menu at the Top `(...)`** — Select `Convert To Postman Format`.
