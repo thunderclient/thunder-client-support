@@ -70,21 +70,25 @@
      <td><a href="#removeQuotes">removeQuotes</a></td>
      <td><a href="#removeSpaces">removeSpaces</a></td>
     <td><a href="#replace">replace</a></td>
-   <td><a href="#setIfValue">setIfValue</a></td> 
+    <td><a href="#setIfValue">setIfValue</a></td> 
+    <td><a href="#setNull">setNull</a></td> 
    <td><a href="#slice">slice</a></td> 
-   <td><a href="#split">split</a></td>
+   
     
    
 
 </tr>
 <tr>
+  <td><a href="#split">split</a></td>
   <td><a href="#stringify">stringify</a></td>   
   <td><a href="#substring">substring</a></td>      
      <td><a href="#subtract">subtract</a></td> 
   <td><a href="#unique">unique</a></td>
    <td><a href="#upper">upper</a></td>
    <td><a href="#urlEncode">urlEncode</a></td> 
-   <td><a href="#urlDecode">urlDecode</a></td> 
+</tr>
+<tr>
+  <td><a href="#urlDecode">urlDecode</a></td> 
 </tr>
 </table>
 
@@ -243,6 +247,11 @@
 <a name="setIfValue"></a>
 #### setIfValue
 - The filter will set env variable only when input has value, The syntax in Tests `json.name | setIfValue`
+- This filter is useful in `Tests` section, when `Set Env Variable` dropdown selected
+
+<a name="setNull"></a>
+#### setNull
+- The filter will set env variable value to null when the property value is null (by default null value is set as empty). The syntax in Tests `json.name | setNull`
 - This filter is useful in `Tests` section, when `Set Env Variable` dropdown selected
 
 <a name="slice"></a>
