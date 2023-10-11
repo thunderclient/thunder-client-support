@@ -23,3 +23,6 @@ Please find the documentation links for Thunder Client Features
 
 **Test Assertions Using Scripting**
 - https://github.com/rangav/thunder-client-support/blob/master/docs/filters.md#assertions
+
+**CLI & CI/CD Documentation**
+- https://rangav.medium.com/d91eb5c71d8e
