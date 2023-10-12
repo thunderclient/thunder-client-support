@@ -189,6 +189,8 @@ Open request view and click the `{}` icon to see the Code Tab:
 
 <img width="314" alt="Thunder Client Environment Variables" src="https://user-images.githubusercontent.com/8637550/208125768-af89dabb-3107-47eb-8ece-e2caf7bff714.png">
 
+- **Common Variables**: The following variables are available for all the requests `{{request_name}}`, `{{collection_name}}` and `{{folder_name}}`
+
 The following environments can be used in Thunder Client, ranked from least to highest precedence:
 
 1. **OS Environment Variables**: You can use OS System environment variables as global variables using the format `{{variable}}`.
