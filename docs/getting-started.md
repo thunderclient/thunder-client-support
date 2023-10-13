@@ -3,7 +3,8 @@
 Please find the documentation links for Thunder Client Features
 
 
-**Git-Sync** ( Save requests data to Git Repository for Team Sharing)
+**Git-Sync**
+- Save requests data to Git Repository for Team Sharing
 - https://github.com/rangav/thunder-client-support#git-sync
 
 **Import Collections**
