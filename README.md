@@ -95,12 +95,18 @@ Integration with Git is supported by VSCode settings below.
    - Make sure the `Workspace Relative Path` setting is "**Workspace**" scope, not "**User**".
    - **Example 1**: To save requests in the folder named `Child` inside the workspace, the Workspace relative path is `Child`. Similarly, for a folder `Child/folder_name` inside the workspace the workspace relative path is `Child/folder_name`
    - **Example 2**: To save requests in the Parent folder of the workspace, the workspace relative path is `../`
+
+<img width="900" alt="Screenshot 2023-10-13 at 07 40 22" src="https://github.com/rangav/thunder-client-support/assets/8637550/6a61e33f-898c-4df5-9bf9-9d21b0d654e6">
+
 <br/>
 
 ### 2. Custom Location:
    Use this setting when you'd like to save all of the requests data in one fixed location. Enter the full folder path to save the data.
    - Supports relative path to user root directory. Use prefix **$HOME**. e.g `$HOME/Documents/folderName`
 
+<img width="900" alt="Screenshot 2023-10-13 at 07 43 27" src="https://github.com/rangav/thunder-client-support/assets/8637550/51252981-de87-438b-868c-bd3246e0d343">
+
+<br/>
 <br/>
 
 - **Note 1**: The environments will be stored in `thunderEnvironment.json`, in the **thunder-tests** folder. If you'd like to exclude any secrets from `thunderEnvironment.json` file then use `Local Environment` to store values locally on your computer.
