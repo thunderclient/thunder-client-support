@@ -9,7 +9,7 @@ Please find the documentation links for Thunder Client Features
 
 **Import Collections**
 - You can import collections from `Postman`, `Insomnia`, and `Open API 3.0`
-- https://github.com/rangav/thunder-client-support/tree/master#import
+- https://github.com/rangav/thunder-client-support#import
 
 
 ## Features
@@ -27,7 +27,7 @@ Please find the documentation links for Thunder Client Features
 - https://github.com/rangav/thunder-client-support/blob/master/docs/filters.md#post-req-filter
 
 **Testing from the Tests tab(GUI)**
-- https://github.com/rangav/thunder-client-support/tree/master#testing
+- https://github.com/rangav/thunder-client-support#testing
 
 **Test Assertions Using Scripting**
 - https://github.com/rangav/thunder-client-support/blob/master/docs/filters.md#assertions
