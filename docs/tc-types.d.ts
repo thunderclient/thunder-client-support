@@ -1,6 +1,16 @@
-// version 1.5.1
+// version 1.5.2
 
 declare var tc: tcType;
+
+/**
+ * Chai expect function
+ */
+declare var expect: any;
+
+/**
+ * Chai assert function
+ */
+declare var assert: any;
 
 interface tcType {
     /**
