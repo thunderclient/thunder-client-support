@@ -26,36 +26,18 @@ function testFilter() {
 module.exports = [testFilter]
 ```
 
-### Assertions using Node Assert library
-
-```js
-// using built-in node assert module
-const assert = require("assert");
-
-function testFilter() {
-    console.log("test assertion filter");
-    tc.test("Response code is 200", function () {
-        assert.equal(tc.response.status, 200);
-    })
-}
-
-module.exports = [testFilter]
-```
 
 ### Assertions using Chai library
 
 ```js
-var chai = require("chai");
-var expect = chai.expect;
-var assert = chai.assert;
 
 function testChaiFilter() {
-    tc.test("Response code is 200", function () {
-        assert.equal(tc.response.status, 200)
+   tc.test("Response code expect to be 200", function () {
+        expect(tc.response.status).to.equal(200);
     })
 
-    tc.test("Response code expect to be 200", function () {
-        expect(tc.response.status).to.equal(200);
+    tc.test("Response code is 200", function () {
+        assert.equal(tc.response.status, 200)
     })
 }
 
