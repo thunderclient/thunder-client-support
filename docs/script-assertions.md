@@ -7,7 +7,6 @@ This feature is useful to write test assertions using scripting. Developers can 
 
 ```js
 
-function testFilter() {
     let success = tc.response.status == 200;
     let json = tc.response.json;
     let containsThunder = json.message?.includes("thunder");
@@ -21,9 +20,7 @@ function testFilter() {
             let time = tc.response.time < 1000;
             return success && time;
     });
-}
 
-module.exports = [testFilter]
 ```
 
 
@@ -31,7 +28,6 @@ module.exports = [testFilter]
 
 ```js
 
-function testChaiFilter() {
    tc.test("Response code expect to be 200", function () {
         expect(tc.response.status).to.equal(200);
     })
@@ -39,7 +35,5 @@ function testChaiFilter() {
     tc.test("Response code is 200", function () {
         assert.equal(tc.response.status, 200)
     })
-}
 
-module.exports = [testChaiFilter]
 ```
