@@ -407,19 +407,40 @@ module.exports = [testReq]
 
 <a name="assertions"></a>
 ## Assertions using Scripting
-- Please see the documentation to write assertions using scripting - [click here](https://github.com/rangav/thunder-client-support/blob/master/docs/script-assertions.md)
+
+#### Assertions without any library
+
 ```js
-var chai = require("chai");
-var expect = chai.expect;
-var assert = chai.assert;
 
-function testChaiFilter() {
-    tc.test("Response code is 200", function () {
-        assert.equal(tc.response.status, 200)
-    })
+function testFilter() {
+    let success = tc.response.status == 200;
+    let json = tc.response.json;
+    let containsThunder = json.message?.includes("thunder");
 
+    tc.test("Response code is 200", success);
+    tc.test("Response contains thunder word", containsThunder);
+
+    // Assertions using function syntax
+    tc.test("verifying multiple tests", function () {
+            let success = tc.response.status == 200;
+            let time = tc.response.time < 1000;
+            return success && time;
+    });
+}
+
+module.exports = [testFilter]
+```
+#### Assertions using Chai library
+- expect and assert functions are available as global variables
+```js
+
+function testChaiFilter() {  
     tc.test("Response code expect to be 200", function () {
         expect(tc.response.status).to.equal(200);
+    })
+
+    tc.test("Response code is 200", function () {
+        assert.equal(tc.response.status, 200)
     })
 }
 
