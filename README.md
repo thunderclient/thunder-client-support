@@ -385,22 +385,17 @@ System variables are useful to generate random/dynamic data for use in request q
 - Example custom script
 ```js
     // example code to load faker-js module
-    console.log("loading faker-js module");
     var { faker } = await tc.loadModule("@faker-js/faker");
-    console.log("faker Name: ", faker.person.firstName());
     tc.setVar("firstName", faker.person.firstName());
 
     // example code to load chance module
     var Chance = await tc.loadModule("chance");
     var chance = new Chance();
-    console.log("Person Name: ", chance.name());
     tc.setVar("firstName", chance.name());
 
     // example code to load falso module
-    console.log("loading falso module");
     var falso = await tc.loadModule("@ngneat/falso");
     var user = falso.randUser();
-    console.log("user", user.firstName, user.lastName);
     tc.setVar("firstName", user.firstName);
 ```
 
