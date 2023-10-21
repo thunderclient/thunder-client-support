@@ -457,7 +457,8 @@ console.log("delayed for 5 seconds");
 
 <a name="custom-filters"></a>
 # Customer Filters
-- Please see [documentation](https://github.com/rangav/thunder-client-support/blob/master/docs/custom-filters.md) to create customer filter using script files
+- If you like to use `external` javascript files for scripting, then you can use the Custom Filters feature.
+- Please see [documentation](https://github.com/rangav/thunder-client-support/blob/master/docs/custom-filters.md) to create customer filters.
 
 
 <a name="feedback"></a>
