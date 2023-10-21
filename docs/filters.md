@@ -306,15 +306,14 @@
 - The filter will [decode](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/decodeURIComponent) the string, The syntax is `{{queryParam1 | urlDecode}}`
 - if `queryParam1` value is `hello%2Bworld`, then result is `hello+world`
 
-------
 
 <a name="scripting"></a>
 
-## Scripting
+# Scripting
 
 ### Global Variables
 - The following global variables are available to use in scripting.
-- `tc` the main object for all API access.
+- `tc` is the main [object](https://github.com/rangav/thunder-client-support/blob/master/docs/tc-types.d.ts) for all API access.
 - [Chai](https://www.chaijs.com/api/bdd/) library `expect` and `assert` for assertions.
 - `btoa` and `atob` to base64 encoding and decoding.
 
