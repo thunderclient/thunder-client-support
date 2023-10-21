@@ -253,7 +253,7 @@ Setting environment variables is supported in the Tests tab. Follow the steps be
   - **Text Response:** Enter the `text` keyword. This sets the entire response body to the variable.
   - **Custom Value:** To set any custom value manually, Just type the text as required in the left input e.g `processing`
   - **Clear Value:** To clear values use `null` keyword in the left input.
-  - **Delete Variable:** To delete a variable completely use `delete` keyword in left input.
+  - **Delete Variable:** To delete a variable completely use the `delete` keyword in left input.
 - In the value input, enter a variable name in the format `{{variableName}}`.
   - When it matches a variable name in Env, it will turn **green**. If the variable doesn't exist, it will be created.
 - Now execute the request. You will see the variable value set in the Env tab.
@@ -268,14 +268,14 @@ The default location will be Active Environment when you use `{{variable}}`. You
 - To set a variable in the **global** environment use `{{variable, global}}`.
 - (optional) To set a variable in the **active** environment use `{{variable, active}}`. Use this format only when you have attached an Environment to a Collection, otherwise use the `{{variable}}` format.
 
-#### Set Env in Custom Scripts
+#### Set Environment Variables in Scripting
 
-To Set Env from [Custom scripts](https://github.com/rangav/thunder-client-support/blob/master/docs/filters.md#custom-filters), please see the below options. 
+To Set Env from [Custom scripts](https://github.com/rangav/thunder-client-support/blob/master/docs/filters.md), please see the below options. 
 
-- To save to `active` environment - `tc.setVar(varName, value)`
-- To save to `local` environment - `tc.setVar(varName, value, "local")`
-- To save to `global` environment - `tc.setVar(varName, value, "global")`
-- To set variable for `collection` or `request` level - `tc.setVar(varName, value, "request")`
+- To save to **active** environment - `tc.setVar(varName, value)`
+- To save to **local** environment - `tc.setVar(varName, value, "local")`
+- To save to **global** environment - `tc.setVar(varName, value, "global")`
+- To set variable for **collection** or **request** level - `tc.setVar(varName, value, "request")`
 - For more details [visit here](https://github.com/rangav/thunder-client-support/blob/master/docs/custom-filters.js#L40)
 
 
