@@ -382,11 +382,9 @@ System variables are useful to generate random/dynamic data for use in request q
 
 ### Using Node Modules to generate fake data
 - You can use node libraries like [faker-js](https://www.npmjs.com/package/@faker-js/faker), or lightweight libraries [chance](https://www.npmjs.com/package/chance), [falso](https://www.npmjs.com/package/@ngneat/falso) to generate random data
-- Create a Custom Filter and use it in `Pre Run` tab -> `Pre Request Script` to generate fake data.
-- Please follow the instructions for [Custom Scripts](https://github.com/rangav/thunder-client-support/blob/master/docs/filters.md#custom-filters)
-- Example custom filter script
+- Open `request` or `collection settings` -> then select `Pre Run` tab -> `Scripting` tab to generate fake data in `Pre Request Script`.
+- Example custom script
 ```js
-async function fakeDataFilter() {
     // example code to load faker-js module
     console.log("loading faker-js module");
     var { faker } = await tc.loadModule("@faker-js/faker");
@@ -405,9 +403,6 @@ async function fakeDataFilter() {
     var user = falso.randUser();
     console.log("user", user.firstName, user.lastName);
     tc.setVar("firstName", user.firstName);
-}
-
-module.exports = [fakeDataFilter];
 ```
 <a name="proxy"></a>
 
