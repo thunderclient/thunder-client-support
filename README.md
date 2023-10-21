@@ -381,8 +381,8 @@ System variables are useful to generate random/dynamic data for use in request q
     - Example 2: `{{#dateISO, { year : -1, day: 3 } }}`
 
 ### Using Node Modules to generate fake data
-- You can use node libraries like [faker-js](https://www.npmjs.com/package/@faker-js/faker), or lightweight libraries [chance](https://www.npmjs.com/package/chance), [falso](https://www.npmjs.com/package/@ngneat/falso) to generate random data
-- Open `request` or `collection settings` -> then select `Pre Run` tab -> `Scripting` tab to generate fake data in `Pre Request Script`.
+- You can use node libraries like [faker-js](https://www.npmjs.com/package/@faker-js/faker), or lightweight libraries [chance](https://www.npmjs.com/package/chance), [falso](https://www.npmjs.com/package/@ngneat/falso) to generate random data  in `Pre Request Script`.
+- Open `request` or `collection settings` -> then select `Pre Run` tab -> `Scripting` tab to generate fake data.
 - Example custom script
 ```js
     // example code to load faker-js module
