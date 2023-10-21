@@ -409,11 +409,7 @@ console.log(response);
 
 ```js
 let success = tc.response.status == 200;
-let json = tc.response.json;
-let containsThunder = json.message?.includes("thunder");
-
 tc.test("Response code is 200", success);
-tc.test("Response contains thunder word", containsThunder);
 
 // Assertions using function syntax
 tc.test("verifying multiple tests", function () {
