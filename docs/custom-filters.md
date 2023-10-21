@@ -1,7 +1,7 @@
 # Customer Filters
 - [Custom Filters](#custom-filters)
-  - [Pre Request Script](#pre-req-filter)
-  - [Post Request Script](#post-req-filter)
+  - [Pre Request Filter](#pre-req-filter)
+  - [Post Request Filter](#post-req-filter)
   - [Import Node Module](#import-node-module)
   - [Execute Requests](#execute-requests)
   - [Assertions using Scripting](#assertions)
@@ -10,6 +10,14 @@
 - [Feedback](#feedback)
 
 ## Custom Filters
+
+### Global Variables
+- The global variables available are `tc`, `expect`, `assert`, `btoa`, and `atob`.
+- `tc` is the main [object](https://github.com/rangav/thunder-client-support/blob/master/docs/tc-types.d.ts) for all API access.
+- [Chai](https://www.chaijs.com/api/bdd/) library `expect` and `assert` for assertions.
+- `btoa` and `atob` to base64 encoding and decoding.
+
+### How to Create Customer Filters
 
 **Step 1:** Create Javascript file with custom filters
 - The sample custom filters javascript file [custom-filters.js](https://github.com/rangav/thunder-client-support/blob/master/docs/custom-filters.js)
