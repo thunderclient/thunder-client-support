@@ -319,22 +319,20 @@
 
 <a name="pre-req-script"></a>
 
-### Pre Request Script in PreRun Tab
-- Run Custom Filter directly in `Pre-Run` tab as Pre Request Script, useful to set Env Variables
-<img width="705" alt="Pre Req Filter" src="https://github.com/rangav/thunder-client-support/assets/8637550/07420d12-c9de-4efc-af3f-f85a47412cf2">
-
-- This Custom Filter will not have any `arguments` and return `no value`
-<img width="543" alt="Pre Filter Function" src="https://user-images.githubusercontent.com/8637550/205506079-395de0b6-593e-4fa9-b38a-31a1d6a1545a.png">
+### Pre Request Script
+- Run Pre Request script from `Pre Run` -> `Scripting` tab, useful to set Env Variables
+<img width="752" alt="pre-request-scripting" src="https://github.com/rangav/thunder-client-support/assets/8637550/3b561ec0-8657-4060-8b69-c5f5992b6dec">
 
 ------
 
 <a name="post-req-script"></a>
 
 ### Post Request Script in Tests Tab
-- Run Custom Filter directly in `Tests` tab as Post Request Script
-- Useful to do clean-up tasks after request or set environment variables from the response for advanced use cases
+- Run the Post Request script from `Tests` -> `Scripting` tab
+- Useful to do clean-up tasks, set environment variables from the response and assertions
 
-<img width="705" alt="Post Req Script" src="https://github.com/rangav/thunder-client-support/assets/8637550/8b0769df-c796-4219-b4c9-a5c4fe36d9b0">
+<img width="752" alt="post-request-script" src="https://github.com/rangav/thunder-client-support/assets/8637550/efb91e5d-9d0f-492b-a82d-e4bad356f655">
+
 
 ------
 
@@ -344,35 +342,42 @@
 - Now you can import any `node module` in [Custom Filters](https://github.com/rangav/thunder-client-support/blob/master/docs/custom-filters.js)
 - This feature is still in `Beta`, not all modules are working
 - e.g:   `var moment = await tc.loadModule("moment");`
-<img width="762" alt="Screenshot 2022-12-04 at 17 33 03" src="https://user-images.githubusercontent.com/8637550/205506205-f01dd73d-d8b1-41eb-9f65-a0c88170d00f.png">
+```js
+console.log("load node module");
+
+var moment = await tc.loadModule("moment")
+
+console.log(moment().format());
+tc.setVar("date", moment().format());
+```
 
 #### Use Node Modules to generate fake data
 - You can use node libraries like [faker-js](https://www.npmjs.com/package/@faker-js/faker), or lightweight libraries [chance](https://www.npmjs.com/package/chance), [falso](https://www.npmjs.com/package/@ngneat/falso) to generate random data
 - Create a Custom Filter and use it in `Pre Run` tab -> `Pre Request Script` to generate fake data.
 - Example custom filter script
 ```js
-async function fakeDataFilter() {
     // example code to load faker-js module
-    console.log("loading faker-js module");
     var { faker } = await tc.loadModule("@faker-js/faker");
-    console.log("faker Name: ", faker.person.firstName());
     tc.setVar("firstName", faker.person.firstName());
 
     // example code to load chance module
     var Chance = await tc.loadModule("chance");
     var chance = new Chance();
-    console.log("Person Name: ", chance.name());
     tc.setVar("firstName", chance.name());
 
     // example code to load falso module
-    console.log("loading falso module");
     var falso = await tc.loadModule("@ngneat/falso");
     var user = falso.randUser();
-    console.log("user", user.firstName, user.lastName);
     tc.setVar("firstName", user.firstName);
-}
+```
+**NOTE**
+```js
+ // to save Env value to Active Environment
+ tc.setVar("firstName", faker.person.firstName());
 
-module.exports = [fakeDataFilter];
+// If you do not want to save to the Environment file
+// then use the request scope
+ tc.setVar("firstName", faker.person.firstName(), "request");
 ```
 ------
 
@@ -382,24 +387,17 @@ module.exports = [fakeDataFilter];
 - Execute existing requests using the API - `await tc.runRequest("reqId");`
 - Useful for request chaining programmatically from the Pre or Post request script.
 ```js
-async function testReq(){
-   var result = await tc.runRequest("reqId");
-   console.log(result);
-}
-
-module.exports = [testReq]
+var result = await tc.runRequest("reqId");
+console.log(result);
 ``` 
 - Execute custom requests using the [Axios library](https://axios-http.com/docs/api_intro)
 - Useful for executing custom requests programmatically from the Pre or Post request script.
 ```js
 const axios = require('axios');
 
-async function testReq(){
-   const response = await axios.get("https://www.thunderclient.com/welcome");
-   console.log(response);
-}
+const response = await axios.get("https://www.thunderclient.com/welcome");
+console.log(response);
 
-module.exports = [testReq]
 ```
 
 ------
@@ -410,40 +408,30 @@ module.exports = [testReq]
 #### Assertions without any library
 
 ```js
+let success = tc.response.status == 200;
+let json = tc.response.json;
+let containsThunder = json.message?.includes("thunder");
 
-function testFilter() {
-    let success = tc.response.status == 200;
-    let json = tc.response.json;
-    let containsThunder = json.message?.includes("thunder");
+tc.test("Response code is 200", success);
+tc.test("Response contains thunder word", containsThunder);
 
-    tc.test("Response code is 200", success);
-    tc.test("Response contains thunder word", containsThunder);
-
-    // Assertions using function syntax
-    tc.test("verifying multiple tests", function () {
-            let success = tc.response.status == 200;
-            let time = tc.response.time < 1000;
-            return success && time;
-    });
-}
-
-module.exports = [testFilter]
+// Assertions using function syntax
+tc.test("verifying multiple tests", function () {
+        let success = tc.response.status == 200;
+        let time = tc.response.time < 1000;
+        return success && time;
+});
 ```
 #### Assertions using Chai library
 - expect and assert functions are available as global variables
 ```js
+tc.test("Response code expect to be 200", function () {
+    expect(tc.response.status).to.equal(200);
+})
 
-function testChaiFilter() {  
-    tc.test("Response code expect to be 200", function () {
-        expect(tc.response.status).to.equal(200);
-    })
-
-    tc.test("Response code is 200", function () {
-        assert.equal(tc.response.status, 200)
-    })
-}
-
-module.exports = [testChaiFilter]
+tc.test("Response code is 200", function () {
+    assert.equal(tc.response.status, 200)
+})
 ```
 ------
 
@@ -452,13 +440,9 @@ module.exports = [testChaiFilter]
 ### Delay Helper Function
 - To delay the script execution use the API - `await tc.delay(1000);`
 ```js
-async function testReq(){
-   // delay for 5 seconds
-   var result = await tc.delay(5000);
-   console.log("delayed for 5 seconds");
-}
-
-module.exports = [testReq]
+// delay for 5 seconds
+var result = await tc.delay(5000);
+console.log("delayed for 5 seconds");
 ```
 ------
 <a name="tc-object"></a>
