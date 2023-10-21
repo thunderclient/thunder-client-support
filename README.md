@@ -270,13 +270,21 @@ The default location will be Active Environment when you use `{{variable}}`. You
 
 #### Set Environment Variables in Scripting
 
-To Set Env from [Custom scripts](https://github.com/rangav/thunder-client-support/blob/master/docs/filters.md), please see the below options. 
+To set Env variables from [Scripting](https://github.com/rangav/thunder-client-support/blob/master/docs/filters.md#scripting), please see the below examples.
 
-- To save to **active** environment - `tc.setVar(varName, value)`
-- To save to **local** environment - `tc.setVar(varName, value, "local")`
-- To save to **global** environment - `tc.setVar(varName, value, "global")`
-- To set variable for **collection** or **request** level - `tc.setVar(varName, value, "request")`
+```js
+// To save to **active** environment
+tc.setVar(varName, value);
 
+// To save to **local** environment
+tc.setVar(varName, value, "local");
+
+// To save to **global** environment
+tc.setVar(varName, value, "global");
+
+// To set variable for **collection** or **request** level
+tc.setVar(varName, value, "request");
+```
 <a name="auth"></a>
 
 ## Auth
