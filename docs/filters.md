@@ -419,7 +419,7 @@ tc.test("verifying multiple tests", function () {
 });
 ```
 #### Assertions using Chai library
-- expect and assert functions are available as global variables
+- `expect` and `assert` functions are available as global variables
 ```js
 tc.test("Response code expect to be 200", function () {
     expect(tc.response.status).to.equal(200);
