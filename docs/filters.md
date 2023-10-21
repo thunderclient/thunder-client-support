@@ -1,16 +1,9 @@
 # Advances Use Cases
-- For advanced use cases you can use filters or scripting to perform custom functionality.
-
-## Filters
-
-- Function filters are useful to perform advanced data manipulation and the syntax is inspired from [Jinja Filters](https://jinja.palletsprojects.com/en/3.1.x/templates/#builtin-filters)
-- The filters can be used in `Environment Variables` and `Tests`
-- The filter syntax is `{{variable | filter1 | filter2...}}` or in **Tests** `json.items | filter1 | filter2...`
-- If you like to use filters without a variable use @ sign `{{@ | filter1 | filter2}}`
-- The Filters can be used in `Headers, Body, Query Params & Tests`
+- For advanced use cases you can use `filters` or `scripting` to perform custom functionality.
 
 ## Menu
-- [Filters In Env Variable](#filters-in-env-var)
+- [Filters](#filters)
+  - [Filters In Env Variable](#filters-in-env-var)
   - [Filters In Tests](#filters-in-tests)
   - [Built-In Filters](#built-in-filters)
 - [Scripting](#scripting)
@@ -23,6 +16,15 @@
   - [tc object types](#tc-object)
 - [Custom Filters](#custom-filters)
 - [Feedback](#feedback)
+
+<a name="filters"></a>
+## Filters
+
+- Function filters are useful to perform advanced data manipulation and the syntax is inspired from [Jinja Filters](https://jinja.palletsprojects.com/en/3.1.x/templates/#builtin-filters)
+- The filters can be used in `Environment Variables` and `Tests`
+- The filter syntax is `{{variable | filter1 | filter2...}}` or in **Tests** `json.items | filter1 | filter2...`
+- If you like to use filters without a variable use @ sign `{{@ | filter1 | filter2}}`
+- The Filters can be used in `Headers, Body, Query Params & Tests`
 
 <a name="filters-in-env-var"></a>
 
