@@ -276,8 +276,6 @@ To Set Env from [Custom scripts](https://github.com/rangav/thunder-client-suppor
 - To save to **local** environment - `tc.setVar(varName, value, "local")`
 - To save to **global** environment - `tc.setVar(varName, value, "global")`
 - To set variable for **collection** or **request** level - `tc.setVar(varName, value, "request")`
-- For more details [visit here](https://github.com/rangav/thunder-client-support/blob/master/docs/custom-filters.js#L40)
-
 
 <a name="auth"></a>
 
