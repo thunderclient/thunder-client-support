@@ -14,21 +14,14 @@
   - [Filters In Tests](#filters-in-tests)
   - [Built-In Filters](#built-in-filters)
 - [Scripting](#scripting)
-  - [Pre Request Script](#pre-req-filter)
-  - [Post Request Script](#post-req-filter)
+  - [Pre Request Script](#pre-req-script)
+  - [Post Request Script](#post-req-script)
   - [Import Node Module](#import-node-module)
   - [Execute Requests](#execute-requests)
   - [Assertions using Scripting](#assertions)
   - [Delay Function](#delay)
   - [tc object types](#tc-object)
 - [Custom Filters](#custom-filters)
-  - [Pre Request Script](#pre-req-filter)
-  - [Post Request Script](#post-req-filter)
-  - [Import Node Module](#import-node-module)
-  - [Execute Requests](#execute-requests)
-  - [Assertions using Scripting](#assertions)
-  - [Delay Function](#delay)
-  - [tc object types](#tc-object)
 - [Feedback](#feedback)
 
 <a name="filters-in-env-var"></a>
@@ -312,24 +305,11 @@
 - if `queryParam1` value is `hello%2Bworld`, then result is `hello+world`
 
 <a name="scripting"></a>
-<a name="custom-filters"></a>
 
-## Custom Filters
-
-**Step 1:** Create Javascript file with custom filters
-- The sample custom filters javascript file [custom-filters.js](https://github.com/rangav/thunder-client-support/blob/master/docs/custom-filters.js)
-- The `tc` object types file [tc-types.d.ts](https://github.com/rangav/thunder-client-support/blob/master/docs/tc-types.d.ts)
-
-<img width="701" alt="custom-filter" src="https://user-images.githubusercontent.com/8637550/202422492-30ad7123-0964-40db-ba1c-31bbe67d57f4.png">
-
-**Step 2:** Attach Custom filters JS files to `Collection Settings`
-<img width="900" alt="col-sets" src="https://user-images.githubusercontent.com/8637550/202426659-972f5307-0b51-4100-b6bf-0f3fb2f33140.png">
-
-**Step 3:** Use Custom filters in Request
-<img width="900" alt="custom-filter-using" src="https://user-images.githubusercontent.com/8637550/202422840-76998a57-0cbf-46ef-9309-52965c72959c.png">
+## Scripting
 
 ------
-<a name="pre-req-filter"></a>
+<a name="pre-req-script"></a>
 
 ### Pre Request Script in PreRun Tab
 - Run Custom Filter directly in `Pre-Run` tab as Pre Request Script, useful to set Env Variables
@@ -340,7 +320,7 @@
 
 ------
 
-<a name="post-req-filter"></a>
+<a name="post-req-script"></a>
 
 ### Post Request Script in Tests Tab
 - Run Custom Filter directly in `Tests` tab as Post Request Script
@@ -483,9 +463,15 @@ module.exports = [testReq]
 /// <reference path="./tc-types.d.ts" />
 ```
 
+<a name="custom-filters"></a>
+# Customer Filters
+- Please see [documentation](https://github.com/rangav/thunder-client-support/blob/master/docs/custom-filters.md) to create customer filter using script files
+
+
 <a name="feedback"></a>
-### Feedback
+# Feedback
 - Let us know if you have any suggestions for improvement and also need any additional built-in filters
+
 
 
 
