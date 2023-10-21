@@ -327,7 +327,7 @@
 
 <a name="post-req-script"></a>
 
-### Post Request Script in Tests Tab
+### Post Request Script
 - Run the Post Request script from `Tests` -> `Scripting` tab
 - Useful to do clean-up tasks, set environment variables from the response and assertions
 
