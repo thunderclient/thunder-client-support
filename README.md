@@ -219,7 +219,15 @@ The following environments can be used in Thunder Client, ranked from least to h
    CollectionB -> EnvB
    CollectionC -> EnvC
    ```
+7. **Collection and Request Variables**
+  - You can set `collection` and `request` specific env variables in scripting using `request` scope.
+  - These variable values are available during the execution of the request only.
+  - To use - open collection settings or request view -> then select `Pre Run` Tab and use the `Scripting` tab
 
+```js
+tc.setVar("name", "Thunder Client", "request");
+tc.setVar("baseUrl", "http://localhost:8744", "request");
+```
 #### How to use Environment Variables
 
 - To use environment variables use the format `{{variableName}}`. You can use variables in Query Params, Headers, Body & Tests.
