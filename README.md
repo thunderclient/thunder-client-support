@@ -404,6 +404,17 @@ System variables are useful to generate random/dynamic data for use in request q
     console.log("user", user.firstName, user.lastName);
     tc.setVar("firstName", user.firstName);
 ```
+
+**NOTE**
+```js
+ // to save Env value to Active Environment
+ tc.setVar("firstName", faker.person.firstName());
+
+// If you do not want to save to the Environment file
+// then use the request scope
+ tc.setVar("firstName", faker.person.firstName(), "request");
+```
+
 <a name="proxy"></a>
 
 ## Proxy
