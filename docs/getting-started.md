@@ -21,10 +21,10 @@ Please find the documentation links for Thunder Client Features
 - https://github.com/rangav/thunder-client-support#setenv
 
 **Pre Request Scripts**
-- https://github.com/rangav/thunder-client-support/blob/master/docs/filters.md#custom-filters
+- https://github.com/rangav/thunder-client-support/blob/master/docs/filters.md#pre-request-script
 
 **Post Request Scripts**
-- https://github.com/rangav/thunder-client-support/blob/master/docs/filters.md#post-req-filter
+- https://github.com/rangav/thunder-client-support/blob/master/docs/filters.md#post-request-script
 
 **Testing from the Tests tab(GUI)**
 - https://github.com/rangav/thunder-client-support#testing
