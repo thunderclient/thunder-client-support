@@ -1,4 +1,4 @@
-// version 1.5.2
+// version 1.5.3
 
 declare var tc: tcType;
 
@@ -23,9 +23,9 @@ interface tcType {
      * Set Environment variable value
      * @param variableName variable name
      * @param value variable value
-     * @param scope [optional] environment scope with values: local, global
+     * @param scope [optional] environment scope with values: local, global and request
      */
-    setVar(variableName: string, value: any, scope?: "local" | "global"): void;
+    setVar(variableName: string, value: any, scope?: "local" | "global" | "request"): void;
 
     /**
     * Add or update the query parameter of the URL
