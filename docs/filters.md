@@ -1,4 +1,7 @@
-# Filters
+# Advances Use Cases
+- For advanced use cases you can use filters or scripting to perform custom functionality.
+
+## Filters
 
 - Function filters are useful to perform advanced data manipulation and the syntax is inspired from [Jinja Filters](https://jinja.palletsprojects.com/en/3.1.x/templates/#builtin-filters)
 - The filters can be used in `Environment Variables` and `Tests`
@@ -8,8 +11,8 @@
 
 ## Menu
 - [Filters In Env Variable](#filters-in-env-var)
-- [Filters In Tests](#filters-in-tests)
-- [Built-In Filters](#built-in-filters)
+  - [Filters In Tests](#filters-in-tests)
+  - [Built-In Filters](#built-in-filters)
 - [Custom Filters](#custom-filters)
   - [Pre Request Script](#pre-req-filter)
   - [Post Request Script](#post-req-filter)
