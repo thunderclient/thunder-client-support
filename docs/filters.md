@@ -312,7 +312,7 @@
 # Scripting
 
 ### Global Variables
-- The following global variables are available to use in scripting.
+- The global variables are available are `tc`, `expect`, `assert`, `btoa` and `atob`.
 - `tc` is the main [object](https://github.com/rangav/thunder-client-support/blob/master/docs/tc-types.d.ts) for all API access.
 - [Chai](https://www.chaijs.com/api/bdd/) library `expect` and `assert` for assertions.
 - `btoa` and `atob` to base64 encoding and decoding.
