@@ -13,6 +13,14 @@
 - [Filters In Env Variable](#filters-in-env-var)
   - [Filters In Tests](#filters-in-tests)
   - [Built-In Filters](#built-in-filters)
+- [Scripting](#scripting)
+  - [Pre Request Script](#pre-req-filter)
+  - [Post Request Script](#post-req-filter)
+  - [Import Node Module](#import-node-module)
+  - [Execute Requests](#execute-requests)
+  - [Assertions using Scripting](#assertions)
+  - [Delay Function](#delay)
+  - [tc object types](#tc-object)
 - [Custom Filters](#custom-filters)
   - [Pre Request Script](#pre-req-filter)
   - [Post Request Script](#post-req-filter)
@@ -303,7 +311,7 @@
 - The filter will [decode](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/decodeURIComponent) the string, The syntax is `{{queryParam1 | urlDecode}}`
 - if `queryParam1` value is `hello%2Bworld`, then result is `hello+world`
 
-
+<a name="scripting"></a>
 <a name="custom-filters"></a>
 
 ## Custom Filters
