@@ -266,7 +266,6 @@ The default location will be Active Environment when you use `{{variable}}`. You
 
 - To set a variable in the **local** environment use `{{variable, local}}`.
 - To set a variable in the **global** environment use `{{variable, global}}`.
-- (optional) To set a variable in the **active** environment use `{{variable, active}}`. Use this format only when you have attached an Environment to a Collection, otherwise use the `{{variable}}` format.
 
 #### Set Environment Variables in Scripting
 
