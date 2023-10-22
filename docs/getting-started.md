@@ -20,10 +20,10 @@ Please find the documentation links for Thunder Client Features
 **Set Environment Variables From Response**
 - https://github.com/rangav/thunder-client-support#setenv
 
-**Pre Request Scripts**
+**Pre Request Script**
 - https://github.com/rangav/thunder-client-support/blob/master/docs/filters.md#pre-request-script
 
-**Post Request Scripts**
+**Post Request Script**
 - https://github.com/rangav/thunder-client-support/blob/master/docs/filters.md#post-request-script
 
 **Testing from the Tests tab(GUI)**
@@ -31,6 +31,9 @@ Please find the documentation links for Thunder Client Features
 
 **Test Assertions Using Scripting**
 - https://github.com/rangav/thunder-client-support/blob/master/docs/filters.md#assertions
+
+**Cookies**
+- https://github.com/rangav/thunder-client-support/tree/master#cookies
 
 ## CI/CD Integration
 
