@@ -344,11 +344,50 @@ tc.setVar(varName, value, "request");
 
 ## Cookies
 
-- You can create or modify cookies using the `Cookie` header in the request.
-- To **clear** existing cookies for the request, use `Clear All` button in the Cookies Tab:
+### Create Cookies
+- You can create or modify cookies using the `Cookie` header in the request
+- Cookies are separated by `;`
+<img width="688" alt="create cookie" src="https://github.com/rangav/thunder-client-support/assets/8637550/a6fd8989-d1f3-49b1-a268-02c1430a7802">
 
-<img width="834" alt="Thunder Client Cookie" src="https://user-images.githubusercontent.com/8637550/208124553-f65370d6-2420-41f8-944e-200b28113b6e.png">
+<br/>
+<br/>
 
+**Create Cookies from scripting**
+```js
+// set cookie for current url
+await tc.setCookie("https://www.thunderclient.com", "cookieName", "cookieValue");
+await tc.setCookie(tc.request.url, "cookieName", "cookieValue");
+```
+
+### Clear Cookies
+- From the Request `Pre Run` tab you can check `Clear Cookies` option, This will clear cookies for the current domain
+- `Clear All Cookies`: From Cookies tab on the right, click `Clear All` to remove all cookies from store.
+
+<br/>
+
+**Clear Cookies from scripting**
+```js
+// clear all cookies in store
+await tc.clearCookies();
+
+// clear all cookies for current domain
+await tc.clearCookies("url");
+await tc.clearCookies(tc.request.url);
+
+// clear single cookie by name of cookie
+await tc.clearCookies(tc.request.url, "cookieName");
+```
+
+### View Cookies
+
+```js
+// get all cookies in store
+var list = await tc.getCookies();
+
+// get all cookies for current url
+var listDomain = await tc.getCookies("url");
+var listDomain = await tc.getCookies(tc.request.url);
+```
 <a name="path"></a>
 
 ## Path Variables
