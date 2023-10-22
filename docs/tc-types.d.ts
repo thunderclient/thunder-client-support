@@ -1,4 +1,4 @@
-// version 1.5.3
+// version 1.6.0
 
 declare var tc: tcType;
 
@@ -56,9 +56,27 @@ interface tcType {
     exec(command: string): Promise<any>;
 
     /**
-     * Clear all existing cookies
+     * Get all cookies in cookie store
+     * @param url [optional] to get cookies for url, if empty all cookies will be returned
+     * @since 1.6.0
      */
-    clearCookies(): Promise<void>;
+    getCookies(url?: string): Promise<Cookie[]>;
+
+    /**
+     * Clear all existing cookies
+     * @param url [optional] to clear cookies for url, if empty all cookies will be cleared
+     * @param name [optional] to clear cookie by name, if empty all cookies for the url will be cleared
+     */
+    clearCookies(url?: string, name?: string): Promise<void>;
+
+    /**
+     * Set cookie in cookie store
+     * @param url the url to set cookie for
+     * @param name cookie name
+     * @param value cookie value
+     * @since 1.6.0
+     */
+    setCookie(url: string, name: string, value: string): Promise<void>;
 
     /**
      * Delay the execution for the specified milliseconds
@@ -135,4 +153,15 @@ type BodyType = "none" | "text" | "json" | "xml" | "formdata" | "formencoded" | 
 type GraphqlBody = {
     query: string,
     variables?: string | undefined
+}
+
+type Cookie = {
+    key: string;
+    value: string;
+    expires: Date;
+    domain: string;
+    path: string;
+    hostOnly: boolean;
+    creation: Date;
+    lastAccessed: Date;
 }
