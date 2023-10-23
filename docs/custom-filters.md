@@ -33,7 +33,7 @@
 ------
 <a name="pre-req-filter"></a>
 
-### Pre Request Script in PreRun Tab
+### Pre Request Filter in PreRun Tab
 - Run Custom Filter directly in `Pre-Run` tab as Pre Request Script, useful to set Env Variables
 <img width="705" alt="Pre Req Filter" src="https://github.com/rangav/thunder-client-support/assets/8637550/07420d12-c9de-4efc-af3f-f85a47412cf2">
 
@@ -44,7 +44,7 @@
 
 <a name="post-req-filter"></a>
 
-### Post Request Script in Tests Tab
+### Post Request Filter in Tests Tab
 - Run Custom Filter directly in `Tests` tab as Post Request Script
 - Useful to do clean-up tasks after request or set environment variables from the response for advanced use cases
 
