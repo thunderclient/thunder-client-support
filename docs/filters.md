@@ -14,7 +14,6 @@
   - [Execute Requests](#execute-requests)
   - [Assertions using Scripting](#assertions)
   - [Delay Function](#delay)
-  - [tc object types](#tc-object)
 - [Custom Filters](#custom-filters)
 - [Feedback](#feedback)
 
@@ -447,15 +446,7 @@ var result = await tc.delay(5000);
 console.log("delayed for 5 seconds");
 ```
 ------
-<a name="tc-object"></a>
 
-### tc object types
-- Refer to `tc` object types file  [tc-types.d.ts](https://github.com/rangav/thunder-client-support/blob/master/docs/tc-types.d.ts) for the methods and properties available.
-- Copy the types file to you project and refer at the top for VS Code autocomplete suggestions
-```
-/// copy tc-types.d.ts file for vscode autocompletion on tc object
-/// <reference path="./tc-types.d.ts" />
-```
 
 <a name="custom-filters"></a>
 # Customer Filters
