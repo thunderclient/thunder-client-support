@@ -7,6 +7,7 @@
   - [Filters In Tests](#filters-in-tests)
   - [Built-In Filters](#built-in-filters)
 - [Scripting](#scripting)
+- [Inline Scripting](#inline-scripting)
   - [Pre Request Script](#pre-req-script)
   - [Post Request Script](#post-req-script)
   - [Import Node Module](#import-node-module)
@@ -310,6 +311,11 @@
 <a name="scripting"></a>
 
 # Scripting
+- There are two ways you can write custom scripting in Thunder Client.
+1. **Inline Scripting:** You can write code inside the Thunder Client views.
+2. **Custom Filters(External JS Files):** You can write code in javascript files and attach it to a collection.
+
+## Inline Scripting
 
 ### Global Variables
 - The global variables available are `tc`, `expect`, `assert`, `btoa`, and `atob`.
