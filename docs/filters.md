@@ -310,9 +310,9 @@
 <a name="scripting"></a>
 
 # Scripting
-- There are two ways you can write custom scripting in Thunder Client.
-1. **Inline Scripting:** You can write code inside the Thunder Client views.
-2. **Custom Filters(External JS Files):** You can write code in javascript files and attach it to a collection.
+There are two ways you can write custom scripting in Thunder Client for advanced use cases.
+1. **Inline Scripting:** You can write javascript code inside the Thunder Client views.
+2. **Custom Filters(External JS Files):** You can write code in separate javascript files and attach it to a collection.
 
 ## Inline Scripting
 
