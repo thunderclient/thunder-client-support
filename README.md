@@ -460,8 +460,13 @@ System variables are useful to generate random/dynamic data for use in request q
 ## Proxy
 
 - VS Code proxy setting - https://code.visualstudio.com/docs/setup/network#_proxy-server-support
-#### Old Settings 
-- Proxies are supported using the VS Code proxy setting, in the format: `http://username:password@host:port`.
+#### CLI Proxy
+- You need to set in `workspace -> .vscode -> settings.json` for cli to use proxy.
+```json
+{
+  "http.proxy": "http://username:password@host:port"
+}
+```
 - **exclude Proxy Host List**: Use this setting to exclude hosts from proxy, supports comma separated values e.g: `*.abc.com,xyz.com`.
 
 <a name="http2"></a>
