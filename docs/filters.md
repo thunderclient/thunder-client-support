@@ -358,8 +358,8 @@ tc.setVar("date", moment().format());
 
 #### Use Node Modules to generate fake data
 - You can use node libraries like [faker-js](https://www.npmjs.com/package/@faker-js/faker), or lightweight libraries [chance](https://www.npmjs.com/package/chance), [falso](https://www.npmjs.com/package/@ngneat/falso) to generate random data
-- Create a Custom Filter and use it in `Pre Run` tab -> `Pre Request Script` to generate fake data.
-- Example custom filter script
+- Use `Pre Run` tab -> `Scripting` tab to generate fake data using code.
+- Example custom script
 ```js
     // example code to load faker-js module
     var { faker } = await tc.loadModule("@faker-js/faker");
