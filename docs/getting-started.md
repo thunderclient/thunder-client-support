@@ -2,6 +2,9 @@
 
 Please find the documentation links for Thunder Client Features
 
+**How to login from Extension**
+- Please see the instructions on how to add team members and login from the Extension.
+- https://github.com/rangav/thunder-client-support/blob/master/docs/subscription.md
 
 **Git-Sync**
 - Save requests data to Git Repository for Team Sharing
