@@ -1,6 +1,3 @@
-### Subscriptions Announcement
-- We announced subscriptions on `May 19th` -  https://github.com/rangav/thunder-client-support/releases/tag/v2.7.0
-
 ### Move To Free Version
 If you want to move to the **free version** and stop using **git-sync feature** please follow the below steps
 
@@ -14,8 +11,8 @@ If you want to move to the **free version** and stop using **git-sync feature** 
 ### Compare Plans
 - https://www.thunderclient.com/pricing#compare
 
-### Move To Another Tool
-- [Convert to Postman](https://github.com/rangav/thunder-client-support#how-to-convert-to-postman-format) format and export json file
+### Export Data
+- [Convert to Postman](https://github.com/rangav/thunder-client-support#export-data) format and export json file
 
 ### Support
 - If you have any further questions -
