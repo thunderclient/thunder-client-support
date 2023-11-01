@@ -1,4 +1,4 @@
-// version 1.6.0
+// version 1.6.1
 
 declare var tc: tcType;
 
@@ -101,6 +101,12 @@ interface tcType {
     runRequest(reqId: string): Promise<ResponseModel>;
 
     /**
+     * Get the Request Info
+     * @since 1.6.1
+     */
+    info: InfoModel;
+
+    /**
      * Get the Request object (Only Headers can be modified)
      */
     request: RequestModel;
@@ -158,10 +164,18 @@ type GraphqlBody = {
 type Cookie = {
     key: string;
     value: string;
-    expires: Date;
+    expires?: string; // date in ISO 8601 format
     domain: string;
     path: string;
     hostOnly: boolean;
-    creation: Date;
-    lastAccessed: Date;
+    httpOnly?: boolean;
+    creation: string;  // date in ISO 8601 format
+    lastAccessed: string;  // date in ISO 8601 format
+}
+
+type InfoModel = {
+    environmentName: string,
+    requestName: string,
+    collectionName: string,
+    folderName: string,
 }
