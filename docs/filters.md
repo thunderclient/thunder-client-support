@@ -442,7 +442,7 @@ tc.test("Response code is 200", function () {
 - To delay the script execution use the API - `await tc.delay(1000);`
 ```js
 // delay for 5 seconds
-var result = await tc.delay(5000);
+await tc.delay(5000);
 console.log("delayed for 5 seconds");
 ```
 ------
