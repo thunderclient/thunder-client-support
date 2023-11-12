@@ -164,7 +164,7 @@ Open request view and click the `{}` icon to see the Code Tab:
 <a name="pre-request"></a>
 ## Pre Request Scripting
 
-- Pre Request scripting is now supported by using [Function Filters & Custom Filters](https://github.com/rangav/thunder-client-support/blob/master/docs/filters.md)
+- Pre Request scripting is now supported - see docs [Pre Req Scripting](https://github.com/rangav/thunder-client-support/blob/master/docs/filters.md#scripting)
 
 
 <a name="testing"></a>
