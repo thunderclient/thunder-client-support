@@ -322,6 +322,10 @@ There are two ways you can write custom scripting in Thunder Client for advanced
 - [Chai](https://www.chaijs.com/api/bdd/) library `expect` and `assert` for assertions.
 - `btoa` and `atob` to base64 encoding and decoding.
 
+### Built in Modules
+- `ajv`, `ajv-formats`, `assert`, `atob`, `axios`, `btoa`, `buffer`, `chai`, `crypto-js`, `fast-xml-parser`, `fs`, `http`, `https`, `papaparse`, `stream`, `tough-cookie`, `url`
+- To use built-in modules -  `var axios = require("axios");`
+
 <a name="pre-req-script"></a>
 
 ### Pre Request Script
