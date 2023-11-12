@@ -17,6 +17,10 @@
 - [Chai](https://www.chaijs.com/api/bdd/) library `expect` and `assert` for assertions.
 - `btoa` and `atob` to base64 encoding and decoding.
 
+### Built in Modules
+- `ajv`, `ajv-formats`, `assert`, `atob`, `axios`, `btoa`, `buffer`, `chai`, `crypto-js`, `fast-xml-parser`, `fs`, `http`, `https`, `papaparse`, `stream`, `tough-cookie`, `url`
+- To use built-in modules -  `var axios = require("axios");`
+
 ### How to Create Customer Filters
 
 **Step 1:** Create Javascript file with custom filters
