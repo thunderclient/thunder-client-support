@@ -184,7 +184,7 @@ Open request view and click the `{}` icon to see the Code Tab:
 - You can save response data to Env Variables [details here](https://github.com/rangav/thunder-client-support#setenv)
 
 #### Custom Scripting in Tests
-- For Advanced use-cases you can use [Function Filters & Custom Filters](https://github.com/rangav/thunder-client-support/blob/master/docs/filters.md#filters-in-tests)
+- For Advanced use-cases you can use [Scripting](https://github.com/rangav/thunder-client-support/blob/master/docs/filters.md#assertions)
 
 #### Xml Testing
 - To perform tests and save response data to environment [click here](https://github.com/rangav/thunder-client-support/blob/master/docs/xml-testing.md)
