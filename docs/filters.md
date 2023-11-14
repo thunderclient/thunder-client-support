@@ -388,6 +388,11 @@ tc.setVar("date", moment().format());
 // then use the request scope
  tc.setVar("firstName", faker.person.firstName(), "request");
 ```
+
+### Execute CLI Command
+- To execute a CLI command and get request use exec helper function
+- `var result = await tc.exec("command");`
+
 ------
 
 <a name="execute-requests"></a>
@@ -407,6 +412,23 @@ const axios = require('axios');
 const response = await axios.get("https://www.thunderclient.com/welcome");
 console.log(response);
 
+```
+#### Retry Request
+- Use this sample code in `Post Request Script` and modify it as per your requirements
+
+```js
+let incrementCount = tc.getVar('incrementCount') || 0;
+let code = tc.response.status;
+
+if(incrementCount <= 3 && code !== 200)
+{
+      incrementCount = incrementCount + 1
+      tc.setVar('incrementCount', incrementCount)
+      console.log(incrementCount);
+
+      await tc.delay(incrementCount * 5000); // exponential delay of 5 secs
+      tc.runRequest(tc.request.id);
+}
 ```
 
 ------
