@@ -430,7 +430,7 @@ if(incrementCount <= 3 && code !== 200)
       console.log(incrementCount);
 
       await tc.delay(incrementCount * 5000); // exponential delay of 5 secs
-      tc.runRequest(tc.request.id);
+      await tc.runRequest(tc.request.id);
 }
 ```
 
