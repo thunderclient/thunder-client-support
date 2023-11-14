@@ -11,6 +11,7 @@
   - [Pre Request Script](#pre-req-script)
   - [Post Request Script](#post-req-script)
   - [Import Node Module](#import-node-module)
+  - [Execute CLI Command](#cli-command)
   - [Execute Requests](#execute-requests)
   - [Assertions using Scripting](#assertions)
   - [Delay Function](#delay)
@@ -388,6 +389,8 @@ tc.setVar("date", moment().format());
 // then use the request scope
  tc.setVar("firstName", faker.person.firstName(), "request");
 ```
+-----
+<a name="cli-command"></a>
 
 ### Execute CLI Command
 - To execute a CLI command and get request use exec helper function
