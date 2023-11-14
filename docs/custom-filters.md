@@ -3,6 +3,7 @@
   - [Pre Request Filter](#pre-req-filter)
   - [Post Request Filter](#post-req-filter)
   - [Import Node Module](#import-node-module)
+  - [Execute CLI Command](#cli-command)
   - [Execute Requests](#execute-requests)
   - [Assertions using Scripting](#assertions)
   - [Delay Function](#delay)
@@ -92,6 +93,14 @@ async function fakeDataFilter() {
 
 module.exports = [fakeDataFilter];
 ```
+
+-----
+<a name="cli-command"></a>
+
+### Execute CLI Command
+- To execute a CLI command and get request use exec helper function
+- `var result = await tc.exec("command");`
+
 ------
 
 <a name="execute-requests"></a>
@@ -118,6 +127,24 @@ async function testReq(){
 }
 
 module.exports = [testReq]
+```
+
+#### Retry Request
+- Use this sample code in `Post Request Script` and modify it as per your requirements
+
+```js
+let incrementCount = tc.getVar('incrementCount') || 0;
+let code = tc.response.status;
+
+if(incrementCount <= 3 && code !== 200)
+{
+      incrementCount = incrementCount + 1
+      tc.setVar('incrementCount', incrementCount)
+      console.log(incrementCount);
+
+      await tc.delay(incrementCount * 5000); // exponential delay of 5 secs
+      tc.runRequest(tc.request.id);
+}
 ```
 
 ------
