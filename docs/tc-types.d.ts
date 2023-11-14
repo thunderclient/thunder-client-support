@@ -1,4 +1,4 @@
-// version 1.6.1
+// version 1.6.2
 
 declare var tc: tcType;
 
@@ -99,6 +99,13 @@ interface tcType {
      * @since 1.3.0
      */
     runRequest(reqId: string): Promise<ResponseModel>;
+
+    /**
+     * Skip Request from execution in collection run
+     * @param reqId the request id
+     * @since 1.6.2
+     */
+    skipRequest(reqId: string): void;
 
     /**
      * Get the Request Info
