@@ -416,7 +416,7 @@ const response = await axios.get("https://www.thunderclient.com/welcome");
 console.log(response);
 
 ```
-#### Retry Request
+### Retry Request
 - Use this sample code in `Post Request Script` and modify it as per your requirements
 
 ```js
