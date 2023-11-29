@@ -11,6 +11,7 @@
   - [Pre Request Script](#pre-req-script)
   - [Post Request Script](#post-req-script)
   - [Import Node Module](#import-node-module)
+  - [Import Functions](#import-functions)
   - [Execute CLI Command](#cli-command)
   - [Execute Requests](#execute-requests)
   - [Assertions using Scripting](#assertions)
@@ -388,6 +389,39 @@ tc.setVar("date", moment().format());
 // If you do not want to save to the Environment file
 // then use the request scope
  tc.setVar("firstName", faker.person.firstName(), "request");
+```
+-----
+<a name="import-functions"></a>
+
+### Import Functions from js files
+- You can import functions from other js files. Useful for code re-use and check-in to your git repo.
+- The path should be relative to workspace if you use Git-Sync, otherwise use full-path. 
+- You can right click on the file and choose `Copy Path` or `Copy Relative Path` accordingly 
+
+```js
+// test-import.js file
+function helloWorld(){
+   return "hello world";
+}
+
+module.exports = {
+  helloWorld
+}
+```
+- From request Inline script import js file using `require`
+```js
+
+var {helloWorld} = require("thunder-tests/test-import.js");
+var result = helloWorld();
+console.log(result);
+```
+
+- You can also save the path in the `Environment variable`, so you don't have to change the path in every request if you move the file to different folder.
+```js
+var scriptPath = tc.getVar("scriptPath");
+var {helloWorld} = require(scriptPath);
+var result = helloWorld();
+console.log(result);
 ```
 -----
 <a name="cli-command"></a>
