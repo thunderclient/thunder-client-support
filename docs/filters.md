@@ -11,7 +11,7 @@
   - [Pre Request Script](#pre-req-script)
   - [Post Request Script](#post-req-script)
   - [Import Node Module](#import-node-module)
-  - [Import Functions](#import-functions)
+  - [Import JS Files](#import-js-files)
   - [Execute CLI Command](#cli-command)
   - [Execute Requests](#execute-requests)
   - [Assertions using Scripting](#assertions)
@@ -391,7 +391,7 @@ tc.setVar("date", moment().format());
  tc.setVar("firstName", faker.person.firstName(), "request");
 ```
 -----
-<a name="import-functions"></a>
+<a name="import-js-files"></a>
 
 ### Import Functions from js files
 - You can import functions from other js files. Useful for code re-use and check-in to your git repo.
