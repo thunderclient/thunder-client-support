@@ -108,7 +108,7 @@ module.exports = {
   helloWorld
 }
 ```
-- From request Inline script import js file using `require`
+- From filters import js file using `require`
 ```js
 
 var {helloWorld} = require("thunder-tests/test-import.js");
