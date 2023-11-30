@@ -428,7 +428,9 @@ console.log(result);
 
 ### Execute CLI Command
 - To execute a CLI command and get request use exec helper function
-- `var result = await tc.exec("command");`
+```js
+var result = await tc.exec("command");
+```
 
 ------
 
