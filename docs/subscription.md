@@ -12,3 +12,5 @@
 3. Generate a Login Link
 4. Open the Login Link from the `same computer` where the `extension is installed`.
 
+### Support
+- If you have any questions, please [contact us](https://www.thunderclient.com/contact).
