@@ -1,6 +1,7 @@
 # Chart View (Beta)
 - The feature is useful for Response Data Visualisation
-- Create charts or tables from response using `tc.chartHTML()`
+- Create charts or tables from response using `tc.chartHTML()` from the Tests tab scripting
+- When you pass data to function `tc.chartHTML(templace, data)`, the data is available in `chart_data` global variable
 - The feature is in Beta, please test and let us know feedback
 
 ```js
