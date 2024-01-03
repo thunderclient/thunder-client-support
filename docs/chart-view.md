@@ -1,5 +1,5 @@
 # Chart View (Beta)
-- The feature is useful for Response Data Visualisation (Beta)
+- The feature is useful for Response Data Visualisation
 - Create charts or tables from response using `tc.chartHTML()`
 - The feature is in Beta, please test and let us know feedback
 
