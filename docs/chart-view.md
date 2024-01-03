@@ -25,6 +25,7 @@ var template = `
     document.getElementById("output").innerHTML = template(chart_data[0]);
     </script>
 `;
+
 var data = tc.response.json.data;
 tc.chartHTML(template, data);
 ```
