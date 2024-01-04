@@ -1,16 +1,9 @@
-// version 1.6.2
+// version 1.6.3
 
 declare var tc: tcType;
-
-/**
- * Chai expect function
- */
 declare var expect: any;
-
-/**
- * Chai assert function
- */
 declare var assert: any;
+
 
 interface tcType {
     /**
@@ -108,6 +101,14 @@ interface tcType {
     skipRequest(reqId: string): void;
 
     /**
+     * Set the chart template and data
+     * @param template chart template HTML string
+     * @param data chart data
+     * @since 1.6.3
+     */
+    chartHTML(template: string, data: any): void;
+
+    /**
      * Get the Request Info
      * @since 1.6.1
      */
@@ -186,3 +187,4 @@ type InfoModel = {
     collectionName: string,
     folderName: string,
 }
+
