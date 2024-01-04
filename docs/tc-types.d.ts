@@ -1,9 +1,8 @@
-// version 1.6.3
+// version 2.17.0
 
 declare var tc: tcType;
 declare var expect: any;
 declare var assert: any;
-
 
 interface tcType {
     /**
@@ -24,7 +23,7 @@ interface tcType {
     * Add or update the query parameter of the URL
     * @param paramName query parameter name
     * @param value parameter value
-    * @since 1.5.0
+    * @since 2.11.0
     */
     setParam(paramName: string, value: any): void;
 
@@ -51,7 +50,7 @@ interface tcType {
     /**
      * Get all cookies in cookie store
      * @param url [optional] to get cookies for url, if empty all cookies will be returned
-     * @since 1.6.0
+     * @since 2.14.0
      */
     getCookies(url?: string): Promise<Cookie[]>;
 
@@ -67,14 +66,14 @@ interface tcType {
      * @param url the url to set cookie for
      * @param name cookie name
      * @param value cookie value
-     * @since 1.6.0
+     * @since 2.14.0
      */
     setCookie(url: string, name: string, value: string): Promise<void>;
 
     /**
      * Delay the execution for the specified milliseconds
      * @param ms the delay time in milliseconds
-     * @since 1.3.1
+     * @since 2.9.2
      */
     delay(ms: number): Promise<void>;
 
@@ -82,21 +81,21 @@ interface tcType {
      * Test assertion (Only works in Post Request Script)
      * @param name the name of the test
      * @param result the result of the test -> boolean or function that returns false or throws exception
-     * @since 1.4.0
+     * @since 2.10.0
      */
     test(name: string, result: boolean | (() => boolean | void)): void;
 
     /**
      * Run Request from the script
      * @param reqId the request id
-     * @since 1.3.0
+     * @since 2.9.0
      */
     runRequest(reqId: string): Promise<ResponseModel>;
 
     /**
      * Skip Request from execution in collection run
      * @param reqId the request id
-     * @since 1.6.2
+     * @since 2.16.0
      */
     skipRequest(reqId: string): void;
 
@@ -104,13 +103,13 @@ interface tcType {
      * Set the chart template and data
      * @param template chart template HTML string
      * @param data chart data
-     * @since 1.6.3
+     * @since 2.17.0
      */
     chartHTML(template: string, data: any): void;
 
     /**
      * Get the Request Info
-     * @since 1.6.1
+     * @since 2.15.0
      */
     info: InfoModel;
 
