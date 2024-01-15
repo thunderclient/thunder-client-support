@@ -189,6 +189,9 @@ Open request view and click the `{}` icon to see the Code Tab:
 #### Scripting
 - For Advanced use-cases you can use [Scripting](https://github.com/rangav/thunder-client-support/blob/master/docs/filters.md#scripting)
 
+#### Response Visualization
+- Create charts or tables from response [Chart View](https://github.com/rangav/thunder-client-support/blob/master/docs/chart-view.md)
+
 <a name="environments"></a>
 
 ## Environment Variables
