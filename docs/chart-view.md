@@ -29,3 +29,88 @@ var template = `
 var data = tc.response.json.data;
 tc.chartHTML(template, data);
 ```
+
+
+### Convert JSON Response to Html Table
+Here is generic example below to convert any response `JSON array` to HTML Table
+
+You can modify the style as needed
+
+
+```js
+
+
+var response = tc.response.json;
+
+var html = `
+    <style>
+      body {
+        font-size: 13px;
+        font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      }
+
+      table {
+        width: 100%;
+        box-sizing: border-box;
+        border-collapse: collapse;
+        border-spacing: 0;
+      }
+
+      td,
+      th {
+        padding: 0;
+      }
+
+      th, td {
+        padding: 4px 6px;
+        text-align: left;
+        border-bottom: 1px solid #E1E1E1;
+      }
+
+      th:first-child,
+      td:first-child {
+        padding-left: 0;
+      }
+
+      th:last-child,
+      td:last-child {
+        padding-right: 0;
+      }
+  
+  </style>
+
+    <div id="container"></div>
+    
+    <script>
+         // get the container element
+         let container = document.getElementById("container");
+         
+         var cols = Object.keys(chart_data[0]);
+
+          var headerRow = '<tr>';
+          var bodyRows = '';
+      
+          cols.map(function(col) {
+              headerRow += '<th>' + col + '</th>';
+          });
+      
+          headerRow += '</tr>';
+      
+          chart_data.map(function(row) {
+              bodyRows += '<tr>';
+      
+              cols.map(function(colName) {
+                  bodyRows += '<td>' + row[colName] + '</td>';
+              })
+      
+              bodyRows += '</tr>';
+          });
+      
+          var tabledata=  '<table>' + headerRow + bodyRows + '</table>';
+         container.innerHTML = tabledata; // set table html
+      
+   </script>`
+   
+   tc.chartHTML(html, response);
+```
+
