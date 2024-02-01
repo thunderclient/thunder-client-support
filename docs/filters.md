@@ -457,17 +457,22 @@ console.log(response);
 - Use this sample code in `Post Request Script` and modify it as per your requirements
 
 ```js
-let incrementCount = tc.getVar('incrementCount') || 0;
+let incrementCount = parseInt(tc.getVar('incrementCount') || "0");
 let code = tc.response.status;
 
 if(incrementCount <= 3 && code !== 200)
 {
       incrementCount = incrementCount + 1
       tc.setVar('incrementCount', incrementCount)
-      console.log(incrementCount);
+      console.log("retrying request", incrementCount);
 
       await tc.delay(incrementCount * 1000); // exponential delay of 1 secs
       await tc.runRequest(tc.request.id);
+}
+else
+{
+  tc.setVar('incrementCount', 0);
+  console.log("reset incrementCount = 0");
 }
 ```
 
