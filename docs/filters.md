@@ -14,6 +14,7 @@
   - [Import JS Files](#import-js-files)
   - [Execute CLI Command](#cli-command)
   - [Execute Requests](#execute-requests)
+  - [Retry Request](#retry-request)
   - [Assertions using Scripting](#assertions)
   - [Delay Function](#delay)
 - [Custom Filters](#custom-filters)
