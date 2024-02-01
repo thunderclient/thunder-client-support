@@ -161,7 +161,7 @@ module.exports = [testReq]
 ```
 
 #### Retry Request
-- Use this sample code in `Post Request Script` and modify it as per your requirements
+- Use this sample code in `Post Request Filter` and modify it as per your requirements
 
 ```js
 let incrementCount = parseInt(tc.getVar('incrementCount') || "0");
