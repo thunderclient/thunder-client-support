@@ -467,7 +467,7 @@ if(incrementCount <= 3 && code !== 200)
       console.log("retrying request", incrementCount);
 
       await tc.delay(incrementCount * 1000); // exponential delay of 1 secs
-      await tc.runRequest(tc.request.id);
+      await tc.retryRequest();
 }
 else
 {
