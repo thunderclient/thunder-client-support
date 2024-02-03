@@ -76,6 +76,11 @@ var html = `
       td:last-child {
         padding-right: 0;
       }
+
+     /* for dark mode use .vscode-dark to override */
+     .vscode-dark th, .vscode-dark td {
+        border-bottom: 1px solid #555;
+      }
   
   </style>
 
@@ -114,3 +119,12 @@ var html = `
    tc.chartHTML(html, response);
 ```
 
+### Dark Mode Stylew
+
+- For dark mode you `.vscode-dark` to override styles, see example below
+```css
+    /* for dark mode use .vscode-dark to override */
+     .vscode-dark th, .vscode-dark td {
+        border-bottom: 1px solid #555;
+      }
+```
