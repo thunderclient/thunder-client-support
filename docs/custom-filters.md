@@ -160,8 +160,9 @@ async function testReq(){
 module.exports = [testReq]
 ```
 
-#### Retry Request
-- Use this sample code in `Post Request Filter` and modify it as per your requirements
+### Retry Request
+- Use the `await tc.retryRequest();` for retrying same request
+- Use Sample code in `Post Request Script` and modify it as per your requirements
 
 ```js
 let incrementCount = parseInt(tc.getVar('incrementCount') || "0");
@@ -169,17 +170,17 @@ let code = tc.response.status;
 
 if(incrementCount <= 3 && code !== 200)
 {
-      incrementCount = incrementCount + 1
-      tc.setVar('incrementCount', incrementCount)
-      console.log("retrying request", incrementCount);
+    incrementCount = incrementCount + 1
+    tc.setVar('incrementCount', incrementCount)
+    console.log("retrying request", incrementCount);
 
-      await tc.delay(incrementCount * 1000); // exponential delay of 1 secs
-      await tc.runRequest(tc.request.id);
+    await tc.delay(incrementCount * 1000); // exponential delay of 1 secs
+    await tc.retryRequest();
 }
 else
 {
-  tc.setVar('incrementCount', 0);
-  console.log("reset incrementCount = 0");
+   tc.setVar('incrementCount', 0);
+   console.log("reset incrementCount = 0");
 }
 ```
 
