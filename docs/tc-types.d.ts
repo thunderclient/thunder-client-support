@@ -1,4 +1,4 @@
-// version 2.17.0
+// version 2.17.5
 
 declare var tc: tcType;
 declare var expect: any;
@@ -91,6 +91,12 @@ interface tcType {
      * @since 2.9.0
      */
     runRequest(reqId: string): Promise<ResponseModel>;
+
+    /**
+     * Retry Request from the script. This will not execute the pre-reqs and pre script
+     * @since 2.17.5
+     */
+    retryRequest(): Promise<ResponseModel>;
 
     /**
      * Skip Request from execution in collection run
