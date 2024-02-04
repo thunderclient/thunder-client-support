@@ -1,4 +1,4 @@
-// version 2.17.5
+// version 2.17.7
 
 declare var tc: tcType;
 declare var expect: any;
@@ -132,6 +132,7 @@ interface tcType {
 
 type RequestModel = {
     id: string;
+    name: string;
     url: string;
     method: string;
     headers: KeyValue[];
