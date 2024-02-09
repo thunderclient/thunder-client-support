@@ -4,7 +4,7 @@
 
 # Thunder Client
 
-[![installs](https://img.shields.io/visual-studio-marketplace/i/rangav.vscode-thunder-client.svg)](https://marketplace.visualstudio.com/items?itemName=rangav.vscode-thunder-client) [![version](https://img.shields.io/visual-studio-marketplace/v/rangav.vscode-thunder-client.svg)](https://marketplace.visualstudio.com/items?itemName=rangav.vscode-thunder-client) [![Discord Badge](https://img.shields.io/discord/1044985063802163230?color=5865F2&label=Discord&logo=discord&logoColor=white&style=flat-square)](https://discord.gg/yw6UsfwrkH)
+[![installs](https://img.shields.io/visual-studio-marketplace/i/rangav.vscode-thunder-client.svg)](https://marketplace.visualstudio.com/items?itemName=rangav.vscode-thunder-client) [![version](https://img.shields.io/visual-studio-marketplace/v/rangav.vscode-thunder-client.svg)](https://marketplace.visualstudio.com/items?itemName=rangav.vscode-thunder-client) [![Discord Badge](https://img.shields.io/discord/1044985063802163230?color=5865F2&label=Discord&logo=discord&logoColor=white&style=flat)](https://discord.gg/yw6UsfwrkH)
 [![X](https://img.shields.io/twitter/follow/thunder_client?style=flat&logo=x)](https://twitter.com/thunder_client)
 [![Reddit](https://img.shields.io/twitter/follow/thunder_client?style=flat&logo=reddit&label=thunderclient)](https://www.reddit.com/r/thunderclient/)
 
