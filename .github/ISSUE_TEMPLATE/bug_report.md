@@ -19,6 +19,7 @@ assignees: ''
 **Platform:** 
  - OS: 
  - vscode version:
+ - node version:
  - extension version:
 
 **Are you using the free version/paid version/trial:**
