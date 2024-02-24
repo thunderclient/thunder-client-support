@@ -9,7 +9,7 @@
 [![Reddit](https://img.shields.io/twitter/follow/thunder_client?style=flat&logo=reddit&label=thunderclient)](https://www.reddit.com/r/thunderclient/)
 
 
-Thunder Client is a lightweight Rest API Client Extension for Visual Studio Code, hand-crafted by [Ranga Vadhineni](https://twitter.com/ranga_vadhineni) with a simple and clean design. The source code is not open source. You can report any Bugs Or Feature requests here.
+Thunder Client is a lightweight Rest API Client Extension for Visual Studio Code, hand-crafted by [Ranga Vadhineni](https://twitter.com/ranga_vadhineni) with a focus on **simplicity, clean design and local storage**. The source code is not open source. You can report any Bugs Or Feature requests here.
 
 - **Featured on Product Hunt** - [Product Hunt](https://www.producthunt.com/posts/thunder-client)
 - Website - [www.thunderclient.com](https://www.thunderclient.com)
@@ -22,10 +22,12 @@ Thunder Client is a lightweight Rest API Client Extension for Visual Studio Code
 
 #### Milestones
 
-- **2 Million** downloads on Apr 17, 2023
-- **1 Million** downloads on July 13, 2022
-- **500K** downloads on Dec 20, 2021
-- Extension **launched** on Mar 31, 2021
+
+- Extension **launched** on Mar 31st, 2021
+- **500K** downloads on Dec 20th, 2021
+- **1 Million** downloads on July 13th, 2022
+- [View All Milestones](https://www.thunderclient.com/about)
+
 
 #### Follow Us for Updates
 &nbsp;[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/thunder_client)
@@ -77,9 +79,9 @@ Thunder Client is a lightweight Rest API Client Extension for Visual Studio Code
 - **Lightweight** and Easy to use Rest API Client.
 - Supports **Collections and Environment variables**.
 - **Scriptless Testing:** Test API response easily with GUI-based interface.
+- **Local Storage:** All request data is saved locally on the user's device.
+- **Git Sync:** Save request data in your Git repository for team collaboration.
 - **Themes:** The extension supports VS Code themes.
-- **Offline & Local Storage:** Works offline and saves all the requests data locally on your device.
-- **Git Sync:** Save requests data in your Git Repository.
 
 <a name="team"></a>
 
