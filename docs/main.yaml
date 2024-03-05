@@ -47,7 +47,7 @@ jobs:
       # Upload the contents of Test Results directory to workspace
       - name: Output the run Details
         if: ${{ always() }}
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: RunReports
           path: thunder-reports
