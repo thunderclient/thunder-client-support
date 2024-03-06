@@ -237,6 +237,11 @@ The following environments can be used in Thunder Client, ranked from least to h
 tc.setVar("name", "Thunder Client", "request");
 tc.setVar("baseUrl", "http://localhost:8744", "request");
 ```
+
+#### Active Environment Selection
+- If you like to avoid creating unnecessary Source Control activity, then set `Active Environment` selection changes to `local memory` using the setting. 
+<img width="781" alt="Screenshot 2024-02-26 at 13 20 40" src="https://github.com/rangav/thunder-client-support/assets/8637550/82641900-64a8-4fc1-91af-861aa9ebd4bc">
+
 #### How to use Environment Variables
 
 - To use environment variables use the format `{{variableName}}`. You can use variables in Query Params, Headers, Body & Tests.
