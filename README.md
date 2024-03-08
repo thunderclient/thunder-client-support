@@ -170,7 +170,7 @@ Open request view and click the `{}` icon to see the Code Tab:
 <a name="scripting"></a>
 ## Scripting
 
-- The Pre-Request and Post-Request scripting is now supported - see docs [Pre Req Scripting](https://github.com/rangav/thunder-client-support/blob/master/docs/filters.md)
+- The Pre-Request and Post-Request scripting is now supported - see docs [Scripting](https://github.com/rangav/thunder-client-support/blob/master/docs/filters.md)
 
 
 <a name="testing"></a>
