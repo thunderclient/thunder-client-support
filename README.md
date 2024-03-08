@@ -41,7 +41,7 @@ Thunder Client is a lightweight Rest API Client Extension for Visual Studio Code
 - [CLI & CI/CD Integration](#cli)
 - [Storage Location](#storage)
 - [Code Snippet](#codegen)
-- [Pre Request Scripting](#pre-request)
+- [Scripting](#scripting)
 - [Testing](#testing)
 - [Environments](#environments)
 - [Set Environment Variable](#setenv)
@@ -167,10 +167,10 @@ Open request view and click the `{}` icon to see the Code Tab:
 - You can save the code snippet to a file or open the snippet on VS Code `tab` using <img width="30" alt="Screenshot 2022-08-01 at 17 09 12" src="https://user-images.githubusercontent.com/8637550/182192387-283a4975-7625-4f71-8c02-9240eae2a609.png">
 
 
-<a name="pre-request"></a>
-## Pre Request Scripting
+<a name="scripting"></a>
+## Scripting
 
-- Pre Request scripting is now supported - see docs [Pre Req Scripting](https://github.com/rangav/thunder-client-support/blob/master/docs/filters.md#scripting)
+- The Pre-Request and Post-Request scripting is now supported - see docs [Pre Req Scripting](https://github.com/rangav/thunder-client-support/blob/master/docs/filters.md)
 
 
 <a name="testing"></a>
