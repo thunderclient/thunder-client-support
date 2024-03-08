@@ -224,7 +224,7 @@
 <a name="readFile"></a>
 #### readFile
 - The filter will read the contents of the file, The syntax is `{{pathVar | readFile}}` or `{{pathVar | readFile("base64")}}`
-- Please create a Env variable with value as path of the file. The path can be `absolute` or `relative` path to workspace
+- Please create a Env variable with value as **path of the file**. The path can be `absolute` or `relative` path to workspace
 - Relative path will work only if you enabled the setting `Save To Workspace`
 - e.g 1: `{{pathVar | readFile}}` will read the file as text useful to read JSON files.
 - e.g 2: `{{pathVar | readFile("base64")}}` will read the file as `base64` encoding useful to read image files.
