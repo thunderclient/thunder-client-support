@@ -369,7 +369,7 @@ tc.setVar("date", moment().format());
 - Example custom script
 ```js
     // example code to load faker-js module
-    var { faker } = await tc.loadModule("@faker-js/faker");
+    var { faker } = await tc.loadModule("@faker-js/faker", "8.0.0");
     tc.setVar("firstName", faker.person.firstName());
 
     // example code to load chance module
