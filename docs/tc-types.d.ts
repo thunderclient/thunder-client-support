@@ -1,4 +1,4 @@
-// version 2.17.7
+// version 2.19.5
 
 declare var tc: tcType;
 declare var expect: any;
@@ -139,6 +139,10 @@ type RequestModel = {
     body: RequestBody | undefined;
     getHeader: (name: string) => string | undefined;
     setHeader: (name: string, value: string) => void;
+    /**
+     * Set Request body - examples: https://github.com/rangav/thunder-client-support/releases/tag/v2.19.5
+     */
+    setBody: (body: string | object | GraphqlBody | undefined, type?: BodyType) => void;
 }
 
 type ResponseModel = {
