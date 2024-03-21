@@ -256,15 +256,19 @@ tc.setVar("baseUrl", "http://localhost:8744", "request");
 
 ## Set Environment Variable
 
+<img width="757" alt="Screenshot 2024-03-21 at 17 05 20" src="https://github.com/rangav/thunder-client-support/assets/8637550/efd4ebc7-f857-45ec-b078-6ce482f1b031">
+
+
+
 Setting environment variables is supported in the Tests tab. Follow the steps below:
 
 - Create an environment first from the Env tab (if it's not already created).
 - In the Tests tab, select the `Set Env Variable` dropdown option (The action will automatically become `setTo`).
 - Enter the appropriate source of the variable value in the left input box:
-  - **Header:** Enter `header.headerName` where `headerName` is the response header name.
-  - **Cookie:** Enter `cookie.cookieName` where `cookieName` is the response cookie name.
   - **JSON Response:** Enter `json.propertyName` where `propertyName` is the JSON key in the response body.
   - **Text Response:** Enter the `text` keyword. This sets the entire response body to the variable.
+  - **Header:** Enter `header.headerName` where `headerName` is the response header name.
+  - **Cookie:** Enter `cookie.cookieName` where `cookieName` is the response cookie name.
   - **Custom Value:** To set any custom value manually, Just type the text as required in the left input e.g `processing`
   - **Clear Value:** To clear values use `null` keyword in the left input.
   - **Delete Variable:** To delete a variable completely use the `delete` keyword in left input.
