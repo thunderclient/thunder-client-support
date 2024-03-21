@@ -7,6 +7,14 @@
 - Json schema validation.
 - Re-arrange tests order using drag & drop.
 
+### Schema Validation
+1. Save the path of the schema file in the env variable.
+2. The path can be `absolute` or `relative` path to workspace, Relative path will work only if you enabled the setting `Save To Workspace`
+3. Select Schema option in the Tests tab and use the [readFile](https://github.com/rangav/thunder-client-support/blob/master/docs/filters.md#readFile) filter.
+
+<img width="750" alt="Screenshot 2024-03-21 at 16 52 23" src="https://github.com/rangav/thunder-client-support/assets/8637550/09d877e4-328b-4827-9fb0-7c8225ff0204">
+
+
 ### Test Arrays
 
 <img width="1578" alt="ArrayTests" src="https://user-images.githubusercontent.com/8637550/203997869-b12bee5e-6fff-4e86-a45f-22a43011bb4a.png">
