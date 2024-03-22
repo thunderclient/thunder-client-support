@@ -396,7 +396,7 @@ tc.setVar("date", moment().format());
 
 ### Import Functions from js files
 - You can import functions from other js files. Useful for code re-use and check-in to your git repo.
-- The path should be relative to workspace if you use Git-Sync, otherwise use full-path. 
+- The **path** should be `relative` to workspace if you use Git-Sync, otherwise use full-path. 
 - You can right click on the file and choose `Copy Path` or `Copy Relative Path` accordingly 
 
 ```js
