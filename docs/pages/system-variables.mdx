@@ -1,0 +1,61 @@
+## System Variables
+
+System variables are useful to generate random/dynamic data for use in request query params or body. The format is `{{#variableName}}`
+
+- `{{#guid}}` — Generates random uuid.
+- `{{#name}}` - Generates random name.
+- `{{#string}}` — Generates random string.
+- `{{#number}}` — Generates random number between 1 to 1000000.
+  - **Custom Range**: use `{{#number, min, max}}`
+  - Example: `{{#number, 100, 999}}`
+- `{{#email}}` — Generates random email.
+- `{{#bool}}` — Generates true or false.
+- `{{#enum, val1, val2, val3,...}}` — Generates one of the enum values provided (comma separated).
+  - Example 1: `{{#enum, red, green, blue}}`
+  - Example 2: `{{#enum, 1, 2, 3}}`
+- `{{#date}}` — Generates unix date timestamp in milliseconds.
+  - **Custom date format**: use `{{#date, 'YYYY-MM-DD hh:mm:ss:fff'}}`, the format should be in `single` quotes.
+  - Unix timestamp: use `{{#date, 'X'}}`, this will output unix timestamp in seconds.
+  - **Manipulate date** using format : `{year:2, mon:-3, day:-2, hour:3, min:5, sec:7}`
+    - Example 1: `{{#date, {year: -1, day: 3, mon: 5}}}`
+    - Example 2: `{{#date,'YYYY-MM-DD', {year: -1}}}`
+- `{{#dateISO}}` — Generates date ISO format.
+  - **Manipulate date** using format : `{year:2, mon:-3, day:-2, hour:3, min:5, sec:7}`
+    - Example 1: `{{#dateISO, {year: 1}}}`
+    - Example 2: `{{#dateISO, { year : -1, day: 3 } }}`
+
+### Using Node Modules to generate fake data
+- You can use node libraries like [faker-js](https://www.npmjs.com/package/@faker-js/faker), or lightweight [chance](https://www.npmjs.com/package/chance), [falso](https://www.npmjs.com/package/@ngneat/falso) to generate random data  in `Pre Request Script`.
+- Use `Pre Run` tab -> `Scripting` tab to generate fake data using code.
+- Example custom script
+```js
+    // example code to load faker-js module
+    var { faker } = await tc.loadModule("@faker-js/faker");
+    tc.setVar("firstName", faker.person.firstName());
+
+    // example code to load chance module
+    var Chance = await tc.loadModule("chance");
+    var chance = new Chance();
+    tc.setVar("firstName", chance.name());
+
+    // example code to load falso module
+    var falso = await tc.loadModule("@ngneat/falso");
+    var user = falso.randUser();
+    tc.setVar("firstName", user.firstName);
+```
+
+**NOTE**
+```js
+ // to save Env value to Active Environment
+ tc.setVar("firstName", faker.person.firstName());
+
+// If you do not want to save to the Environment file
+// then use the request scope
+ tc.setVar("firstName", faker.person.firstName(), "request");
+```
+## Path Variables
+
+Path variables are supported using the format `{variable}` in the url field:
+
+- **Example 1**: `https://www.thunderclient.com/details/customer/{customerId}`
+- **Example 2**: `https://www.thunderclient.com/details/{customerId}{name}/`

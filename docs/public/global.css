@@ -1,0 +1,90 @@
+:root {
+    --tc-logo-color: #fff;
+    --tc-bg-color: rgb(17, 18, 19);
+    --tc-text-color: rgb(178 185 196);
+    --tc-footer-bg-color: var(--tc-bg-color);
+    --tc-footer-text-color: #fff;
+    --tc-box-shadow: inherit;
+    --tc-nav-bg-color: #1c1e21;
+}
+
+html.light {
+    --tc-logo-color: #24467f;
+    --tc-bg-color: #f5f8fd;
+    --tc-text-color: #24467f;
+    --tc-footer-bg-color: #2a426c;
+    --tc-footer-text-color: #b7b9ca;
+    --tc-box-shadow: none;
+    --tc-nav-bg-color: #fff;
+
+}
+aside a{
+    font-size: 0.925rem !important;
+}
+
+html.light code.nx-border-black{
+    background-color:rgb(147 141 189 / 23%); /* rgb(198 171 171 / 23%); */
+}
+
+/* html.light pre.nx-bg-primary-700\/5{
+    background-color: rgb(215 206 206 / 23%);
+} */
+
+nav a {
+    color: var(--tc-text-color) !important;
+}
+
+nav a span {
+    font-size: 16.5px;
+}
+
+@media (max-width: 1500px) {
+    .nx-max-w-\[90rem\] {
+        max-width: 85rem !important;
+    }
+}
+
+.nav-docs-title {
+    font-weight: 200;
+    color: var(--tc-logo-color);
+    padding-left: 20px;
+}
+
+@media (max-width: 1100px) {
+    .nav-docs-title {
+        display: none !important;
+    }
+}
+
+.nextra-nav-container {
+    background-color: var(--tc-nav-bg-color) !important;
+}
+
+div[dir='ltr'], .nextra-sidebar-container .nx-sticky, .nextra-scrollbar .nx-items-start {
+    background-color: var(--tc-bg-color) !important;
+}
+
+footer {
+    background-color: var(--tc-footer-bg-color) !important;
+}
+
+footer .nx-text-gray-600 {
+    color: var(--tc-footer-text-color) !important;
+}
+
+.nextra-nav-container-blur, .nextra-sidebar-container .nx-sticky, .nextra-scrollbar .nx-items-start {
+    box-shadow: var(--tc-box-shadow) !important;
+}
+
+html.dark .nextra-nav-container-blur {
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 transparent), var(--tw-ring-shadow, 0 0 transparent), var(--tw-shadow) !important;
+}
+
+.nextra-sidebar-container .nx-text-primary-800, .nextra-sidebar-container .nx-text-gray-500,
+.nextra-content, .nextra-content .nx-text-slate-900, .nextra-scrollbar .nx-text-gray-500, .nx-tracking-tight {
+    color: var(--tc-text-color) !important;
+}
+
+html.dark :is(html[class~=dark] .nextra-content), html.dark .nextra-content .nx-text-slate-900 {
+    color: rgba(226, 232, 240, var(--tw-text-opacity)) !important;
+}

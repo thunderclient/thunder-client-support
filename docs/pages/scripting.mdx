@@ -1,0 +1,219 @@
+# Scripting
+There are two ways you can write custom scripting in Thunder Client for advanced use cases.
+1. **Inline Scripting:** You can write javascript code inside the Thunder Client views.
+2. **Custom Filters(External JS Files):** You can write code in separate javascript files and attach it to a collection.
+
+## Inline Scripting
+
+### Global Variables
+- The global variables available are `tc`, `expect`, `assert`, `btoa`, and `atob`.
+- `tc` is the main [object](https://github.com/thunderclient/thunder-client-support/blob/master/docs/tc-types.d.ts) for all API access.
+- [Chai](https://www.chaijs.com/api/bdd/) library `expect` and `assert` for assertions.
+- `btoa` and `atob` to base64 encoding and decoding.
+
+### Built in Modules
+- `ajv`, `ajv-formats`, `assert`, `atob`, `axios`, `btoa`, `buffer`, `chai`, `crypto-js`, `fast-xml-parser`, `fs`, `http`, `https`, `papaparse`, `stream`, `tough-cookie`, `url`
+- To use built-in modules -  `var axios = require("axios");`
+
+ 
+
+### Pre Request Script
+- Run Pre Request script from `Pre Run` -> `Scripting` tab, useful to set Env Variables
+![img](https://github.com/thunderclient/thunder-client-support/assets/8637550/3b561ec0-8657-4060-8b69-c5f5992b6dec)
+
+------
+
+ 
+
+### Post Request Script
+- Run the Post Request script from `Tests` -> `Scripting` tab
+- Useful to do clean-up tasks, set environment variables from the response and assertions
+
+![img](https://github.com/thunderclient/thunder-client-support/assets/8637550/efb91e5d-9d0f-492b-a82d-e4bad356f655)
+
+------
+
+ 
+
+### Import Node Module (Beta)
+- Now you can import any `node module`
+- This feature is still in `Beta`, not all modules are working
+- e.g:   `var moment = await tc.loadModule("moment");`
+```js
+console.log("load node module");
+
+var moment = await tc.loadModule("moment")
+
+console.log(moment().format());
+tc.setVar("date", moment().format());
+```
+
+#### Use Node Modules to generate fake data
+- You can use node libraries like [faker-js](https://www.npmjs.com/package/@faker-js/faker), or lightweight libraries [chance](https://www.npmjs.com/package/chance), [falso](https://www.npmjs.com/package/@ngneat/falso) to generate random data
+- Use `Pre Run` tab -> `Scripting` tab to generate fake data using code.
+- Example custom script
+```js
+    // example code to load faker-js module
+    var { faker } = await tc.loadModule("@faker-js/faker");
+    tc.setVar("firstName", faker.person.firstName());
+
+    // example code to load chance module
+    var Chance = await tc.loadModule("chance");
+    var chance = new Chance();
+    tc.setVar("firstName", chance.name());
+
+    // example code to load falso module
+    var falso = await tc.loadModule("@ngneat/falso");
+    var user = falso.randUser();
+    tc.setVar("firstName", user.firstName);
+```
+**NOTE**
+```js
+ // to save Env value to Active Environment
+ tc.setVar("firstName", faker.person.firstName());
+
+// If you do not want to save to the Environment file
+// then use the request scope
+ tc.setVar("firstName", faker.person.firstName(), "request");
+```
+-----
+ 
+
+### Import Functions from js files
+- You can import functions from other js files. Useful for code re-use and check-in to your git repo.
+- The path should be relative to workspace if you use Git-Sync, otherwise use full-path. 
+- You can right click on the file and choose `Copy Path` or `Copy Relative Path` accordingly 
+
+```js
+// test-import.js file
+function helloWorld(){
+   return "hello world";
+}
+
+module.exports = {
+  helloWorld
+}
+```
+- From request Inline script import js file using `require`
+```js
+
+var {helloWorld} = require("thunder-tests/test-import.js");
+var result = helloWorld();
+console.log(result);
+```
+
+- You can also save the path in the `Environment variable`, so you don't have to change the path in every request if you move the file to different folder.
+```js
+var scriptPath = tc.getVar("scriptPath");
+var {helloWorld} = require(scriptPath);
+var result = helloWorld();
+console.log(result);
+```
+-----
+ 
+
+### Execute CLI Command
+To execute a CLI command and get response use exec helper function
+```js
+var result = await tc.exec("command");
+```
+
+------
+
+ 
+
+### Send Requests from Script
+- Execute existing requests using the API - `await tc.runRequest("reqId");`
+- Useful for request chaining programmatically from the Pre or Post request script.
+```js
+var result = await tc.runRequest("reqId");
+console.log(result);
+``` 
+- Execute custom requests using the [Axios library](https://axios-http.com/docs/api_intro)
+- Useful for executing custom requests programmatically from the Pre or Post request script.
+```js
+const axios = require('axios');
+
+const response = await axios.get("https://www.thunderclient.com/welcome");
+console.log(response);
+
+```
+### Retry Request
+- Use the `await tc.retryRequest();` for retrying same request
+- Use Sample code in `Post Request Script` and modify it as per your requirements
+
+```js
+let incrementCount = parseInt(tc.getVar('incrementCount') || "0");
+let code = tc.response.status;
+
+if(incrementCount <= 3 && code !== 200)
+{
+    incrementCount = incrementCount + 1
+    tc.setVar('incrementCount', incrementCount)
+    console.log("retrying request", incrementCount);
+
+    await tc.delay(incrementCount * 1000); // exponential delay of 1 secs
+    await tc.retryRequest();
+}
+else
+{
+   tc.setVar('incrementCount', 0);
+   console.log("reset incrementCount = 0");
+}
+```
+
+------
+
+ 
+## Assertions using Scripting
+
+#### Assertions without any library
+
+```js
+let success = tc.response.status == 200;
+tc.test("Response code is 200", success);
+
+// Assertions using function syntax
+tc.test("verifying multiple tests", function () {
+        let success = tc.response.status == 200;
+        let time = tc.response.time < 1000;
+        return success && time;
+});
+```
+#### Assertions using Chai library
+- `expect` and `assert` functions are available as global variables
+```js
+tc.test("Response code expect to be 200", function () {
+    expect(tc.response.status).to.equal(200);
+})
+
+tc.test("Response code is 200", function () {
+    assert.equal(tc.response.status, 200)
+})
+```
+------
+
+ 
+
+### Delay Helper Function
+- To delay the script execution use the API - `await tc.delay(1000);`
+```js
+// delay for 5 seconds
+await tc.delay(5000);
+console.log("delayed for 5 seconds");
+```
+------
+
+
+ 
+# Customer Filters
+- If you like to use `external` javascript files for scripting, then you can use the Custom Filters feature.
+- Please see [documentation](custom-filters) to create customer filters.
+
+
+ 
+
+
+
+
+

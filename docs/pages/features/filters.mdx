@@ -1,0 +1,283 @@
+# Advances Use Cases
+- For advanced use cases you can use `filters` or `scripting` to perform custom functionality.
+
+
+## Filters
+
+- Function filters are useful to perform advanced data manipulation and the syntax is inspired from [Jinja Filters](https://jinja.palletsprojects.com/en/3.1.x/templates/#builtin-filters)
+- The filters can be used in `Environment Variables` and `Tests`
+- The filter syntax is `{{variable | filter1 | filter2...}}` or in **Tests** `json.items | filter1 | filter2...`
+- If you like to use filters without a variable use @ sign `{{@ | filter1 | filter2}}`
+- The Filters can be used in `Headers, Body, Query Params & Tests`
+
+
+
+### Filters In Env Variable
+- This is useful to modify the environment variable value before sending the request
+- The filters can be used in `Query params, Headers, Auth & Body`
+
+![img](https://user-images.githubusercontent.com/8637550/202413000-abe18411-13a1-47c0-a612-f3bc585b5bb0.png)
+
+
+
+### Filters In Tests
+- This is useful for advanced use cases to test and set environment variables from the response.
+
+![img](https://user-images.githubusercontent.com/8637550/202415862-5e6d3712-a7c8-466b-8c7c-f91452ee4464.png)
+
+
+
+### Built-In Filters:
+
+
+| Function            | Description                          |
+|---------------------|--------------------------------------|
+| [At](#at)            | The filter will return element at index        |
+| [Abs](#abs)          | The filter will return absolute value      |
+| [Add](#add)          | if number value is 6, then add filter will return 11      |
+| [Atob](#atob)        | The filter will decode the value      |
+| [Btoa](#btoa)        | The filter will Base64 encode the value      |
+| [Exec](#exec)        | The filter will execute node command and return value      |
+| [First](#first)      | The filter will return first element in array     |
+| [Filter](#filter)    | The filter will perform array filter operation    |
+| [Format](#format)    | The format filter useful to format the string output    |
+| [Hash](#hash)        | The filter will create hash of the input      |
+| [Hmac](#hmac)        | The filter will create hash of the input      |
+| [IsEmail](#isEmail)  | The filter will check the input is email or not return true or false  |
+| [IsUrl](#isUrl)      | The filter will check the input is URL or not return true or false    |
+| [Join](#join)        | The filter will join array with separator      |
+| [Last](#last)        | The filter will return last element in array      |
+| [Length](#length)    | The filter will return length of the `string` or `array`    |
+| [Lower](#lower)      | The filter will return lowercase of the string     |
+| [map](#map)          | The filter will return subset of properties       |
+| [Multiply](#multiply)| if number value is 6, then multiply filter will return 30  |
+| [ParseJSON](#parseJson)| The filter will convert string to JSON object |
+| [Prop](#prop)        | The filter will get property value of an object      |
+| [ReadFile](#readFile)| The filter will read the contents of the file  |
+| [RemoveQuotes](#removeQuotes)| The filter will remove quotes from the string|
+| [RemoveSpaces](#removeSpaces)| The filter will remove spaces from the string|
+| [Replace](#replace)  | The filter will remove quotes from the string   |
+| [SetIfValue](#setIfValue)| The filter will remove spaces from the string|
+| [SetNull](#setNull)  | The filter will replace match with replace string   |
+| [Slice](#slice)      | The filter will set env variable only when input has value     |
+| [Split](#split)      | The filter will set env variable value to null when the property value is null     |
+| [Stringify](#stringify)| The filter will perform standard array operations |
+| [Substring](#substring)| The filter will split the string using the separator |
+| [Subtract](#subtract)| The filter will JSON stringify the object |
+| [unique](#unique)    | The filter will return unique elements in array  |
+| [upper](#upper)      | The filter will return uppercase of the string  |
+| [UrlEncode](#urlEncode)| The filter will encode the string |
+| [UrlDecode](#urlDecode)| The filter will decode the string |
+
+
+
+#### at
+- The filter will return element [at](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/at) index, The syntax is in Tests `json.items | at(1)`
+- if `json.items` value is `[2,6,8,9]` then
+  - `json.items | at(1)` the result will be `6`
+  - `json.items | at(-1)` the result will be `9`
+
+
+#### abs
+- The syntax is `{{number | abs}}` 
+- if `number` value is -7, then abs filter will return 7
+
+
+#### add
+- The syntax is `{{number | add(5)}}` or `{{number | add("variableName")}}`
+- You can pass parameter value as number or env variable name
+- e.g 1: if `number` value is 6, then add filter will return 11
+- e.g 2: if `number` is 5 and `variable` is 8, then result is 13
+
+
+#### atob
+- The filter will [decode](https://developer.mozilla.org/en-US/docs/Web/API/atob) the value, The syntax is `{{input | atob}}`
+- if `input` value is `SGVsbG8gV29ybGQ=`, then result is `Hello World`
+
+
+#### btoa
+- The filter will Base64 [encode](https://developer.mozilla.org/en-US/docs/Web/API/btoa) the value, The syntax is `{{input | btoa}}`
+- if `input` value is `Hello World`, then result is `SGVsbG8gV29ybGQ=`
+
+
+#### exec
+- The filter will execute node command and return value, The syntax is `{{variable | exec("command")}}` or without a variable `{{@ | exec("command")}}`
+- You can also pass variables as parameters e.g: `{{@ | exec("gcloud auth {0} {1}", "var1", "var2")}}`
+- if `command` value is `node --version`, then result is `v16.15.0`
+
+
+#### first
+- The filter will return first element in array, The syntax in Tests `json.items | first`
+- if `json.items` value is `[3,6,8,9]`, then result is `3`
+
+
+#### filter
+- The filter will perform array filter operation, The syntax in Tests `json.items | filter(id>5)`
+- The following operations are supported `>, >=, <, <=, =, !=, *=, ^=, $=`
+- `*=` filters using contains operation
+- `^=` filters using startsWith operation
+- `$=` filters using endsWith operation
+
+
+#### format
+- The format filter useful to format the string output, The syntax is `{{variable | format("Hello {0}")}}`
+- if `variable` value is `World`, then result is `Hello World`
+- Using **multiple** variables `{{var1 | format("Hello {0} {1} {2}", "var2", "var3")}}`, the `{0}` is replaced with `var1` value, `{1}` with `var2` value, and `{2}` with `var3` value.
+- if you are using in Tests tab to set env value, then you can use e.g `json.var1 | format("hello {0} {1}", "var2")` in left input
+
+
+#### hash
+- The filter will create hash of the input, The syntax is `{{variable | hash("algorithm", "encoding")}}` or `{{variable | hash}}`
+- @param - `algorithm`: The default value is `MD5`. The values supported are `SHA256`, `SHA512`, `SHA1`, `MD5`.
+- @param - `encoding`: The default value is `base64`. The values supported are `hex`, `base64`.
+
+
+#### hmac
+- The filter will create hash of the input, The syntax is `{{variable | hmac("secret", "algorithm", "encoding")}}` or `{{variable | hmac("secret")}}`
+- @param - `secret`: The name of the env variable where secret is saved.
+- @param - `algorithm`: The default value is `SHA256`. The values supported are `SHA256`, `SHA512`, `SHA1`, `MD5`.
+- @param - `encoding`: The default value is `base64`. The values supported are `hex`, `base64`.
+
+
+#### isEmail
+- The filter will check the input is email or not return true or false, The syntax in Tests `json.email | isEmail`
+
+
+#### isUrl
+- The filter will check the input is URL or not return true or false, The syntax in Tests `json.homepage | isUrl`
+
+
+#### join
+- The filter will join array with separator, The syntax is `{{variable | spilit(" ") | join("separator")}}` or in Tests `json.items | join`
+- The default `separator` is comma `,` so you can use `json.items | join`
+- if `variable` value is `Hello World`, then result is `Hello-World`
+
+ 
+#### last
+- The filter will return last element in array, The syntax is `json.items | last`
+- if `json.items` value is `[3,6,8,9]`, then result is `9`
+
+ 
+#### length
+- The filter will return length of the `string` or `array`, The syntax is `{{variable | length}}`
+- if `variable` value is `Hello World`, then result is `11`
+
+ 
+#### lower
+- The filter will return lowercase of the string, The syntax is `{{variable | lower}}`
+- if `variable` value is `Hello World`, then result is `hello world`
+
+ 
+#### map
+- The filter will return subset of properties, The syntax is `{{variable | map("id", "name")}}` or In Tests `json.items | map("id")`
+- e.g 1: In Tests `json.items | map("id")` which result in `["123","534","56444"]`
+- e.g 2: `json.items | map("id", "name")` which result in `[{"name":"test1", "id":"123}, {"name":"test2", "id":"534"}]`
+
+ 
+#### multiply
+- The syntax is `{{number | multiply(5)}}` or `{{number | multiply("variableName")}}`
+- e.g 1: if `number` value is 6, then multiply filter will return 30
+- e.g 2: if `number` is 5 and `variableName` is 8, then result is 40
+
+ 
+#### parseJSON
+- The filter will convert string to JSON object. The syntax is `{{address | parseJSON}}`
+- The filter can be used with other filters e.g: `{{address | parseJSON | prop("lat")}}`
+
+ 
+#### prop
+- The filter will get property value of an object, The syntax in Tests `json.items | prop("id")`
+- e.g 1: if `json.items` value is `[{"id":1005, "name":"boston"}]`, then `prop("id")` will return `1005`
+- e.g 1: if array is `[{"id":1005, "name":"boston"}, {"id":1006, "name":"london"}]`, then `prop("id")` will return `1005,1006`
+
+ 
+#### readFile
+- The filter will read the contents of the file, The syntax is `{{pathVar | readFile}}` or `{{pathVar | readFile("base64")}}`
+- Please create a Env variable with value as path of the file. The path can be `absolute` or `relative` path to workspace
+- Relative path will work only if you enabled the setting `Save To Workspace`
+- e.g 1: `{{pathVar | readFile}}` will read the file as text useful to read JSON files.
+- e.g 2: `{{pathVar | readFile("base64")}}` will read the file as `base64` encoding useful to read image files.
+- e.g 3: To use in the request body
+  
+```json
+  {
+    "data": "{{pathVar | readFile(\"base64\")}}"
+  }
+  ```
+
+
+ 
+#### removeQuotes
+- The filter will remove quotes from the string, The syntax is `{{variable | removeQuotes}}`
+- if `variable` value is `"Hell"o W'orld`, then result is `Hello World`
+
+ 
+#### removeSpaces
+- The filter will remove spaces from the string, The syntax is `{{variable | removeSpaces}}`
+- if `variable` value is `"Welcome Hello World`, then the result is `WelcomeHelloWorld`
+
+ 
+#### replace
+- The filter will replace match with replace string, The syntax is `{{variable | replace("Hello", "NewValue")}}`
+- if `variable` value is `Hello World`, then `replace("Hello", "New")` result is `New World`
+- You can also pass single argument `{{variable | replace("Hello")}}`, which will replace with empty string
+
+ 
+#### setIfValue
+- The filter will set env variable only when input has value, The syntax in Tests `json.name | setIfValue`
+- This filter is useful in `Tests` section, when `Set Env Variable` dropdown selected
+
+ 
+#### setNull
+- The filter will set env variable value to null when the property value is null (by default null value is set as empty). The syntax in Tests `json.name | setNull`
+- This filter is useful in `Tests` section, when `Set Env Variable` dropdown selected
+
+ 
+#### slice
+- The filter will perform standard array [slice](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice) operation, The syntax is `{{variable | split(" ") | slice(1, 2)}}`
+- if `variable` value is `welcome to thunder client`, then result is `["to"]`
+
+ 
+#### split
+- The filter will split the string using the separator, The syntax is `{{variable | split("separator")}}`
+- if `variable` value is `Hello World`, then `split(" ")` result is `["Hello", "World"]`
+
+ 
+#### stringify
+- The filter will JSON stringify the object, The syntax is `{{variable | stringify}}`
+
+ 
+#### substring
+- The filter will return substring of the input, The syntax is `{{variable | substring(start, end)}}`
+- if `variable` value is `Hello World`, then `substring(-5)` result is `World`
+- if you like pass `input.length - 5` then just pass `-5` value
+
+ 
+#### subtract
+- The syntax is `{{number | subtract(5)}}` or `{{number | subtract("variable")}}`
+- e.g 1: if `number` value is 6, then add filter will return 1
+- e.g 2: if `number` is 45 and `variable` is 8, then result is 37
+
+ 
+#### unique
+- The filter will return unique elements in array, The syntax is `json.items | unique`
+- if `json.items` value is `[3,8,9,6,8,9]`, then result is `[3,8,9,6]`
+
+ 
+#### upper
+- The filter will return uppercase of the string, The syntax is `{{variable | upper}}`
+- if `variable` value is `Hello World`, then result is `HELLO WORLD`
+
+ 
+#### urlEncode
+- The filter will [encode](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent) the string, The syntax is `{{queryParam1 | urlEncode}}`
+- if `queryParam1` value is `hello+world`, then result is `hello%2Bworld`
+
+ 
+#### urlDecode
+- The filter will [decode](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/decodeURIComponent) the string, The syntax is `{{queryParam1 | urlDecode}}`
+- if `queryParam1` value is `hello%2Bworld`, then result is `hello+world`
+
+
+ 
+

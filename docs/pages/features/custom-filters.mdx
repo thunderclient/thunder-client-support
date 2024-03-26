@@ -1,0 +1,77 @@
+
+
+### Global Variables
+- The global variables available are `tc`, `expect`, `assert`, `btoa`, and `atob`.
+- `tc` is the main [object](https://github.com/thunderclient/thunder-client-support/blob/master/docs/tc-types.d.ts) for all API access.
+- [Chai](https://www.chaijs.com/api/bdd/) library `expect` and `assert` for assertions.
+- `btoa` and `atob` to base64 encoding and decoding.
+
+### Built in Modules
+- `ajv`, `ajv-formats`, `assert`, `atob`, `axios`, `btoa`, `buffer`, `chai`, `crypto-js`, `fast-xml-parser`, `fs`, `http`, `https`, `papaparse`, `stream`, `tough-cookie`, `url`
+- To use built-in modules -  `var axios = require("axios");`
+
+### How to Create Customer Filters
+
+**Step 1:** Create Javascript file with custom filters
+- The sample custom filters javascript file [custom-filters.js](https://github.com/thunderclient/thunder-client-support/blob/master/docs/custom-filters.js)
+
+![custom-filter](https://user-images.githubusercontent.com/8637550/202422492-30ad7123-0964-40db-ba1c-31bbe67d57f4.png)
+
+**Step 2:** Attach Custom filters JS files to `Collection Settings`
+![col-sets](https://user-images.githubusercontent.com/8637550/202426659-972f5307-0b51-4100-b6bf-0f3fb2f33140.png)
+
+**Step 3:** Use Custom filters in Request
+![custom-filter-using](https://user-images.githubusercontent.com/8637550/202422840-76998a57-0cbf-46ef-9309-52965c72959c.png)
+
+------
+
+
+### Pre Request Filter in PreRun Tab
+- Run Custom Filter directly in `Pre-Run` tab as Pre Request Script, useful to set Env Variables
+![Pre Req Filter](https://github.com/thunderclient/thunder-client-support/assets/8637550/07420d12-c9de-4efc-af3f-f85a47412cf2)
+
+- This Custom Filter will not have any `arguments` and return `no value`
+![Pre Filter Function](https://user-images.githubusercontent.com/8637550/205506079-395de0b6-593e-4fa9-b38a-31a1d6a1545a.png)
+
+------
+
+
+
+### Post Request Filter in Tests Tab
+- Run Custom Filter directly in `Tests` tab as Post Request Script
+- Useful to do clean-up tasks after request or set environment variables from the response for advanced use cases
+
+![Post Req Script](https://github.com/thunderclient/thunder-client-support/assets/8637550/8b0769df-c796-4219-b4c9-a5c4fe36d9b0)
+
+------
+
+
+
+### Import Node Module (Beta)
+- Now you can import any `node module` in Custom Filters
+- This feature is still in `Beta`, not all modules are working
+- e.g:   `var moment = await tc.loadModule("moment");`
+![Screenshot 2022-12-04 at 17 33 03](https://user-images.githubusercontent.com/8637550/205506205-f01dd73d-d8b1-41eb-9f65-a0c88170d00f.png)
+
+#### Use Node Modules to generate fake data
+- You can use node libraries like [faker-js](https://www.npmjs.com/package/@faker-js/faker), or lightweight libraries [chance](https://www.npmjs.com/package/chance), [falso](https://www.npmjs.com/package/@ngneat/falso) to generate random data
+- Create a Custom Filter and use it in `Pre Run` tab -> `Pre Request Script` to generate fake data.
+- Example custom filter script
+```js
+async function fakeDataFilter() {
+    // example code to load faker-js module
+    var { faker } = await tc.loadModule("@faker-js/faker");
+    tc.setVar("firstName", faker.person.firstName());
+
+    // example code to load chance module
+    var Chance = await tc.loadModule("chance");
+    var chance = new Chance();
+    tc.setVar("firstName", chance.name());
+
+    // example code to load falso module
+    var falso = await tc.loadModule("@ngneat/falso");
+    var user = falso.randUser();
+    tc.setVar("firstName", user.firstName);
+}
+
+module.exports = [fakeDataFilter];

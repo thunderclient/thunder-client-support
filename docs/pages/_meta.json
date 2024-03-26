@@ -1,0 +1,35 @@
+{
+  "index": "Home",
+  "git-sync": "Git Sync",
+  "environment": "Environment",
+  "system-variables": "System Variables",
+  "cookies": "Cookies",
+  "testing": "Testing",
+  "scripting": "Scripting",
+  "import-export": "Import/Export",
+  "ci-cd-integration": "CI/CD Integration",
+  "features": {
+    "title": "Features"
+  },
+  "free-version": "Free Version",
+  "subscription": "Subscription",
+  "common-issues": "Common Issues",
+  "website": {
+    "type": "page",
+    "title": "Website",
+    "href": "https://www.thunderclient.com",
+    "theme": {
+      "typesetting": "article",
+      "layout": "full"
+    }
+  },
+  "contact": {
+    "type": "page",
+    "title": "Contact",
+    "href": "https://www.thunderclient.com/contact",
+    "theme": {
+      "typesetting": "article",
+      "layout": "full"
+    }
+  }
+}
