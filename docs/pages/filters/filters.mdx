@@ -27,47 +27,47 @@
 
 
 
-### Built-In Filters:
+## Built-In Filters:
 
 
 | Function            | Description                          |
 |---------------------|--------------------------------------|
-| [At](#at)            | The filter will return element at index        |
-| [Abs](#abs)          | The filter will return absolute value      |
-| [Add](#add)          | if number value is 6, then add filter will return 11      |
-| [Atob](#atob)        | The filter will decode the value      |
-| [Btoa](#btoa)        | The filter will Base64 encode the value      |
-| [Exec](#exec)        | The filter will execute node command and return value      |
-| [First](#first)      | The filter will return first element in array     |
-| [Filter](#filter)    | The filter will perform array filter operation    |
-| [Format](#format)    | The format filter useful to format the string output    |
-| [Hash](#hash)        | The filter will create hash of the input      |
-| [Hmac](#hmac)        | The filter will create hash of the input      |
-| [IsEmail](#isEmail)  | The filter will check the input is email or not return true or false  |
-| [IsUrl](#isUrl)      | The filter will check the input is URL or not return true or false    |
-| [Join](#join)        | The filter will join array with separator      |
-| [Last](#last)        | The filter will return last element in array      |
-| [Length](#length)    | The filter will return length of the `string` or `array`    |
-| [Lower](#lower)      | The filter will return lowercase of the string     |
+| [at](#at)            | The filter will return element at index        |
+| [abs](#abs)          | The filter will return absolute value      |
+| [add](#add)          | if number value is 6, then add filter will return 11      |
+| [atob](#atob)        | The filter will decode the value      |
+| [btoa](#btoa)        | The filter will Base64 encode the value      |
+| [exec](#exec)        | The filter will execute node command and return value      |
+| [first](#first)      | The filter will return first element in array     |
+| [filter](#filter)    | The filter will perform array filter operation    |
+| [format](#format)    | The format filter useful to format the string output    |
+| [hash](#hash)        | The filter will create hash of the input      |
+| [hmac](#hmac)        | The filter will create hash of the input      |
+| [isEmail](#isEmail)  | The filter will check the input is email or not return true or false  |
+| [isUrl](#isUrl)      | The filter will check the input is URL or not return true or false    |
+| [join](#join)        | The filter will join array with separator      |
+| [last](#last)        | The filter will return last element in array      |
+| [length](#length)    | The filter will return length of the `string` or `array`    |
+| [lower](#lower)      | The filter will return lowercase of the string     |
 | [map](#map)          | The filter will return subset of properties       |
-| [Multiply](#multiply)| if number value is 6, then multiply filter will return 30  |
-| [ParseJSON](#parseJson)| The filter will convert string to JSON object |
-| [Prop](#prop)        | The filter will get property value of an object      |
-| [ReadFile](#readFile)| The filter will read the contents of the file  |
-| [RemoveQuotes](#removeQuotes)| The filter will remove quotes from the string|
-| [RemoveSpaces](#removeSpaces)| The filter will remove spaces from the string|
-| [Replace](#replace)  | The filter will remove quotes from the string   |
-| [SetIfValue](#setIfValue)| The filter will remove spaces from the string|
-| [SetNull](#setNull)  | The filter will replace match with replace string   |
-| [Slice](#slice)      | The filter will set env variable only when input has value     |
-| [Split](#split)      | The filter will set env variable value to null when the property value is null     |
-| [Stringify](#stringify)| The filter will perform standard array operations |
-| [Substring](#substring)| The filter will split the string using the separator |
-| [Subtract](#subtract)| The filter will JSON stringify the object |
+| [multiply](#multiply)| if number value is 6, then multiply filter will return 30  |
+| [parseJSON](#parseJson)| The filter will convert string to JSON object |
+| [prop](#prop)        | The filter will get property value of an object      |
+| [readFile](#readFile)| The filter will read the contents of the file  |
+| [removeQuotes](#removeQuotes)| The filter will remove quotes from the string|
+| [removeSpaces](#removeSpaces)| The filter will remove spaces from the string|
+| [replace](#replace)  | The filter will remove quotes from the string   |
+| [setIfValue](#setIfValue)| The filter will remove spaces from the string|
+| [setNull](#setNull)  | The filter will replace match with replace string   |
+| [slice](#slice)      | The filter will set env variable only when input has value     |
+| [split](#split)      | The filter will set env variable value to null when the property value is null     |
+| [stringify](#stringify)| The filter will perform standard array operations |
+| [substring](#substring)| The filter will split the string using the separator |
+| [subtract](#subtract)| The filter will JSON stringify the object |
 | [unique](#unique)    | The filter will return unique elements in array  |
 | [upper](#upper)      | The filter will return uppercase of the string  |
-| [UrlEncode](#urlEncode)| The filter will encode the string |
-| [UrlDecode](#urlDecode)| The filter will decode the string |
+| [urlEncode](#urlEncode)| The filter will encode the string |
+| [urlDecode](#urlDecode)| The filter will decode the string |
 
 
 
@@ -138,11 +138,11 @@
 - @param - `algorithm`: The default value is `SHA256`. The values supported are `SHA256`, `SHA512`, `SHA1`, `MD5`.
 - @param - `encoding`: The default value is `base64`. The values supported are `hex`, `base64`.
 
-
+<a name="isEmail"></a>
 #### isEmail
 - The filter will check the input is email or not return true or false, The syntax in Tests `json.email | isEmail`
 
-
+<a name="isUrl"></a>
 #### isUrl
 - The filter will check the input is URL or not return true or false, The syntax in Tests `json.homepage | isUrl`
 
@@ -179,7 +179,7 @@
 - e.g 1: if `number` value is 6, then multiply filter will return 30
 - e.g 2: if `number` is 5 and `variableName` is 8, then result is 40
 
- 
+<a name="parseJson"></a>
 #### parseJSON
 - The filter will convert string to JSON object. The syntax is `{{address | parseJSON}}`
 - The filter can be used with other filters e.g: `{{address | parseJSON | prop("lat")}}`
@@ -190,7 +190,7 @@
 - e.g 1: if `json.items` value is `[{"id":1005, "name":"boston"}]`, then `prop("id")` will return `1005`
 - e.g 1: if array is `[{"id":1005, "name":"boston"}, {"id":1006, "name":"london"}]`, then `prop("id")` will return `1005,1006`
 
- 
+<a name="readFile"></a>
 #### readFile
 - The filter will read the contents of the file, The syntax is `{{pathVar | readFile}}` or `{{pathVar | readFile("base64")}}`
 - Please create a Env variable with value as path of the file. The path can be `absolute` or `relative` path to workspace
@@ -206,12 +206,12 @@
   ```
 
 
- 
+<a name="removeQuotes"></a>
 #### removeQuotes
 - The filter will remove quotes from the string, The syntax is `{{variable | removeQuotes}}`
 - if `variable` value is `"Hell"o W'orld`, then result is `Hello World`
 
- 
+<a name="removeSpaces"></a>
 #### removeSpaces
 - The filter will remove spaces from the string, The syntax is `{{variable | removeSpaces}}`
 - if `variable` value is `"Welcome Hello World`, then the result is `WelcomeHelloWorld`
@@ -222,12 +222,12 @@
 - if `variable` value is `Hello World`, then `replace("Hello", "New")` result is `New World`
 - You can also pass single argument `{{variable | replace("Hello")}}`, which will replace with empty string
 
- 
+<a name="setIfValue"></a>
 #### setIfValue
 - The filter will set env variable only when input has value, The syntax in Tests `json.name | setIfValue`
 - This filter is useful in `Tests` section, when `Set Env Variable` dropdown selected
 
- 
+<a name="setNull"></a>
 #### setNull
 - The filter will set env variable value to null when the property value is null (by default null value is set as empty). The syntax in Tests `json.name | setNull`
 - This filter is useful in `Tests` section, when `Set Env Variable` dropdown selected
@@ -268,12 +268,12 @@
 - The filter will return uppercase of the string, The syntax is `{{variable | upper}}`
 - if `variable` value is `Hello World`, then result is `HELLO WORLD`
 
- 
+<a name="urlEncode"></a>
 #### urlEncode
 - The filter will [encode](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent) the string, The syntax is `{{queryParam1 | urlEncode}}`
 - if `queryParam1` value is `hello+world`, then result is `hello%2Bworld`
 
- 
+<a name="urlDecode"></a>
 #### urlDecode
 - The filter will [decode](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/decodeURIComponent) the string, The syntax is `{{queryParam1 | urlDecode}}`
 - if `queryParam1` value is `hello%2Bworld`, then result is `hello+world`

@@ -1,19 +1,23 @@
 {
   "index": "Home",
-  "git-sync": "Git Sync",
-  "environment": "Environment",
-  "system-variables": "System Variables",
-  "cookies": "Cookies",
-  "testing": "Testing",
-  "scripting": "Scripting",
-  "import-export": "Import/Export",
-  "ci-cd-integration": "CI/CD Integration",
+  "team": "Team Collaboration",
+  "environments": "Environments",
   "features": {
     "title": "Features"
   },
-  "free-version": "Free Version",
-  "subscription": "Subscription",
-  "common-issues": "Common Issues",
+  "testing": "Testing",
+  "filters": {
+    "title": "Filters"
+  },
+  "scripting": {
+    "title": "Scripting"
+  },
+  "cli": {
+    "title": "CLI"
+  },
+  "others": {
+    "title": "Others"
+  },
   "website": {
     "type": "page",
     "title": "Website",

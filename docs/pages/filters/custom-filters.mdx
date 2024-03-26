@@ -13,9 +13,32 @@
 ### How to Create Customer Filters
 
 **Step 1:** Create Javascript file with custom filters
-- The sample custom filters javascript file [custom-filters.js](https://github.com/thunderclient/thunder-client-support/blob/master/docs/custom-filters.js)
 
-![custom-filter](https://user-images.githubusercontent.com/8637550/202422492-30ad7123-0964-40db-ba1c-31bbe67d57f4.png)
+```js filename="custom-filters.js"
+const CryptoJS = require("crypto-js");
+const { v4: uuid4 } = require("uuid");
+
+async function appendString(input, param1) {
+
+     // read a file
+    var data = await tc.readFile(input);
+    
+    // execute a command
+    var result = await tc.exec("echo testing");
+    
+    return `${input} ${data} ${result}`;
+}
+
+function customHmac(input) {
+    console.log("running custom hmac");
+    var secretValue = tc.getVar("secret");
+
+    let encoded = CryptoJS.HmacSHA256(input, secretValue);
+    return encoded.toString(CryptoJS.enc.Base64);
+}
+
+module.exports = [customHmac, appendString];
+```
 
 **Step 2:** Attach Custom filters JS files to `Collection Settings`
 ![col-sets](https://user-images.githubusercontent.com/8637550/202426659-972f5307-0b51-4100-b6bf-0f3fb2f33140.png)
@@ -26,34 +49,68 @@
 ------
 
 
-### Pre Request Filter in PreRun Tab
+## Pre Request Filter
 - Run Custom Filter directly in `Pre-Run` tab as Pre Request Script, useful to set Env Variables
-![Pre Req Filter](https://github.com/thunderclient/thunder-client-support/assets/8637550/07420d12-c9de-4efc-af3f-f85a47412cf2)
+
+<img width="600" alt="Pre Filter" src="https://github.com/thunderclient/thunder-client-support/assets/8637550/07420d12-c9de-4efc-af3f-f85a47412cf2" />
+
 
 - This Custom Filter will not have any `arguments` and return `no value`
-![Pre Filter Function](https://user-images.githubusercontent.com/8637550/205506079-395de0b6-593e-4fa9-b38a-31a1d6a1545a.png)
+
+```js filename="custom-filters.js"
+function preFilter1() {
+
+    console.log("set env variable example");
+    let uuid = uuid4();
+
+    // ---- save to active environment
+    tc.setVar("uuidFromScript", uuid);
+
+    // ---- save to local environment
+    // tc.setVar("uuidFromScript", uuid, "local");
+
+    // ---- save to global environment
+    // tc.setVar("uuidFromScript", uuid, "global");
+}
+
+module.exports = [preFilter1];
+```
 
 ------
 
 
-
-### Post Request Filter in Tests Tab
+## Post Request Filter
 - Run Custom Filter directly in `Tests` tab as Post Request Script
 - Useful to do clean-up tasks after request or set environment variables from the response for advanced use cases
-
-![Post Req Script](https://github.com/thunderclient/thunder-client-support/assets/8637550/8b0769df-c796-4219-b4c9-a5c4fe36d9b0)
+<img width="600" alt="Post Filter" src="https://github.com/thunderclient/thunder-client-support/assets/8637550/8b0769df-c796-4219-b4c9-a5c4fe36d9b0" />
 
 ------
 
 
-
-### Import Node Module (Beta)
+## Import Node Module (Beta)
 - Now you can import any `node module` in Custom Filters
 - This feature is still in `Beta`, not all modules are working
 - e.g:   `var moment = await tc.loadModule("moment");`
-![Screenshot 2022-12-04 at 17 33 03](https://user-images.githubusercontent.com/8637550/205506205-f01dd73d-d8b1-41eb-9f65-a0c88170d00f.png)
 
-#### Use Node Modules to generate fake data
+```js filename="custom-filters.js"
+async function customFilter(input) {
+    console.log("Loading node module - moment");
+
+    // ---- load any node module from npm registry
+    // the first run will take few seconds as it needs to download the module from npm registry
+    var moment = await tc.loadModule("moment");
+
+    // ---- load specific version of moment
+    // var moment = await tc.loadModule("moment", "2.29.1");
+
+    return `${input} ${moment().format()}`;
+}
+
+module.exports = [customFilter];
+
+```
+
+### Use Node Modules to generate fake data
 - You can use node libraries like [faker-js](https://www.npmjs.com/package/@faker-js/faker), or lightweight libraries [chance](https://www.npmjs.com/package/chance), [falso](https://www.npmjs.com/package/@ngneat/falso) to generate random data
 - Create a Custom Filter and use it in `Pre Run` tab -> `Pre Request Script` to generate fake data.
 - Example custom filter script

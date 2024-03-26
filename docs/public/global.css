@@ -18,12 +18,14 @@ html.light {
     --tc-nav-bg-color: #fff;
 
 }
-aside a{
-    font-size: 0.925rem !important;
+
+aside a, aside button {
+    font-size: 0.950rem !important;
 }
 
-html.light code.nx-border-black{
-    background-color:rgb(147 141 189 / 23%); /* rgb(198 171 171 / 23%); */
+html.light code.nx-border-black {
+    background-color: rgb(147 141 189 / 23%);
+    /* rgb(198 171 171 / 23%); */
 }
 
 /* html.light pre.nx-bg-primary-700\/5{
@@ -38,11 +40,11 @@ nav a span {
     font-size: 16.5px;
 }
 
-@media (max-width: 1500px) {
+/* @media (max-width: 1500px) {
     .nx-max-w-\[90rem\] {
         max-width: 85rem !important;
     }
-}
+} */
 
 .nav-docs-title {
     font-weight: 200;

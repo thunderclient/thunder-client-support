@@ -1,0 +1,11 @@
+## Proxy
+
+- VS Code proxy setting - https://code.visualstudio.com/docs/setup/network#_proxy-server-support
+#### CLI Proxy
+- You need to set in `workspace -> .vscode -> settings.json` for CLI to use proxy.
+```json
+{
+  "http.proxy": "http://username:password@host:port"
+}
+```
+- **exclude Proxy Host List**: Use this setting to exclude hosts from proxy, supports comma separated values e.g: `*.abc.com,xyz.com`.

@@ -1,9 +1,12 @@
+import { Callout, Steps } from 'nextra/components'
+
 ## Git Sync
 
+<Callout type="info">Subscription required to use this feature.</Callout>
 
-This feature is useful to share requests with your team by saving data in a git project or custom location.
+This feature is useful for saving data in a git repository for team collaboration.
 
-Integration with Git is supported by VSCode settings below.
+Integration with Git is supported by VS Code settings below.
 
 **NOTE:**  choose **any one setting** as required.
 
@@ -14,13 +17,13 @@ Integration with Git is supported by VSCode settings below.
      - **Example 1**: To save requests in the folder named `Child` inside the workspace, the Workspace relative path is `Child`. Similarly, for a folder `Child/folder_name` inside the workspace the workspace relative path is `Child/folder_name`
      - **Example 2**: To save requests in the Parent folder of the workspace, the workspace relative path is `../`
 
-
+![SaveToWorkspace](/images/git-sync-1.png)
 
 ### 2. Custom Location:
    Use this setting when you'd like to save all of the requests data in one fixed location. Enter the full folder path to save the data.
    - Supports relative path to user root directory. Use prefix **$HOME**. e.g `$HOME/Documents/folderName`
 
-
+![CustomLocation](/images/git-sync-2.png)
 
 - **Note 1**: The environments will be stored in `thunderEnvironment.json`, in the **thunder-tests** folder. If you'd like to exclude any secrets from `thunderEnvironment.json` file then use `Local Environment` to store values locally on your computer.
 - **Note 2**: Please **restart VS Code** after updating settings.

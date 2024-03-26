@@ -42,6 +42,10 @@ const config: DocsThemeConfig = {
   },
   primaryHue: 212,
   primarySaturation: 100,
+  sidebar: {
+    defaultMenuCollapseLevel: 1,
+    autoCollapse: true,
+  },
   // https://github.com/shuding/nextra/blob/8e86fc60deadf8d93114e313c770a0b611921e9b/examples/docs/src/theme.config.js#L21
   useNextSeoProps() {
     const { asPath } = useRouter()

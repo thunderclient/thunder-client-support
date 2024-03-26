@@ -1,13 +1,20 @@
 # Thunder Client
+<hr/>
+<div className="nx-flex">
+  <span className="nx-p-2">
+  [![installs](https://img.shields.io/visual-studio-marketplace/i/rangav.vscode-thunder-client.svg)](https://marketplace.visualstudio.com/items?itemName=rangav.vscode-thunder-client)
+  </span>
 
-[![installs](https://img.shields.io/visual-studio-marketplace/i/rangav.vscode-thunder-client.svg)](https://marketplace.visualstudio.com/items?itemName=rangav.vscode-thunder-client) 
-[![version](https://img.shields.io/visual-studio-marketplace/v/rangav.vscode-thunder-client.svg)](https://marketplace.visualstudio.com/items?itemName=rangav.vscode-thunder-client) 
+  <span className="nx-p-2">
+  [![version](https://img.shields.io/visual-studio-marketplace/v/rangav.vscode-thunder-client.svg)](https://marketplace.visualstudio.com/items?itemName=rangav.vscode-thunder-client) 
+  </span>
+</div>
 
 
 Thunder Client is a lightweight Rest API Client Extension for Visual Studio Code, hand-crafted by [Ranga Vadhineni](https://twitter.com/ranga_vadhineni) with a simple and clean design. The source code is not open source. You can report any Bugs Or Feature requests here.
 
-- **Featured on Product Hunt** - [Product Hunt](https://www.producthunt.com/posts/thunder-client)
-- Website - [www.thunderclient.com](https://www.thunderclient.com)
+- Featured on Product Hunt - [Product Hunt](https://www.producthunt.com/posts/thunder-client)
+- Extension - [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=rangav.vscode-thunder-client)
 
 
 #### Story behind Thunder Client
@@ -16,12 +23,10 @@ Thunder Client is a lightweight Rest API Client Extension for Visual Studio Code
 
 #### Milestones
 
-- **2 Million** downloads on Apr 17, 223
-- **1 Million** downloads on July 13, 2022
-- **500K** downloads on Dec 20, 2021
-- Extension **launched** on Mar 31, 2021
-
-
+- The extension was **launched** on March 31st, 2021
+- **500K** downloads on Dec 20th, 2021
+- **1 Million** downloads on July 13th, 2022
+- [View All Milestones](https://www.thunderclient.com/about)
 
 
 ## How to Use
@@ -31,9 +36,10 @@ Thunder Client is a lightweight Rest API Client Extension for Visual Studio Code
 - Video: [youtube.com/watch?v=NKZ0ahNbmak](https://youtu.be/NKZ0ahNbmak?t=3)
 
 
+<img alt="Thunder Client" src="https://raw.githubusercontent.com/thunderclient/thunder-client-support/master/images/thunder-client-v2.png" />
+
 #### Requirements
 - Minimum **VS Code** version now required is `v1.71.0`
-
 
 
 ## Main Features
@@ -41,13 +47,9 @@ Thunder Client is a lightweight Rest API Client Extension for Visual Studio Code
 - **Lightweight** and Easy to use Rest API Client.
 - Supports **Collections and Environment variables**.
 - **Scriptless Testing:** Test API response easily with GUI-based interface.
-- **Themes:** The extension supports VS Code themes.
-- **Offline & Local Storage:** Works offline and saves all the requests data locally on your device.
-- **Git Sync:** Save requests data in your Git Repository.
-
-
-
-
+- **Local Storage:** The extension saves all the requests data locally on the user device.
+- **Git Sync:** Save requests data in your Git repository for team collaboration.
+- **CLI:** The CLI supports CI and CD integration and generates reports.
 
 
 
@@ -65,123 +67,8 @@ For VSCode Server:
 - **Linux**: `~/.vscode-server/data/User/globalStorage/rangav.vscode-thunder-client`
 
 
-## Code Snippet
-
-Code snippet generation is available for the following languages:
-
-- C# - HttpClient
-- cURL
-- Dart Http
-- JavaScript Fetch & Axios
-- Php Laravel
-- PowerShell
-- Python requests & http.client
-- and other languages are powered by [httpsnippet](https://github.com/Kong/httpsnippet)
-
-Open request view and click the `{}` icon to see the Code Tab:
-
-
-#### Key Features
-
-- Supports most languages including Flutter, Dart, PHP Laravel, C#, JS, Python, Swift, etc.
-- Updates the code snippet in **real-time** as you make changes to a request.
-
-
-## Pre Request Scripting
-
-- Pre Request scripting is now supported - see docs [Pre Req Scripting](filters/scripting)
-
-
-## Scriptless Testing
-
-
-- We need to write a lot of boilerplate code in Postman and other clients to do basic testing using scripting (like status code equals `200`). So we implemented GUI-based tests, where you can select a couple of dropdowns to do most standard tests easily, without any scripting knowledge.
-- Tests can be done for strings, numbers, count, and type checking.
-- Json schema validation.
-- Re-arrange tests order using drag & drop.
-
-#### Test Arrays
-- Test array data in response using array filters [details here](testing/array-testing)
-
-#### Set Env Variable
-- You can save response data to Env Variables [details here](environment)
-
-#### Xml Testing
-- To perform tests and save response data to environment [click here](testing/xml-testing)
-
-#### Scripting
-- For Advanced use-cases you can use [Scripting](filters/scripting)
-
-#### Response Visualization
-- Create charts or tables from response [Chart View](chart-view)
-
-## Logs
-
-- To view the logs open `Output` Window and select `Thunder Client` in filter dropdown
-- Logs will display request details and error logs
-
-![img](https://user-images.githubusercontent.com/8637550/208124214-bcc493ba-82e6-41f1-90e7-34f16e8fa8e6.png)
-
-## Proxy
-
-- VS Code proxy setting - https://code.visualstudio.com/docs/setup/network#_proxy-server-support
-#### CLI Proxy
-- You need to set in `workspace -> .vscode -> settings.json` for cli to use proxy.
-```json
-{
-  "http.proxy": "http://username:password@host:port"
-}
-```
-- **exclude Proxy Host List**: Use this setting to exclude hosts from proxy, supports comma separated values e.g: `*.abc.com,xyz.com`.
-
-
-
-## Http/2
-
-- To send a request using the HTTP/2 protocol, please select `HTTP/2` option in VS Code settings for **Http Version**.
-
-## Keyboard Shortcuts
-
-- `Ctl+Shift+P` (From Command Palette):
-  - Thunder Client — New Request
-  - Thunder Client — Run Last Request
-  - Thunder Client — Import Curl
-  - Thunder Client — Change Environment
-  - Thunder Client — Convert To Postman Format
-- `Cmd/Ctrl + Enter` — To execute the request.
-- `Enter` — on request url field to send request.
-- `Cmd/Ctrl + s` — Save Request without run.
-- `Cmd/Ctrl + click` — on request in Sidebar will open it in a new tab.
-- `Cmd/Ctrl + click` — on collection/folder will open collection settings.
-- `Cmd/Ctrl + s` — Environment view save data.
-- `Cmd/Ctrl + e` — Change active environment.
-- `Alt+Shft + f` — Format Post Body data.
-- `Cmd/Ctrl + u` — Import Curl.
-- `Alt + z` — Toggle word-wrap on response.
-- `Escape` — Cancel response full-screen mode.
-
-
-## VS Code Settings
-
-To see all the VS Code settings for Thunder Client:
-
-1. Open VSCode settings View, then search for `Thunder Client`.
-2. From Sidebar View -> Click `...` menu at the top, then click `Extension Settings`.
-
-
 
 ## Contribution
 
 - If you'd like to improve documentation, please submit a PR.
 - Suggestions to further improve the product.
-
-
-
-## Privacy
-
-- Basic anonymized analytics data is collected using [vscode-extension-telemetry](https://github.com/Microsoft/vscode-extension-telemetry). No personal or requests data is collected. You can opt-out using VS Code Settings [details here](https://code.visualstudio.com/docs/getstarted/telemetry).
-- There is no backend or cloud sync; all data is stored locally on your computer, but you can sync data using [git](https://github.com/thunderclient/thunder-client-support#git-sync).
-## Thunder Client CLI
-- There is no analytics tracking used in the Thunder Client CLI. So when you run CLI in the CI and CD build pipelines, there is zero tracking and no data is shared with us.
-- When CLI is used locally along the extension, basic anonymized analytics data is collected in the extension, which can be turned off as mentioned above.
-

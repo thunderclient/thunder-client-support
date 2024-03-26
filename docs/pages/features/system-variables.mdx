@@ -53,9 +53,3 @@ System variables are useful to generate random/dynamic data for use in request q
 // then use the request scope
  tc.setVar("firstName", faker.person.firstName(), "request");
 ```
-## Path Variables
-
-Path variables are supported using the format `{variable}` in the url field:
-
-- **Example 1**: `https://www.thunderclient.com/details/customer/{customerId}`
-- **Example 2**: `https://www.thunderclient.com/details/{customerId}{name}/`

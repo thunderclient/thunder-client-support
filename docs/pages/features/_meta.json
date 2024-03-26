@@ -1,9 +1,11 @@
 {
-  "filters": "Filters",
-  "custom-filter": "Custom Filters",
+  "cookies": "Cookies",
+  "code-snippet": "Code Snippet",
+  "path-variables": "Path Variables",
+  "system-variables": "System Variables",
   "authentication": "Authentication",
-  "script-assertion": "Script Assertion",
   "request-chaining": "Request Chaining",
-  "chart-view": "Chart View"
-  
+  "import-export": "Import/Export",
+  "logs": "Logs",
+  "proxy": "Proxy"
 }

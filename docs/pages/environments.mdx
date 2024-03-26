@@ -1,7 +1,9 @@
-## Environment Variables
+## Environments
 
+<br/>
+<img width="314" alt="Thunder Client Environment Variables" src="/images/environments.png" />
 
-- **Common Variables**: The following variables are available for all the requests `{{request_name}}`, `{{collection_name}}` and `{{folder_name}}`
+**Common Variables**: The following variables are available for all the requests `{{request_name}}`, `{{collection_name}}` and `{{folder_name}}`
 
 The following environments can be used in Thunder Client, ranked from least to highest precedence:
 
@@ -34,11 +36,11 @@ The following environments can be used in Thunder Client, ranked from least to h
 tc.setVar("name", "Thunder Client", "request");
 tc.setVar("baseUrl", "http://localhost:8744", "request");
 ```
-#### How to use Environment Variables
+### How to use Environment Variables
 
 - To use environment variables use the format `{{variableName}}`. You can use variables in Query Params, Headers, Body & Tests.
 
-#### Import `.env` Files
+### Import `.env` Files
 
 - You can import Thunder Client, Postman and `.env` files using the Import Menu Option (see above image, option 4). More details [here](#import).
 

@@ -1,0 +1,38 @@
+
+## Schema Validation
+
+1. Save the path of the schema file in the env variable.
+2. The path can be `absolute` or `relative` path to workspace, Relative path will work only if you enabled the setting `Save To Workspace`
+3. Select Schema option in the Tests tab and use the [readFile](https://github.com/rangav/thunder-client-support/blob/master/docs/filters.md#readFile) filter.
+
+<img alt="Screenshot 2024-03-21 at 16 52 23" src="https://github.com/rangav/thunder-client-support/assets/8637550/09d877e4-328b-4827-9fb0-7c8225ff0204" />
+
+### Sample Schema
+
+```json filename="schema_file.json"
+{
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+        "fraction": {
+            "type": "number"
+        },
+        "balance": {
+            "type": "number"
+        },
+        "bignumber": {
+            "type": "integer"
+        },
+        "isNumber": {
+            "type": "null"
+        }
+    },
+    "required": [
+        "balance",
+        "bignumber",
+        "fraction",
+        "isNumber"
+    ],
+    "title": "Welcome4"
+}
+```
