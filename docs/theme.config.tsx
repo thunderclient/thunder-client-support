@@ -36,7 +36,7 @@ const config: DocsThemeConfig = {
   chat: {
     link: 'https://discord.com/invite/yw6UsfwrkH',
   },
-  docsRepositoryBase: 'https://github.com/thunderclient/thunder-docs/blob/main/docs/',
+  docsRepositoryBase: 'https://github.com/thunderclient/thunder-client-support/blob/main/docs/',
   footer: {
     text: <span style={{ textAlign: 'center', marginLeft: '35%' }}>© 2024 Thunder Client Limited. Registered Company in Ireland</span>,
   },
