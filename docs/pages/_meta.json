@@ -36,19 +36,5 @@
     "type": "page",
     "title": "Contact",
     "href": "https://www.thunderclient.com/contact"
-  },
-  "company": {
-    "title": "Company",
-    "type": "menu",
-    "items": {
-      "about": {
-        "title": "About",
-        "href": "https://www.thunderclient.com/about"
-      },
-      "contact": {
-        "title": "Pricing",
-        "href": "https://www.thunderclient.com/pricing"
-      }
-    }
   }
 }

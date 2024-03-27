@@ -43,9 +43,9 @@ nav a span, nav button.nx-text-sm, nav .nx-inline-block a {
     font-family: inherit;
 }
 
-nav button.nx-text-sm {
+/* nav button.nx-text-sm {
     font-weight: 400;
-}
+} */
 
 .nav-docs-title {
     font-weight: 200;

@@ -2,3 +2,4 @@ thunder-tests
 .DS_Store
 docs/dist
 docs/node_modules
+node_modules
