@@ -1,8 +1,7 @@
 {
   "index": "Home",
-  "get-started": "Getting Started",
+  "getting-started": "Getting Started",
   "team": "Team Collaboration",
-  "environments": "Environments",
   "features": {
     "title": "Features"
   },
