@@ -1,0 +1,50 @@
+# Send Requests
+- Send requests to any URL using the Thunder Client API
+- Use the `tc.runRequest` method to execute existing requests
+- Use the `axios` library to send custom requests
+
+### Send Internal Requests
+- Execute existing requests using the API - `await tc.runRequest("reqId");`
+- Useful for request chaining programmatically from the Pre or Post request script.
+```js
+var result = await tc.runRequest("reqId");
+
+// to get the request id dynamically
+var result = await tc.runRequest(tc.request.id);
+
+console.log(result);
+``` 
+
+### Send Custom Requests
+- Execute custom requests using the [Axios library](https://axios-http.com/docs/api_intro)
+- Useful for executing custom requests programmatically from the Pre or Post request script.
+```js
+const axios = require('axios');
+
+const response = await axios.get("https://www.thunderclient.com/welcome");
+console.log(response);
+
+```
+### Retry Request
+- Use the `await tc.retryRequest();` for retrying same request
+- Use Sample code in `Post Request Script` and modify it as per your requirements
+
+```js
+let incrementCount = parseInt(tc.getVar('incrementCount') || "0");
+let code = tc.response.status;
+
+if(incrementCount <= 3 && code !== 200)
+{
+    incrementCount = incrementCount + 1
+    tc.setVar('incrementCount', incrementCount)
+    console.log("retrying request", incrementCount);
+
+    await tc.delay(incrementCount * 1000); // exponential delay of 1 secs
+    await tc.retryRequest();
+}
+else
+{
+   tc.setVar('incrementCount', 0);
+   console.log("reset incrementCount = 0");
+}
+```

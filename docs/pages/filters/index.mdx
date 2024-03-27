@@ -1,8 +1,5 @@
-# Advances Use Cases
-- For advanced use cases you can use `filters` or `scripting` to perform custom functionality.
 
-
-## Filters
+# Filters
 
 - Function filters are useful to perform advanced data manipulation and the syntax is inspired from [Jinja Filters](https://jinja.palletsprojects.com/en/3.1.x/templates/#builtin-filters)
 - The filters can be used in `Environment Variables` and `Tests`
@@ -30,44 +27,44 @@
 ## Built-In Filters:
 
 
-| Function            | Description                          |
-|---------------------|--------------------------------------|
-| [at](#at)            | The filter will return element at index        |
-| [abs](#abs)          | The filter will return absolute value      |
-| [add](#add)          | if number value is 6, then add filter will return 11      |
-| [atob](#atob)        | The filter will decode the value      |
-| [btoa](#btoa)        | The filter will Base64 encode the value      |
-| [exec](#exec)        | The filter will execute node command and return value      |
-| [first](#first)      | The filter will return first element in array     |
-| [filter](#filter)    | The filter will perform array filter operation    |
-| [format](#format)    | The format filter useful to format the string output    |
-| [hash](#hash)        | The filter will create hash of the input      |
-| [hmac](#hmac)        | The filter will create hash of the input      |
-| [isEmail](#isEmail)  | The filter will check the input is email or not return true or false  |
-| [isUrl](#isUrl)      | The filter will check the input is URL or not return true or false    |
-| [join](#join)        | The filter will join array with separator      |
-| [last](#last)        | The filter will return last element in array      |
-| [length](#length)    | The filter will return length of the `string` or `array`    |
-| [lower](#lower)      | The filter will return lowercase of the string     |
-| [map](#map)          | The filter will return subset of properties       |
-| [multiply](#multiply)| if number value is 6, then multiply filter will return 30  |
-| [parseJSON](#parseJson)| The filter will convert string to JSON object |
-| [prop](#prop)        | The filter will get property value of an object      |
-| [readFile](#readFile)| The filter will read the contents of the file  |
+| Function                | Description                          |
+|-------------------------|--------------------------------------|
+| [at](#at)               | The filter will return element at index        |
+| [abs](#abs)             | The filter will return absolute value      |
+| [add](#add)             | The filter is useful to add number      |
+| [atob](#atob)           | The filter will Base64 decode the value      |
+| [btoa](#btoa)           | The filter will Base64 encode the value      |
+| [exec](#exec)           | The filter will execute node command and return value      |
+| [first](#first)         | The filter will return first element in array     |
+| [filter](#filter)       | The filter will perform array filter operation    |
+| [format](#format)       | The format filter useful to format the string output    |
+| [hash](#hash)           | The filter will create hash of the input      |
+| [hmac](#hmac)           | The filter will create hash of the input      |
+| [isEmail](#isEmail)     | The filter will check the input is email or not and return true/false  |
+| [isUrl](#isUrl)         | The filter will check the input is URL or not and return true/false    |
+| [join](#join)           | The filter will join array with separator      |
+| [last](#last)           | The filter will return last element in array      |
+| [length](#length)       | The filter will return length of the `string` or `array`    |
+| [lower](#lower)         | The filter will return lowercase of the string     |
+| [map](#map)             | The filter will return subset of properties       |
+| [multiply](#multiply)   | The filter is useful to multiply numbers   |
+| [parseJSON](#parseJson) | The filter will convert string to JSON object |
+| [prop](#prop)           | The filter will get property value of an object      |
+| [readFile](#readFile)   | The filter will read the contents of the file  |
 | [removeQuotes](#removeQuotes)| The filter will remove quotes from the string|
 | [removeSpaces](#removeSpaces)| The filter will remove spaces from the string|
-| [replace](#replace)  | The filter will remove quotes from the string   |
-| [setIfValue](#setIfValue)| The filter will remove spaces from the string|
-| [setNull](#setNull)  | The filter will replace match with replace string   |
-| [slice](#slice)      | The filter will set env variable only when input has value     |
-| [split](#split)      | The filter will set env variable value to null when the property value is null     |
-| [stringify](#stringify)| The filter will perform standard array operations |
-| [substring](#substring)| The filter will split the string using the separator |
-| [subtract](#subtract)| The filter will JSON stringify the object |
-| [unique](#unique)    | The filter will return unique elements in array  |
-| [upper](#upper)      | The filter will return uppercase of the string  |
-| [urlEncode](#urlEncode)| The filter will encode the string |
-| [urlDecode](#urlDecode)| The filter will decode the string |
+| [replace](#replace)     | The filter will replace match with replace string   |
+| [setIfValue](#setIfValue)| The filter will set env variable only when input has value |
+| [setNull](#setNull)     | The filter will set env variable value to null when the property value is null   |
+| [slice](#slice)         | The filter will perform standard array slice operation     |
+| [split](#split)         | The filter will split the string using the separator     |
+| [stringify](#stringify) | The filter will JSON stringify the object |
+| [substring](#substring) | The filter will return substring of the input |
+| [subtract](#subtract)   | The filter will subtract number from input |
+| [unique](#unique)       | The filter will return unique elements in array  |
+| [upper](#upper)         | The filter will return uppercase of the string  |
+| [urlEncode](#urlEncode) | The filter will encode the string |
+| [urlDecode](#urlDecode) | The filter will decode the string |
 
 
 

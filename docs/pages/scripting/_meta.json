@@ -1,0 +1,9 @@
+{
+    "index": "Scripting",
+    "api": "API Reference",
+    "assertions": "Assertions",
+    "import-files": "Import JS Files",
+    "libraries": "Node Libraries",
+    "send-request": "Send Requests",
+    "functions": "Helper Functions"
+}

@@ -16,6 +16,7 @@ html.light {
     --tc-footer-text-color: #b7b9ca;
     --tc-box-shadow: none;
     --tc-nav-bg-color: #fff;
+    --shiki-token-comment: #9094aa;
 
 }
 
@@ -72,6 +73,10 @@ footer {
 
 footer .nx-text-gray-600 {
     color: var(--tc-footer-text-color) !important;
+}
+
+.footer-text {
+    margin: auto;
 }
 
 .nextra-nav-container-blur, .nextra-sidebar-container .nx-sticky, .nextra-scrollbar .nx-items-start {

@@ -1,0 +1,44 @@
+---
+title: Import JS Files
+---
+
+# Import Javascript files
+
+- You can import functions from other js files. Useful for code re-use and check-in to your git repo.
+
+#### Create JS File
+- Create a new JS file in the workspace.
+- Add the function you want to import in the file.
+- Export the function using `module.exports`
+
+```js filename="test-import.js"
+// test-import.js file
+function helloWorld(){
+   return "hello world";
+}
+
+module.exports = {
+  helloWorld
+}
+```
+
+#### Import JS File
+- Import js file using `require`
+- The path should be relative to workspace if you use Git-Sync, otherwise use full-path. 
+- You can right click on the file and choose `Copy Path` or `Copy Relative Path` accordingly 
+
+```js
+var { helloWorld } = require("thunder-tests/test-import.js");
+
+var result = helloWorld();
+console.log(result);
+```
+#### Save Path in Env Variable
+- You can also save the path in the `Environment variable`, so you don't have to change the path in every request if you move the file to different folder.
+
+```js
+var scriptPath = tc.getVar("scriptPath");
+var {helloWorld} = require(scriptPath);
+var result = helloWorld();
+console.log(result);
+```

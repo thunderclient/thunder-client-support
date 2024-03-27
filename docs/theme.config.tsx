@@ -38,7 +38,7 @@ const config: DocsThemeConfig = {
   },
   docsRepositoryBase: 'https://github.com/thunderclient/thunder-client-support/blob/main/docs/',
   footer: {
-    text: <span style={{ textAlign: 'center', marginLeft: '35%' }}>© 2024 Thunder Client Limited. Registered Company in Ireland</span>,
+    text: <span className='footer-text'>© 2024 Thunder Client Limited. Registered Company in Ireland</span>,
   },
   primaryHue: 212,
   primarySaturation: 100,

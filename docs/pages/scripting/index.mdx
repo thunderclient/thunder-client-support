@@ -1,0 +1,33 @@
+# Scripting
+There are two ways you can write custom scripting in Thunder Client for advanced use cases.
+1. **Inline Scripting:** You can write javascript code inside the Thunder Client views.
+2. **Custom Filters(External JS Files):** You can write code in separate javascript files and attach it to a collection.
+
+## Inline Scripting
+
+### Global Variables
+- The global variables available are `tc`, `expect`, `assert`, `btoa`, and `atob`.
+- `tc` is the main [object](https://github.com/thunderclient/thunder-client-support/blob/master/docs/tc-types.d.ts) for all API access.
+- [Chai](https://www.chaijs.com/api/bdd/) library `expect` and `assert` for assertions.
+- `btoa` and `atob` to base64 encoding and decoding.
+
+### Built in Modules
+- `ajv`, `ajv-formats`, `assert`, `atob`, `axios`, `btoa`, `buffer`, `chai`, `crypto-js`, `fast-xml-parser`, `fs`, `http`, `https`, `papaparse`, `stream`, `tough-cookie`, `url`
+- To use built-in modules -  `var axios = require("axios");`
+
+ 
+
+### Pre Request Script
+- Run Pre Request script from `Pre Run` -> `Scripting` tab, useful to set Env Variables
+
+![img](https://github.com/thunderclient/thunder-client-support/assets/8637550/3b561ec0-8657-4060-8b69-c5f5992b6dec)
+
+------
+
+ 
+
+### Post Request Script
+- Run the Post Request script from `Tests` -> `Scripting` tab
+- Useful to do clean-up tasks, set environment variables from the response and assertions
+
+![img](https://github.com/thunderclient/thunder-client-support/assets/8637550/efb91e5d-9d0f-492b-a82d-e4bad356f655)

@@ -5,7 +5,7 @@
   "system-variables": "System Variables",
   "authentication": "Authentication",
   "request-chaining": "Request Chaining",
-  "import-export": "Import/Export",
+  "import": "Import/Export",
   "logs": "Logs",
   "proxy": "Proxy"
 }

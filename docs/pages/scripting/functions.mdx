@@ -1,0 +1,23 @@
+---
+title: Helper Functions
+---
+
+# Helper Functions
+
+#### Execute CLI Command
+To execute a CLI command and get response use exec helper function
+```js
+var result = await tc.exec("command");
+
+// example
+var result = await tc.exec("node -v");
+```
+
+
+#### Delay Function
+- To delay the script execution use the API - `await tc.delay(1000);`
+```js
+// delay for 5 seconds
+await tc.delay(5000);
+console.log("delayed for 5 seconds");
+```

@@ -1,0 +1,49 @@
+---
+title: Node Libraries
+---
+
+## Import Node Module
+
+- Now you can import any `node module`
+- This feature is still in `Beta`, not all modules are working
+- e.g:   `var moment = await tc.loadModule("moment");`
+```js
+console.log("load node module");
+
+var moment = await tc.loadModule("moment");
+
+// use moment specific version
+var moment = await tc.loadModule("moment", "2.30.0");
+
+console.log(moment().format());
+tc.setVar("date", moment().format());
+```
+
+#### Use Node Modules to generate fake data
+- You can use node libraries like [faker-js](https://www.npmjs.com/package/@faker-js/faker), or lightweight libraries [chance](https://www.npmjs.com/package/chance), [falso](https://www.npmjs.com/package/@ngneat/falso) to generate random data
+- Use `Pre Run` tab -> `Scripting` tab to generate fake data using code.
+- Example custom script
+```js
+    // example code to load faker-js module
+    var { faker } = await tc.loadModule("@faker-js/faker");
+    tc.setVar("firstName", faker.person.firstName());
+
+    // example code to load chance module
+    var Chance = await tc.loadModule("chance");
+    var chance = new Chance();
+    tc.setVar("firstName", chance.name());
+
+    // example code to load falso module
+    var falso = await tc.loadModule("@ngneat/falso");
+    var user = falso.randUser();
+    tc.setVar("firstName", user.firstName);
+```
+**NOTE**
+```js
+ // to save Env value to Active Environment
+ tc.setVar("firstName", faker.person.firstName());
+
+// If you do not want to save to the Environment file
+// then use the request scope
+ tc.setVar("firstName", faker.person.firstName(), "request");
+```

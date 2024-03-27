@@ -1,16 +1,17 @@
 {
   "index": "Home",
+  "get-started": "Getting Started",
   "team": "Team Collaboration",
   "environments": "Environments",
   "features": {
     "title": "Features"
   },
   "testing": "Testing",
-  "filters": {
-    "title": "Filters"
-  },
   "scripting": {
     "title": "Scripting"
+  },
+  "filters": {
+    "title": "Filters"
   },
   "cli": {
     "title": "CLI"
@@ -21,19 +22,11 @@
   "website": {
     "type": "page",
     "title": "Website",
-    "href": "https://www.thunderclient.com",
-    "theme": {
-      "typesetting": "article",
-      "layout": "full"
-    }
+    "href": "https://www.thunderclient.com"
   },
   "contact": {
     "type": "page",
     "title": "Contact",
-    "href": "https://www.thunderclient.com/contact",
-    "theme": {
-      "typesetting": "article",
-      "layout": "full"
-    }
+    "href": "https://www.thunderclient.com/contact"
   }
 }
