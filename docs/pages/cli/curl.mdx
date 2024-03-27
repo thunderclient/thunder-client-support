@@ -1,0 +1,24 @@
+---
+title: cURL Commands
+---
+
+# Enhances cURL Commands
+In the above, we've seen how to easily run requests and collections from the CLI. Thunder Client CLI also integrates with **cURL commands**, allowing you to run or create requests from the CLI.
+
+### Standard cURL Command
+![img](/images/cli/curl1.webp)
+
+### Run cURL using TC CLI
+Run cURL command by prefixing `tc` and see the magic. By using Thunder Client CLI you will get the following benefits over normal cURL.
+
+- Formatted Output
+- Syntax Highlighting & VSCode Themes
+- Request history will be saved to your Activity Tab
+
+![img](/images/cli/curl2.webp)
+
+### Save Request to Collection/Folder
+You can also save requests to collection or folder using cURL command from CLI.
+
+- `tc curl 'http://httpbin.org/anything' --name 'Curl Req1' --col User` the command will add request to collection **User** with name **Curl Req1**.
+- Use `--col` argument to save to collection, and `--fol` argument to save to folder, and `--name` to specify the name of request.

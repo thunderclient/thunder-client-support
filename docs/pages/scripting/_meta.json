@@ -5,5 +5,7 @@
     "import-files": "Import JS Files",
     "libraries": "Node Libraries",
     "send-request": "Send Requests",
-    "functions": "Helper Functions"
+    "functions": "Helper Functions",
+    "filters": "Filters",
+    "custom-filters": "Custom Filters"
 }

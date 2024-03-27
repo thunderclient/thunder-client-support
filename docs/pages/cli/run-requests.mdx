@@ -1,0 +1,32 @@
+# Run Requests
+The CLI and Extension are integrated seamlessly, so you can access requests data from the terminal without any additional configuration.
+
+- To execute requests run `tc 'requestNameOrId'`, the request can be executed using id, name or partial name
+
+![img](/images/cli/run-requests.webp)
+
+<br/>
+As you can see in the above image, executing requests is very easy from CLI. The output is formatted beautifully with **Status, Response with Syntax highlighting & VSCode theme**, and **Test results**.
+
+
+To Run the same request from **UI requires multiple steps** as below
+
+- Open Sidebar
+- Click Collections Tab
+- Open collection `User` and folder `Account`
+- Then open `Welcome` request
+- Now execute the request
+
+## Output Log
+When the user executes a request by default — **Status, Response & Test Results** are displayed. You can control the data to output with `--log` argument.
+
+- Log options for request: 0=All Data, 1=ReqHeaders, 2=ReqBody, 6=ResHeaders, 7=ResBody, 8=Tests
+- Example: `tc 'welcome' --log 1,2,7` will display Req headers, Req Body, and Response Body.
+
+## Open Request UI from CLI
+If you like to quickly execute a request in extension UI, then you can do it easily from CLI using `--ui` argument.
+
+- `tc 'welcome' --ui` To open a request in UI and execute automatically
+- `tc 'welcome' --ui2` To open a request in UI **without auto-run**.
+
+![img](/images/cli/run-req-ui.gif)

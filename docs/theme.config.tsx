@@ -55,8 +55,20 @@ const config: DocsThemeConfig = {
       }
     }
 
+    if (asPath =='/cli') {
+      return {
+        titleTemplate: 'Thunder Client CLI Docs',
+      }
+    }
+
+    if (asPath.includes('/cli')) {
+      return {
+        titleTemplate: '%s – Thunder Client CLI',
+      }
+    }
+
     return {
-      titleTemplate: '%s – Thunder Client Documentation',
+      titleTemplate: '%s – Thunder Client Docs',
     };
   }
 }

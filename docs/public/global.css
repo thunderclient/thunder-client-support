@@ -37,15 +37,15 @@ nav a {
     color: var(--tc-text-color) !important;
 }
 
-nav a span {
-    font-size: 16.5px;
+nav a span, nav button.nx-text-sm, nav .nx-inline-block a {
+    font-size: 1rem;
+    font-weight: 300;
+    font-family: inherit;
 }
 
-/* @media (max-width: 1500px) {
-    .nx-max-w-\[90rem\] {
-        max-width: 85rem !important;
-    }
-} */
+nav button.nx-text-sm {
+    font-weight: 400;
+}
 
 .nav-docs-title {
     font-weight: 200;
