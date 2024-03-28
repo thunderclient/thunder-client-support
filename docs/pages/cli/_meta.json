@@ -2,7 +2,6 @@
     "index": "Features",
     "install": "Install",
     "run-requests": "Run Requests",
-    "themes": "VS Code Themes",
     "run-collection": "Run Collection",
     "list": "List Command",
     "curl": "cURL Command",

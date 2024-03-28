@@ -1,22 +1,22 @@
 # CI/CD Integration
 
-Thunder Client CLI can be used in build server to run collection and save reports in **xml, html, json and csv** formats.
+Thunder Client CLI can be used in build server to run collection and save reports in **XML, HTML, JSON and CSV** formats.
 
 1. **VS Code Settings:** If you are using any TC VS Code settings, you need to set the scope to `workspace`, so the settings will be saved to the workspace directory.
 2. **Git Sync:** The collection runner in build server will work only when you enable [git sync](/team#git-sync) feature
-3. `tc --col "ColNameOrId" --report "xml,html"` command will execute all the requests and save reports in **thunder-reports** folder
+3. **Reports:** `tc --col "ColNameOrId" --report "xml,html"` command will execute all the requests and save reports in **thunder-reports** folder
 
-#### Github Actions
+### Github Actions
 - The [sample yaml file](#yaml) can be used to integrate with **Github actions** or other **build pipelines**.
 
-#### Workspace Location
+### Workspace Location
 - **[Optional]:** The CLI will use the current working directory as workspace directory, but if the data is in different workspace directory then use the `--ws 'fullpathToGitWorkspace'` to specify the workspace path.
 
-#### Stop Collection When Fail
+### Stop Collection When Fail
 - **[Optional]:** If you want to stop collection execution of other requests when a request test fails then use the argument `--stop-on-fail`
 
 <a name="yaml"></a>
-#### Sample YAML File
+### Sample YAML File
 
 ```yaml filename="main.yaml"
 # This is a basic workflow to help you get started with Actions
