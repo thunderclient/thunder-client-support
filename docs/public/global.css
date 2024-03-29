@@ -43,6 +43,12 @@ nav a span, nav button.nx-text-sm, nav .nx-inline-block a {
     font-family: inherit;
 }
 
+h1 {
+    font-weight: 600 !important;
+    font-size: 2rem !important;
+    margin-top: 1rem !important;
+}
+
 /* nav button.nx-text-sm {
     font-weight: 400;
 } */
