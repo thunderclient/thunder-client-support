@@ -1,5 +1,5 @@
 import React from 'react'
-import { DocsThemeConfig } from 'nextra-theme-docs'
+import { DocsThemeConfig, ThemeSwitch } from 'nextra-theme-docs'
 import { useRouter } from 'next/router';
 
 // <link rel="stylesheet" href="/global.css" /> 
@@ -42,9 +42,15 @@ const config: DocsThemeConfig = {
   },
   primaryHue: 212,
   primarySaturation: 100,
+  // navbar:{
+  //   extraContent:(
+  //     <ThemeSwitch lite={true} className='theme-switch' />
+  //   )
+  // },
   sidebar: {
     defaultMenuCollapseLevel: 1,
     autoCollapse: true,
+    toggleButton: true,
   },
   // https://github.com/shuding/nextra/blob/8e86fc60deadf8d93114e313c770a0b611921e9b/examples/docs/src/theme.config.js#L21
   useNextSeoProps() {

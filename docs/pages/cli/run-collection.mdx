@@ -3,21 +3,27 @@
 
 Collection Runner will execute all the requests in the collection and display output in a beautiful format similar to the extension UI.
 
+#### Run Single Collection
+
 - `tc --col 'colNameOrId'` will run requests in the collection from CLI
+
+#### Run Multiple Collections
+
+- `tc --col "colNameOrId1,colNameOrId2"` will run multiple collections from CLI
 
 #### Run All Collections
 
 - `tc --col all` will run all the collections from CLI
 - `tc --col all --skip "ColA,ColB"` will run all collections except ColA & ColB.
-#### Run Multiple Collections
 
-- `tc --col "colNameOrId1,colNameOrId2"` will run multiple collections from CLI
 #### Run Collection Parallel
 
 - `tc --col 'colNameOrId' --concurrent 5` will run 5 requests at a time in parallel from CLI.
+
 #### Run Folder
 
 - `tc --fol 'folNameOrId'` will run requests in the folder from CLI
+
 #### Run Selected Requests
 
 - `tc --reqlist "nameOrId1,nameOrId2,nameOrId3"` will run selected requests from the collection
