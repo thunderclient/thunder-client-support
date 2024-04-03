@@ -1,10 +1,10 @@
 {
   "environments": "Environments",
+  "authentication": "Authentication",
   "cookies": "Cookies",
   "code-snippet": "Code Snippet",
   "path-variables": "Path Variables",
   "system-variables": "System Variables",
-  "authentication": "Authentication",
   "request-chaining": "Request Chaining",
   "import": "Import/Export",
   "logs": "Logs",
