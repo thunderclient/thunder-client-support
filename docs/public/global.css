@@ -6,6 +6,7 @@
     --tc-footer-text-color: #fff;
     --tc-box-shadow: inherit;
     --tc-nav-bg-color: #1c1e21;
+    --nextra-navbar-height: 3.65rem;
 }
 
 html.light {

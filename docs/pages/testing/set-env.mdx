@@ -1,32 +1,69 @@
+import {  Steps } from 'nextra/components';
+
 # Set Environment Variable
+
+From the `Tests` tab, you can set environment variables using the `Set Env Variable` dropdown.
+<br/>
+<img width="500" alt="Set Env Variable" src="/images/set-env.png" />
 
 Setting environment variables is supported in the Tests tab. Follow the steps below:
 
-- Create an environment first from the Env tab (if it's not already created).
-- In the Tests tab, select the `Set Env Variable` dropdown option (The action will automatically become `setTo`).
-- Enter the appropriate source of the variable value in the left input box:
-  - **Header:** Enter `header.headerName` where `headerName` is the response header name.
-  - **Cookie:** Enter `cookie.cookieName` where `cookieName` is the response cookie name.
-  - **JSON Response:** Enter `json.propertyName` where `propertyName` is the JSON key in the response body.
-  - **Text Response:** Enter the `text` keyword. This sets the entire response body to the variable.
-  - **Custom Value:** To set any custom value manually, Just type the text as required in the left input e.g `processing`
-  - **Clear Value:** To clear values use `null` keyword in the left input.
-  - **Delete Variable:** To delete a variable completely use the `delete` keyword in left input.
+<Steps>
+### Step 1
+ 
+Create an environment first from the Env tab (if it's not already created).
+ 
+### Step 2
+ 
+In the Tests tab, select the `Set Env Variable` dropdown option (The `action` will automatically become `setTo`).
+
+### Step 3
+ 
+Enter the appropriate source of the variable value in the left input box (see above image).
+</Steps>
+
+## Source Types
+
+##### JSON Response
+  - Enter `json.propertyName` where `propertyName` is the JSON key in the response body.
+
+##### Text Response
+  - Enter the `text` keyword. This sets the entire response body to the variable.
+
+##### Header
+  - Enter `header.headerName` where `headerName` is the response header name.
+
+##### Cookie
+  - Enter `cookie.cookieName` where `cookieName` is the response cookie name.
+
+##### Custom Value
+  - To set any custom value manually, Just type the text as required in the left input e.g `processing`.
+
+##### Clear Value
+  - To clear values use `null` keyword in the left input.
+
+##### Delete Variable
+  - To delete a variable completely use the `delete` keyword in left input.
+
+### Value Input
 - In the value input, enter a variable name in the format `{{variableName}}`.
   - When it matches a variable name in Env, it will turn **green**. If the variable doesn't exist, it will be created.
 - Now execute the request. You will see the variable value set in the Env tab.
   - If you don't see the change in the Env tab, close and re-open the tab to refresh it.
 
-#### Set Env with Scope
+### Set Env with Scope
+
 
 The default location will be Active Environment when you use `{{variable}}`. You can use a scope to control which environment variable to set the value explicitly.
+
+<img width="500" alt="Set Env Variable Scope" src="/images/set-env-scope.png" />
 
 - To set a variable in the **local** environment use `{{variable, local}}`.
 - To set a variable in the **global** environment use `{{variable, global}}`.
 
 ## Set Variables in Scripting
 
-To set Env variables from [Scripting](/scripting), please see the below examples.
+To set Environment variables from [Scripting](/scripting), please see the below examples.
 
 ```js
 // To save to active environment

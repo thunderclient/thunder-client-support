@@ -3,14 +3,15 @@ title: API Reference
 ---
 
 # API Reference
-- Copy `tc-types.d.ts` and refer at the top for VS Code autocomplete suggestions.
 
-```js
-/// copy tc-types.d.ts file for vscode autocompletion on tc object
-/// <reference path="./tc-types.d.ts" />
-```
-#### Typescript Definition
-```ts filename="tc-types.d.ts"
+### Typescript Definition
+- Please refer to the `tc-types.d.ts` file for the typescript definition of the `tc` object.
+<details open className="last-of-type:mb-0 rounded-lg bg-neutral-50 dark:bg-neutral-800 p-2 mt-4">
+    <summary>
+        <strong className="text-lg">tc-types file</strong>
+    </summary>
+    <div className="nx-p-2">
+    ```ts filename="tc-types.d.ts"
 // version 2.19.5
 
 declare var tc: tcType;
@@ -213,4 +214,14 @@ type InfoModel = {
     folderName: string,
 }
 
+```
+    </div>
+</details>
+
+#### Autocomplete
+- Copy `tc-types.d.ts` to your project and refer at the top for VS Code autocomplete suggestions.
+
+```js
+/// copy tc-types.d.ts file for vscode autocompletion on tc object
+/// <reference path="./tc-types.d.ts" />
 ```
