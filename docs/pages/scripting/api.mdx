@@ -4,6 +4,18 @@ title: API Reference
 
 # API Reference
 
+export function DetailsBox({ title, children }) {
+    return (
+        <details className='p-2'>
+            <summary>
+                <strong>{title}</strong>
+            </summary>
+            <div className='nx-p-2'>
+                {children}
+            </div>
+        </details>
+    )
+}
 
 ## Request
 
@@ -49,11 +61,7 @@ Get the request object. Only headers and body can be modified.
 ### setBody
 - `tc.request.setBody(body: string | object | GraphqlBody | undefined, type?: BodyType): void`
 - Set the body of the request.
-<details className="last-of-type:mb-0 rounded-lg bg-neutral-50 dark:bg-neutral-800 p-2 mt-4">
-    <summary>
-        <strong className="text-lg">setBody Examples</strong>
-    </summary>
-    <div className="nx-p-2">
+<DetailsBox title="Sample Usage">
 ```js
 // set JSON body
 tc.request.setBody({
@@ -107,8 +115,7 @@ tc.request.setBody({
 tc.request.setBody("file_path/test.csv", "binary")
 
 ```
-   </div>
-</details>
+</DetailsBox>
 
 ## Response
 Get the response object of the request. This object is read-only.
@@ -133,7 +140,7 @@ Get the response object of the request. This object is read-only.
 
 ### Cookies
 - `tc.response.cookies` is an array of key-value pairs representing the cookies of the response.
-- Each header object has the following properties:
+- Each cookie object has the following properties:
   - `name`: The name of the header.
   - `value`: The value of the header.
 
@@ -150,6 +157,21 @@ Get the response object of the request. This object is read-only.
 ### setVar
 - `tc.setVar(variableName: string, value: any, scope?: "local" | "global" | "request"): void`
 - Set the value of an environment variable.
+<DetailsBox title="Sample Usage">
+  ```js
+  // To save to active environment
+  tc.setVar(varName, value);
+  
+  // To save to local environment
+  tc.setVar(varName, value, "local");
+  
+  // To save to global environment
+  tc.setVar(varName, value, "global");
+  
+  // To set collection or request level variables
+  tc.setVar(varName, value, "request");
+  ```
+</DetailsBox>
 
 ### setParam
 - `tc.setParam(paramName: string, value: any): void`
@@ -158,62 +180,163 @@ Get the response object of the request. This object is read-only.
 ### loadModule
 - `tc.loadModule(moduleName: string, version?: string): Promise<any>`
 - Load and get a node module from the npm registry.
+<DetailsBox title="Sample Usage">
+  ```js
+  console.log("load node module");
+ 
+  var moment = await tc.loadModule("moment");
+  
+  // use moment specific version
+  var moment = await tc.loadModule("moment", "2.30.0");
+  
+  console.log(moment().format());
+  tc.setVar("date", moment().format());
+  ```
+
+  Documentation: [Node Libraries](/scripting/libraries)
+</DetailsBox>
 
 ### readFile
 - `tc.readFile(path: string, encoding?: string): Promise<string | undefined>`
 - Read a file from disk.
   - `path`: The path to the file, relative to the project root or an absolute path.
-  - `encoding` (optional): The encoding to use. Can be "base64" or "utf8". If not specified, "utf8" will be used.
-
+  - `encoding` (optional): The encoding to use. Can be "utf8" or "base64". If not specified, "utf8" will be used.
+<DetailsBox title="Sample Usage">
+    ```js
+    // To read a text file
+    await tc.readFile("filePath");
+    
+    // To read file in base64 encoding
+    await tc.readFile("filePath", "base64");
+    ```
+</DetailsBox>
 ### exec
 - `tc.exec(command: string): Promise<any>`
-- Execute a command and return the result. e.g: `await tc.exec("node --version")`.
+- Execute a command and return the result.
+<DetailsBox title="Sample Usage">
+  ```js
+  await tc.exec("node --version");
+  ```
+</DetailsBox>
 
 ### getCookies
 - `tc.getCookies(url?: string): Promise<Cookie[]>`
 - Get all cookies in the cookie store.
+<DetailsBox title="Sample Usage">
+  ```js
+  // get all cookies in store
+  var list = await tc.getCookies();
+  
+  // get all cookies for current url
+  var listDomain = await tc.getCookies("url");
+  var listDomain = await tc.getCookies(tc.request.url);
+  ```
+</DetailsBox>
 
 ### clearCookies
 - `tc.clearCookies(url?: string, name?: string): Promise<void>`
 - Clear existing cookies.
+<DetailsBox title="Sample Usage">
+  ```js
+  // clear all cookies in store
+  await tc.clearCookies();
+  
+  // clear all cookies for current domain
+  await tc.clearCookies("url");
+  await tc.clearCookies(tc.request.url);
+  
+  // clear single cookie by name of cookie
+  await tc.clearCookies(tc.request.url, "cookieName");
+  ```
+</DetailsBox>
 
 ### setCookie
 - `tc.setCookie(url: string, name: string, value: string): Promise<void>`
 - Set a cookie in the cookie store.
+<DetailsBox title="Sample Usage">
+  ```js
+  // set cookie for current url
+  await tc.setCookie("https://www.thunderclient.com", "cookieName", "cookieValue");
+  await tc.setCookie(tc.request.url, "cookieName", "cookieValue");
+  ```
+</DetailsBox>
 
 ### delay
 - `tc.delay(ms: number): Promise<void>`
 - Delay the execution for the specified number of milliseconds.
+<DetailsBox title="Sample Usage">
+  ```js
+  // delay for 1 second.
+  await tc.delay(1000);
+  ```
+</DetailsBox>
 
 ### test
 - `tc.test(name: string, result: boolean | (() => boolean | void)): void`
 - Perform a test assertion.
+<DetailsBox title="Sample Usage">
+  ```js
+  // assert response code is 200 without assertion library
+  tc.test("Response code is 200", tc.response.status === 200);
+
+  // assert response code is 200 with chai library
+  tc.test("Response code expect to be 200", function () {
+        expect(tc.response.status).to.equal(200);
+  })
+  ```
+
+  Documentation: [Assertions](/scripting/assertions)
+</DetailsBox>
 
 ### runRequest
 - `tc.runRequest(reqId: string): Promise<ResponseModel>`
 - Run a request from the script.
+<DetailsBox title="Sample Usage">
+  ```js
+  var result = await tc.runRequest("reqId");
+ 
+  // to get the request id dynamically
+  var result = await tc.runRequest(tc.request.id);
+  
+  console.log(result);
+  ```
+
+  Documentation: [Send Requests](/scripting/send-request)
+</DetailsBox>
 
 ### retryRequest
 - `tc.retryRequest(): Promise<ResponseModel>`
-- Retry a request from the script. This will not execute the pre-reqs and pre-script.
+- Retry a request from the script. This will not execute the **pre-reqs** and **pre-script**.
+<DetailsBox title="Sample Usage">
+  ```js
+  await tc.retryRequest();
+  ```
+
+  Documentation: [Send Requests](/scripting/send-request)
+</DetailsBox>
 
 ### skipRequest
 - `tc.skipRequest(reqId: string): void`
 - Skip a request from execution in collection run.
+<DetailsBox title="Sample Usage">
+  ```js
+  await tc.skipRequest("reqId");
+ 
+  // to get the request id dynamically
+  await tc.skipRequest(tc.request.id);
+  ```
+</DetailsBox>
 
 ### chartHTML
 - `tc.chartHTML(template: string, data: any): void`
-- Set the chart template and data.
+- Set the chart template and data. See [Chart View](/testing/chart-view) for more details.
 
 
 ## Typescript Definition
 - Please refer to the `tc-types.d.ts` file for the typescript definition of the `tc` object.
-<details className="last-of-type:mb-0 rounded-lg bg-neutral-50 dark:bg-neutral-800 p-2 mt-4">
-    <summary>
-        <strong className="text-lg">tc-types.d.ts file</strong>
-    </summary>
-    <div className="nx-p-2">
-    ```ts filename="tc-types.d.ts"
+<DetailsBox title="tc-types.d.ts file">
+
+```ts filename="tc-types.d.ts"
 // version 2.19.5
 
 declare var tc: tcType;
@@ -414,8 +537,7 @@ type InfoModel = {
 }
 
 ```
-    </div>
-</details>
+</DetailsBox>
 
 #### Autocomplete
 - If you are using external JS files, you can refer to the `tc-types.d.ts` file for autocomplete suggestions.
