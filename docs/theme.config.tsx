@@ -66,7 +66,7 @@ const config: DocsThemeConfig = {
       }
     }
 
-    if (asPath =='/cli') {
+    if (asPath == '/cli') {
       return {
         titleTemplate: 'Thunder Client CLI Docs',
       }
