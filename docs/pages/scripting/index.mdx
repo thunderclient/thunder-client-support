@@ -4,50 +4,17 @@ There are two ways you can write custom scripting in Thunder Client for advanced
 2. **Custom Filters(External JS Files):** You can write code in separate javascript files and attach it to a collection.
 
 ## Inline Scripting
-
-### Global Variables
-The following global variables available in the scripting 
-
-| Global Variables | Description |
-|-----------------|-------------|
-| tc              | The main object for all API access |
-| expect          | Chai library for assertions |
-| assert          | Chai library for assertions |
-| btoa            | Base64 encoding |
-| atob            | Base64 decoding |
-
-
-### Built in Modules
-The following built-in modules are available in the scripting
-
-| Library Name     | Description |
-|-----------------|-------------|
-| [ajv](https://github.com/ajv-validator/ajv)             | JSON schema validator |
-| [ajv-formats](https://github.com/ajv-validator/ajv-formats)     | Additional formats for JSON schema validation |
-| [axios](https://github.com/axios/axios)           | Promise-based HTTP client |
-| [buffer](https://nodejs.org/api/buffer.html)          | Buffer class for working with binary data |
-| [chai](https://github.com/chaijs/chai)            | Assertion library |
-| [crypto-js](https://github.com/brix/crypto-js)       | JavaScript library for cryptographic operations |
-| [fast-xml-parser](https://github.com/NaturalIntelligence/fast-xml-parser) | XML parser and validator |
-| [fs](https://nodejs.org/api/fs.html)              | File system module |
-| [http](https://nodejs.org/api/http.html)            | HTTP module |
-| [https](https://nodejs.org/api/https.html)           | HTTPS module |
-| [papaparse](https://github.com/mholt/PapaParse)       | CSV parser and processor |
-| [stream](https://nodejs.org/api/stream.html)          | Readable and writable streams |
-| [tough-cookie](https://github.com/salesforce/tough-cookie)    | HTTP cookie handling library |
-| [url](https://nodejs.org/api/url.html)             | URL parsing and formatting |
- 
- #### How to use built-in modules
- ```javascript
-const axios = require('axios');
-const response = await axios.get('https://jsonplaceholder.typicode.com/todos/1');
-console.log(response.data);
-```
+- JavaScript code can be written directly within Thunder Client views.
+- You have the flexibility to write scripts in the following contexts:
+  - Request Level
+  - Folder Level
+  - Collection Level
+- Additionally, scripts can be authored in `Pre-Request` and `Post-Request` scripts.
 
 ### Pre Request Script
 - Run Pre Request script from `Pre Run` -> `Scripting` tab, useful to set Env Variables
 
-![img](https://github.com/thunderclient/thunder-client-support/assets/8637550/3b561ec0-8657-4060-8b69-c5f5992b6dec)
+![img](/images/pre-req.png)
 
 ------
 
@@ -57,4 +24,4 @@ console.log(response.data);
 - Run the Post Request script from `Tests` -> `Scripting` tab
 - Useful to do clean-up tasks, set environment variables from the response and assertions
 
-![img](https://github.com/thunderclient/thunder-client-support/assets/8637550/efb91e5d-9d0f-492b-a82d-e4bad356f655)
+![img](/images/post-req.png)

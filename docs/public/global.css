@@ -46,9 +46,18 @@ nav a span, nav button.nx-text-sm, nav .nx-inline-block a {
 
 h1 {
     font-weight: 600 !important;
-    font-size: 2rem !important;
+    font-size: 1.9rem !important;
     margin-top: 1rem !important;
 }
+
+h2 {
+    font-size: 1.70rem !important;
+}
+
+.nextra-steps h3:before {
+    border-color: rgb(147 141 189 / 33%) !important;
+}
+
 
 /* nav button.nx-text-sm {
     font-weight: 400;

@@ -1,5 +1,5 @@
 ---
-title: API Reference
+title: Scripting API Reference
 ---
 
 # API Reference
@@ -16,6 +16,46 @@ export function DetailsBox({ title, children }) {
         </details>
     )
 }
+
+## Global Variables
+The following global variables available in the scripting.
+
+| Global Variable | Description |
+|-----------------|-------------|
+| tc              | The main object for all API access |
+| expect          | Chai library for assertions |
+| assert          | Chai library for assertions |
+| btoa            | Base64 encoding |
+| atob            | Base64 decoding |
+
+## Built in Libraries
+The following built-in libraries are available in the scripting
+
+<DetailsBox title="List of Libraries">
+| Library Name     | Description |
+|-----------------|-------------|
+| [ajv](https://github.com/ajv-validator/ajv)             | JSON schema validator |
+| [ajv-formats](https://github.com/ajv-validator/ajv-formats)     | Additional formats for JSON schema validation |
+| [axios](https://github.com/axios/axios)           | Promise-based HTTP client |
+| [buffer](https://nodejs.org/api/buffer.html)          | Buffer class for working with binary data |
+| [chai](https://github.com/chaijs/chai)            | Assertion library |
+| [crypto-js](https://github.com/brix/crypto-js)       | JavaScript library for cryptographic operations |
+| [fast-xml-parser](https://github.com/NaturalIntelligence/fast-xml-parser) | XML parser and validator |
+| [fs](https://nodejs.org/api/fs.html)              | File system module |
+| [http](https://nodejs.org/api/http.html)            | HTTP module |
+| [https](https://nodejs.org/api/https.html)           | HTTPS module |
+| [papaparse](https://github.com/mholt/PapaParse)       | CSV parser and processor |
+| [stream](https://nodejs.org/api/stream.html)          | Readable and writable streams |
+| [tough-cookie](https://github.com/salesforce/tough-cookie)    | HTTP cookie handling library |
+| [url](https://nodejs.org/api/url.html)             | URL parsing and formatting |
+
+**How to use built-in libraries**
+```javascript
+// e.g: to use axios library
+const axios = require('axios');
+```
+
+</DetailsBox>
 
 ## Request
 
@@ -42,13 +82,19 @@ Get the request object. Only headers and body can be modified.
 
 ### Body
 - `tc.request.body` is an object representing the body of the request.
-- The body object has the following properties:
-  - `type`: The type of the body. Possible values are "none", "text", "json", "xml", "formdata", "formencoded", "graphql", "binary".
-  - `raw`: The raw body content.
-  - `form`: An array of key-value pairs representing form data.
-  - `files`: An array of key-value pairs representing files to upload.
-  - `graphql`: An object representing a GraphQL query.
-  - `binary`: The binary body content.
+<DetailsBox title="body type">
+ ```ts
+  type RequestBody = {
+      type: BodyType,
+      raw: string | undefined,
+      form: KeyValue[] | undefined,
+      files: KeyValue[] | undefined,
+      graphql: GraphqlBody | undefined,
+      binary: string | undefined
+  }
+ ```
+  For more details, refer to the [Typescript Definition](/scripting/api#typescript-definition) file.
+</DetailsBox>
 
 ### setHeader
 - `tc.request.setHeader(name: string, value: string): void`
@@ -147,6 +193,16 @@ Get the response object of the request. This object is read-only.
 ### getHeader
 - `tc.response.getHeader(name: string): string | undefined`
 - Get the value of a specific header.
+
+## Info
+- Get the additional information of the current executing request
+
+| Property       | Description                                      |
+|----------------|--------------------------------------------------|
+| tc.info.environmentName   | The environment used for current request.  |
+| tc.info.requestName       | The current request name.   |
+| tc.info.collectionName    | The collection name of the request.  |
+| tc.info.folderName        | The folder name of the request.  |
 
 ## Methods
 
@@ -342,198 +398,198 @@ Get the response object of the request. This object is read-only.
 declare var tc: tcType;
 
 interface tcType {
-        /**
-         * Get Environment variable value
-        * @param variableName variable name
-        */
-        getVar(variableName: string): string;
+    /**
+      * Get Environment variable value
+    * @param variableName variable name
+    */
+    getVar(variableName: string): string;
 
-        /**
-        * Set Environment variable value
-        * @param variableName variable name
-        * @param value variable value
-        * @param scope [optional] environment scope with values: local, global and request
-        */
-        setVar(variableName: string, value: any, scope?: "local" | "global" | "request"): void;
+    /**
+    * Set Environment variable value
+    * @param variableName variable name
+    * @param value variable value
+    * @param scope [optional] environment scope with values: local, global and request
+    */
+    setVar(variableName: string, value: any, scope?: "local" | "global" | "request"): void;
 
-        /**
-        * Add or update the query parameter of the URL
-        * @param paramName query parameter name
-        * @param value parameter value
-        * @since 2.11.0
-        */
-        setParam(paramName: string, value: any): void;
+    /**
+    * Add or update the query parameter of the URL
+    * @param paramName query parameter name
+    * @param value parameter value
+    * @since 2.11.0
+    */
+    setParam(paramName: string, value: any): void;
 
-        /**
-        * Load and get node module from npm registry
-        * @param moduleName module name
-        * @param version [optional] module version, if empty latest version will be used
-        */
-        loadModule(moduleName: string, version?: string): Promise<any>;
+    /**
+    * Load and get node module from npm registry
+    * @param moduleName module name
+    * @param version [optional] module version, if empty latest version will be used
+    */
+    loadModule(moduleName: string, version?: string): Promise<any>;
 
-        /**
-        * Read the file from disk
-        * @param path file path relative to project root or absolute path
-        * @param encoding [optional] encoding to use base64 or utf8. if empty utf8 will be used
-        */
-        readFile(path: string, encoding?: string): Promise<string | undefined>;
+    /**
+    * Read the file from disk
+    * @param path file path relative to project root or absolute path
+    * @param encoding [optional] encoding to use base64 or utf8. if empty utf8 will be used
+    */
+    readFile(path: string, encoding?: string): Promise<string | undefined>;
 
-        /**
-        * Executes the command and returns the result
-        * @param command command to execute
-        */
-        exec(command: string): Promise<any>;
+    /**
+    * Executes the command and returns the result
+    * @param command command to execute
+    */
+    exec(command: string): Promise<any>;
 
-        /**
-        * Get all cookies in cookie store
-        * @param url [optional] to get cookies for url, if empty all cookies will be returned
-        * @since 2.14.0
-        */
-        getCookies(url?: string): Promise<Cookie[]>;
+    /**
+    * Get all cookies in cookie store
+    * @param url [optional] to get cookies for url, if empty all cookies will be returned
+    * @since 2.14.0
+    */
+    getCookies(url?: string): Promise<Cookie[]>;
 
-        /**
-        * Clear all existing cookies
-        * @param url [optional] to clear cookies for url, if empty all cookies will be cleared
-        * @param name [optional] to clear cookie by name, if empty all cookies for the url are cleared
-        */
-        clearCookies(url?: string, name?: string): Promise<void>;
+    /**
+    * Clear all existing cookies
+    * @param url [optional] to clear cookies for url, if empty all cookies will be cleared
+    * @param name [optional] to clear cookie by name, if empty all cookies for the url are cleared
+    */
+    clearCookies(url?: string, name?: string): Promise<void>;
 
-        /**
-        * Set cookie in cookie store
-        * @param url the url to set cookie for
-        * @param name cookie name
-        * @param value cookie value
-        * @since 2.14.0
-        */
-        setCookie(url: string, name: string, value: string): Promise<void>;
+    /**
+    * Set cookie in cookie store
+    * @param url the url to set cookie for
+    * @param name cookie name
+    * @param value cookie value
+    * @since 2.14.0
+    */
+    setCookie(url: string, name: string, value: string): Promise<void>;
 
-        /**
-        * Delay the execution for the specified milliseconds
-        * @param ms the delay time in milliseconds
-        * @since 2.9.2
-        */
-        delay(ms: number): Promise<void>;
+    /**
+    * Delay the execution for the specified milliseconds
+    * @param ms the delay time in milliseconds
+    * @since 2.9.2
+    */
+    delay(ms: number): Promise<void>;
 
-        /**
-        * Test assertion (Only works in Post Request Script)
-        * @param name the name of the test
-        * @param result the result of the test -> boolean or function that returns false 
-        * or throws exception
-        * @since 2.10.0
-        */
-        test(name: string, result: boolean | (() => boolean | void)): void;
+    /**
+    * Test assertion (Only works in Post Request Script)
+    * @param name the name of the test
+    * @param result the result of the test -> boolean or function that returns false 
+    * or throws exception
+    * @since 2.10.0
+    */
+    test(name: string, result: boolean | (() => boolean | void)): void;
 
-        /**
-        * Run Request from the script
-        * @param reqId the request id
-        * @since 2.9.0
-        */
-        runRequest(reqId: string): Promise<ResponseModel>;
+    /**
+    * Run Request from the script
+    * @param reqId the request id
+    * @since 2.9.0
+    */
+    runRequest(reqId: string): Promise<ResponseModel>;
 
-        /**
-        * Retry Request from the script. This will not execute the pre-reqs and pre script
-        * @since 2.17.5
-        */
-        retryRequest(): Promise<ResponseModel>;
+    /**
+    * Retry Request from the script. This will not execute the pre-reqs and pre script
+    * @since 2.17.5
+    */
+    retryRequest(): Promise<ResponseModel>;
 
-        /**
-        * Skip Request from execution in collection run
-        * @param reqId the request id
-        * @since 2.16.0
-        */
-        skipRequest(reqId: string): void;
+    /**
+    * Skip Request from execution in collection run
+    * @param reqId the request id
+    * @since 2.16.0
+    */
+    skipRequest(reqId: string): void;
 
-        /**
-        * Set the chart template and data
-        * @param template chart template HTML string
-        * @param data chart data
-        * @since 2.17.0
-        */
-        chartHTML(template: string, data: any): void;
+    /**
+    * Set the chart template and data
+    * @param template chart template HTML string
+    * @param data chart data
+    * @since 2.17.0
+    */
+    chartHTML(template: string, data: any): void;
 
-        /**
-        * Get the Request Info
-        * @since 2.15.0
-        */
-        info: InfoModel;
+    /**
+    * Get the Request Info
+    * @since 2.15.0
+    */
+    info: InfoModel;
 
-        /**
-        * Get the Request object (Only Headers can be modified)
-        */
-        request: RequestModel;
+    /**
+    * Get the Request object (Only Headers can be modified)
+    */
+    request: RequestModel;
 
-        /**
-        * Get the Response object (read-only)
-        */
-        response: ResponseModel;
+    /**
+    * Get the Response object (read-only)
+    */
+    response: ResponseModel;
 }
 
 type RequestModel = {
-        id: string;
-        name: string;
-        url: string;
-        method: string;
-        headers: KeyValue[];
-        body: RequestBody | undefined;
-        getHeader: (name: string) => string | undefined;
-        setHeader: (name: string, value: string) => void;
-        /**
-         * Set Request body
-        */
-        setBody: (body: string | object | GraphqlBody | undefined, type?: BodyType) => void;
+    id: string;
+    name: string;
+    url: string;
+    method: string;
+    headers: KeyValue[];
+    body: RequestBody | undefined;
+    getHeader: (name: string) => string | undefined;
+    setHeader: (name: string, value: string) => void;
+    /**
+      * Set Request body
+    */
+    setBody: (body: string | object | GraphqlBody | undefined, type?: BodyType) => void;
 }
 
 type ResponseModel = {
-        status: number;
-        time: number;
-        size: number;
-        contentType: string;
-        headers: KeyValue[];
-        cookies: KeyValue[];
-        json: any;
-        text: string;
-        getHeader: (name: string) => string | undefined;
+    status: number;
+    time: number;
+    size: number;
+    contentType: string;
+    headers: KeyValue[];
+    cookies: KeyValue[];
+    json: any;
+    text: string;
+    getHeader: (name: string) => string | undefined;
 }
 
 type RequestBody = {
-        type: BodyType,
-        raw: string | undefined,
-        form: KeyValue[] | undefined,
-        files: KeyValue[] | undefined,
-        graphql: GraphqlBody | undefined,
-        binary: string | undefined
+    type: BodyType,
+    raw: string | undefined,
+    form: KeyValue[] | undefined,
+    files: KeyValue[] | undefined,
+    graphql: GraphqlBody | undefined,
+    binary: string | undefined
 }
 
 type KeyValue = {
-        name: string,
-        value: string,
-        isDisabled?: boolean | undefined
+    name: string,
+    value: string,
+    isDisabled?: boolean | undefined
 }
 
 type BodyType = "none"|"text"|"json"|"xml"|"formdata"|"formencoded"|"graphql"|"binary";
 
 type GraphqlBody = {
-        query: string,
-        variables?: string | undefined
+    query: string,
+    variables?: string | undefined
 }
 
 type Cookie = {
-        key: string;
-        value: string;
-        expires?: string; // date in ISO 8601 format
-        domain: string;
-        path: string;
-        hostOnly: boolean;
-        httpOnly?: boolean;
-        creation: string;  // date in ISO 8601 format
-        lastAccessed: string;  // date in ISO 8601 format
+    key: string;
+    value: string;
+    expires?: string; // date in ISO 8601 format
+    domain: string;
+    path: string;
+    hostOnly: boolean;
+    httpOnly?: boolean;
+    creation: string;  // date in ISO 8601 format
+    lastAccessed: string;  // date in ISO 8601 format
 }
 
 type InfoModel = {
-        environmentName: string,
-        requestName: string,
-        collectionName: string,
-        folderName: string,
+    environmentName: string,
+    requestName: string,
+    collectionName: string,
+    folderName: string,
 }
 
 ```

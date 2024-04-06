@@ -4,8 +4,10 @@
 
 # Thunder Client
 
-[![installs](https://img.shields.io/visual-studio-marketplace/i/rangav.vscode-thunder-client.svg)](https://marketplace.visualstudio.com/items?itemName=rangav.vscode-thunder-client) [![version](https://img.shields.io/visual-studio-marketplace/v/rangav.vscode-thunder-client.svg)](https://marketplace.visualstudio.com/items?itemName=rangav.vscode-thunder-client) [![Discord Badge](https://img.shields.io/discord/1044985063802163230?color=5865F2&label=Discord&logo=discord&logoColor=white&style=flat)](https://discord.gg/yw6UsfwrkH)
-[![X](https://img.shields.io/twitter/follow/thunder_client?style=flat&logo=x)](https://twitter.com/thunder_client)
+![Visual Studio Marketplace Installs](https://img.shields.io/visual-studio-marketplace/i/rangav.vscode-thunder-client?label=Installs)
+![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/rangav.vscode-thunder-client?label=Extension)
+![NPM Version](https://img.shields.io/npm/v/%40thunderclient%2Fcli?label=CLI)
+[![Discord Badge](https://img.shields.io/discord/1044985063802163230?color=5865F2&label=Discord&logo=discord&logoColor=white&style=flat)](https://discord.gg/yw6UsfwrkH)
 [![Reddit](https://img.shields.io/twitter/follow/thunder_client?style=flat&logo=reddit&label=thunderclient)](https://www.reddit.com/r/thunderclient/)
 
 Thunder Client is a lightweight Rest API Client Extension for Visual Studio Code, hand-crafted by [Ranga Vadhineni](https://twitter.com/ranga_vadhineni) with a focus on **simplicity, clean design and local storage**. The source code is not open source. You can report any Bugs Or Feature requests here.
@@ -40,10 +42,6 @@ Thunder Client is a lightweight Rest API Client Extension for Visual Studio Code
 - Video: [youtube.com/watch?v=NKZ0ahNbmak](https://youtu.be/NKZ0ahNbmak?t=3)
 
 <img width="850" alt="Thunder Client" src="https://github.com/rangav/thunder-client-support/blob/master/images/thunder-client-v2.png">
-
-#### Requirements
-
-- Minimum **VS Code** version now required is `v1.78.0`
 
 <a name="features"></a>
 

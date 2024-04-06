@@ -6,7 +6,7 @@ From the `Tests` tab, you can set environment variables using the `Set Env Varia
 <br/>
 <img width="500" alt="Set Env Variable" src="/images/set-env.png" />
 
-Setting environment variables is supported in the Tests tab. Follow the steps below:
+Follow the steps below:
 
 <Steps>
 ### Step 1
@@ -24,34 +24,34 @@ Enter the appropriate source of the variable value in the left input box (see ab
 
 ## Source Types
 
-##### JSON Response
+#### JSON Response
   - Enter `json.propertyName` where `propertyName` is the JSON key in the response body.
 
-##### Text Response
+#### Text Response
   - Enter the `text` keyword. This sets the entire response body to the variable.
 
-##### Header
-  - Enter `header.headerName` where `headerName` is the response header name.
+#### Header
+  - To set header, enter `header.headerName` where `headerName` is the response header name.
 
-##### Cookie
-  - Enter `cookie.cookieName` where `cookieName` is the response cookie name.
+#### Cookie
+  - To set cookie, enter `cookie.cookieName` where `cookieName` is the response cookie name.
 
-##### Custom Value
+#### Custom Value
   - To set any custom value manually, Just type the text as required in the left input e.g `processing`.
 
-##### Clear Value
+#### Clear Value
   - To clear values use `null` keyword in the left input.
 
-##### Delete Variable
+#### Delete Variable
   - To delete a variable completely use the `delete` keyword in left input.
 
-### Value Input
+## Value Field
 - In the value input, enter a variable name in the format `{{variableName}}`.
   - When it matches a variable name in Env, it will turn **green**. If the variable doesn't exist, it will be created.
 - Now execute the request. You will see the variable value set in the Env tab.
   - If you don't see the change in the Env tab, close and re-open the tab to refresh it.
 
-### Set Env with Scope
+## Set Env with Scope
 
 
 The default location will be Active Environment when you use `{{variable}}`. You can use a scope to control which environment variable to set the value explicitly.
