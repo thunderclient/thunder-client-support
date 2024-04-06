@@ -10,8 +10,9 @@ const config: DocsThemeConfig = {
   head:(
     <>
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta name="description" content="Explore the documentation for Thunder Client, a lightweight API client for VS Code" />
       <meta property="og:title" content="Documentation - Thunder Client" />
-      <meta property="og:description" content="Thunder Client API Client Documentation" />
+      <meta property="og:description" content="Explore the documentation for Thunder Client, a lightweight API client for VS Code" />
       <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     </>
   ),
