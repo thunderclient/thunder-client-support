@@ -13,4 +13,16 @@ const withNextra = nextra({
 module.exports = withNextra({
   distDir: 'dist',
   output: "standalone",
+  redirects: () => [
+    {
+      source: '/getting-started',
+      destination: '/get-started',
+      permanent: true
+    },
+    {
+      source: '/features/authentication',
+      destination: '/features/auth',
+      permanent: true
+    }
+  ]
 })
