@@ -368,7 +368,7 @@ Get the response object of the request. This object is read-only.
   await tc.retryRequest();
   ```
 
-  Documentation: [Send Requests](/scripting/send-request)
+  Documentation: [Retry Request](/scripting/send-request#retry-request)
 </DetailsBox>
 
 ### skipRequest
@@ -377,9 +377,6 @@ Get the response object of the request. This object is read-only.
 <DetailsBox title="Sample Usage">
   ```js
   await tc.skipRequest("reqId");
- 
-  // to get the request id dynamically
-  await tc.skipRequest(tc.request.id);
   ```
 </DetailsBox>
 
