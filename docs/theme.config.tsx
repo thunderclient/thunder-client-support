@@ -44,7 +44,7 @@ const config: DocsThemeConfig = {
     }
   },
   footer: {
-    text: <span className='footer-text'>© 2024 Thunder Client Limited. Registered Company in Ireland</span>,
+    text: <span className='footer-text'>© 2024 Thunder Client Limited. Based in Dublin, Ireland</span>,
   },
   primaryHue: 212,
   primarySaturation: 100,

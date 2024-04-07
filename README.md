@@ -54,6 +54,14 @@ Thunder Client is a lightweight Rest API Client Extension for Visual Studio Code
 - **Git Sync:** Save requests data in your Git repository for team collaboration.
 - **CLI:** The CLI supports CI and CD integration and generates reports.
 
+## Innovations
+
+- First to introduce GUI based **API Client for VS Code**.
+- First to introduce **100% local storage** API Client.
+- First to introduce **Scriptless Testing**.
+- First to introduce an **advanced CLI** that runs Requests, Collections and cURL commands.
+- More to come...
+
 ## Documentation (NEW)
 
 - We're excited to launch our new documentation site - https://docs.thunderclient.com
