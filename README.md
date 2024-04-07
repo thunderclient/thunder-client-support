@@ -17,6 +17,11 @@ Thunder Client is a lightweight Rest API Client Extension for Visual Studio Code
 - Extension - [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=rangav.vscode-thunder-client)
 - Documentation - [https://docs.thunderclient.com](https://docs.thunderclient.com/)
 
+#### Follow Us for Updates
+
+&nbsp;[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/thunder_client)
+&nbsp; &nbsp; [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/company/thunderclient/)
+
 #### Story behind Thunder Client
 
 - Read Launch Blog Post on [Medium](https://rangav.medium.com/thunder-client-alternative-to-postman-68ee0c9486d6)
@@ -28,10 +33,14 @@ Thunder Client is a lightweight Rest API Client Extension for Visual Studio Code
 - **1 Million** downloads on July 13th, 2022
 - [View All Milestones](https://www.thunderclient.com/about)
 
-#### Follow Us for Updates
+#### Innovations
 
-&nbsp;[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/thunder_client)
-&nbsp; &nbsp; [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/company/thunderclient/)
+- First to introduce GUI based **API Client for VS Code**.
+- First to introduce **100% local storage** API Client.
+- First to introduce **Scriptless Testing**.
+- First to introduce an **advanced CLI** that runs Requests, Collections and cURL commands.
+- More to come...
+
 
 <a name="usage"></a>
 
@@ -53,14 +62,6 @@ Thunder Client is a lightweight Rest API Client Extension for Visual Studio Code
 - **Local Storage:** The extension saves all data locally on the user's device.
 - **Git Sync:** Save requests data in your Git repository for team collaboration.
 - **CLI:** The CLI supports CI and CD integration and generates reports.
-
-## Innovations
-
-- First to introduce GUI based **API Client for VS Code**.
-- First to introduce **100% local storage** API Client.
-- First to introduce **Scriptless Testing**.
-- First to introduce an **advanced CLI** that runs Requests, Collections and cURL commands.
-- More to come...
 
 ## Documentation (NEW)
 
