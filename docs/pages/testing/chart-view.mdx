@@ -128,3 +128,192 @@ var html = `
         border-bottom: 1px solid #555;
       }
 ```
+
+### Copying text to clipboard
+
+The chat view is in an iframe and has no access to `navigator.clipboard`. You can copy text to the clipboard by using `parent.postMessage()` to send a message to the parent window to copy the text to the clipboard.
+
+The example below demonstrates how to create a custom context menu to copy text to the clipboard. Right-click anywhere on the page to see the context menu. Select the content and click 'Copy' to copy the selected text to the clipboard.
+
+There is also a simpler implementation with a button that copies the text "Hello, World!" to the clipboard when clicked.
+
+```js
+var template = `
+<div id="container"></div>
+
+<script>
+
+  // get the container element
+  let container = document.getElementById("container");
+
+  let explanation = document.createElement("p");
+  explanation.textContent = "This template demonstrates how to create a custom context menu that allows you to copy text to the clipboard. Right-click anywhere on the text inside this view to see the context menu. Select the content and click 'Copy' to copy the selected text to the clipboard.";
+  container.appendChild(explanation);
+
+  let text = document.createElement("p");
+  text.textContent = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi.";
+  container.appendChild(text);
+
+  function copyToClipboard(text) {
+    try {
+      parent.postMessage({ command: 'copy-text', "text": text });
+      return '';
+    } catch (error) {
+      return 'Failed to copy text' + error;
+    }
+  }
+
+  // Create a button
+  let button = document.createElement("button");
+  button.textContent = "Copy to clipboard: 'Hello, World!'";
+  button.addEventListener("click", function () {
+    copyToClipboard("Hello, World!");
+  });
+  container.appendChild(button);
+
+  var contextMenu; // Define a variable to store the context menu
+
+  function clearContextMenu() {
+    if (contextMenu) {
+      container.removeChild(contextMenu);
+      contextMenu = null;
+    }
+  }
+
+  document.addEventListener('click', function (event) {
+    // If the target of the click event is not the contextMenu and the contextMenu exists
+    if (event.target !== contextMenu) {
+      // Remove the contextMenu from the document
+      clearContextMenu();
+    }
+  });
+
+  function copyText() {
+    var text = window.getSelection().toString();
+    copyToClipboard(text);
+  }
+
+  container.addEventListener('contextmenu', function (event) {
+    event.preventDefault(); // Prevent the default context menu
+
+    // Remove the previous context menu if it exists
+    clearContextMenu();
+
+    try {
+      // Create a new custom context menu
+      contextMenu = document.createElement('div');
+      contextMenu.innerHTML = '<ul style="list-style: none; padding: 0; margin: 0; background-color: #333; color: #fff;"><li class="context-menu-item" id="copy" style="padding: 5px;">Copy</li></ul>';
+      contextMenu.style.position = 'absolute';
+      contextMenu.style.top = event.clientY + 'px';
+      contextMenu.style.left = event.clientX + 'px';
+      contextMenu.style.backgroundColor = 'white';
+      contextMenu.style.border = '1px solid white';
+      contextMenu.style.padding = '0px';
+      contextMenu.style.zIndex = '1000';
+      container.appendChild(contextMenu);
+    } catch (error) {
+      // Add text error to context menu
+      text.textContent = 'Error: ' + error;
+      copyToClipboard('Error: ' + error);
+    }
+
+    try {
+      // Get the context menu options
+      var copy = document.getElementById('copy');
+
+      // Check if there are any selected rows
+      var copyable = window.getSelection().toString().length > 0;
+
+      // Add or remove the 'disabled' class based on whether there are any selected rows
+      if (copyable) {
+        copy.classList.remove('disabled');
+      } else {
+        copy.classList.add('disabled');
+      }
+
+      // Add a click event listener to the "Copy selected rows" option
+      copy.addEventListener('click', copyText);
+
+    } catch (error) {
+      // Add text error to context menu
+      contextMenu.textContent = 'Error: ' + error;
+      copyToClipboard('Error: ' + error);
+    }
+  });
+
+</script>
+<style>
+  body {
+    font-size: 13px;
+    font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+
+  table {
+    width: 100%;
+    box-sizing: border-box;
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+
+  td,
+  th {
+    padding: 0;
+    border: 1px solid #E1E1E1;
+  }
+
+  th,
+  td {
+    padding: 4px 6px;
+    text-align: left;
+  }
+
+  th:first-child,
+  td:first-child {
+    padding-left: 0;
+  }
+
+  th:last-child,
+  td:last-child {
+    padding-right: 0;
+  }
+
+  th {
+    white-space: nowrap;
+    transition: width 0.2s ease-in-out;
+  }
+
+  th {
+    cursor: pointer;
+  }
+
+  th:hover {
+    background-color: #555;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  .context-menu-item {
+    cursor: pointer;
+  }
+
+  .context-menu-item:hover {
+    background-color: #555;
+  }
+
+  .disabled {
+    cursor: default !important;
+    background-color: #333 !important;
+    color: #999 !important;
+  }
+
+  .disabled:hover {
+    background-color: #333 !important;
+    color: #999 !important;
+  }
+</style>
+`
+
+tc.chartHTML(template);
+```
