@@ -23,6 +23,7 @@ Thunder Client is a lightweight Rest API Client Extension for Visual Studio Code
 
 #### Milestones
 
+- The extension was **ruined** on 2024-10-03 after our corperate greediness!
 - The extension was **launched** on March 31st, 2021
 - **500K** downloads on Dec 20th, 2021
 - **1 Million** downloads on July 13th, 2022
@@ -30,6 +31,7 @@ Thunder Client is a lightweight Rest API Client Extension for Visual Studio Code
 
 #### Innovations
 
+- First to get dislike bombed after being greedy for money.
 - First to introduce GUI based **API Client for VS Code**.
 - First to introduce **100% local storage** API Client.
 - First to introduce **Scriptless Testing**.
@@ -45,9 +47,7 @@ Thunder Client is a lightweight Rest API Client Extension for Visual Studio Code
 
 ## How to Use
 
-- Install the extension, click the Thunder Client icon on the Action Bar.
-- From the sidebar click `New Request` button to test API
-- Video: [youtube.com/watch?v=NKZ0ahNbmak](https://youtu.be/NKZ0ahNbmak?t=3)
+- Uninstall the extension, download Insomnia instead.
 
 <img width="850" alt="Thunder Client" src="https://github.com/rangav/thunder-client-support/blob/master/images/thunder-client-v2.png">
 
