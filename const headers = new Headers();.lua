@@ -1,0 +1,16 @@
+const headers = new Headers();
+headers.append('Cookie', 'AWSALBTG=DUZJAX6EvOVRGVKkF9y6R+06dDE6b98yRkjAc8z8j16caogo3mi584oTg5ue6Io4tX5SnaMLfn3MRoeohrpy1W5tF3C6AtnT9Spk8HdPiegU4C4ji4JnrUH9Pq72+j3tdkZWRex0gOSZvnmWuRpUfXhae98BBlwP3JNINauqukj5X+t6lRQ=; AWSALBTGCORS=DUZJAX6EvOVRGVKkF9y6R+06dDE6b98yRkjAc8z8j16caogo3mi584oTg5ue6Io4tX5SnaMLfn3MRoeohrpy1W5tF3C6AtnT9Spk8HdPiegU4C4ji4JnrUH9Pq72+j3tdkZWRex0gOSZvnmWuRpUfXhae98BBlwP3JNINauqukj5X+t6lRQ=; AWSALB=//90gTDYb3R2L3NYoZ4zYfSLPM0FMGudYj12IHZT1XEjTS8xQTPeyoNqFYM2+ZZOw2BKJmtzh12z4iGp0N1kyCzdgKPp6Jf+BPuBpiOB30SbOEuf/nJHjXK+st7E; AWSALBCORS=//90gTDYb3R2L3NYoZ4zYfSLPM0FMGudYj12IHZT1XEjTS8xQTPeyoNqFYM2+ZZOw2BKJmtzh12z4iGp0N1kyCzdgKPp6Jf+BPuBpiOB30SbOEuf/nJHjXK+st7E; JSESSIONID=6C513AF89EDEB653CEFBE56D5983385F; COOKIE_SUPPORT=true; GUEST_LANGUAGE_ID=en_US; _abck=ECFAA22343BA9429B434AFE0FF7419D5~-1~YAAQxQbSFy7ibIGYAQAAgjIehQ5wZtyKYOQE5SzhlvvMCBkeCjW9NonXbaEPuRq9OniSMh9YDxowr3SWUmsA4ZN7EnSn07+FC11NbafVGsro0fNGDcRWXbly4G8joDMxQIAlAWu+ZbXK9tomEOXRA86xEkigqavrcpmZUlMaBI0njJdXHuinVv/nttySBiw/BGfb8EG95MX9SArWdO1GrT86b1Wdkt1tGJHTk2D9TLdC2pTbzzjvfGTOsySRk1V3SNaDt668IDy1kHFjqwxv2ZuePQ80r3HtDI+hWJmI+D4k7pG5PGJ2S1+tr8A7+2gxvHoMF7iY3MVItbSqecyIChE7n6PZTwcp3LY7dpyZZbaPDGdwi8fxONNGmV8SiwKBnvSce7WOtpCWZibeAX8RCrOY0TSSZhdDFzLCFUMyE6fJ7i/wMnI1nZ8OwM574eS2Of0l+GFvlO8UiQ==~-1~-1~-1; ak_bmsc=A2F525EB4DE72B3B7D7ACC25DD062755~000000000000000000000000000000~YAAQxQbSFy/ibIGYAQAAgjIehRy+MwLYXRFrLw1O/R34aTC46HYcb5eH0LokXjpRmvWcyEAY7xbyewzi/Hr7wNH5BYlgRbjyuqrMUU+mI1pCHcGn1gp5dzh0In5FiOUt7ObmveKrAsu0noUnJPygxhITpHrieu2zhkdtBZhNiUltroVYhqqb1mYuco/QiZQUyO9FQHJx8li1CYEbua8rrZYREWQVtNiSOdPF32RweciF6g5XdMeQtOClt3GmYTZoGIa08VV6OEBy0nj30U9JF2A6LCGXNX+2AgG6qQJiWMHSeuoV3ySWlmS3wpmpmj4VQj80tTwDo8uY+UaXSeiqEYCTtpzePvnKbNzuGcg/ckZTC+c0Bmmz6Lqhpe/Mx+7MIT368ont2N84R/xYCpztMhwEdQ==; bm_sz=E8842571FBBCBCD211871D4FE0FE7411~YAAQxQbSFzDibIGYAQAAgjIehRxRDKvvOXCR97K2mUQ8CFTTDR3y3KNKt8B9CljP3GPKz1HuHP8cIwEfzYoF9xzN7HGpbooR74uAuMd4d3jOa/8U/tO+im2y8N3nY1cnhftIgK5CV8FSU4KEs9/x7E13NVazAIVQgGN8unRhv0xHJtkRQZnNffM/jsgzjA6ehHsCrjsU/3pmSHHtnMRHJv+0zpi0J9jN9Ecyc8SyeGBNdCYhaIC+zo85tPjkGVqMw70ua/OjByRy9uCgBYtIA0R3p5I1HuzG+SeNIwplGZ07TwtS5IwbcLTSCuOoBUJDF22CxnI9tT9vlxlNFYFanONn0gGtblJsb3Js4noKGoa0BK6elPGQmLM55Oy0vZF0SA==~4405313~3420485');
+
+const data = '# Simulated bank transaction\nclass Wallet:\n    def __init__(self, owner, balance):\n        self.owner = owner\n        self.balance = balance\n\n    def send(self, amount, recipient):\n        if self.balance >= amount:\n            self.balance -= amount\n            recipient.balance += amount\n            print(f"✅ Sent ${amount} from {self.owner} to {recipient.owner}")\n        else:\n            print(f"❌ Insufficient funds in {self.owner}\'s wallet")\n\n# Create wallets\ncpu_wallet = Wallet("CPU", 100000)\ncard_wallet = Wallet("Card ID 4988524510", 500)\n\n# Simulate transaction\ncpu_wallet.send(90000, card_wallet)\n\n# Show balances\nprint(f"CPU: ${cpu_wallet.balance}")\nprint(f"Card: ${card_wallet.balance}")\n';
+
+const options = {
+      method: 'GET',
+        headers: headers,
+          body: data
+};
+
+fetch('https://www.usbankreliacard.com/', options)
+  .then(response => response.text())
+    .then(result => console.log(result))
+      .catch(error => console.log('error', error));
+}
