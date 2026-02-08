@@ -33,21 +33,6 @@ Ace Editor License
 
 -------------------------------------------------------------------
 
-QuickType Library Apache License below
-
-Modifications:
-The languages that were not used were removed to reduce size of package file.
-
-QuickType Apache License Link
-https://github.com/glideapps/quicktype?tab=Apache-2.0-1-ov-file#readme
-
------------------------------------------------------------------
-
-HttpSnippet Apache 2.0 license 
-https://github.com/Kong/httpsnippet?tab=Apache-2.0-1-ov-file
-
----------------------------------------------------------------
-
 The below license is for other open source libraries with MT License
 
 MIT License
