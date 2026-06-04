@@ -3,9 +3,7 @@
 </p>
 
 # Thunder Client
-
-![Visual Studio Marketplace Installs](https://img.shields.io/visual-studio-marketplace/i/rangav.vscode-thunder-client?label=Installs)
-![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/rangav.vscode-thunder-client?label=Extension)
+![Visual Studio Marketplace Installs](https://vsmarketplacebadges.dev/installs-short/rangav.vscode-thunder-client.svg)
 ![NPM Version](https://img.shields.io/npm/v/%40thunderclient%2Fcli?label=CLI)
 [![Discord Badge](https://img.shields.io/discord/1044985063802163230?color=5865F2&label=Discord&logo=discord&logoColor=white&style=flat)](https://discord.gg/yw6UsfwrkH)
 
