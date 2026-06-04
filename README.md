@@ -9,7 +9,7 @@
 ![NPM Version](https://img.shields.io/npm/v/%40thunderclient%2Fcli?label=CLI)
 [![Discord Badge](https://img.shields.io/discord/1044985063802163230?color=5865F2&label=Discord&logo=discord&logoColor=white&style=flat)](https://discord.gg/yw6UsfwrkH)
 
-Thunder Client is a lightweight Rest API Client Extension for Visual Studio Code, hand-crafted by [Ranga Vadhineni](https://twitter.com/ranga_vadhineni) with a focus on **simplicity, clean design and local storage**. The source code is not open source. You can report any Bugs Or Feature requests here.
+Thunder Client is a lightweight REST API client for [VS Code](https://marketplace.visualstudio.com/items?itemName=rangav.vscode-thunder-client) and [JetBrains](https://plugins.jetbrains.com/plugin/31431-thunder-client), designed with a focus on **simplicity, clean design, and local storage**. You can report any bugs or feature requests here.
 
 - Featured on Product Hunt - [Product Hunt](https://www.producthunt.com/posts/thunder-client)
 - Featured in the "20 Fan Favorite Extensions" for [VS Code](https://www.youtube.com/watch?v=mI5My0cBTv4)
