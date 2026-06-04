@@ -4,6 +4,7 @@
 
 # Thunder Client
 ![Visual Studio Marketplace Installs](https://vsmarketplacebadges.dev/installs-short/rangav.vscode-thunder-client.svg)
+![Visual Studio Version](https://vsmarketplacebadges.dev/version-short/rangav.vscode-thunder-client.svg)
 ![NPM Version](https://img.shields.io/npm/v/%40thunderclient%2Fcli?label=CLI)
 [![Discord Badge](https://img.shields.io/discord/1044985063802163230?color=5865F2&label=Discord&logo=discord&logoColor=white&style=flat)](https://discord.gg/yw6UsfwrkH)
 
